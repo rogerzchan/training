@@ -83,6 +83,19 @@ function weekBounds(date){
   const s = w.start, e = iso(new Date(new Date(s+'T00:00').getTime()+6*864e5));
   return {w, start:s, end:e};
 }
+/* Which week's jump budget does a session count against? The week that
+   contains the date it was actually DONE, because that is when the tissue
+   absorbed it — not the week it was scheduled in. Work logged before the
+   program officially starts still counts against week 1 rather than
+   vanishing into no week at all. */
+function budgetWeekOf(s){
+  if(!s.date) return null;
+  const first = P.weeks[0], last = P.weeks[P.weeks.length-1];
+  if(s.date < first.start) return first.n;
+  const n = Math.floor(days(P.meta.start, s.date)/7) + 1;
+  if(n > last.n) return last.n;
+  return n;
+}
 function contactsOf(sess){
   let c = 0;
   for(const en of sess.entries||[]){
@@ -97,7 +110,8 @@ function jumpBudget(date){
   const ceiling = inSeason ? P.budget.inSeasonCeiling : P.budget.offSeasonCeiling;
   let vbHours = 0, contacts = 0;
   for(const s of Object.values(S.sessions)){
-    if(!s.done || !s.date || s.date < b.start || s.date > b.end) continue;
+    if(!s.done || !s.date) continue;
+    if(budgetWeekOf(s) !== b.w.n) continue;
     if(s.play) vbHours += num(s.playHours) || 2;
     contacts += contactsOf(s);
   }
