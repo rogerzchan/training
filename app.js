@@ -135,6 +135,7 @@ function tendonRule(site){
   return {status:'good', msg:`${p.before} → ${p.after} at 24h. Progress as written.`};
 }
 function e1rm(load, reps){ return (load && reps) ? load*(1+reps/30) : null; }
+function bodyweight(){ return num(S.settings.bw); }   // local only, never in the repo
 function bestE1(exId){
   let best = null;
   for(const s of Object.values(S.sessions)){
@@ -308,11 +309,14 @@ function vToday(){
   </div>`;
 
   const keys = ['bench','squatacc','hangclean'];
+  const bw = bodyweight();
   const rows = keys.map(k=>{const b=bestE1(k); return b?`<tr><td>${esc(P.exercises[k].name)}</td>
       <td class="r mono">${b.load}×${b.reps}</td><td class="r mono">${Math.round(b.v)}</td>
-      <td class="r mono">${(b.v/P.athlete.bw).toFixed(2)}x</td></tr>`:''}).filter(Boolean).join('');
+      ${bw?`<td class="r mono">${(b.v/bw).toFixed(2)}x</td>`:'<td class="r tiny">—</td>'}</tr>`:''})
+    .filter(Boolean).join('');
   if(rows) h += `<h2>Key lifts</h2><div class="card tight"><table>
-    <tr><th>Lift</th><th class="r">Best</th><th class="r">e1RM</th><th class="r">×BW</th></tr>${rows}</table></div>`;
+    <tr><th>Lift</th><th class="r">Best</th><th class="r">e1RM</th><th class="r">×BW</th></tr>${rows}</table>
+    ${bw?'':'<div class="tiny" style="margin-top:9px">Set your bodyweight in the Data tab to see ×BW.</div>'}</div>`;
   return h;
 }
 
@@ -533,12 +537,16 @@ function vData(){
     <button class="btn sec" style="margin-top:8px" data-act="import">Import JSON</button>
     <input type="file" id="fin" accept="application/json" style="display:none">
   </div>
+  <h2>You</h2><div class="card">
+    <div class="row" style="gap:8px"><input inputmode="decimal" placeholder="bodyweight (lb)"
+      value="${S.settings.bw ?? ''}" data-set="bw" style="max-width:150px">
+      <span class="muted tiny grow">stays on this device, never in the repo</span></div>
+    <div class="tiny" style="margin-top:8px">Used for the ×bodyweight column on key lifts.</div></div>
   <h2>Program</h2><div class="card tight"><table>
     <tr><td>Start</td><td class="r mono">${P.meta.start}</td></tr>
     <tr><td>Peak event</td><td class="r">${esc(P.meta.peakEvent)}</td></tr>
     <tr><td>Peak date</td><td class="r mono">${P.meta.peakDate}</td></tr>
     <tr><td>Total weeks</td><td class="r mono">${P.meta.totalWeeks}</td></tr>
-    <tr><td>Bodyweight</td><td class="r mono">${P.athlete.bw} lb</td></tr>
   </table><div class="tiny" style="margin-top:10px">To change the program, edit program.json and push.
     Never needed for logging.</div></div>
   <h2>Danger</h2><div class="card"><button class="btn sec" data-act="wipe"
@@ -588,6 +596,7 @@ document.addEventListener('click', e => {
     localStorage.removeItem(KEY); S = blank(); render(); } return; }
 });
 document.addEventListener('input', e => {
+  if(e.target.dataset.set){ S.settings[e.target.dataset.set] = e.target.value; return save(); }
   const el = e.target; if(!el.dataset.f || !openSession) return;
   const s = getSession(openSession); if(!s) return;
   if(el.dataset.f === 'notes'){ s.notes = el.value; return save(); }

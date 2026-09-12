@@ -1,11 +1,5 @@
 {
  "version": 1,
- "athlete": {
-  "name": "Roger",
-  "bw": 170,
-  "height": "5'10\"",
-  "age": 24
- },
  "meta": {
   "start": "2026-09-14",
   "peakEvent": "NACIVT Los Angeles",
