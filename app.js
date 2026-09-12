@@ -676,6 +676,13 @@ fetch('program.json?v=' + Date.now())
   .then(r => r.json())
   .then(p => { P = p; readHash(); render();
     requestPersist().then(ok => { if(ok !== null) render(); });
-    if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{}); })
+    if('serviceWorker' in navigator){
+      // when a new service worker takes over, reload once so you are running the new code
+      let reloaded = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if(reloaded) return; reloaded = true; location.reload();
+      });
+      navigator.serviceWorker.register('sw.js').then(reg => reg.update()).catch(()=>{});
+    } })
   .catch(() => { $('#app').innerHTML =
     '<h1>Could not load program</h1><p class="sub">program.json is missing or unreachable.</p>'; });
