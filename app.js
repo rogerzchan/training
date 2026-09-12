@@ -465,10 +465,9 @@ function vSession(){
       h += `<div class="card">
         <div class="row sb" style="align-items:flex-start;gap:9px">
           <div class="exname grow">${esc(ex.name)}</div>
-          <a class="vid" href="${videoUrl(en.ex)}" target="_blank" rel="noopener noreferrer"
-             aria-label="Watch ${esc(ex.name)} on YouTube">
+          <a class="vid" href="${videoUrl(en.ex)}" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24"><path d="M4 5.8v12.4a1 1 0 0 0 1.52.85l10.3-6.2a1 1 0 0 0 0-1.7L5.52 4.95A1 1 0 0 0 4 5.8z"/></svg>
-          </a></div>
+            How&nbsp;to</a></div>
         ${ex.cue?`<div class="cue">${esc(ex.cue)}</div>`:''}
         <div class="rx">${esc(rx.sets)} × ${esc(rx.reps)}${
           L?` @ <b>${loadLabel(L, ex.unit)}</b>`:''} · rest ${esc(rx.rest)}${rx.note?` · ${esc(rx.note)}`:''}</div>
@@ -614,6 +613,7 @@ function vData(){
       <span class="muted tiny grow">stays on this device, never in the repo</span></div>
     <div class="tiny" style="margin-top:8px">Used for the ×bodyweight column on key lifts.</div></div>
   <h2>Program</h2><div class="card tight"><table>
+    <tr><td>Build</td><td class="r mono">${esc(P.meta.build || 'unknown')}</td></tr>
     <tr><td>Start</td><td class="r mono">${P.meta.start}</td></tr>
     <tr><td>Peak event</td><td class="r">${esc(P.meta.peakEvent)}</td></tr>
     <tr><td>Peak date</td><td class="r mono">${P.meta.peakDate}</td></tr>

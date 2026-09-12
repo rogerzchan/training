@@ -4,7 +4,8 @@
   "start": "2026-09-14",
   "peakEvent": "NACIVT Los Angeles",
   "peakDate": "2027-09-04",
-  "totalWeeks": 52
+  "totalWeeks": 52,
+  "build": "2026-09-12 \u00b7 e1be228"
  },
  "budget": {
   "offSeasonCeiling": 400,
