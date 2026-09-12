@@ -230,6 +230,18 @@ function getSession(id){
   S.sessions[id] = s; save(); return s;
 }
 function started(s){ return !!s && (s.done || s.entries.some(e=>e.sets.some(x=>x.done))); }
+/* Weeks advance with the real calendar, so a missed session would otherwise
+   just vanish off the Today screen. Surface anything still unfinished. */
+function carryOver(){
+  const now = weekFor(today());
+  if(!now) return [];
+  const out = [];
+  for(let n = Math.max(1, now.n - 4); n < now.n; n++){
+    const pr = weekProgress(n);
+    if(pr.total && pr.done < pr.total) out.push({n, ...pr});
+  }
+  return out;
+}
 function weekProgress(n){
   const w = weekByN(n); if(!w) return {done:0,total:0};
   let done=0,total=0;
@@ -309,6 +321,11 @@ function vToday(){
 
   h += backupBanner();
   if(lay) h += `<div class="flag b">No session logged in ${lay} days. Drop to 2 sets per lift and rebuild load.</div>`;
+  const co = carryOver();
+  if(co.length) h += `<div class="flag">Still unfinished: ${
+    co.map(c=>`<button class="link" style="display:inline;padding:0" data-act="wk" data-n="${c.n}"
+      >week ${c.n} (${c.total-c.done} left)</button>`).join(', ')}.
+    Nothing is lost, they stay loggable. Skip them if the week has moved on.</div>`;
   for(const f of w.flags) h += `<div class="flag">${esc(f)}</div>`;
   if(w.weightedBalls) h += `<div class="flag g">Weighted balls — ${esc(w.weightedBalls)}</div>`;
 
@@ -504,7 +521,9 @@ function vWeek(){
       <button class="btn sec sm" data-act="wk" data-n="${w.n+1}" ${w.n>=P.meta.totalWeeks?'disabled':''}>Next ›</button>
     </div>
     <p class="sub" style="margin-top:14px">Block ${esc(w.block)} · ${esc(w.priority)} priority
-      · starts ${w.start} · <span class="mono">${prog.done}/${prog.total}</span> done</p>`;
+      · starts ${w.start} · <span class="mono">${prog.done}/${prog.total}</span> done${
+      !isNow && weekFor(today()) && w.n < weekFor(today()).n && prog.done < prog.total
+        ? ' · <span style="color:var(--warn)">past week, unfinished</span>' : ''}</p>`;
   for(const f of w.flags) h += `<div class="flag">${esc(f)}</div>`;
   if(w.weightedBalls) h += `<div class="flag g">Weighted balls — ${esc(w.weightedBalls)}</div>`;
   h += sessionList(w.n, {suggest: isNow && todaySlot() ? todaySlot().slot : null});
