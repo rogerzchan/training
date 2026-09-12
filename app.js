@@ -136,6 +136,38 @@ function tendonRule(site){
 }
 function e1rm(load, reps){ return (load && reps) ? load*(1+reps/30) : null; }
 function bodyweight(){ return num(S.settings.bw); }   // local only, never in the repo
+
+/* ---------- prescribed load ----------
+   Always resolves to ONE number, never a range. Block 1 climbs from loads
+   derived from Roger's TrainHeroic history; later blocks derive from his own
+   logged e1RM so the number comes from real data, not a year-old guess. */
+function roundTo(v, inc){ return Math.round(v/inc)*inc; }
+function isDeload(week){ return (P.deloadWeeks||[]).includes(week); }
+function prescribedLoad(it, week, exId){
+  if(it.bw) return null;
+  if(it.fixed != null) return {v:it.fixed, kind:'implement'};
+  if(it.pct != null){
+    const ref = bestE1(it.pctOf || exId);
+    if(!ref) return {kind:'needs-max', pct:it.pct, of:it.pctOf || exId};
+    return {v:roundTo(ref.v*it.pct, 5), kind:'pct', pct:it.pct};
+  }
+  if(it.start == null) return null;
+  let v = it.start + it.step*Math.floor((week-1)/it.every);
+  if(it.cap != null) v = Math.min(v, it.cap);
+  if(isDeload(week)) v = roundTo(v*(P.deloadFactor||0.85), it.step===2.5?2.5:5);
+  return {v:roundTo(v, it.step===2.5?2.5:5), kind:'progression',
+          capped: it.cap != null && v >= it.cap};
+}
+function loadLabel(L, unit){
+  if(!L) return null;
+  if(L.kind === 'needs-max') return `${Math.round(L.pct*100)}% of your logged max`;
+  return `${L.v} ${unit==='oz'?'oz':'lb'}`;
+}
+function videoUrl(exId){
+  const ex = P.exercises[exId]; if(!ex) return null;
+  if(ex.video) return ex.video;
+  return 'https://www.youtube.com/results?search_query=' + encodeURIComponent(ex.q || ex.name);
+}
 function bestE1(exId){
   let best = null;
   for(const s of Object.values(S.sessions)){
@@ -190,8 +222,10 @@ function getSession(id){
              entries:[], play:!!(def && def.isPlay)};
   if(def) for(const blk of def.blocks) for(const it of blk.items){
     const n = parseInt(it.sets)||1;
+    const L = prescribedLoad(it, k.week, it.ex);
+    const pre = (L && L.v != null) ? String(L.v) : '';
     s.entries.push({ex:it.ex, block:blk.name, rx:it,
-      sets:Array.from({length:n},()=>({reps:'',load:it.load??'',rpe:'',done:false}))});
+      sets:Array.from({length:n},()=>({reps:'',load:pre,rpe:'',done:false}))});
   }
   S.sessions[id] = s; save(); return s;
 }
@@ -409,11 +443,23 @@ function vSession(){
       if(en.block !== cur){ cur = en.block; h += `<h2>${esc(cur)}</h2>`; }
       const ex = P.exercises[en.ex] || {name:en.ex, cue:''};
       const rx = en.rx, lp = lastPerf(en.ex, id), hint = progressionHint(en.ex, id);
-      h += `<div class="card"><div class="exname">${esc(ex.name)}</div>
+      const L = prescribedLoad(rx, s.week, en.ex);
+      const unitCol = L ? (ex.unit==='oz'?'OZ':'LB') : (ex.unit==='mph'?'MPH':'BW');
+      h += `<div class="card">
+        <div class="row sb" style="align-items:flex-start;gap:9px">
+          <div class="exname grow">${esc(ex.name)}</div>
+          <a class="vid" href="${videoUrl(en.ex)}" target="_blank" rel="noopener noreferrer"
+             aria-label="Watch ${esc(ex.name)} on YouTube">
+            <svg viewBox="0 0 24 24"><path d="M4 5.8v12.4a1 1 0 0 0 1.52.85l10.3-6.2a1 1 0 0 0 0-1.7L5.52 4.95A1 1 0 0 0 4 5.8z"/></svg>
+          </a></div>
         ${ex.cue?`<div class="cue">${esc(ex.cue)}</div>`:''}
-        <div class="rx">${esc(rx.sets)} × ${esc(rx.reps)} · rest ${esc(rx.rest)}${rx.load?` · ${rx.load}`:''}${rx.note?` · ${esc(rx.note)}`:''}</div>
+        <div class="rx">${esc(rx.sets)} × ${esc(rx.reps)}${
+          L?` @ <b>${loadLabel(L, ex.unit)}</b>`:''} · rest ${esc(rx.rest)}${rx.note?` · ${esc(rx.note)}`:''}</div>
+        ${L&&L.kind==='implement'?'<div class="tiny">Implement weight — fixed. Progress intent, not load.</div>':''}
+        ${L&&L.capped?'<div class="tiny">Holding here. Retest before adding more.</div>':''}
         ${lp?`<div class="last">Last ${lp.date}: ${lp.sets.map(x=>`${x.reps||'?'}×${x.load||'bw'}`).join(', ')}</div>`:'<div class="last">No history</div>'}
-        ${hint?`<div class="last" style="color:var(--acc)">${esc(hint)}</div>`:''}
+        ${hint?`<div class="last" style="color:var(--accent)">${esc(hint)}</div>`:''}
+        <div class="set head"><span class="n">SET</span><span>REPS</span><span>${unitCol}</span><span>RPE</span><span></span></div>
         <div class="sets">
           ${en.sets.map((st,si)=>`<div class="set">
             <span class="n">${si+1}</span>
@@ -580,6 +626,9 @@ document.addEventListener('click', e => {
   if(a === 'delset'){ const s = getSession(openSession), en = s.entries[+t.dataset.e];
     if(en.sets.length > 1) en.sets.pop(); save(); return render(); }
   if(a === 'finish'){ const s = getSession(openSession);
+    // if you typed reps, you did the set — no need to also tick it
+    for(const en of s.entries) for(const st of en.sets)
+      if(!st.done && num(st.reps) != null) st.done = true;
     const def = dayDef(s.dayId);
     if(def && def.isPlay){ s.play = true; s.playHours = num($('#pHours')?.value) || 2; }
     if(!s.date) s.date = today();

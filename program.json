@@ -31,373 +31,435 @@
    "name": "Rolling Arm Bar w/ Screwdriver Rotation",
    "cue": "Slow. Thoracic rotation, not lumbar.",
    "cat": "prep",
-   "unit": "none"
+   "unit": "none",
+   "q": "rolling arm bar screwdriver rotation shoulder mobility drill"
   },
   "tspine": {
    "name": "Wall Side T Spine Opener",
    "cue": "Reach long, follow the hand with your eyes.",
    "cat": "prep",
-   "unit": "none"
+   "unit": "none",
+   "q": "side lying wall thoracic spine opener rotation drill"
   },
   "shpullover": {
    "name": "Shoulder Mobility Pullovers",
    "cue": "Ribs down, no lumbar arch.",
    "cat": "prep",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "dumbbell shoulder mobility pullover ribs down"
   },
   "bandpa": {
    "name": "Band Pull-Apart",
    "cue": "Straight arms, low load, high reps.",
    "cat": "prep",
-   "unit": "none"
+   "unit": "none",
+   "q": "band pull apart proper form"
   },
   "banderer90": {
    "name": "Band External Rotation @ 90 deg",
    "cue": "Upper arm parallel to floor. No shrug.",
    "cat": "prep",
-   "unit": "none"
+   "unit": "none",
+   "q": "band external rotation at 90 degrees shoulder"
   },
   "banderir": {
    "name": "Band ER / IR",
    "cue": "Elbow pinned. Rotate from the shoulder, not the wrist.",
    "cat": "prep",
-   "unit": "none"
+   "unit": "none",
+   "q": "band internal external rotation shoulder warm up"
   },
   "wristsnap": {
    "name": "Wrist Snaps into wall",
    "cue": "Light ball. Snap, don't push.",
    "cat": "prep",
-   "unit": "none"
+   "unit": "none",
+   "q": "wrist snap drill throwing into wall baseball"
   },
   "hipskip": {
    "name": "Hip Mobility ER/IR Skips",
    "cue": "Loose, rhythmic.",
    "cat": "prep",
-   "unit": "none"
+   "unit": "none",
+   "q": "hip external internal rotation skip warm up drill"
   },
   "anklelift": {
    "name": "Ankle Mobility Liftoff",
    "cue": "Knee tracks over toe.",
    "cat": "prep",
-   "unit": "none"
+   "unit": "none",
+   "q": "ankle mobility liftoff drill knee over toe"
   },
   "quadiso": {
    "name": "Quad Tendon Isometric @ ~60 deg",
    "cue": "70% effort. BEFORE training, not after. ~45 min analgesic window.",
    "cat": "prep",
-   "unit": "none"
+   "unit": "none",
+   "q": "spanish squat isometric quad tendon 45 second hold"
   },
   "pogos": {
    "name": "Pogos",
    "cue": "Stiff ankles, minimal knee bend, quiet.",
    "cat": "plyo",
-   "unit": "none"
+   "unit": "none",
+   "q": "pogo jumps stiff ankle plyometric"
   },
   "cablerot": {
    "name": "Cable Rotation / Rib Dissociation",
    "cue": "Hips quiet. Rotate the ribcage on the pelvis.",
    "cat": "power",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "cable rib dissociation rotation hips quiet drill"
   },
   "mbsplit": {
    "name": "MB Split Stance Toss into wall",
    "cue": "Load the back hip. Drive with hip rotation, not the arm.",
    "cat": "power",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "split stance rotational medicine ball throw into wall"
   },
   "plyopush": {
    "name": "Plyo Push-up",
    "cue": "Hands leave the floor. Land soft.",
    "cat": "power",
-   "unit": "none"
+   "unit": "none",
+   "q": "plyometric push up hands leave floor"
   },
   "plyoballrev": {
    "name": "Plyo Ball Reverse Throw into wall",
    "cue": "Controlled. This is the eccentric ER drill.",
    "cat": "power",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "driveline reverse throw plyo ball"
   },
   "mbrepeat": {
    "name": "Med Ball Repeat Toss",
    "cue": "Continuous, rhythmic, no pause.",
    "cat": "power",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "medicine ball chest pass repeat toss wall"
   },
   "ripthrough": {
    "name": "Band or Cable Rip Through",
    "cue": "Explosive. Finish tall.",
    "cat": "power",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "band rip through rotational power drill"
   },
   "mbshotput": {
    "name": "Step-behind Rotational MB Shotput",
    "cue": "Build momentum. Land into a stiff front leg.",
    "cat": "power",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "step behind rotational medicine ball shotput"
   },
   "mbscoop": {
    "name": "MB Scoop Throw",
    "cue": "Full extension. Finish tall.",
    "cat": "power",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "medicine ball scoop toss rotational distance"
   },
   "mbvertunder": {
    "name": "CM Vertical Underhand MB Throw",
    "cue": "Priming only. Max intent, zero fatigue.",
    "cat": "power",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "countermovement vertical underhand medicine ball throw"
   },
   "mbvertover": {
    "name": "Vertical Overhand MB Throw",
    "cue": "Priming only.",
    "cat": "power",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "vertical overhand medicine ball throw"
   },
   "mbbroad": {
    "name": "Broad Jump MB Throw",
    "cue": "Priming only.",
    "cat": "power",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "broad jump medicine ball throw"
   },
   "penult": {
    "name": "Lean/Fall Penultimate Jumps",
    "cue": "Long low penultimate step, quick final step.",
    "cat": "plyo",
-   "unit": "none"
+   "unit": "none",
+   "q": "penultimate step jump drill volleyball approach lean fall"
   },
   "boxrepeat": {
    "name": "Box or Hurdle Repeat Jumps",
    "cue": "Minimise ground contact.",
    "cat": "plyo",
-   "unit": "none"
+   "unit": "none",
+   "q": "repeat box jumps hurdle hops minimal ground contact"
   },
   "altdrop": {
    "name": "Altitude Drop Progressions",
    "cue": "Step off. Land TALL, stiffer knees.",
    "cat": "plyo",
-   "unit": "none"
+   "unit": "none",
+   "q": "altitude drop landing drill plyometric"
   },
   "deepnocm": {
    "name": "Deep Non Countermovement Assisted Jump",
    "cue": "No countermovement. Pure concentric.",
    "cat": "plyo",
-   "unit": "none"
+   "unit": "none",
+   "q": "non countermovement squat jump no countermovement"
   },
   "slmultibox": {
    "name": "Single Leg Multi Directional Box Jump",
    "cue": "Control the landing.",
    "cat": "plyo",
-   "unit": "none"
+   "unit": "none",
+   "q": "single leg multi directional box jump"
   },
   "bandpogo": {
    "name": "Band Resisted Pogos",
    "cue": "Fast, low amplitude.",
    "cat": "plyo",
-   "unit": "none"
+   "unit": "none",
+   "q": "band resisted pogo jumps"
   },
   "approach": {
    "name": "4-Step Approach Jump",
    "cue": "Arms back then up. Max downswing = final foot strike.",
    "cat": "plyo",
-   "unit": "none"
+   "unit": "none",
+   "q": "volleyball 4 step approach jump technique arm swing"
   },
   "blocksim": {
    "name": "Block Jump Simulation",
    "cue": "5 consecutive jumps.",
    "cat": "plyo",
-   "unit": "none"
+   "unit": "none",
+   "q": "volleyball block jump repeat footwork drill"
   },
   "hangclean": {
    "name": "Hang Power Clean",
    "cue": "Violent hip extension. Catch tall.",
    "cat": "lower",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "hang power clean technique"
   },
   "squatacc": {
    "name": "Squat (Accelerative Strength)",
    "cue": "Full depth. Move the bar fast.",
    "cat": "lower",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "speed squat accelerative back squat bar speed"
   },
   "squatabs": {
    "name": "Absolute Strength Squat",
    "cue": "Heavy. Full depth.",
    "cat": "lower",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "heavy back squat form"
   },
   "heelsnarrow": {
    "name": "Heels Elevated Narrow Squat",
    "cue": "Deep and quad-biased. Week 5+ only.",
    "cat": "lower",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "heels elevated narrow stance squat"
   },
   "hamcurl": {
    "name": "Worlds Greatest Hamstring Curl",
    "cue": "Control the eccentric.",
    "cat": "lower",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "nordic hamstring curl eccentric"
   },
   "soleus": {
    "name": "Soleus Raise",
    "cue": "BENT KNEE. This is the one sprints don't train.",
    "cat": "lower",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "seated calf raise bent knee soleus"
   },
   "ecccalf": {
    "name": "Eccentric Calf Raise",
    "cue": "3s down.",
    "cat": "lower",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "eccentric calf raise slow lowering"
   },
   "spanish": {
    "name": "Spanish Squat (~60 deg)",
    "cue": "Band behind the knees. Stay tall.",
    "cat": "lower",
-   "unit": "none"
+   "unit": "none",
+   "q": "spanish squat band knee isometric"
   },
   "trapjump": {
    "name": "Trap Bar Jump",
    "cue": "30% load. Intent is speed.",
    "cat": "lower",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "trap bar jump loaded jump squat"
   },
   "bandassistjump": {
    "name": "Band Assisted Jump",
    "cue": "Overspeed. Let the band help.",
    "cat": "lower",
-   "unit": "none"
+   "unit": "none",
+   "q": "band assisted jump overspeed"
   },
   "bench": {
    "name": "Bench Press",
    "cue": "Elbows tucked 45-60 deg, NEVER flared to 90. Scap retracted + depressed.",
    "cat": "upper",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "barbell bench press elbow tuck scapula retract"
   },
   "incline": {
    "name": "Incline Bench Press",
    "cue": "Same elbow rule.",
    "cat": "upper",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "incline barbell bench press form"
   },
   "latpulldown": {
    "name": "Half Kneel Lat Pulldown",
    "cue": "Ribs down. Pull with the lat, not the bicep.",
    "cat": "upper",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "half kneeling lat pulldown"
   },
   "pullover": {
    "name": "DB Pullover",
    "cue": "BENT ARM. Stop short of full end range.",
    "cat": "upper",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "dumbbell pullover bent arm form"
   },
   "stiffarmpd": {
    "name": "Cable Stiff-Arm Pulldown",
    "cue": "Fallback for the pullover if pinching returns.",
    "cat": "upper",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "cable stiff arm pulldown lat"
   },
   "dbrow": {
    "name": "Split Stance DB Row",
    "cue": "Full stretch at the bottom.",
    "cat": "upper",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "split stance dumbbell row"
   },
   "invrow": {
    "name": "Inverted Row",
    "cue": "Body rigid. Chest to the bar.",
    "cat": "upper",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "inverted row form"
   },
   "landmine": {
    "name": "Landmine Split Stance Dip Press",
    "cue": "Shoulder-friendly press angle.",
    "cat": "upper",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "landmine press split stance"
   },
   "fingercurl": {
    "name": "Finger Tip Curls",
    "cue": "Slow. Relevant to ball grip.",
    "cat": "upper",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "finger tip curls forearm grip"
   },
   "sidelyer": {
    "name": "Side-lying DB External Rotation",
    "cue": "3s lower. Light.",
    "cat": "upper",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "side lying dumbbell external rotation"
   },
   "serratus": {
    "name": "Serratus Wall Slide",
    "cue": "Push INTO the wall. Reach long at the top.",
    "cat": "upper",
-   "unit": "none"
+   "unit": "none",
+   "q": "serratus wall slide"
   },
   "pronepull": {
    "name": "Prone Pull Through",
    "cue": "Short range. Scap retraction.",
    "cat": "upper",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "prone trap raise pull through shoulder"
   },
   "revfly": {
    "name": "Reverse Fly",
    "cue": "Light. Squeeze the blades.",
    "cat": "upper",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "dumbbell reverse fly"
   },
   "pallof": {
    "name": "Pallof Press",
    "cue": "Resist the rotation. Ribs down.",
    "cat": "upper",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "pallof press anti rotation"
   },
   "revthrow": {
    "name": "Reverse Throws (plyo ball)",
    "cue": "ALWAYS FIRST in the plyo ball routine.",
    "cat": "throw",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "driveline reverse throws plyo ball"
   },
   "pivotpick": {
    "name": "Pivot Picks (plyo ball)",
    "cue": "Always second.",
    "cat": "throw",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "driveline pivot pickoff drill plyo ball"
   },
   "rollin": {
    "name": "Roll-ins (plyo ball)",
    "cue": "Max effort.",
    "cat": "throw",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "driveline roll in throw plyo ball"
   },
   "walkwind": {
    "name": "Walking Windups (plyo ball)",
    "cue": "ALWAYS LAST.",
    "cat": "throw",
-   "unit": "lb"
+   "unit": "lb",
+   "q": "driveline walking windup plyo ball"
   },
   "catchplay": {
    "name": "Catch Play Build-up",
    "cue": "Build intensity gradually.",
    "cat": "throw",
-   "unit": "none"
+   "unit": "none",
+   "q": "baseball catch play warm up routine"
   },
   "longtoss": {
    "name": "Long Toss",
    "cue": "Build to max distance.",
    "cat": "throw",
-   "unit": "none"
+   "unit": "none",
+   "q": "baseball long toss progression"
   },
   "wball": {
    "name": "Weighted Ball Throws",
    "cue": "Week 5+. Never off a mound, never cold.",
    "cat": "throw",
-   "unit": "oz"
+   "unit": "oz",
+   "q": "driveline weighted baseball throwing program"
   },
   "velotest": {
    "name": "Velocity Test (video flight time)",
    "cue": "240fps, 60ft, 5 throws. mph = 9816/frames.",
    "cat": "test",
-   "unit": "mph"
+   "unit": "mph",
+   "q": "measure pitch speed slow motion video frame count"
   }
  },
  "days": {
@@ -411,16 +473,18 @@
       {
        "ex": "mbscoop",
        "sets": 3,
-       "reps": "3/side max",
+       "reps": "3/side, max effort",
        "rest": "full",
-       "note": "Rotational MB throw for distance, 6 lb. Log best."
+       "note": "Rotational throw for distance. Log your best.",
+       "fixed": 6
       },
       {
        "ex": "velotest",
        "sets": 1,
        "reps": "5 throws",
        "rest": "full",
-       "note": "Every 3rd week only."
+       "note": "Every 3rd week only.",
+       "bw": true
       }
      ]
     },
@@ -431,32 +495,38 @@
        "ex": "armbar",
        "sets": 2,
        "reps": "6/side",
-       "rest": "0"
+       "rest": "0",
+       "bw": true
       },
       {
        "ex": "tspine",
        "sets": 2,
        "reps": "5/side",
-       "rest": "0"
+       "rest": "0",
+       "bw": true
       },
       {
        "ex": "shpullover",
        "sets": 2,
        "reps": "10",
        "rest": "0",
-       "load": 10
+       "start": 10,
+       "step": 0,
+       "every": 1
       },
       {
        "ex": "bandpa",
        "sets": 2,
        "reps": "15",
-       "rest": "0"
+       "rest": "0",
+       "bw": true
       },
       {
        "ex": "banderer90",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "30s"
+       "rest": "30s",
+       "bw": true
       }
      ]
     },
@@ -468,27 +538,31 @@
        "sets": 3,
        "reps": "6/side",
        "rest": "45s",
-       "load": 25
+       "start": 25,
+       "step": 5,
+       "every": 4,
+       "cap": 45
       },
       {
        "ex": "mbsplit",
        "sets": 3,
        "reps": "4/side",
        "rest": "60s",
-       "load": 8
+       "fixed": 8
       },
       {
        "ex": "plyopush",
        "sets": 3,
        "reps": "5",
-       "rest": "75s"
+       "rest": "75s",
+       "bw": true
       },
       {
        "ex": "plyoballrev",
        "sets": 3,
        "reps": "8/arm",
        "rest": "45s",
-       "load": 2
+       "fixed": 2
       }
      ]
     },
@@ -500,48 +574,66 @@
        "sets": 4,
        "reps": "5",
        "rest": "2min",
-       "load": 165,
-       "note": "A1"
+       "note": "A1",
+       "start": 165,
+       "step": 5,
+       "every": 2,
+       "cap": 210
       },
       {
        "ex": "latpulldown",
        "sets": 4,
        "reps": "8",
        "rest": "2min",
-       "load": 100,
-       "note": "A2"
+       "note": "A2",
+       "start": 100,
+       "step": 5,
+       "every": 2,
+       "cap": 150
       },
       {
        "ex": "pullover",
        "sets": 3,
        "reps": "10",
        "rest": "90s",
-       "load": 35,
-       "note": "B1 - bent arm, short of end range"
+       "note": "B1 - bent arm, short of end range",
+       "start": 35,
+       "step": 5,
+       "every": 3,
+       "cap": 55
       },
       {
        "ex": "dbrow",
        "sets": 3,
        "reps": "8/arm",
        "rest": "90s",
-       "load": 60,
-       "note": "B2"
+       "note": "B2",
+       "start": 60,
+       "step": 5,
+       "every": 3,
+       "cap": 80
       },
       {
        "ex": "landmine",
        "sets": 3,
        "reps": "8/arm",
        "rest": "60s",
-       "load": 35,
-       "note": "C1"
+       "note": "C1",
+       "start": 35,
+       "step": 5,
+       "every": 3,
+       "cap": 55
       },
       {
        "ex": "fingercurl",
        "sets": 3,
        "reps": "12",
        "rest": "60s",
-       "load": 10,
-       "note": "C2"
+       "note": "C2",
+       "start": 10,
+       "step": 5,
+       "every": 6,
+       "cap": 25
       }
      ]
     },
@@ -552,27 +644,37 @@
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "45s"
+       "rest": "45s",
+       "start": 5,
+       "step": 0,
+       "every": 1
       },
       {
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
-       "rest": "45s"
+       "rest": "45s",
+       "bw": true
       },
       {
        "ex": "pronepull",
        "sets": 2,
        "reps": "10",
        "rest": "45s",
-       "load": 20
+       "start": 20,
+       "step": 5,
+       "every": 6,
+       "cap": 30
       },
       {
        "ex": "revfly",
        "sets": 2,
        "reps": "12",
        "rest": "45s",
-       "load": 12.5
+       "start": 12.5,
+       "step": 2.5,
+       "every": 4,
+       "cap": 25
       }
      ]
     }
@@ -589,32 +691,38 @@
        "ex": "armbar",
        "sets": 2,
        "reps": "6/side",
-       "rest": "0"
+       "rest": "0",
+       "bw": true
       },
       {
        "ex": "tspine",
        "sets": 2,
        "reps": "5/side",
-       "rest": "0"
+       "rest": "0",
+       "bw": true
       },
       {
        "ex": "shpullover",
        "sets": 2,
        "reps": "10",
        "rest": "0",
-       "load": 10
+       "start": 10,
+       "step": 0,
+       "every": 1
       },
       {
        "ex": "bandpa",
        "sets": 2,
        "reps": "15",
-       "rest": "0"
+       "rest": "0",
+       "bw": true
       },
       {
        "ex": "banderer90",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "30s"
+       "rest": "30s",
+       "bw": true
       }
      ]
     },
@@ -626,28 +734,34 @@
        "sets": 3,
        "reps": "6/side",
        "rest": "45s",
-       "load": 25
+       "start": 25,
+       "step": 5,
+       "every": 4,
+       "cap": 45
       },
       {
        "ex": "mbrepeat",
        "sets": 3,
        "reps": "10",
        "rest": "60s",
-       "load": 15
+       "fixed": 15
       },
       {
        "ex": "ripthrough",
        "sets": 3,
        "reps": "6/side",
        "rest": "60s",
-       "load": 10
+       "start": 10,
+       "step": 5,
+       "every": 4,
+       "cap": 25
       },
       {
        "ex": "plyoballrev",
        "sets": 3,
        "reps": "8/arm",
        "rest": "45s",
-       "load": 2
+       "fixed": 2
       }
      ]
     },
@@ -659,47 +773,63 @@
        "sets": 4,
        "reps": "6",
        "rest": "2min",
-       "load": 125,
-       "note": "A1"
+       "note": "A1",
+       "start": 125,
+       "step": 5,
+       "every": 2,
+       "cap": 165
       },
       {
        "ex": "invrow",
        "sets": 4,
        "reps": "10",
        "rest": "2min",
-       "note": "A2"
+       "note": "A2",
+       "bw": true
       },
       {
        "ex": "pullover",
        "sets": 3,
        "reps": "10",
        "rest": "90s",
-       "load": 35,
-       "note": "B1"
+       "note": "B1",
+       "start": 35,
+       "step": 5,
+       "every": 3,
+       "cap": 55
       },
       {
        "ex": "dbrow",
        "sets": 3,
        "reps": "8/arm",
        "rest": "90s",
-       "load": 60,
-       "note": "B2"
+       "note": "B2",
+       "start": 60,
+       "step": 5,
+       "every": 3,
+       "cap": 80
       },
       {
        "ex": "landmine",
        "sets": 3,
        "reps": "8/arm",
        "rest": "60s",
-       "load": 35,
-       "note": "C1"
+       "note": "C1",
+       "start": 35,
+       "step": 5,
+       "every": 3,
+       "cap": 55
       },
       {
        "ex": "fingercurl",
        "sets": 3,
        "reps": "12",
        "rest": "60s",
-       "load": 10,
-       "note": "C2"
+       "note": "C2",
+       "start": 10,
+       "step": 5,
+       "every": 6,
+       "cap": 25
       }
      ]
     },
@@ -710,19 +840,22 @@
        "ex": "deepnocm",
        "sets": 3,
        "reps": "3",
-       "rest": "60s"
+       "rest": "60s",
+       "bw": true
       },
       {
        "ex": "slmultibox",
        "sets": 3,
        "reps": "4/leg",
-       "rest": "60s"
+       "rest": "60s",
+       "bw": true
       },
       {
        "ex": "bandpogo",
        "sets": 3,
        "reps": "12",
-       "rest": "45s"
+       "rest": "45s",
+       "bw": true
       }
      ]
     },
@@ -733,20 +866,27 @@
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "45s"
+       "rest": "45s",
+       "start": 5,
+       "step": 0,
+       "every": 1
       },
       {
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
-       "rest": "45s"
+       "rest": "45s",
+       "bw": true
       },
       {
        "ex": "revfly",
        "sets": 2,
        "reps": "12",
        "rest": "45s",
-       "load": 12.5
+       "start": 12.5,
+       "step": 2.5,
+       "every": 4,
+       "cap": 25
       }
      ]
     }
@@ -763,26 +903,30 @@
        "ex": "hipskip",
        "sets": 2,
        "reps": "20yd",
-       "rest": "0"
+       "rest": "0",
+       "bw": true
       },
       {
        "ex": "anklelift",
        "sets": 2,
        "reps": "8/side",
-       "rest": "0"
+       "rest": "0",
+       "bw": true
       },
       {
        "ex": "quadiso",
        "sets": 5,
        "reps": "45s",
        "rest": "30s",
-       "note": "70% effort, ~60 deg. BEFORE the session."
+       "note": "70% effort, ~60 deg. BEFORE the session.",
+       "bw": true
       },
       {
        "ex": "pogos",
        "sets": 2,
        "reps": "15",
-       "rest": "30s"
+       "rest": "30s",
+       "bw": true
       }
      ]
     },
@@ -793,20 +937,23 @@
        "ex": "penult",
        "sets": 4,
        "reps": "3",
-       "rest": "60s"
+       "rest": "60s",
+       "bw": true
       },
       {
        "ex": "boxrepeat",
        "sets": 3,
        "reps": "5",
-       "rest": "75s"
+       "rest": "75s",
+       "bw": true
       },
       {
        "ex": "altdrop",
        "sets": 3,
        "reps": "4",
        "rest": "60s",
-       "note": "Week 3+ only"
+       "note": "Week 3+ only",
+       "bw": true
       }
      ]
     },
@@ -818,29 +965,41 @@
        "sets": 5,
        "reps": "3",
        "rest": "2min",
-       "load": 155
+       "start": 155,
+       "step": 5,
+       "every": 2,
+       "cap": 205
       },
       {
        "ex": "squatacc",
        "sets": 4,
        "reps": "4",
        "rest": "2.5min",
-       "load": 235,
-       "note": "Full depth"
+       "note": "Full depth",
+       "start": 235,
+       "step": 10,
+       "every": 2,
+       "cap": 285
       },
       {
        "ex": "hamcurl",
        "sets": 3,
        "reps": "8",
        "rest": "90s",
-       "load": 70
+       "start": 70,
+       "step": 5,
+       "every": 3,
+       "cap": 95
       },
       {
        "ex": "soleus",
        "sets": 3,
        "reps": "12",
        "rest": "60s",
-       "load": 120
+       "start": 120,
+       "step": 10,
+       "every": 2,
+       "cap": 180
       }
      ]
     },
@@ -852,13 +1011,17 @@
        "sets": 2,
        "reps": "10",
        "rest": "45s",
-       "load": 55
+       "start": 55,
+       "step": 5,
+       "every": 3,
+       "cap": 85
       },
       {
        "ex": "spanish",
        "sets": 3,
        "reps": "30s",
-       "rest": "45s"
+       "rest": "45s",
+       "bw": true
       }
      ]
     }
@@ -875,20 +1038,22 @@
        "ex": "banderir",
        "sets": 2,
        "reps": "15/arm",
-       "rest": "30s"
+       "rest": "30s",
+       "bw": true
       },
       {
        "ex": "wristsnap",
        "sets": 2,
        "reps": "10",
-       "rest": "30s"
+       "rest": "30s",
+       "bw": true
       },
       {
        "ex": "revthrow",
        "sets": 2,
        "reps": "8",
        "rest": "45s",
-       "load": 2
+       "fixed": 2
       }
      ]
     },
@@ -900,28 +1065,28 @@
        "sets": 3,
        "reps": "8",
        "rest": "45s",
-       "load": 2
+       "fixed": 2
       },
       {
        "ex": "pivotpick",
        "sets": 3,
        "reps": "6",
        "rest": "60s",
-       "load": 2
+       "fixed": 2
       },
       {
        "ex": "rollin",
        "sets": 3,
        "reps": "5",
        "rest": "60s",
-       "load": 1
+       "fixed": 1
       },
       {
        "ex": "walkwind",
        "sets": 3,
        "reps": "5",
        "rest": "60s",
-       "load": 1
+       "fixed": 1
       }
      ]
     },
@@ -932,20 +1097,23 @@
        "ex": "catchplay",
        "sets": 1,
        "reps": "10 min",
-       "rest": "-"
+       "rest": "-",
+       "bw": true
       },
       {
        "ex": "longtoss",
        "sets": 1,
        "reps": "8-10 throws",
-       "rest": "as needed"
+       "rest": "as needed",
+       "bw": true
       },
       {
        "ex": "wball",
        "sets": 3,
        "reps": "5 per ball",
        "rest": "90s",
-       "note": "Week 5+ only. See block notes for weights."
+       "note": "Week 5+ only. See block notes for weights.",
+       "bw": true
       }
      ]
     },
@@ -957,14 +1125,14 @@
        "sets": 3,
        "reps": "5/side",
        "rest": "60s",
-       "load": 6
+       "fixed": 6
       },
       {
        "ex": "mbscoop",
        "sets": 3,
        "reps": "5",
        "rest": "60s",
-       "load": 8
+       "fixed": 8
       }
      ]
     }
@@ -981,25 +1149,29 @@
        "ex": "hipskip",
        "sets": 2,
        "reps": "20yd",
-       "rest": "0"
+       "rest": "0",
+       "bw": true
       },
       {
        "ex": "anklelift",
        "sets": 2,
        "reps": "8/side",
-       "rest": "0"
+       "rest": "0",
+       "bw": true
       },
       {
        "ex": "quadiso",
        "sets": 5,
        "reps": "45s",
-       "rest": "30s"
+       "rest": "30s",
+       "bw": true
       },
       {
        "ex": "pogos",
        "sets": 2,
        "reps": "15",
-       "rest": "30s"
+       "rest": "30s",
+       "bw": true
       }
      ]
     },
@@ -1011,28 +1183,34 @@
        "sets": 1,
        "reps": "2",
        "rest": "15s",
-       "note": "1 - 85-90%"
+       "note": "1 - 85-90%",
+       "pct": 0.87,
+       "pctOf": "squatacc"
       },
       {
        "ex": "altdrop",
        "sets": 1,
        "reps": "4",
        "rest": "15s",
-       "note": "2"
+       "note": "2",
+       "bw": true
       },
       {
        "ex": "trapjump",
        "sets": 1,
        "reps": "4",
        "rest": "15s",
-       "note": "3 - 30%"
+       "note": "3 - 30%",
+       "pct": 0.3,
+       "pctOf": "squatacc"
       },
       {
        "ex": "bandassistjump",
        "sets": 1,
        "reps": "4",
        "rest": "2.5min",
-       "note": "4 - then next round"
+       "note": "4 - then next round",
+       "bw": true
       }
      ]
     },
@@ -1044,21 +1222,28 @@
        "sets": 4,
        "reps": "3",
        "rest": "2min",
-       "load": 185
+       "pct": 0.8,
+       "pctOf": "hangclean"
       },
       {
        "ex": "hamcurl",
        "sets": 3,
        "reps": "8",
        "rest": "90s",
-       "load": 70
+       "start": 70,
+       "step": 5,
+       "every": 3,
+       "cap": 95
       },
       {
        "ex": "soleus",
        "sets": 3,
        "reps": "12",
        "rest": "60s",
-       "load": 120
+       "start": 120,
+       "step": 10,
+       "every": 2,
+       "cap": 180
       }
      ]
     },
@@ -1070,13 +1255,17 @@
        "sets": 2,
        "reps": "10",
        "rest": "45s",
-       "load": 55
+       "start": 55,
+       "step": 5,
+       "every": 3,
+       "cap": 85
       },
       {
        "ex": "spanish",
        "sets": 3,
        "reps": "30s",
-       "rest": "45s"
+       "rest": "45s",
+       "bw": true
       }
      ]
     }
@@ -1093,25 +1282,29 @@
        "ex": "hipskip",
        "sets": 2,
        "reps": "20yd",
-       "rest": "0"
+       "rest": "0",
+       "bw": true
       },
       {
        "ex": "anklelift",
        "sets": 2,
        "reps": "8/side",
-       "rest": "0"
+       "rest": "0",
+       "bw": true
       },
       {
        "ex": "quadiso",
        "sets": 5,
        "reps": "45s",
-       "rest": "30s"
+       "rest": "30s",
+       "bw": true
       },
       {
        "ex": "pogos",
        "sets": 2,
        "reps": "15",
-       "rest": "30s"
+       "rest": "30s",
+       "bw": true
       }
      ]
     },
@@ -1122,25 +1315,29 @@
        "ex": "approach",
        "sets": 4,
        "reps": "5",
-       "rest": "75s"
+       "rest": "75s",
+       "bw": true
       },
       {
        "ex": "penult",
        "sets": 4,
        "reps": "3",
-       "rest": "60s"
+       "rest": "60s",
+       "bw": true
       },
       {
        "ex": "altdrop",
        "sets": 3,
        "reps": "5",
-       "rest": "60s"
+       "rest": "60s",
+       "bw": true
       },
       {
        "ex": "blocksim",
        "sets": 4,
        "reps": "5 jumps",
-       "rest": "30s"
+       "rest": "30s",
+       "bw": true
       }
      ]
     },
@@ -1152,21 +1349,26 @@
        "sets": 3,
        "reps": "4",
        "rest": "2.5min",
-       "load": 265
+       "pct": 0.8,
+       "pctOf": "squatacc"
       },
       {
        "ex": "heelsnarrow",
        "sets": 3,
        "reps": "8",
        "rest": "90s",
-       "load": 185
+       "pct": 0.62,
+       "pctOf": "heelsnarrow"
       },
       {
        "ex": "soleus",
        "sets": 3,
        "reps": "12",
        "rest": "60s",
-       "load": 130
+       "start": 120,
+       "step": 10,
+       "every": 2,
+       "cap": 180
       }
      ]
     },
@@ -1177,7 +1379,8 @@
        "ex": "spanish",
        "sets": 3,
        "reps": "30s",
-       "rest": "45s"
+       "rest": "45s",
+       "bw": true
       }
      ]
     }
@@ -1194,13 +1397,15 @@
        "ex": "bandpa",
        "sets": 2,
        "reps": "15",
-       "rest": "30s"
+       "rest": "30s",
+       "bw": true
       },
       {
        "ex": "banderer90",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "30s"
+       "rest": "30s",
+       "bw": true
       }
      ]
     },
@@ -1212,28 +1417,34 @@
        "sets": 3,
        "reps": "3",
        "rest": "2min",
-       "load": 185
+       "pct": 0.85,
+       "pctOf": "bench"
       },
       {
        "ex": "latpulldown",
        "sets": 3,
        "reps": "6",
        "rest": "90s",
-       "load": 110
+       "pct": 0.8,
+       "pctOf": "latpulldown"
       },
       {
        "ex": "dbrow",
        "sets": 2,
        "reps": "8/arm",
        "rest": "90s",
-       "load": 65
+       "pct": 0.85,
+       "pctOf": "dbrow"
       },
       {
        "ex": "pallof",
        "sets": 2,
        "reps": "8/side",
        "rest": "60s",
-       "load": 30
+       "start": 30,
+       "step": 5,
+       "every": 4,
+       "cap": 50
       }
      ]
     },
@@ -1244,20 +1455,27 @@
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "45s"
+       "rest": "45s",
+       "start": 5,
+       "step": 0,
+       "every": 1
       },
       {
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
-       "rest": "45s"
+       "rest": "45s",
+       "bw": true
       },
       {
        "ex": "pronepull",
        "sets": 2,
        "reps": "10",
        "rest": "45s",
-       "load": 20
+       "start": 20,
+       "step": 5,
+       "every": 6,
+       "cap": 30
       }
      ]
     }
@@ -1275,7 +1493,8 @@
        "sets": 5,
        "reps": "45s",
        "rest": "30s",
-       "note": "BEFORE play."
+       "note": "BEFORE play.",
+       "bw": true
       }
      ]
     },
@@ -1287,32 +1506,48 @@
        "sets": 3,
        "reps": "2",
        "rest": "2min",
-       "note": "80-85%"
+       "note": "80-85%",
+       "pct": 0.82,
+       "pctOf": "hangclean"
       },
       {
        "ex": "squatacc",
        "sets": 2,
        "reps": "3",
        "rest": "2.5min",
-       "note": "80-85%, full depth"
+       "note": "80-85%, full depth",
+       "pct": 0.82,
+       "pctOf": "squatacc"
       },
       {
        "ex": "hamcurl",
        "sets": 2,
        "reps": "6",
-       "rest": "90s"
+       "rest": "90s",
+       "start": 70,
+       "step": 5,
+       "every": 3,
+       "cap": 95
       },
       {
        "ex": "soleus",
        "sets": 3,
        "reps": "12",
-       "rest": "60s"
+       "rest": "60s",
+       "start": 120,
+       "step": 10,
+       "every": 2,
+       "cap": 180
       },
       {
        "ex": "ecccalf",
        "sets": 2,
        "reps": "10",
-       "rest": "45s"
+       "rest": "45s",
+       "start": 55,
+       "step": 5,
+       "every": 3,
+       "cap": 85
       }
      ]
     },
@@ -1323,7 +1558,8 @@
        "ex": "spanish",
        "sets": 3,
        "reps": "30s",
-       "rest": "45s"
+       "rest": "45s",
+       "bw": true
       }
      ]
     }
@@ -1340,13 +1576,15 @@
        "ex": "bandpa",
        "sets": 2,
        "reps": "15",
-       "rest": "30s"
+       "rest": "30s",
+       "bw": true
       },
       {
        "ex": "banderer90",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "30s"
+       "rest": "30s",
+       "bw": true
       }
      ]
     },
@@ -1358,25 +1596,35 @@
        "sets": 3,
        "reps": "3",
        "rest": "2min",
-       "note": "85%, elbows tucked"
+       "note": "85%, elbows tucked",
+       "pct": 0.85,
+       "pctOf": "bench"
       },
       {
        "ex": "latpulldown",
        "sets": 3,
        "reps": "6",
-       "rest": "90s"
+       "rest": "90s",
+       "pct": 0.8,
+       "pctOf": "latpulldown"
       },
       {
        "ex": "dbrow",
        "sets": 2,
        "reps": "8/arm",
-       "rest": "90s"
+       "rest": "90s",
+       "pct": 0.85,
+       "pctOf": "dbrow"
       },
       {
        "ex": "pallof",
        "sets": 2,
        "reps": "8/side",
-       "rest": "60s"
+       "rest": "60s",
+       "start": 30,
+       "step": 5,
+       "every": 4,
+       "cap": 50
       }
      ]
     },
@@ -1387,13 +1635,20 @@
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "45s"
+       "rest": "45s",
+       "start": 5,
+       "step": 0,
+       "every": 1
       },
       {
        "ex": "pronepull",
        "sets": 2,
        "reps": "10",
-       "rest": "45s"
+       "rest": "45s",
+       "start": 20,
+       "step": 5,
+       "every": 6,
+       "cap": 30
       }
      ]
     }
@@ -1411,34 +1666,36 @@
        "sets": 2,
        "reps": "3",
        "rest": "-",
-       "load": 8
+       "fixed": 8
       },
       {
        "ex": "mbvertover",
        "sets": 2,
        "reps": "3",
        "rest": "-",
-       "load": 8
+       "fixed": 8
       },
       {
        "ex": "mbbroad",
        "sets": 2,
        "reps": "3",
        "rest": "-",
-       "load": 8
+       "fixed": 8
       },
       {
        "ex": "pogos",
        "sets": 2,
        "reps": "10",
-       "rest": "-"
+       "rest": "-",
+       "bw": true
       },
       {
        "ex": "approach",
        "sets": 3,
        "reps": "1",
        "rest": "-",
-       "note": "80 / 90 / 100%"
+       "note": "80 / 90 / 100%",
+       "bw": true
       }
      ]
     }
@@ -1456,7 +1713,8 @@
        "sets": 5,
        "reps": "45s",
        "rest": "30s",
-       "note": "Before you play."
+       "note": "Before you play.",
+       "bw": true
       }
      ]
     }
@@ -1489,7 +1747,8 @@
    "weightedBalls": null,
    "flags": [
     "TEST WEEK: 2 sets per lift, no altitude drops, full baseline battery"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 2,
@@ -1509,7 +1768,8 @@
    "weightedBalls": null,
    "flags": [
     "3 sets per lift, still no altitude drops"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 3,
@@ -1529,7 +1789,8 @@
    "weightedBalls": null,
    "flags": [
     "Altitude drops enter now, gated on week 1 RSI"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 4,
@@ -1549,7 +1810,8 @@
    "weightedBalls": null,
    "flags": [
     "Altitude drops enter now, gated on week 1 RSI"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 5,
@@ -1569,6 +1831,10 @@
    "weightedBalls": "overload: 6 oz, 7 oz, 3x5 each, 90s",
    "flags": [
     "DELOAD: 2 sets per exercise, no test"
+   ],
+   "ballWeights": [
+    6,
+    7
    ]
   },
   {
@@ -1587,7 +1853,11 @@
     "off"
    ],
    "weightedBalls": "overload: 6 oz, 7 oz, 3x5 each, 90s",
-   "flags": []
+   "flags": [],
+   "ballWeights": [
+    6,
+    7
+   ]
   },
   {
    "n": 7,
@@ -1605,7 +1875,11 @@
     "off"
    ],
    "weightedBalls": "overload: 6 oz, 7 oz, 3x5 each, 90s",
-   "flags": []
+   "flags": [],
+   "ballWeights": [
+    6,
+    7
+   ]
   },
   {
    "n": 8,
@@ -1623,7 +1897,11 @@
     "off"
    ],
    "weightedBalls": "overload: 6 oz, 7 oz, 3x5 each, 90s",
-   "flags": []
+   "flags": [],
+   "ballWeights": [
+    6,
+    7
+   ]
   },
   {
    "n": 9,
@@ -1641,7 +1919,11 @@
     "off"
    ],
    "weightedBalls": "underload: tennis ball + 4 oz if available, 3x5 each, 90s",
-   "flags": []
+   "flags": [],
+   "ballWeights": [
+    3,
+    4
+   ]
   },
   {
    "n": 10,
@@ -1661,6 +1943,10 @@
    "weightedBalls": "underload: tennis ball + 4 oz if available, 3x5 each, 90s",
    "flags": [
     "DELOAD: 2 sets per exercise, no test"
+   ],
+   "ballWeights": [
+    3,
+    4
    ]
   },
   {
@@ -1679,7 +1965,11 @@
     "off"
    ],
    "weightedBalls": "underload: tennis ball + 4 oz if available, 3x5 each, 90s",
-   "flags": []
+   "flags": [],
+   "ballWeights": [
+    3,
+    4
+   ]
   },
   {
    "n": 12,
@@ -1697,7 +1987,11 @@
     "off"
    ],
    "weightedBalls": "underload: tennis ball + 4 oz if available, 3x5 each, 90s",
-   "flags": []
+   "flags": [],
+   "ballWeights": [
+    3,
+    4
+   ]
   },
   {
    "n": 13,
@@ -1715,7 +2009,8 @@
     "off"
    ],
    "weightedBalls": null,
-   "flags": []
+   "flags": [],
+   "ballWeights": []
   },
   {
    "n": 14,
@@ -1733,7 +2028,8 @@
     "off"
    ],
    "weightedBalls": null,
-   "flags": []
+   "flags": [],
+   "ballWeights": []
   },
   {
    "n": 15,
@@ -1751,7 +2047,8 @@
     "off"
    ],
    "weightedBalls": null,
-   "flags": []
+   "flags": [],
+   "ballWeights": []
   },
   {
    "n": 16,
@@ -1771,7 +2068,8 @@
    "weightedBalls": null,
    "flags": [
     "DELOAD: 2 sets per exercise, no test"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 17,
@@ -1791,7 +2089,8 @@
    "weightedBalls": null,
    "flags": [
     "Upper is MAINTENANCE: cut sets, hold load"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 18,
@@ -1811,7 +2110,8 @@
    "weightedBalls": null,
    "flags": [
     "Upper is MAINTENANCE: cut sets, hold load"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 19,
@@ -1831,7 +2131,8 @@
    "weightedBalls": null,
    "flags": [
     "Upper is MAINTENANCE: cut sets, hold load"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 20,
@@ -1851,7 +2152,8 @@
    "weightedBalls": null,
    "flags": [
     "Upper is MAINTENANCE: cut sets, hold load"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 21,
@@ -1872,7 +2174,8 @@
    "flags": [
     "DELOAD: 2 sets per exercise, no test",
     "Upper is MAINTENANCE: cut sets, hold load"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 22,
@@ -1892,7 +2195,8 @@
    "weightedBalls": null,
    "flags": [
     "Upper is MAINTENANCE: cut sets, hold load"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 23,
@@ -1912,7 +2216,8 @@
    "weightedBalls": null,
    "flags": [
     "Upper is MAINTENANCE: cut sets, hold load"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 24,
@@ -1932,7 +2237,8 @@
    "weightedBalls": null,
    "flags": [
     "Upper is MAINTENANCE: cut sets, hold load"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 25,
@@ -1952,7 +2258,8 @@
    "weightedBalls": null,
    "flags": [
     "Upper is MAINTENANCE: cut sets, hold load"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 26,
@@ -1973,7 +2280,8 @@
    "flags": [
     "DELOAD: 2 sets per exercise, no test",
     "Upper is MAINTENANCE: cut sets, hold load"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 27,
@@ -1993,7 +2301,8 @@
    "weightedBalls": null,
    "flags": [
     "Upper is MAINTENANCE: cut sets, hold load"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 28,
@@ -2013,7 +2322,8 @@
    "weightedBalls": null,
    "flags": [
     "Upper is MAINTENANCE: cut sets, hold load"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 29,
@@ -2033,7 +2343,8 @@
    "weightedBalls": null,
    "flags": [
     "Upper is MAINTENANCE: cut sets, hold load"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 30,
@@ -2054,7 +2365,8 @@
    "flags": [
     "DELOAD: 2 sets per exercise, no test",
     "Upper is MAINTENANCE: cut sets, hold load"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 31,
@@ -2074,7 +2386,8 @@
    "weightedBalls": null,
    "flags": [
     "Upper is MAINTENANCE: cut sets, hold load"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 32,
@@ -2094,7 +2407,8 @@
    "weightedBalls": null,
    "flags": [
     "Upper is MAINTENANCE: cut sets, hold load"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 33,
@@ -2115,7 +2429,8 @@
    "flags": [
     "DELOAD: 2 sets per exercise, no test",
     "Upper is MAINTENANCE: cut sets, hold load"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 34,
@@ -2135,7 +2450,8 @@
    "weightedBalls": null,
    "flags": [
     "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 35,
@@ -2155,7 +2471,8 @@
    "weightedBalls": null,
    "flags": [
     "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 36,
@@ -2175,7 +2492,8 @@
    "weightedBalls": null,
    "flags": [
     "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 37,
@@ -2195,7 +2513,8 @@
    "weightedBalls": null,
    "flags": [
     "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 38,
@@ -2215,7 +2534,8 @@
    "weightedBalls": null,
    "flags": [
     "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 39,
@@ -2235,7 +2555,8 @@
    "weightedBalls": null,
    "flags": [
     "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 40,
@@ -2255,7 +2576,8 @@
    "weightedBalls": null,
    "flags": [
     "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 41,
@@ -2275,7 +2597,8 @@
    "weightedBalls": null,
    "flags": [
     "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 42,
@@ -2295,7 +2618,8 @@
    "weightedBalls": null,
    "flags": [
     "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 43,
@@ -2315,7 +2639,8 @@
    "weightedBalls": null,
    "flags": [
     "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 44,
@@ -2335,7 +2660,8 @@
    "weightedBalls": null,
    "flags": [
     "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 45,
@@ -2355,7 +2681,8 @@
    "weightedBalls": null,
    "flags": [
     "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 46,
@@ -2375,7 +2702,8 @@
    "weightedBalls": null,
    "flags": [
     "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 47,
@@ -2395,7 +2723,8 @@
    "weightedBalls": null,
    "flags": [
     "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 48,
@@ -2415,7 +2744,8 @@
    "weightedBalls": null,
    "flags": [
     "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 49,
@@ -2435,7 +2765,8 @@
    "weightedBalls": null,
    "flags": [
     "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 50,
@@ -2456,7 +2787,8 @@
    "flags": [
     "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks",
     "TAPER: cut sets ~45%, HOLD load. Last heavy lower 10 days out"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 51,
@@ -2477,7 +2809,8 @@
    "flags": [
     "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks",
     "TAPER: cut sets ~45%, HOLD load. Last heavy lower 10 days out"
-   ]
+   ],
+   "ballWeights": []
   },
   {
    "n": 52,
@@ -2498,7 +2831,18 @@
    "flags": [
     "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks",
     "TAPER: cut sets ~45%, HOLD load. Last heavy lower 10 days out"
-   ]
+   ],
+   "ballWeights": []
   }
- ]
+ ],
+ "deloadWeeks": [
+  5,
+  10,
+  16,
+  21,
+  26,
+  30,
+  33
+ ],
+ "deloadFactor": 0.85
 }
