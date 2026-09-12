@@ -224,9 +224,10 @@ function render(){
   renderTabs(); syncHash(); window.scrollTo(0,0);
 }
 function renderTabs(){
-  const t = [['today','◉','Today'],['week','▦','Week'],['log','≡','Log'],['tests','◎','Tests'],['data','⚙','Data']];
-  $('#tabs').innerHTML = t.map(([k,i,l]) =>
-    `<button data-tab="${k}" class="${view===k&&!openSession?'on':''}"><span class="ic">${i}</span>${l}</button>`).join('');
+  const tabs = [['today','Today'],['week','Week'],['log','Log'],['tests','Tests'],['data','Data']];
+  $('#tabs').innerHTML = tabs.map(([k,l]) =>
+    `<button data-tab="${k}" class="${view===k&&!openSession?'on':''}" aria-label="${l}">
+       <svg><use href="#i-${k}"/></svg>${l}</button>`).join('');
 }
 
 
@@ -245,11 +246,13 @@ function sessionList(n, {suggest=null}={}){
     let pill = '';
     if(s?.done) pill = '<span class="pill g">Done</span>';
     else if(started(s)) pill = '<span class="pill w">Part done</span>';
-    else if(isNext) pill = '<span class="pill n">Next up</span>';
-    h += `<div class="dayitem ${isSuggest?'today':''}"><div class="grow">
-      <div style="font-weight:${isNext||isSuggest?650:500}">${i+1}. ${esc(def.name)}</div>
-      <div class="tiny">${def.mins?`${def.mins} min · `:''}${isSuggest?'suggested today · ':''}${
-        s?.done&&s.date?`logged ${s.date}`:`planned ${slotDate(n,i)}`}</div></div>
+    // isNext is already signalled by the volt Start button; no pill needed
+    h += `<div class="dayitem ${isSuggest?'today':''}">
+      <span class="slot">${i+1}</span>
+      <div class="grow">
+        <div class="dayname" style="${s?.done?'color:var(--dim)':''}">${esc(def.name)}</div>
+        <div class="tiny">${def.mins?`${def.mins} min · `:''}${isSuggest?'today · ':''}${
+          s?.done&&s.date?`logged ${s.date}`:`planned ${slotDate(n,i)}`}</div></div>
       <div class="row" style="gap:7px;flex:0 0 auto">${pill}
       ${def.isOff?'':`<button class="btn ${isNext&&!s?.done?'':'sec'} sm" data-act="open" data-sid="${sid(n,i)}">${
         s?.done?'View':started(s)?'Resume':'Start'}</button>`}</div></div>`;
@@ -301,7 +304,9 @@ function vToday(){
   h += sessionList(w.n, {suggest: ts ? ts.slot : null});
 
   if(bud) h += `<h2>Jump budget this week</h2><div class="card">
-    <div class="row sb"><b class="mono">${bud.total}</b><span class="muted mono">/ ${bud.ceiling}</span></div>
+    <div class="row sb" style="align-items:baseline">
+      <span class="big" style="color:var(--${bud.level==='b'?'bad':bud.level==='w'?'warn':'good'})">${bud.total}</span>
+      <span class="muted mono">of ${bud.ceiling} ceiling</span></div>
     <div class="bar"><i class="${bud.level}" style="width:${bud.pct}%"></i></div>
     <div class="tiny" style="margin-top:8px">Volleyball ${bud.vbHours}h ≈ ${bud.vbJumps} jumps · training ${bud.contacts} contacts</div>
     ${bud.level==='b'?'<div class="flag b" style="margin:10px 0 0">Over budget. Cut training jumps, never the volleyball.</div>':''}
@@ -366,7 +371,7 @@ function backupBanner(){
   const why = !b.last ? `${doneCount()} sessions logged and never backed up`
     : `${b.sinceCount} sessions and ${b.sinceDays} days since your last backup`;
   return `<div class="flag"><b>Back up.</b> ${why}.
-    <button class="addset" style="display:inline;padding:0;margin-left:4px" data-act="export">Export now →</button></div>`;
+    <button class="link" style="display:inline;padding:0;margin-left:4px" data-act="export">Export now</button></div>`;
 }
 
 function scale(site, val){
@@ -418,8 +423,8 @@ function vSession(){
             <button class="chk ${st.done?'on':''}" data-act="tog" data-e="${ei}" data-s="${si}">${st.done?'✓':''}</button>
           </div>`).join('')}
         </div>
-        <div class="row sb"><button class="addset" data-act="addset" data-e="${ei}">+ Add set</button>
-        ${en.sets.length>1?`<button class="addset" style="color:var(--dim2)" data-act="delset" data-e="${ei}">− Remove</button>`:''}</div>
+        <div class="row sb"><button class="link" data-act="addset" data-e="${ei}">+ Add set</button>
+        ${en.sets.length>1?`<button class="link" style="color:var(--dim2)" data-act="delset" data-e="${ei}">− Remove</button>`:''}</div>
       </div>`;
     });
     h += `<h2>Session</h2><div class="card">
@@ -447,7 +452,8 @@ function vWeek(){
   const prog = weekProgress(w.n), isNow = weekFor(today())?.n === w.n;
   let h = `<div class="row sb">
       <button class="btn sec sm" data-act="wk" data-n="${w.n-1}" ${w.n<=1?'disabled':''}>‹ Prev</button>
-      <div style="text-align:center"><div style="font-weight:700">Week ${w.n}</div>
+      <div style="text-align:center"><div style="font-family:var(--display);font-weight:700;
+        text-transform:uppercase;letter-spacing:1px;font-size:18px;line-height:1">Week ${w.n}</div>
         <div class="tiny">${esc(w.sub)}${isNow?' · current':''}</div></div>
       <button class="btn sec sm" data-act="wk" data-n="${w.n+1}" ${w.n>=P.meta.totalWeeks?'disabled':''}>Next ›</button>
     </div>
