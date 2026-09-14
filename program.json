@@ -461,6 +461,69 @@
    "cat": "test",
    "unit": "mph",
    "q": "measure pitch speed slow motion video frame count"
+  },
+  "towel": {
+   "name": "Towel Drill",
+   "cue": "No ball. Snap the towel through release. Full mechanics, zero space.",
+   "cat": "throw",
+   "unit": "none",
+   "q": "baseball towel drill pitching mechanics"
+  },
+  "wristw": {
+   "name": "Wrist Weight Arm Action",
+   "cue": "1-2 lb wrist weight. Slow, full throwing arm path. No release.",
+   "cat": "throw",
+   "unit": "lb",
+   "q": "wrist weight arm action driveline throwing"
+  },
+  "tubing": {
+   "name": "Shoulder Tubing / J-Band Series",
+   "cue": "Full J-band series. This is the arm care backbone all winter.",
+   "cat": "throw",
+   "unit": "none",
+   "q": "jaeger j band shoulder tubing full series"
+  },
+  "wallrev": {
+   "name": "Reverse Throw into padded wall",
+   "cue": "1.5-2 m from the wall. Controlled. Eccentric ER drill.",
+   "cat": "throw",
+   "unit": "lb",
+   "q": "driveline reverse throw plyo ball wall"
+  },
+  "wallpivot": {
+   "name": "Pivot Pick into padded wall",
+   "cue": "1.5-2 m. Torso rotation, arm along for the ride.",
+   "cat": "throw",
+   "unit": "lb",
+   "q": "driveline pivot pickoff drill wall"
+  },
+  "wallrocker": {
+   "name": "Rocker Throw into padded wall",
+   "cue": "Rock back, rock forward, throw. Momentum into a stiff front leg.",
+   "cat": "throw",
+   "unit": "lb",
+   "q": "driveline rocker drill plyo ball wall"
+  },
+  "wallwind": {
+   "name": "Walking Windup into padded wall",
+   "cue": "Last drill. Full sequence at controlled intent.",
+   "cat": "throw",
+   "unit": "lb",
+   "q": "driveline walking windup plyo ball"
+  },
+  "tennisrebound": {
+   "name": "Tennis Ball Wall Rebound",
+   "cue": "1.5 m from wall. Continuous throw-and-catch. Fast hands, low load.",
+   "cat": "throw",
+   "unit": "none",
+   "q": "tennis ball wall rebound reaction drill baseball"
+  },
+  "ribdis": {
+   "name": "Rib / Pelvis Dissociation Hold",
+   "cue": "Hips square, ribs rotate. This IS hip-shoulder separation.",
+   "cat": "throw",
+   "unit": "none",
+   "q": "hip shoulder separation drill rib pelvis dissociation"
   }
  },
  "days": {
@@ -1727,6 +1790,249 @@
    "mins": 0,
    "blocks": [],
    "isOff": true
+  },
+  "armGym": {
+   "name": "Arm Speed (gym, wall)",
+   "mins": 40,
+   "blocks": [
+    {
+     "name": "Warm-up",
+     "items": [
+      {
+       "ex": "tubing",
+       "sets": 1,
+       "reps": "full series",
+       "rest": "-",
+       "bw": true
+      },
+      {
+       "ex": "banderir",
+       "sets": 2,
+       "reps": "15/arm",
+       "rest": "30s",
+       "bw": true
+      },
+      {
+       "ex": "ribdis",
+       "sets": 2,
+       "reps": "6/side",
+       "rest": "30s",
+       "bw": true
+      }
+     ]
+    },
+    {
+     "name": "Wall Plyo Routine (1.5-2 m, padded wall)",
+     "items": [
+      {
+       "ex": "wallrev",
+       "sets": 3,
+       "reps": "8",
+       "rest": "45s",
+       "fixed": 2,
+       "note": "Always first"
+      },
+      {
+       "ex": "wallpivot",
+       "sets": 3,
+       "reps": "6",
+       "rest": "60s",
+       "fixed": 2,
+       "note": "Always second"
+      },
+      {
+       "ex": "wallrocker",
+       "sets": 3,
+       "reps": "5",
+       "rest": "60s",
+       "fixed": 1
+      },
+      {
+       "ex": "wallwind",
+       "sets": 3,
+       "reps": "5",
+       "rest": "60s",
+       "fixed": 1,
+       "note": "Always last"
+      }
+     ]
+    },
+    {
+     "name": "Arm Speed",
+     "items": [
+      {
+       "ex": "wristw",
+       "sets": 3,
+       "reps": "8/arm",
+       "rest": "45s",
+       "start": 2,
+       "step": 0,
+       "every": 1
+      },
+      {
+       "ex": "towel",
+       "sets": 3,
+       "reps": "8",
+       "rest": "45s",
+       "bw": true
+      },
+      {
+       "ex": "tennisrebound",
+       "sets": 3,
+       "reps": "30s",
+       "rest": "45s",
+       "bw": true
+      }
+     ]
+    },
+    {
+     "name": "Rotational Power",
+     "items": [
+      {
+       "ex": "mbshotput",
+       "sets": 4,
+       "reps": "5/side",
+       "rest": "60s",
+       "fixed": 6
+      },
+      {
+       "ex": "mbscoop",
+       "sets": 3,
+       "reps": "5",
+       "rest": "60s",
+       "fixed": 8
+      },
+      {
+       "ex": "mbrepeat",
+       "sets": 3,
+       "reps": "10",
+       "rest": "60s",
+       "fixed": 15
+      }
+     ]
+    },
+    {
+     "name": "Arm Care",
+     "items": [
+      {
+       "ex": "sidelyer",
+       "sets": 2,
+       "reps": "12/arm",
+       "rest": "45s",
+       "start": 5,
+       "step": 0,
+       "every": 1
+      },
+      {
+       "ex": "pronepull",
+       "sets": 2,
+       "reps": "10",
+       "rest": "45s",
+       "start": 20,
+       "step": 5,
+       "every": 6,
+       "cap": 30
+      },
+      {
+       "ex": "serratus",
+       "sets": 2,
+       "reps": "10",
+       "rest": "45s",
+       "bw": true
+      }
+     ]
+    }
+   ]
+  },
+  "armHome": {
+   "name": "Arm Speed (home, no space)",
+   "mins": 25,
+   "blocks": [
+    {
+     "name": "Prep",
+     "items": [
+      {
+       "ex": "tubing",
+       "sets": 1,
+       "reps": "full series",
+       "rest": "-",
+       "bw": true
+      },
+      {
+       "ex": "bandpa",
+       "sets": 2,
+       "reps": "15",
+       "rest": "30s",
+       "bw": true
+      },
+      {
+       "ex": "ribdis",
+       "sets": 2,
+       "reps": "6/side",
+       "rest": "30s",
+       "bw": true
+      }
+     ]
+    },
+    {
+     "name": "Mechanics, no ball",
+     "items": [
+      {
+       "ex": "towel",
+       "sets": 4,
+       "reps": "8",
+       "rest": "45s",
+       "bw": true
+      },
+      {
+       "ex": "wristw",
+       "sets": 3,
+       "reps": "8/arm",
+       "rest": "45s",
+       "start": 2,
+       "step": 0,
+       "every": 1
+      }
+     ]
+    },
+    {
+     "name": "Arm Care",
+     "items": [
+      {
+       "ex": "banderer90",
+       "sets": 3,
+       "reps": "12/arm",
+       "rest": "30s",
+       "bw": true
+      },
+      {
+       "ex": "sidelyer",
+       "sets": 2,
+       "reps": "12/arm",
+       "rest": "45s",
+       "start": 5,
+       "step": 0,
+       "every": 1
+      },
+      {
+       "ex": "serratus",
+       "sets": 2,
+       "reps": "10",
+       "rest": "45s",
+       "bw": true
+      },
+      {
+       "ex": "pronepull",
+       "sets": 2,
+       "reps": "10",
+       "rest": "45s",
+       "start": 20,
+       "step": 0,
+       "every": 1
+      }
+     ]
+    }
+   ]
   }
  },
  "weeks": [
@@ -1739,9 +2045,9 @@
    "days": [
     "upperA",
     "lowerPower",
-    "throwing",
+    "armGym",
     "upperB",
-    "throwing",
+    "armHome",
     "volleyball",
     "off"
    ],
@@ -1760,9 +2066,9 @@
    "days": [
     "upperA",
     "lowerPower",
-    "throwing",
+    "armGym",
     "upperB",
-    "throwing",
+    "armHome",
     "volleyball",
     "off"
    ],
@@ -1781,9 +2087,9 @@
    "days": [
     "upperA",
     "lowerPower",
-    "throwing",
+    "armGym",
     "upperB",
-    "throwing",
+    "armHome",
     "volleyball",
     "off"
    ],
@@ -1802,9 +2108,9 @@
    "days": [
     "upperA",
     "lowerPower",
-    "throwing",
+    "armGym",
     "upperB",
-    "throwing",
+    "armHome",
     "volleyball",
     "off"
    ],
@@ -1823,13 +2129,13 @@
    "days": [
     "upperA",
     "lowerPower",
-    "throwing",
+    "armGym",
     "upperB",
-    "throwing",
+    "armHome",
     "volleyball",
     "off"
    ],
-   "weightedBalls": "overload: 6 oz, 7 oz, 3x5 each, 90s",
+   "weightedBalls": "overload: plyo balls 450g/1kg into the wall, 3x5 each, 90s",
    "flags": [
     "DELOAD: 2 sets per exercise, no test"
    ],
@@ -1847,13 +2153,13 @@
    "days": [
     "upperA",
     "lowerPower",
-    "throwing",
+    "armGym",
     "upperB",
-    "throwing",
+    "armHome",
     "volleyball",
     "off"
    ],
-   "weightedBalls": "overload: 6 oz, 7 oz, 3x5 each, 90s",
+   "weightedBalls": "overload: plyo balls 450g/1kg into the wall, 3x5 each, 90s",
    "flags": [],
    "ballWeights": [
     6,
@@ -1869,13 +2175,13 @@
    "days": [
     "upperA",
     "lowerPower",
-    "throwing",
+    "armGym",
     "upperB",
-    "throwing",
+    "armHome",
     "volleyball",
     "off"
    ],
-   "weightedBalls": "overload: 6 oz, 7 oz, 3x5 each, 90s",
+   "weightedBalls": "overload: plyo balls 450g/1kg into the wall, 3x5 each, 90s",
    "flags": [],
    "ballWeights": [
     6,
@@ -1891,13 +2197,13 @@
    "days": [
     "upperA",
     "lowerPower",
-    "throwing",
+    "armGym",
     "upperB",
-    "throwing",
+    "armHome",
     "volleyball",
     "off"
    ],
-   "weightedBalls": "overload: 6 oz, 7 oz, 3x5 each, 90s",
+   "weightedBalls": "overload: plyo balls 450g/1kg into the wall, 3x5 each, 90s",
    "flags": [],
    "ballWeights": [
     6,
@@ -1913,13 +2219,13 @@
    "days": [
     "upperA",
     "lowerPower",
-    "throwing",
+    "armGym",
     "upperB",
-    "throwing",
+    "armHome",
     "volleyball",
     "off"
    ],
-   "weightedBalls": "underload: tennis ball + 4 oz if available, 3x5 each, 90s",
+   "weightedBalls": "underload: tennis ball + 150g plyo ball, 3x5 each, 90s",
    "flags": [],
    "ballWeights": [
     3,
@@ -1935,13 +2241,13 @@
    "days": [
     "upperA",
     "lowerPower",
-    "throwing",
+    "armGym",
     "upperB",
-    "throwing",
+    "armHome",
     "volleyball",
     "off"
    ],
-   "weightedBalls": "underload: tennis ball + 4 oz if available, 3x5 each, 90s",
+   "weightedBalls": "underload: tennis ball + 150g plyo ball, 3x5 each, 90s",
    "flags": [
     "DELOAD: 2 sets per exercise, no test"
    ],
@@ -1959,13 +2265,13 @@
    "days": [
     "upperA",
     "lowerPower",
-    "throwing",
+    "armGym",
     "upperB",
-    "throwing",
+    "armHome",
     "volleyball",
     "off"
    ],
-   "weightedBalls": "underload: tennis ball + 4 oz if available, 3x5 each, 90s",
+   "weightedBalls": "underload: tennis ball + 150g plyo ball, 3x5 each, 90s",
    "flags": [],
    "ballWeights": [
     3,
@@ -1981,13 +2287,13 @@
    "days": [
     "upperA",
     "lowerPower",
-    "throwing",
+    "armGym",
     "upperB",
-    "throwing",
+    "armHome",
     "volleyball",
     "off"
    ],
-   "weightedBalls": "underload: tennis ball + 4 oz if available, 3x5 each, 90s",
+   "weightedBalls": "underload: tennis ball + 150g plyo ball, 3x5 each, 90s",
    "flags": [],
    "ballWeights": [
     3,
@@ -2003,9 +2309,9 @@
    "days": [
     "upperA",
     "lowerPower",
-    "throwing",
+    "armGym",
     "upperB",
-    "throwing",
+    "armHome",
     "volleyball",
     "off"
    ],
@@ -2022,9 +2328,9 @@
    "days": [
     "upperA",
     "lowerPower",
-    "throwing",
+    "armGym",
     "upperB",
-    "throwing",
+    "armHome",
     "volleyball",
     "off"
    ],
@@ -2041,9 +2347,9 @@
    "days": [
     "upperA",
     "lowerPower",
-    "throwing",
+    "armGym",
     "upperB",
-    "throwing",
+    "armHome",
     "volleyball",
     "off"
    ],
@@ -2060,9 +2366,9 @@
    "days": [
     "upperA",
     "lowerPower",
-    "throwing",
+    "armGym",
     "upperB",
-    "throwing",
+    "armHome",
     "volleyball",
     "off"
    ],
@@ -2081,7 +2387,7 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "throwing",
+    "armGym",
     "lowerB2",
     "upperMaint",
     "volleyball",
@@ -2102,7 +2408,7 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "throwing",
+    "armGym",
     "lowerB2",
     "upperMaint",
     "volleyball",
@@ -2123,7 +2429,7 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "throwing",
+    "armGym",
     "lowerB2",
     "upperMaint",
     "volleyball",
@@ -2144,7 +2450,7 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "throwing",
+    "armGym",
     "lowerB2",
     "upperMaint",
     "volleyball",
@@ -2165,7 +2471,7 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "throwing",
+    "armGym",
     "lowerB2",
     "upperMaint",
     "volleyball",
@@ -2187,7 +2493,7 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "throwing",
+    "armGym",
     "lowerB2",
     "upperMaint",
     "volleyball",
@@ -2208,7 +2514,7 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "throwing",
+    "armGym",
     "lowerB2",
     "upperMaint",
     "volleyball",
@@ -2229,7 +2535,7 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "throwing",
+    "armGym",
     "lowerB2",
     "upperMaint",
     "volleyball",
@@ -2250,7 +2556,7 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "throwing",
+    "armGym",
     "lowerB2",
     "upperMaint",
     "volleyball",
@@ -2271,7 +2577,7 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "throwing",
+    "armGym",
     "lowerB2",
     "upperMaint",
     "volleyball",
@@ -2293,7 +2599,7 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "throwing",
+    "armGym",
     "lowerB2",
     "upperMaint",
     "volleyball",
@@ -2314,7 +2620,7 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "throwing",
+    "armGym",
     "lowerB2",
     "upperMaint",
     "volleyball",
@@ -2335,7 +2641,7 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "throwing",
+    "armGym",
     "lowerB2",
     "upperMaint",
     "volleyball",
@@ -2356,7 +2662,7 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "throwing",
+    "armGym",
     "lowerB2",
     "upperMaint",
     "volleyball",
@@ -2365,7 +2671,8 @@
    "weightedBalls": null,
    "flags": [
     "DELOAD: 2 sets per exercise, no test",
-    "Upper is MAINTENANCE: cut sets, hold load"
+    "Upper is MAINTENANCE: cut sets, hold load",
+    "SPRING ON-RAMP: weather permitting, start outdoor catch play. 4-5 week structured return before any max intent."
    ],
    "ballWeights": []
   },
@@ -2378,7 +2685,7 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "throwing",
+    "armGym",
     "lowerB2",
     "upperMaint",
     "volleyball",
@@ -2386,7 +2693,8 @@
    ],
    "weightedBalls": null,
    "flags": [
-    "Upper is MAINTENANCE: cut sets, hold load"
+    "Upper is MAINTENANCE: cut sets, hold load",
+    "SPRING ON-RAMP: weather permitting, start outdoor catch play. 4-5 week structured return before any max intent."
    ],
    "ballWeights": []
   },
@@ -2399,7 +2707,7 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "throwing",
+    "armGym",
     "lowerB2",
     "upperMaint",
     "volleyball",
@@ -2407,7 +2715,8 @@
    ],
    "weightedBalls": null,
    "flags": [
-    "Upper is MAINTENANCE: cut sets, hold load"
+    "Upper is MAINTENANCE: cut sets, hold load",
+    "SPRING ON-RAMP: weather permitting, start outdoor catch play. 4-5 week structured return before any max intent."
    ],
    "ballWeights": []
   },
@@ -2420,7 +2729,7 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "throwing",
+    "armGym",
     "lowerB2",
     "upperMaint",
     "volleyball",
@@ -2429,7 +2738,8 @@
    "weightedBalls": null,
    "flags": [
     "DELOAD: 2 sets per exercise, no test",
-    "Upper is MAINTENANCE: cut sets, hold load"
+    "Upper is MAINTENANCE: cut sets, hold load",
+    "SPRING ON-RAMP: weather permitting, start outdoor catch play. 4-5 week structured return before any max intent."
    ],
    "ballWeights": []
   },

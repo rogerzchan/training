@@ -168,9 +168,12 @@ function prescribedLoad(it, week, exId){
   if(it.start == null) return null;
   let v = it.start + it.step*Math.floor((week-1)/it.every);
   if(it.cap != null) v = Math.min(v, it.cap);
-  if(isDeload(week)) v = roundTo(v*(P.deloadFactor||0.85), it.step===2.5?2.5:5);
-  return {v:roundTo(v, it.step===2.5?2.5:5), kind:'progression',
-          capped: it.cap != null && v >= it.cap};
+  // only round if the load actually moves, and never coarser than the step itself,
+  // otherwise a 2 lb wrist weight rounds to zero
+  const inc = !it.step ? null : (it.step < 5 ? it.step : 5);
+  if(isDeload(week) && it.step) v = v*(P.deloadFactor||0.85);
+  if(inc) v = roundTo(v, inc);
+  return {v, kind:'progression', capped: it.cap != null && v >= it.cap};
 }
 function loadLabel(L, unit){
   if(!L) return null;
