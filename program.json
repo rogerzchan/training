@@ -644,6 +644,27 @@
    "cat": "prep",
    "unit": "none",
    "q": "tibialis raise calf raise reciprocal"
+  },
+  "ctread": {
+   "name": "Curved Treadmill Sprint",
+   "cat": "agility",
+   "unit": "none",
+   "cue": "8s max effort. Hands off the rails. Walk-back recovery.",
+   "q": "curved treadmill sprint assault airrunner technique"
+  },
+  "ctreadres": {
+   "name": "Curved Treadmill Resisted Sprint",
+   "cat": "agility",
+   "unit": "none",
+   "cue": "Moderate resistance. 6s, driving. Stride length, not turnover.",
+   "q": "resisted curved treadmill sprint magnetic resistance training"
+  },
+  "sledpush": {
+   "name": "Sled Push (acceleration)",
+   "cat": "lower",
+   "unit": "lb",
+   "cue": "Low body angle, long drives. This is the acceleration lift.",
+   "q": "heavy sled push acceleration sprint technique"
   }
  },
  "days": {
@@ -2209,7 +2230,7 @@
   },
   "lowerB": {
    "name": "Lower B \u00b7 Unilateral + Agility",
-   "mins": 75,
+   "mins": 80,
    "blocks": [
     {
      "name": "Prep",
@@ -2245,31 +2266,37 @@
      ]
     },
     {
-     "name": "Footwork + Speed",
+     "name": "Speed + Horizontal Power",
      "items": [
       {
-       "ex": "dotdrill",
+       "ex": "sledpush",
        "sets": 3,
-       "reps": "30s",
-       "rest": "45s",
-       "bw": true,
-       "rpe": 6
+       "reps": "20yd",
+       "rest": "90s",
+       "start": 135,
+       "step": 10,
+       "every": 3,
+       "cap": 205,
+       "rpe": 8,
+       "note": "Acceleration. The treadmill is poor at this, the sled is not."
       },
       {
-       "ex": "curvedrun",
-       "sets": 4,
-       "reps": "25yd",
-       "rest": "75s",
+       "ex": "ctreadres",
+       "sets": 3,
+       "reps": "6s",
+       "rest": "90s",
        "bw": true,
-       "rpe": 7
+       "rpe": 8,
+       "note": "Moderate resistance"
       },
       {
-       "ex": "splitrepeat",
+       "ex": "ctread",
        "sets": 3,
-       "reps": "6/side",
-       "rest": "60s",
+       "reps": "8s",
+       "rest": "2min",
        "bw": true,
-       "rpe": 7
+       "rpe": 9,
+       "note": "No resistance, top speed"
       }
      ]
     },
@@ -2278,7 +2305,7 @@
      "items": [
       {
        "ex": "rfess",
-       "sets": 4,
+       "sets": 3,
        "reps": "6/leg",
        "rest": "90s",
        "start": 70,
@@ -2290,7 +2317,7 @@
       },
       {
        "ex": "kickrdl",
-       "sets": 4,
+       "sets": 3,
        "reps": "8/leg",
        "rest": "90s",
        "start": 45,
