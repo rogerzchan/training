@@ -34,637 +34,858 @@
    "cue": "Slow. Thoracic rotation, not lumbar.",
    "cat": "prep",
    "unit": "none",
-   "q": "rolling arm bar screwdriver rotation shoulder mobility drill"
+   "q": "rolling arm bar screwdriver rotation shoulder mobility drill",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "tspine": {
    "name": "Wall Side T Spine Opener",
    "cue": "Reach long, follow the hand with your eyes.",
    "cat": "prep",
    "unit": "none",
-   "q": "side lying wall thoracic spine opener rotation drill"
+   "q": "side lying wall thoracic spine opener rotation drill",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "shpullover": {
    "name": "Shoulder Mobility Pullovers",
    "cue": "Ribs down, no lumbar arch.",
    "cat": "prep",
    "unit": "lb",
-   "q": "dumbbell shoulder mobility pullover ribs down"
+   "q": "dumbbell shoulder mobility pullover ribs down",
+   "equip": "light dumbbell",
+   "loc": "both",
+   "alt": "Band overhead pull, or a broomstick"
   },
   "bandpa": {
    "name": "Band Pull-Apart",
    "cue": "Straight arms, low load, high reps.",
    "cat": "prep",
    "unit": "none",
-   "q": "band pull apart proper form"
+   "q": "band pull apart proper form",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "banderer90": {
    "name": "Band External Rotation @ 90 deg",
    "cue": "Upper arm parallel to floor. No shrug.",
    "cat": "prep",
    "unit": "none",
-   "q": "band external rotation at 90 degrees shoulder"
+   "q": "band external rotation at 90 degrees shoulder",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "banderir": {
    "name": "Band ER / IR",
    "cue": "Elbow pinned. Rotate from the shoulder, not the wrist.",
    "cat": "prep",
    "unit": "none",
-   "q": "band internal external rotation shoulder warm up"
+   "q": "band internal external rotation shoulder warm up",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "wristsnap": {
    "name": "Wrist Snaps into wall",
    "cue": "Light ball. Snap, don't push.",
    "cat": "prep",
    "unit": "none",
-   "q": "wrist snap drill throwing into wall baseball"
+   "q": "wrist snap drill throwing into wall baseball",
+   "equip": "ball + wall",
+   "loc": "both",
+   "alt": "Tennis ball works for all of these"
   },
   "hipskip": {
    "name": "Hip Mobility ER/IR Skips",
    "cue": "Loose, rhythmic.",
    "cat": "agility",
    "unit": "none",
-   "q": "hip external internal rotation skip warm up drill"
+   "q": "hip external internal rotation skip warm up drill",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "anklelift": {
    "name": "Ankle Mobility Liftoff",
    "cue": "Knee tracks over toe.",
    "cat": "prep",
    "unit": "none",
-   "q": "ankle mobility liftoff drill knee over toe"
+   "q": "ankle mobility liftoff drill knee over toe",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "quadiso": {
    "name": "Quad Tendon Isometric @ ~60 deg",
    "cue": "70% effort. BEFORE training, not after. ~45 min analgesic window.",
    "cat": "prep",
    "unit": "none",
-   "q": "spanish squat isometric quad tendon 45 second hold"
+   "q": "spanish squat isometric quad tendon 45 second hold",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "pogos": {
    "name": "Pogos",
    "cue": "Stiff ankles, minimal knee bend, quiet.",
    "cat": "plyo",
    "unit": "none",
-   "q": "pogo jumps stiff ankle plyometric"
+   "q": "pogo jumps stiff ankle plyometric",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "cablerot": {
    "name": "Cable Rotation / Rib Dissociation",
    "cue": "Hips quiet. Rotate the ribcage on the pelvis.",
    "cat": "power",
    "unit": "lb",
-   "q": "cable rib dissociation rotation hips quiet drill"
+   "q": "cable rib dissociation rotation hips quiet drill",
+   "equip": "cable machine",
+   "loc": "gym"
   },
   "mbsplit": {
    "name": "MB Split Stance Toss into wall",
    "cue": "Load the back hip. Drive with hip rotation, not the arm.",
    "cat": "power",
    "unit": "lb",
-   "q": "split stance rotational medicine ball throw into wall"
+   "q": "split stance rotational medicine ball throw into wall",
+   "equip": "medicine ball",
+   "loc": "gym",
+   "alt": "Any med ball; weight matters less than intent"
   },
   "plyopush": {
    "name": "Plyo Push-up",
    "cue": "Hands leave the floor. Land soft.",
    "cat": "power",
    "unit": "none",
-   "q": "plyometric push up hands leave floor"
+   "q": "plyometric push up hands leave floor",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "plyoballrev": {
    "name": "Plyo Ball Reverse Throw into wall",
    "cue": "Controlled. This is the eccentric ER drill.",
    "cat": "power",
    "unit": "lb",
-   "q": "driveline reverse throw plyo ball"
+   "q": "driveline reverse throw plyo ball",
+   "equip": "ball + wall",
+   "loc": "both",
+   "alt": "Tennis ball works for all of these"
   },
   "mbrepeat": {
    "name": "Med Ball Repeat Toss",
    "cue": "Continuous, rhythmic, no pause.",
    "cat": "power",
    "unit": "lb",
-   "q": "medicine ball chest pass repeat toss wall"
+   "q": "medicine ball chest pass repeat toss wall",
+   "equip": "medicine ball",
+   "loc": "gym",
+   "alt": "Any med ball; weight matters less than intent"
   },
   "ripthrough": {
    "name": "Band or Cable Rip Through",
    "cue": "Explosive. Finish tall.",
    "cat": "power",
    "unit": "lb",
-   "q": "band rip through rotational power drill"
+   "q": "band rip through rotational power drill",
+   "equip": "cable machine",
+   "loc": "gym"
   },
   "mbshotput": {
    "name": "Step-behind Rotational MB Shotput",
    "cue": "Build momentum. Land into a stiff front leg.",
    "cat": "power",
    "unit": "lb",
-   "q": "step behind rotational medicine ball shotput"
+   "q": "step behind rotational medicine ball shotput",
+   "equip": "medicine ball",
+   "loc": "gym",
+   "alt": "Any med ball; weight matters less than intent"
   },
   "mbscoop": {
    "name": "MB Scoop Throw",
    "cue": "Full extension. Finish tall.",
    "cat": "power",
    "unit": "lb",
-   "q": "medicine ball scoop toss rotational distance"
+   "q": "medicine ball scoop toss rotational distance",
+   "equip": "medicine ball",
+   "loc": "gym",
+   "alt": "Any med ball; weight matters less than intent"
   },
   "mbvertunder": {
    "name": "CM Vertical Underhand MB Throw",
    "cue": "Priming only. Max intent, zero fatigue.",
    "cat": "power",
    "unit": "lb",
-   "q": "countermovement vertical underhand medicine ball throw"
+   "q": "countermovement vertical underhand medicine ball throw",
+   "equip": "medicine ball",
+   "loc": "gym",
+   "alt": "Any med ball; weight matters less than intent"
   },
   "mbvertover": {
    "name": "Vertical Overhand MB Throw",
    "cue": "Priming only.",
    "cat": "power",
    "unit": "lb",
-   "q": "vertical overhand medicine ball throw"
+   "q": "vertical overhand medicine ball throw",
+   "equip": "medicine ball",
+   "loc": "gym",
+   "alt": "Any med ball; weight matters less than intent"
   },
   "mbbroad": {
    "name": "Broad Jump MB Throw",
    "cue": "Priming only.",
    "cat": "power",
    "unit": "lb",
-   "q": "broad jump medicine ball throw"
+   "q": "broad jump medicine ball throw",
+   "equip": "medicine ball",
+   "loc": "gym",
+   "alt": "Any med ball; weight matters less than intent"
   },
   "penult": {
    "name": "Lean/Fall Penultimate Jumps",
    "cue": "Long low penultimate step, quick final step.",
    "cat": "plyo",
    "unit": "none",
-   "q": "penultimate step jump drill volleyball approach lean fall"
+   "q": "penultimate step jump drill volleyball approach lean fall",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "boxrepeat": {
    "name": "Box or Hurdle Repeat Jumps",
    "cue": "Minimise ground contact.",
    "cat": "plyo",
    "unit": "none",
-   "q": "repeat box jumps hurdle hops minimal ground contact"
+   "q": "repeat box jumps hurdle hops minimal ground contact",
+   "equip": "plyo box",
+   "loc": "gym",
+   "alt": "A sturdy bench, or step platforms"
   },
   "altdrop": {
    "name": "Altitude Drop Progressions",
    "cue": "Step off. Land TALL, stiffer knees.",
    "cat": "plyo",
    "unit": "none",
-   "q": "altitude drop landing drill plyometric"
+   "q": "altitude drop landing drill plyometric",
+   "equip": "plyo box",
+   "loc": "gym",
+   "alt": "A sturdy bench, or step platforms"
   },
   "deepnocm": {
    "name": "Deep Non Countermovement Assisted Jump",
    "cue": "No countermovement. Pure concentric.",
    "cat": "plyo",
    "unit": "none",
-   "q": "non countermovement squat jump no countermovement"
+   "q": "non countermovement squat jump no countermovement",
+   "equip": "plyo box",
+   "loc": "gym",
+   "alt": "A sturdy bench, or step platforms"
   },
   "slmultibox": {
    "name": "Single Leg Multi Directional Box Jump",
    "cue": "Control the landing.",
    "cat": "plyo",
    "unit": "none",
-   "q": "single leg multi directional box jump"
+   "q": "single leg multi directional box jump",
+   "equip": "plyo box",
+   "loc": "gym",
+   "alt": "A sturdy bench, or step platforms"
   },
   "bandpogo": {
    "name": "Band Resisted Pogos",
    "cue": "Fast, low amplitude.",
    "cat": "plyo",
    "unit": "none",
-   "q": "band resisted pogo jumps"
+   "q": "band resisted pogo jumps",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "approach": {
    "name": "4-Step Approach Jump",
    "cue": "Arms back then up. Max downswing = final foot strike.",
    "cat": "plyo",
    "unit": "none",
-   "q": "volleyball 4 step approach jump technique arm swing"
+   "q": "volleyball 4 step approach jump technique arm swing",
+   "equip": "run-up space + ceiling height",
+   "loc": "gym",
+   "alt": "Do these at volleyball instead if the gym ceiling is low"
   },
   "blocksim": {
    "name": "Block Jump Simulation",
    "cue": "5 consecutive jumps.",
    "cat": "plyo",
    "unit": "none",
-   "q": "volleyball block jump repeat footwork drill"
+   "q": "volleyball block jump repeat footwork drill",
+   "equip": "ceiling height",
+   "loc": "gym",
+   "alt": "Do these at volleyball instead"
   },
   "hangclean": {
    "name": "Hang Power Clean",
    "cue": "Violent hip extension. Catch tall.",
    "cat": "lower",
    "unit": "lb",
-   "q": "hang power clean technique"
+   "q": "hang power clean technique",
+   "equip": "barbell + rack",
+   "loc": "gym"
   },
   "squatacc": {
    "name": "Squat (Accelerative Strength)",
    "cue": "Full depth. Move the bar fast.",
    "cat": "lower",
    "unit": "lb",
-   "q": "speed squat accelerative back squat bar speed"
+   "q": "speed squat accelerative back squat bar speed",
+   "equip": "barbell + rack",
+   "loc": "gym"
   },
   "squatabs": {
    "name": "Absolute Strength Squat",
    "cue": "Heavy. Full depth.",
    "cat": "lower",
    "unit": "lb",
-   "q": "heavy back squat form"
+   "q": "heavy back squat form",
+   "equip": "barbell + rack",
+   "loc": "gym"
   },
   "heelsnarrow": {
    "name": "Heels Elevated Narrow Squat",
    "cue": "Deep and quad-biased. Week 5+ only.",
    "cat": "lower",
    "unit": "lb",
-   "q": "heels elevated narrow stance squat"
+   "q": "heels elevated narrow stance squat",
+   "equip": "barbell + rack",
+   "loc": "gym"
   },
   "hamcurl": {
    "name": "Worlds Greatest Hamstring Curl",
    "cue": "Control the eccentric.",
    "cat": "lower",
    "unit": "lb",
-   "q": "nordic hamstring curl eccentric"
+   "q": "nordic hamstring curl eccentric",
+   "equip": "partner or anchored heels",
+   "loc": "gym",
+   "alt": "Hook heels under a lat-pulldown seat or a loaded barbell; or use the 45-degree bench"
   },
   "soleus": {
    "name": "Soleus Raise",
    "cue": "BENT KNEE. This is the one sprints don't train.",
    "cat": "lower",
    "unit": "lb",
-   "q": "seated calf raise bent knee soleus"
+   "q": "seated calf raise bent knee soleus",
+   "equip": "seated calf machine",
+   "loc": "gym",
+   "alt": "Bent-knee calf raise holding dumbbells, or a Smith machine"
   },
   "ecccalf": {
    "name": "Eccentric Calf Raise",
    "cue": "3s down.",
    "cat": "lower",
    "unit": "lb",
-   "q": "eccentric calf raise slow lowering"
+   "q": "eccentric calf raise slow lowering",
+   "equip": "dumbbells",
+   "loc": "both"
   },
   "spanish": {
    "name": "Spanish Squat (~60 deg)",
    "cue": "Band behind the knees. Stay tall.",
    "cat": "lower",
    "unit": "none",
-   "q": "spanish squat band knee isometric"
+   "q": "spanish squat band knee isometric",
+   "equip": "thick band + rack anchor",
+   "loc": "both",
+   "alt": "Plain wall sit at the same knee angle"
   },
   "trapjump": {
    "name": "Trap Bar Jump",
    "cue": "30% load. Intent is speed.",
    "cat": "lower",
    "unit": "lb",
-   "q": "trap bar jump loaded jump squat"
+   "q": "trap bar jump loaded jump squat",
+   "equip": "trap/hex bar",
+   "loc": "gym",
+   "alt": "DB jump squat holding two dumbbells"
   },
   "bandassistjump": {
    "name": "Band Assisted Jump",
    "cue": "Overspeed. Let the band help.",
    "cat": "lower",
    "unit": "none",
-   "q": "band assisted jump overspeed"
+   "q": "band assisted jump overspeed",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "bench": {
    "name": "Bench Press",
    "cue": "Elbows tucked 45-60 deg, NEVER flared to 90. Scap retracted + depressed.",
    "cat": "upper",
    "unit": "lb",
-   "q": "barbell bench press elbow tuck scapula retract"
+   "q": "barbell bench press elbow tuck scapula retract",
+   "equip": "barbell + rack",
+   "loc": "gym"
   },
   "incline": {
    "name": "Incline Bench Press",
    "cue": "Same elbow rule.",
    "cat": "upper",
    "unit": "lb",
-   "q": "incline barbell bench press form"
+   "q": "incline barbell bench press form",
+   "equip": "barbell + rack",
+   "loc": "gym"
   },
   "latpulldown": {
    "name": "Half Kneel Lat Pulldown",
    "cue": "Ribs down. Pull with the lat, not the bicep.",
    "cat": "upper",
    "unit": "lb",
-   "q": "half kneeling lat pulldown"
+   "q": "half kneeling lat pulldown",
+   "equip": "cable machine",
+   "loc": "gym"
   },
   "pullover": {
    "name": "DB Pullover",
    "cue": "BENT ARM. Stop short of full end range.",
    "cat": "upper",
    "unit": "lb",
-   "q": "dumbbell pullover bent arm form"
+   "q": "dumbbell pullover bent arm form",
+   "equip": "dumbbells",
+   "loc": "both"
   },
   "stiffarmpd": {
    "name": "Cable Stiff-Arm Pulldown",
    "cue": "Fallback for the pullover if pinching returns.",
    "cat": "upper",
    "unit": "lb",
-   "q": "cable stiff arm pulldown lat"
+   "q": "cable stiff arm pulldown lat",
+   "equip": "cable machine",
+   "loc": "gym"
   },
   "dbrow": {
    "name": "Split Stance DB Row",
    "cue": "Full stretch at the bottom.",
    "cat": "upper",
    "unit": "lb",
-   "q": "split stance dumbbell row"
+   "q": "split stance dumbbell row",
+   "equip": "dumbbells",
+   "loc": "both"
   },
   "invrow": {
    "name": "Inverted Row",
    "cue": "Body rigid. Chest to the bar.",
    "cat": "upper",
    "unit": "lb",
-   "q": "inverted row form"
+   "q": "inverted row form",
+   "equip": "bar or rings",
+   "loc": "gym",
+   "alt": "Table-edge row, or a band row"
   },
   "landmine": {
    "name": "Landmine Split Stance Dip Press",
    "cue": "Shoulder-friendly press angle.",
    "cat": "upper",
    "unit": "lb",
-   "q": "landmine press split stance"
+   "q": "landmine press split stance",
+   "equip": "landmine attachment",
+   "loc": "gym",
+   "alt": "Wedge a barbell into a corner, or single-arm DB press"
   },
   "fingercurl": {
    "name": "Finger Tip Curls",
    "cue": "Slow. Relevant to ball grip.",
    "cat": "upper",
    "unit": "lb",
-   "q": "finger tip curls forearm grip"
+   "q": "finger tip curls forearm grip",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "sidelyer": {
    "name": "Side-lying DB External Rotation",
    "cue": "3s lower. Light.",
    "cat": "upper",
    "unit": "lb",
-   "q": "side lying dumbbell external rotation"
+   "q": "side lying dumbbell external rotation",
+   "equip": "light dumbbell",
+   "loc": "both",
+   "alt": "Band external rotation lying on your side"
   },
   "serratus": {
    "name": "Serratus Wall Slide",
    "cue": "Push INTO the wall. Reach long at the top.",
    "cat": "upper",
    "unit": "none",
-   "q": "serratus wall slide"
+   "q": "serratus wall slide",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "pronepull": {
    "name": "Prone Pull Through",
    "cue": "Short range. Scap retraction.",
    "cat": "upper",
    "unit": "lb",
-   "q": "prone trap raise pull through shoulder"
+   "q": "prone trap raise pull through shoulder",
+   "equip": "light dumbbells",
+   "loc": "both",
+   "alt": "Band pull-through, or no weight at all"
   },
   "revfly": {
    "name": "Reverse Fly",
    "cue": "Light. Squeeze the blades.",
    "cat": "upper",
    "unit": "lb",
-   "q": "dumbbell reverse fly"
+   "q": "dumbbell reverse fly",
+   "equip": "dumbbells",
+   "loc": "both"
   },
   "pallof": {
    "name": "Pallof Press",
    "cue": "Resist the rotation. Ribs down.",
    "cat": "upper",
    "unit": "lb",
-   "q": "pallof press anti rotation"
+   "q": "pallof press anti rotation",
+   "equip": "cable or band",
+   "loc": "both",
+   "alt": "Band anchored at chest height"
   },
   "revthrow": {
    "name": "Reverse Throws (plyo ball)",
    "cue": "ALWAYS FIRST in the plyo ball routine.",
    "cat": "throw",
    "unit": "lb",
-   "q": "driveline reverse throws plyo ball"
+   "q": "driveline reverse throws plyo ball",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "pivotpick": {
    "name": "Pivot Picks (plyo ball)",
    "cue": "Always second.",
    "cat": "throw",
    "unit": "lb",
-   "q": "driveline pivot pickoff drill plyo ball"
+   "q": "driveline pivot pickoff drill plyo ball",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "rollin": {
    "name": "Roll-ins (plyo ball)",
    "cue": "Max effort.",
    "cat": "throw",
    "unit": "lb",
-   "q": "driveline roll in throw plyo ball"
+   "q": "driveline roll in throw plyo ball",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "walkwind": {
    "name": "Walking Windups (plyo ball)",
    "cue": "ALWAYS LAST.",
    "cat": "throw",
    "unit": "lb",
-   "q": "driveline walking windup plyo ball"
+   "q": "driveline walking windup plyo ball",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "catchplay": {
    "name": "Catch Play Build-up",
    "cue": "Build intensity gradually.",
    "cat": "throw",
    "unit": "none",
-   "q": "baseball catch play warm up routine"
+   "q": "baseball catch play warm up routine",
+   "equip": "partner or wall",
+   "loc": "gym",
+   "alt": "Wall at 1.5-2 m"
   },
   "longtoss": {
    "name": "Long Toss",
    "cue": "Build to max distance.",
    "cat": "throw",
    "unit": "none",
-   "q": "baseball long toss progression"
+   "q": "baseball long toss progression",
+   "equip": "outdoor space",
+   "loc": "outdoor",
+   "alt": "Spring only. No indoor substitute"
   },
   "wball": {
    "name": "Weighted Ball Throws",
    "cue": "Week 5+. Never off a mound, never cold.",
    "cat": "throw",
    "unit": "oz",
-   "q": "driveline weighted baseball throwing program"
+   "q": "driveline weighted baseball throwing program",
+   "equip": "weighted / plyo balls",
+   "loc": "gym",
+   "alt": "Tennis ball as the underload; the gym's weighted balls for overload"
   },
   "velotest": {
    "name": "Velocity Test (video flight time)",
    "cue": "240fps, 60ft, 5 throws. mph = 9816/frames.",
    "cat": "test",
    "unit": "mph",
-   "q": "measure pitch speed slow motion video frame count"
+   "q": "measure pitch speed slow motion video frame count",
+   "equip": "60 ft + phone at 240fps",
+   "loc": "outdoor",
+   "alt": "Spring only. Track the MB scoop throw instead"
   },
   "towel": {
    "name": "Towel Drill",
    "cue": "No ball. Snap the towel through release. Full mechanics, zero space.",
    "cat": "throw",
    "unit": "none",
-   "q": "baseball towel drill pitching mechanics"
+   "q": "baseball towel drill pitching mechanics",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "wristw": {
    "name": "Wrist Weight Arm Action",
    "cue": "1-2 lb wrist weight. Slow, full throwing arm path. No release.",
    "cat": "throw",
    "unit": "lb",
-   "q": "wrist weight arm action driveline throwing"
+   "q": "wrist weight arm action driveline throwing",
+   "equip": "wrist weights (~$15)",
+   "loc": "both",
+   "alt": "Hold a 2 lb dumbbell, or a light band in the hand"
   },
   "tubing": {
    "name": "Shoulder Tubing / J-Band Series",
    "cue": "Full J-band series. This is the arm care backbone all winter.",
    "cat": "throw",
    "unit": "none",
-   "q": "jaeger j band shoulder tubing full series"
+   "q": "jaeger j band shoulder tubing full series",
+   "equip": "J-bands / shoulder tubing (~$25)",
+   "loc": "both",
+   "alt": "Any light resistance band, or a light cable stack"
   },
   "wallrev": {
    "name": "Reverse Throw into padded wall",
    "cue": "1.5-2 m from the wall. Controlled. Eccentric ER drill.",
    "cat": "throw",
    "unit": "lb",
-   "q": "driveline reverse throw plyo ball wall"
+   "q": "driveline reverse throw plyo ball wall",
+   "equip": "plyo ball + padded wall",
+   "loc": "gym",
+   "alt": "Tennis ball, or a 1 kg med ball into a mat"
   },
   "wallpivot": {
    "name": "Pivot Pick into padded wall",
    "cue": "1.5-2 m. Torso rotation, arm along for the ride.",
    "cat": "throw",
    "unit": "lb",
-   "q": "driveline pivot pickoff drill wall"
+   "q": "driveline pivot pickoff drill wall",
+   "equip": "plyo ball + padded wall",
+   "loc": "gym",
+   "alt": "Tennis ball into a mat"
   },
   "wallrocker": {
    "name": "Rocker Throw into padded wall",
    "cue": "Rock back, rock forward, throw. Momentum into a stiff front leg.",
    "cat": "throw",
    "unit": "lb",
-   "q": "driveline rocker drill plyo ball wall"
+   "q": "driveline rocker drill plyo ball wall",
+   "equip": "plyo ball + padded wall",
+   "loc": "gym",
+   "alt": "Tennis ball into a mat"
   },
   "wallwind": {
    "name": "Walking Windup into padded wall",
    "cue": "Last drill. Full sequence at controlled intent.",
    "cat": "throw",
    "unit": "lb",
-   "q": "driveline walking windup plyo ball"
+   "q": "driveline walking windup plyo ball",
+   "equip": "plyo ball + padded wall",
+   "loc": "gym",
+   "alt": "Tennis ball into a mat"
   },
   "tennisrebound": {
    "name": "Tennis Ball Wall Rebound",
    "cue": "1.5 m from wall. Continuous throw-and-catch. Fast hands, low load.",
    "cat": "throw",
    "unit": "none",
-   "q": "tennis ball wall rebound reaction drill baseball"
+   "q": "tennis ball wall rebound reaction drill baseball",
+   "equip": "ball + wall",
+   "loc": "both",
+   "alt": "Tennis ball works for all of these"
   },
   "ribdis": {
    "name": "Rib / Pelvis Dissociation Hold",
    "cue": "Hips square, ribs rotate. This IS hip-shoulder separation.",
    "cat": "throw",
    "unit": "none",
-   "q": "hip shoulder separation drill rib pelvis dissociation"
+   "q": "hip shoulder separation drill rib pelvis dissociation",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "rfess": {
    "name": "RFESS Progressions",
    "cue": "Rear foot elevated. Front shin vertical, torso tall.",
    "cat": "lower",
    "unit": "lb",
-   "q": "rear foot elevated split squat form"
+   "q": "rear foot elevated split squat form",
+   "equip": "dumbbells",
+   "loc": "both"
   },
   "kickrdl": {
    "name": "Kickstand RDL",
    "cue": "Back toe as a kickstand. Hinge, feel the front hamstring.",
    "cat": "lower",
    "unit": "lb",
-   "q": "kickstand RDL single leg romanian deadlift"
+   "q": "kickstand RDL single leg romanian deadlift",
+   "equip": "dumbbells",
+   "loc": "both"
   },
   "hipflex": {
    "name": "Cable Hip Flexor Drivers",
    "cue": "Drive the knee. This is the stride-length lift.",
    "cat": "lower",
    "unit": "lb",
-   "q": "cable hip flexor driver march knee drive"
+   "q": "cable hip flexor driver march knee drive",
+   "equip": "cable + ankle strap",
+   "loc": "gym",
+   "alt": "Band looped round the foot, anchored low"
   },
   "hipext45": {
    "name": "45 Degree Hip Extension",
    "cue": "Glute and hamstring, not lower back.",
    "cat": "lower",
    "unit": "lb",
-   "q": "45 degree back extension hip extension glute"
+   "q": "45 degree back extension hip extension glute",
+   "equip": "45-degree back extension bench",
+   "loc": "gym",
+   "alt": "Back extension machine, or a barbell hip thrust"
   },
   "dotdrill": {
    "name": "Dot Drill (2 foot / 1 foot V)",
    "cue": "Fast feet, quiet landings. Footwork, not power.",
    "cat": "agility",
    "unit": "none",
-   "q": "dot drill footwork agility 5 dot"
+   "q": "dot drill footwork agility 5 dot",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "curvedrun": {
    "name": "Curved Runs",
    "cue": "Lean into the curve. 20-30 m arcs.",
    "cat": "agility",
    "unit": "none",
-   "q": "curved run sprint mechanics drill"
+   "q": "curved run sprint mechanics drill",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "olcalf": {
    "name": "One Leg Calf Raise Progressions",
    "cue": "Full range, pause at the top.",
    "cat": "lower",
    "unit": "lb",
-   "q": "single leg calf raise progression"
+   "q": "single leg calf raise progression",
+   "equip": "dumbbells",
+   "loc": "both"
   },
   "hamslider": {
    "name": "Hamstring Slider Progressions",
    "cue": "Control the eccentric. Hips stay up.",
    "cat": "lower",
    "unit": "lb",
-   "q": "hamstring slider curl eccentric"
+   "q": "hamstring slider curl eccentric",
+   "equip": "furniture sliders",
+   "loc": "gym",
+   "alt": "Towels on a smooth floor, or a stability-ball leg curl"
   },
   "hipbridge": {
    "name": "Rapid Hip Bridge Progression",
    "cue": "Fast, rhythmic. Glutes not lower back.",
    "cat": "lower",
    "unit": "lb",
-   "q": "rapid hip bridge glute bridge progression"
+   "q": "rapid hip bridge glute bridge progression",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "ankle3d": {
    "name": "3D Ankle Blaster",
    "cue": "All three planes. Small range, high control.",
    "cat": "prep",
    "unit": "none",
-   "q": "3d ankle mobility strength drill"
+   "q": "3d ankle mobility strength drill",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "ankleres": {
    "name": "Resisted Ankle Circles",
    "cue": "Band around the foot. Slow circles.",
    "cat": "prep",
    "unit": "lb",
-   "q": "resisted ankle circles band"
+   "q": "resisted ankle circles band",
+   "equip": "band",
+   "loc": "both"
   },
   "rdl": {
    "name": "Romanian Deadlift",
    "cue": "Hinge. Bar close. Stop where the hamstrings stop.",
    "cat": "lower",
    "unit": "lb",
-   "q": "romanian deadlift barbell form"
+   "q": "romanian deadlift barbell form",
+   "equip": "barbell + rack",
+   "loc": "gym"
   },
   "splitrepeat": {
    "name": "Band Resisted Split Stance Repeats",
    "cue": "Split stance, repeated fast reps against the band.",
    "cat": "plyo",
    "unit": "none",
-   "q": "band resisted split stance jump repeats"
+   "q": "band resisted split stance jump repeats",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "razor": {
    "name": "Razor Curl Progressions",
    "cue": "Hips extended throughout. Hard.",
    "cat": "lower",
    "unit": "lb",
-   "q": "razor curl hamstring"
+   "q": "razor curl hamstring",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "reversal": {
    "name": "Rhythm Reversal Strength",
    "cue": "Rhythmic reps. Fast reversal out of the bottom.",
    "cat": "lower",
    "unit": "lb",
-   "q": "rhythm reversal squat strength"
+   "q": "rhythm reversal squat strength",
+   "equip": "barbell + rack",
+   "loc": "gym"
   },
   "sledmarch": {
    "name": "Sled March",
    "cue": "Low, driving marches. Long contacts.",
    "cat": "lower",
    "unit": "lb",
-   "q": "sled march drive"
+   "q": "sled march drive",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "recipinhib": {
    "name": "Lower Leg Reciprocal Inhibition",
    "cue": "Tib raise then calf raise, alternating.",
    "cat": "prep",
    "unit": "none",
-   "q": "tibialis raise calf raise reciprocal"
+   "q": "tibialis raise calf raise reciprocal",
+   "equip": "bodyweight",
+   "loc": "both"
   },
   "ctread": {
    "name": "Curved Treadmill Sprint",
    "cat": "agility",
    "unit": "none",
    "cue": "8s max effort. Hands off the rails. Walk-back recovery.",
-   "q": "curved treadmill sprint assault airrunner technique"
+   "q": "curved treadmill sprint assault airrunner technique",
+   "equip": "curved treadmill",
+   "loc": "gym"
   },
   "ctreadres": {
    "name": "Curved Treadmill Resisted Sprint",
    "cat": "agility",
    "unit": "none",
    "cue": "Moderate resistance. 6s, driving. Stride length, not turnover.",
-   "q": "resisted curved treadmill sprint magnetic resistance training"
+   "q": "resisted curved treadmill sprint magnetic resistance training",
+   "equip": "curved treadmill with resistance",
+   "loc": "gym"
   },
   "sledpush": {
    "name": "Sled Push (acceleration)",
    "cat": "lower",
    "unit": "lb",
    "cue": "Low body angle, long drives. This is the acceleration lift.",
-   "q": "heavy sled push acceleration sprint technique"
+   "q": "heavy sled push acceleration sprint technique",
+   "equip": "sled",
+   "loc": "gym"
   }
  },
  "days": {

@@ -644,6 +644,7 @@ function vSession(){
             <svg viewBox="0 0 24 24"><path d="M4 5.8v12.4a1 1 0 0 0 1.52.85l10.3-6.2a1 1 0 0 0 0-1.7L5.52 4.95A1 1 0 0 0 4 5.8z"/></svg>
             How&nbsp;to</a></div>
         ${ex.cue?`<div class="cue">${esc(ex.cue)}</div>`:''}
+        ${ex.alt?`<div class="equip"><b>${esc(ex.equip||'')}</b> — no dice? ${esc(ex.alt)}</div>`:''}
         <div class="rx">${esc(rx.sets)} × ${esc(rx.reps)}${
           L?` @ <b>${loadLabel(L, ex.unit)}</b>`:''}${
           String(rx.rest).trim()&&String(rx.rest).trim()!=='-'?` · rest ${esc(rx.rest)}`:''}${
@@ -791,6 +792,14 @@ function vData(){
       value="${S.settings.bw ?? ''}" data-set="bw" style="max-width:150px">
       <span class="muted tiny grow">stays on this device, never in the repo</span></div>
     <div class="tiny" style="margin-top:8px">Used for the ×bodyweight column on key lifts.</div></div>
+  <h2>Kit you still need</h2><div class="card tight"><table>
+    <tr><td>5 oz baseball</td><td class="r muted">~$10</td></tr>
+    <tr><td>J-bands / shoulder tubing</td><td class="r muted">~$25</td></tr>
+    <tr><td>Wrist weights, 1–2 lb</td><td class="r muted">~$15</td></tr>
+    <tr><td>Light dumbbells for home, 5 lb pair</td><td class="r muted">~$20</td></tr>
+    <tr><td>Furniture sliders</td><td class="r muted">~$10, or use towels</td></tr>
+  </table><div class="tiny" style="margin-top:10px">Everything else is at GoodLife or is
+   bodyweight. Any exercise needing kit the gym may not stock shows a substitute on its card.</div></div>
   <h2>Rest alarm</h2><div class="card tight"><table>
     <tr><td>Sound at end of rest</td><td class="r"><span class="pill g">On</span></td></tr>
     <tr><td>Phone notification</td><td class="r">${
