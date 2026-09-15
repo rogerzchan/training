@@ -81,7 +81,7 @@
   "hipskip": {
    "name": "Hip Mobility ER/IR Skips",
    "cue": "Loose, rhythmic.",
-   "cat": "prep",
+   "cat": "agility",
    "unit": "none",
    "q": "hip external internal rotation skip warm up drill"
   },
@@ -525,6 +525,125 @@
    "cat": "throw",
    "unit": "none",
    "q": "hip shoulder separation drill rib pelvis dissociation"
+  },
+  "rfess": {
+   "name": "RFESS Progressions",
+   "cue": "Rear foot elevated. Front shin vertical, torso tall.",
+   "cat": "lower",
+   "unit": "lb",
+   "q": "rear foot elevated split squat form"
+  },
+  "kickrdl": {
+   "name": "Kickstand RDL",
+   "cue": "Back toe as a kickstand. Hinge, feel the front hamstring.",
+   "cat": "lower",
+   "unit": "lb",
+   "q": "kickstand RDL single leg romanian deadlift"
+  },
+  "hipflex": {
+   "name": "Cable Hip Flexor Drivers",
+   "cue": "Drive the knee. This is the stride-length lift.",
+   "cat": "lower",
+   "unit": "lb",
+   "q": "cable hip flexor driver march knee drive"
+  },
+  "hipext45": {
+   "name": "45 Degree Hip Extension",
+   "cue": "Glute and hamstring, not lower back.",
+   "cat": "lower",
+   "unit": "lb",
+   "q": "45 degree back extension hip extension glute"
+  },
+  "dotdrill": {
+   "name": "Dot Drill (2 foot / 1 foot V)",
+   "cue": "Fast feet, quiet landings. Footwork, not power.",
+   "cat": "agility",
+   "unit": "none",
+   "q": "dot drill footwork agility 5 dot"
+  },
+  "curvedrun": {
+   "name": "Curved Runs",
+   "cue": "Lean into the curve. 20-30 m arcs.",
+   "cat": "agility",
+   "unit": "none",
+   "q": "curved run sprint mechanics drill"
+  },
+  "olcalf": {
+   "name": "One Leg Calf Raise Progressions",
+   "cue": "Full range, pause at the top.",
+   "cat": "lower",
+   "unit": "lb",
+   "q": "single leg calf raise progression"
+  },
+  "hamslider": {
+   "name": "Hamstring Slider Progressions",
+   "cue": "Control the eccentric. Hips stay up.",
+   "cat": "lower",
+   "unit": "lb",
+   "q": "hamstring slider curl eccentric"
+  },
+  "hipbridge": {
+   "name": "Rapid Hip Bridge Progression",
+   "cue": "Fast, rhythmic. Glutes not lower back.",
+   "cat": "lower",
+   "unit": "lb",
+   "q": "rapid hip bridge glute bridge progression"
+  },
+  "ankle3d": {
+   "name": "3D Ankle Blaster",
+   "cue": "All three planes. Small range, high control.",
+   "cat": "prep",
+   "unit": "none",
+   "q": "3d ankle mobility strength drill"
+  },
+  "ankleres": {
+   "name": "Resisted Ankle Circles",
+   "cue": "Band around the foot. Slow circles.",
+   "cat": "prep",
+   "unit": "lb",
+   "q": "resisted ankle circles band"
+  },
+  "rdl": {
+   "name": "Romanian Deadlift",
+   "cue": "Hinge. Bar close. Stop where the hamstrings stop.",
+   "cat": "lower",
+   "unit": "lb",
+   "q": "romanian deadlift barbell form"
+  },
+  "splitrepeat": {
+   "name": "Band Resisted Split Stance Repeats",
+   "cue": "Split stance, repeated fast reps against the band.",
+   "cat": "plyo",
+   "unit": "none",
+   "q": "band resisted split stance jump repeats"
+  },
+  "razor": {
+   "name": "Razor Curl Progressions",
+   "cue": "Hips extended throughout. Hard.",
+   "cat": "lower",
+   "unit": "lb",
+   "q": "razor curl hamstring"
+  },
+  "reversal": {
+   "name": "Rhythm Reversal Strength",
+   "cue": "Rhythmic reps. Fast reversal out of the bottom.",
+   "cat": "lower",
+   "unit": "lb",
+   "q": "rhythm reversal squat strength"
+  },
+  "sledmarch": {
+   "name": "Sled March",
+   "cue": "Low, driving marches. Long contacts.",
+   "cat": "lower",
+   "unit": "lb",
+   "q": "sled march drive"
+  },
+  "recipinhib": {
+   "name": "Lower Leg Reciprocal Inhibition",
+   "cue": "Tib raise then calf raise, alternating.",
+   "cat": "prep",
+   "unit": "none",
+   "q": "tibialis raise calf raise reciprocal"
   }
  },
  "days": {
@@ -724,8 +843,8 @@
    ]
   },
   "upperB": {
-   "name": "Upper B + Plyo Microdose",
-   "mins": 80,
+   "name": "Upper B",
+   "mins": 65,
    "blocks": [
     {
      "name": "Prep",
@@ -839,35 +958,6 @@
      ]
     },
     {
-     "name": "Plyo Microdose",
-     "items": [
-      {
-       "ex": "deepnocm",
-       "sets": 3,
-       "reps": "3",
-       "rest": "60s",
-       "bw": true,
-       "rpe": 6
-      },
-      {
-       "ex": "slmultibox",
-       "sets": 3,
-       "reps": "4/leg",
-       "rest": "60s",
-       "bw": true,
-       "rpe": 6
-      },
-      {
-       "ex": "bandpogo",
-       "sets": 3,
-       "reps": "12",
-       "rest": "45s",
-       "bw": true,
-       "rpe": 6
-      }
-     ]
-    },
-    {
      "name": "Arm Care",
      "items": [
       {
@@ -907,8 +997,8 @@
    ]
   },
   "lowerPower": {
-   "name": "Lower Power",
-   "mins": 80,
+   "name": "Lower A \u00b7 Power",
+   "mins": 85,
    "blocks": [
     {
      "name": "Prep",
@@ -2116,6 +2206,387 @@
      "roundRest": "45s"
     }
    ]
+  },
+  "lowerB": {
+   "name": "Lower B \u00b7 Unilateral + Agility",
+   "mins": 75,
+   "blocks": [
+    {
+     "name": "Prep",
+     "circuit": true,
+     "rounds": 2,
+     "roundRest": "45s",
+     "items": [
+      {
+       "ex": "hipskip",
+       "sets": 2,
+       "reps": "20yd",
+       "rest": "-",
+       "bw": true,
+       "rpe": 4
+      },
+      {
+       "ex": "recipinhib",
+       "sets": 2,
+       "reps": "12/side",
+       "rest": "-",
+       "bw": true,
+       "rpe": 4
+      },
+      {
+       "ex": "quadiso",
+       "sets": 5,
+       "reps": "45s",
+       "rest": "-",
+       "bw": true,
+       "rpe": 5,
+       "note": "70% effort, before the session"
+      }
+     ]
+    },
+    {
+     "name": "Footwork + Speed",
+     "items": [
+      {
+       "ex": "dotdrill",
+       "sets": 3,
+       "reps": "30s",
+       "rest": "45s",
+       "bw": true,
+       "rpe": 6
+      },
+      {
+       "ex": "curvedrun",
+       "sets": 4,
+       "reps": "25yd",
+       "rest": "75s",
+       "bw": true,
+       "rpe": 7
+      },
+      {
+       "ex": "splitrepeat",
+       "sets": 3,
+       "reps": "6/side",
+       "rest": "60s",
+       "bw": true,
+       "rpe": 7
+      }
+     ]
+    },
+    {
+     "name": "Unilateral Strength",
+     "items": [
+      {
+       "ex": "rfess",
+       "sets": 4,
+       "reps": "6/leg",
+       "rest": "90s",
+       "start": 70,
+       "step": 5,
+       "every": 3,
+       "cap": 105,
+       "rpe": 8,
+       "note": "A1"
+      },
+      {
+       "ex": "kickrdl",
+       "sets": 4,
+       "reps": "8/leg",
+       "rest": "90s",
+       "start": 45,
+       "step": 5,
+       "every": 3,
+       "cap": 75,
+       "rpe": 7,
+       "note": "A2"
+      },
+      {
+       "ex": "hipflex",
+       "sets": 3,
+       "reps": "8/side",
+       "rest": "60s",
+       "start": 25,
+       "step": 5,
+       "every": 4,
+       "cap": 50,
+       "rpe": 7,
+       "note": "B1"
+      },
+      {
+       "ex": "hipext45",
+       "sets": 3,
+       "reps": "10",
+       "rest": "60s",
+       "start": 25,
+       "step": 5,
+       "every": 4,
+       "cap": 50,
+       "rpe": 7,
+       "note": "B2"
+      }
+     ]
+    },
+    {
+     "name": "Lower Leg",
+     "circuit": true,
+     "rounds": 3,
+     "roundRest": "45s",
+     "items": [
+      {
+       "ex": "olcalf",
+       "sets": 3,
+       "reps": "12/leg",
+       "rest": "-",
+       "start": 25,
+       "step": 5,
+       "every": 4,
+       "cap": 45,
+       "rpe": 7
+      },
+      {
+       "ex": "spanish",
+       "sets": 3,
+       "reps": "30s",
+       "rest": "-",
+       "bw": true,
+       "rpe": 6
+      }
+     ]
+    }
+   ]
+  },
+  "armLowerC": {
+   "name": "Arm Speed + Lower C \u00b7 Extensive",
+   "mins": 80,
+   "blocks": [
+    {
+     "name": "Warm-up",
+     "items": [
+      {
+       "ex": "tubing",
+       "sets": 1,
+       "reps": "full series",
+       "rest": "-",
+       "bw": true,
+       "rpe": 4
+      },
+      {
+       "ex": "banderir",
+       "sets": 2,
+       "reps": "15/arm",
+       "rest": "-",
+       "bw": true,
+       "rpe": 4
+      },
+      {
+       "ex": "ribdis",
+       "sets": 2,
+       "reps": "6/side",
+       "rest": "-",
+       "bw": true,
+       "rpe": 4
+      }
+     ],
+     "circuit": true,
+     "rounds": 2,
+     "roundRest": "45s"
+    },
+    {
+     "name": "Wall Plyo Routine (1.5-2 m, padded wall)",
+     "items": [
+      {
+       "ex": "wallrev",
+       "sets": 3,
+       "reps": "8",
+       "rest": "45s",
+       "fixed": 2,
+       "note": "Always first",
+       "rpe": 6
+      },
+      {
+       "ex": "wallpivot",
+       "sets": 3,
+       "reps": "6",
+       "rest": "60s",
+       "fixed": 2,
+       "note": "Always second",
+       "rpe": 6
+      },
+      {
+       "ex": "wallrocker",
+       "sets": 3,
+       "reps": "5",
+       "rest": "60s",
+       "fixed": 1,
+       "rpe": 6
+      },
+      {
+       "ex": "wallwind",
+       "sets": 3,
+       "reps": "5",
+       "rest": "60s",
+       "fixed": 1,
+       "note": "Always last",
+       "rpe": 6
+      }
+     ]
+    },
+    {
+     "name": "Arm Speed",
+     "items": [
+      {
+       "ex": "wristw",
+       "sets": 3,
+       "reps": "8/arm",
+       "rest": "45s",
+       "start": 2,
+       "step": 0,
+       "every": 1,
+       "rpe": 6
+      },
+      {
+       "ex": "towel",
+       "sets": 3,
+       "reps": "8",
+       "rest": "45s",
+       "bw": true,
+       "rpe": 6
+      }
+     ]
+    },
+    {
+     "name": "Rotational Power",
+     "items": [
+      {
+       "ex": "mbshotput",
+       "sets": 4,
+       "reps": "5/side",
+       "rest": "60s",
+       "fixed": 6,
+       "rpe": 6
+      }
+     ]
+    },
+    {
+     "name": "Arm Care",
+     "items": [
+      {
+       "ex": "sidelyer",
+       "sets": 2,
+       "reps": "12/arm",
+       "rest": "-",
+       "start": 5,
+       "step": 0,
+       "every": 1,
+       "rpe": 4
+      },
+      {
+       "ex": "pronepull",
+       "sets": 2,
+       "reps": "10",
+       "rest": "-",
+       "start": 20,
+       "step": 5,
+       "every": 6,
+       "cap": 30,
+       "rpe": 4
+      },
+      {
+       "ex": "serratus",
+       "sets": 2,
+       "reps": "10",
+       "rest": "-",
+       "bw": true,
+       "rpe": 4
+      }
+     ],
+     "circuit": true,
+     "rounds": 2,
+     "roundRest": "45s"
+    },
+    {
+     "name": "Lower C \u00b7 Posterior + Lower Leg",
+     "items": [
+      {
+       "ex": "rdl",
+       "sets": 3,
+       "reps": "8",
+       "rest": "90s",
+       "start": 185,
+       "step": 10,
+       "every": 3,
+       "cap": 245,
+       "rpe": 7,
+       "note": "C1"
+      },
+      {
+       "ex": "hamslider",
+       "sets": 3,
+       "reps": "8",
+       "rest": "90s",
+       "start": 50,
+       "step": 5,
+       "every": 4,
+       "cap": 75,
+       "rpe": 7,
+       "note": "C2"
+      },
+      {
+       "ex": "hipbridge",
+       "sets": 3,
+       "reps": "12",
+       "rest": "60s",
+       "bw": true,
+       "rpe": 6
+      }
+     ]
+    },
+    {
+     "name": "Ankle + Tissue",
+     "circuit": true,
+     "rounds": 2,
+     "roundRest": "45s",
+     "items": [
+      {
+       "ex": "soleus",
+       "sets": 2,
+       "reps": "15",
+       "rest": "-",
+       "start": 120,
+       "step": 10,
+       "every": 2,
+       "cap": 180,
+       "rpe": 7
+      },
+      {
+       "ex": "ankle3d",
+       "sets": 2,
+       "reps": "10/side",
+       "rest": "-",
+       "bw": true,
+       "rpe": 4
+      },
+      {
+       "ex": "ankleres",
+       "sets": 2,
+       "reps": "20s",
+       "rest": "-",
+       "start": 10,
+       "step": 0,
+       "every": 1,
+       "rpe": 4
+      },
+      {
+       "ex": "pogos",
+       "sets": 2,
+       "reps": "20",
+       "rest": "-",
+       "bw": true,
+       "rpe": 5
+      }
+     ]
+    }
+   ]
   }
  },
  "weeks": [
@@ -2128,11 +2599,11 @@
    "days": [
     "upperA",
     "lowerPower",
-    "armGym",
+    "armLowerC",
     "upperB",
-    "armHome",
+    "lowerB",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
@@ -2149,11 +2620,11 @@
    "days": [
     "upperA",
     "lowerPower",
-    "armGym",
+    "armLowerC",
     "upperB",
-    "armHome",
+    "lowerB",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
@@ -2170,11 +2641,11 @@
    "days": [
     "upperA",
     "lowerPower",
-    "armGym",
+    "armLowerC",
     "upperB",
-    "armHome",
+    "lowerB",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
@@ -2191,11 +2662,11 @@
    "days": [
     "upperA",
     "lowerPower",
-    "armGym",
+    "armLowerC",
     "upperB",
-    "armHome",
+    "lowerB",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
@@ -2212,11 +2683,11 @@
    "days": [
     "upperA",
     "lowerPower",
-    "armGym",
+    "armLowerC",
     "upperB",
-    "armHome",
+    "lowerB",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": "overload: plyo balls 450g/1kg into the wall, 3x5 each, 90s",
    "flags": [
@@ -2236,11 +2707,11 @@
    "days": [
     "upperA",
     "lowerPower",
-    "armGym",
+    "armLowerC",
     "upperB",
-    "armHome",
+    "lowerB",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": "overload: plyo balls 450g/1kg into the wall, 3x5 each, 90s",
    "flags": [],
@@ -2258,11 +2729,11 @@
    "days": [
     "upperA",
     "lowerPower",
-    "armGym",
+    "armLowerC",
     "upperB",
-    "armHome",
+    "lowerB",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": "overload: plyo balls 450g/1kg into the wall, 3x5 each, 90s",
    "flags": [],
@@ -2280,11 +2751,11 @@
    "days": [
     "upperA",
     "lowerPower",
-    "armGym",
+    "armLowerC",
     "upperB",
-    "armHome",
+    "lowerB",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": "overload: plyo balls 450g/1kg into the wall, 3x5 each, 90s",
    "flags": [],
@@ -2302,11 +2773,11 @@
    "days": [
     "upperA",
     "lowerPower",
-    "armGym",
+    "armLowerC",
     "upperB",
-    "armHome",
+    "lowerB",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": "underload: tennis ball + 150g plyo ball, 3x5 each, 90s",
    "flags": [],
@@ -2324,11 +2795,11 @@
    "days": [
     "upperA",
     "lowerPower",
-    "armGym",
+    "armLowerC",
     "upperB",
-    "armHome",
+    "lowerB",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": "underload: tennis ball + 150g plyo ball, 3x5 each, 90s",
    "flags": [
@@ -2348,11 +2819,11 @@
    "days": [
     "upperA",
     "lowerPower",
-    "armGym",
+    "armLowerC",
     "upperB",
-    "armHome",
+    "lowerB",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": "underload: tennis ball + 150g plyo ball, 3x5 each, 90s",
    "flags": [],
@@ -2370,11 +2841,11 @@
    "days": [
     "upperA",
     "lowerPower",
-    "armGym",
+    "armLowerC",
     "upperB",
-    "armHome",
+    "lowerB",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": "underload: tennis ball + 150g plyo ball, 3x5 each, 90s",
    "flags": [],
@@ -2392,11 +2863,11 @@
    "days": [
     "upperA",
     "lowerPower",
-    "armGym",
+    "armLowerC",
     "upperB",
-    "armHome",
+    "lowerB",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [],
@@ -2411,11 +2882,11 @@
    "days": [
     "upperA",
     "lowerPower",
-    "armGym",
+    "armLowerC",
     "upperB",
-    "armHome",
+    "lowerB",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [],
@@ -2430,11 +2901,11 @@
    "days": [
     "upperA",
     "lowerPower",
-    "armGym",
+    "armLowerC",
     "upperB",
-    "armHome",
+    "lowerB",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [],
@@ -2449,11 +2920,11 @@
    "days": [
     "upperA",
     "lowerPower",
-    "armGym",
+    "armLowerC",
     "upperB",
-    "armHome",
+    "lowerB",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
@@ -2470,11 +2941,11 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "armGym",
+    "armLowerC",
     "lowerB2",
     "upperMaint",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
@@ -2491,11 +2962,11 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "armGym",
+    "armLowerC",
     "lowerB2",
     "upperMaint",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
@@ -2512,11 +2983,11 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "armGym",
+    "armLowerC",
     "lowerB2",
     "upperMaint",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
@@ -2533,11 +3004,11 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "armGym",
+    "armLowerC",
     "lowerB2",
     "upperMaint",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
@@ -2554,11 +3025,11 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "armGym",
+    "armLowerC",
     "lowerB2",
     "upperMaint",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
@@ -2576,11 +3047,11 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "armGym",
+    "armLowerC",
     "lowerB2",
     "upperMaint",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
@@ -2597,11 +3068,11 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "armGym",
+    "armLowerC",
     "lowerB2",
     "upperMaint",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
@@ -2618,11 +3089,11 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "armGym",
+    "armLowerC",
     "lowerB2",
     "upperMaint",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
@@ -2639,11 +3110,11 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "armGym",
+    "armLowerC",
     "lowerB2",
     "upperMaint",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
@@ -2660,11 +3131,11 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "armGym",
+    "armLowerC",
     "lowerB2",
     "upperMaint",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
@@ -2682,11 +3153,11 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "armGym",
+    "armLowerC",
     "lowerB2",
     "upperMaint",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
@@ -2703,11 +3174,11 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "armGym",
+    "armLowerC",
     "lowerB2",
     "upperMaint",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
@@ -2724,11 +3195,11 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "armGym",
+    "armLowerC",
     "lowerB2",
     "upperMaint",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
@@ -2745,11 +3216,11 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "armGym",
+    "armLowerC",
     "lowerB2",
     "upperMaint",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
@@ -2768,11 +3239,11 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "armGym",
+    "armLowerC",
     "lowerB2",
     "upperMaint",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
@@ -2790,11 +3261,11 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "armGym",
+    "armLowerC",
     "lowerB2",
     "upperMaint",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
@@ -2812,11 +3283,11 @@
    "days": [
     "lowerA2",
     "upperMaint",
-    "armGym",
+    "armLowerC",
     "lowerB2",
     "upperMaint",
     "volleyball",
-    "off"
+    "armHome"
    ],
    "weightedBalls": null,
    "flags": [
