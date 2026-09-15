@@ -541,7 +541,8 @@
        "reps": "3/side, max effort",
        "rest": "full",
        "note": "Rotational throw for distance. Log your best.",
-       "fixed": 6
+       "fixed": 6,
+       "rpe": 6
       }
      ]
     },
@@ -553,14 +554,16 @@
        "sets": 2,
        "reps": "6/side",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "tspine",
        "sets": 2,
        "reps": "5/side",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "shpullover",
@@ -569,21 +572,24 @@
        "rest": "-",
        "start": 10,
        "step": 0,
-       "every": 1
+       "every": 1,
+       "rpe": 4
       },
       {
        "ex": "bandpa",
        "sets": 2,
        "reps": "15",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "banderer90",
        "sets": 2,
        "reps": "12/arm",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       }
      ],
      "circuit": true,
@@ -601,14 +607,16 @@
        "start": 25,
        "step": 5,
        "every": 4,
-       "cap": 45
+       "cap": 45,
+       "rpe": 6
       },
       {
        "ex": "plyopush",
        "sets": 3,
        "reps": "5",
        "rest": "75s",
-       "bw": true
+       "bw": true,
+       "rpe": 6
       }
      ]
     },
@@ -624,7 +632,8 @@
        "start": 165,
        "step": 5,
        "every": 2,
-       "cap": 210
+       "cap": 210,
+       "rpe": 8
       },
       {
        "ex": "latpulldown",
@@ -635,7 +644,8 @@
        "start": 100,
        "step": 5,
        "every": 2,
-       "cap": 150
+       "cap": 150,
+       "rpe": 7
       },
       {
        "ex": "pullover",
@@ -646,7 +656,8 @@
        "start": 35,
        "step": 5,
        "every": 3,
-       "cap": 55
+       "cap": 55,
+       "rpe": 7
       },
       {
        "ex": "dbrow",
@@ -657,7 +668,8 @@
        "start": 60,
        "step": 5,
        "every": 3,
-       "cap": 80
+       "cap": 80,
+       "rpe": 7
       },
       {
        "ex": "landmine",
@@ -667,7 +679,8 @@
        "start": 35,
        "step": 5,
        "every": 3,
-       "cap": 55
+       "cap": 55,
+       "rpe": 7
       }
      ]
     },
@@ -681,14 +694,16 @@
        "rest": "-",
        "start": 5,
        "step": 0,
-       "every": 1
+       "every": 1,
+       "rpe": 4
       },
       {
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "pronepull",
@@ -698,7 +713,8 @@
        "start": 20,
        "step": 5,
        "every": 6,
-       "cap": 30
+       "cap": 30,
+       "rpe": 4
       }
      ],
      "circuit": true,
@@ -719,14 +735,16 @@
        "sets": 2,
        "reps": "6/side",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "tspine",
        "sets": 2,
        "reps": "5/side",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "shpullover",
@@ -735,21 +753,24 @@
        "rest": "-",
        "start": 10,
        "step": 0,
-       "every": 1
+       "every": 1,
+       "rpe": 4
       },
       {
        "ex": "bandpa",
        "sets": 2,
        "reps": "15",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "banderer90",
        "sets": 2,
        "reps": "12/arm",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       }
      ],
      "circuit": true,
@@ -768,7 +789,8 @@
        "start": 125,
        "step": 5,
        "every": 2,
-       "cap": 165
+       "cap": 165,
+       "rpe": 8
       },
       {
        "ex": "invrow",
@@ -776,7 +798,8 @@
        "reps": "10",
        "rest": "2min",
        "note": "A2",
-       "bw": true
+       "bw": true,
+       "rpe": 7
       },
       {
        "ex": "pullover",
@@ -787,7 +810,8 @@
        "start": 35,
        "step": 5,
        "every": 3,
-       "cap": 55
+       "cap": 55,
+       "rpe": 7
       },
       {
        "ex": "dbrow",
@@ -798,7 +822,8 @@
        "start": 60,
        "step": 5,
        "every": 3,
-       "cap": 80
+       "cap": 80,
+       "rpe": 7
       },
       {
        "ex": "landmine",
@@ -808,7 +833,8 @@
        "start": 35,
        "step": 5,
        "every": 3,
-       "cap": 55
+       "cap": 55,
+       "rpe": 7
       }
      ]
     },
@@ -820,21 +846,24 @@
        "sets": 3,
        "reps": "3",
        "rest": "60s",
-       "bw": true
+       "bw": true,
+       "rpe": 6
       },
       {
        "ex": "slmultibox",
        "sets": 3,
        "reps": "4/leg",
        "rest": "60s",
-       "bw": true
+       "bw": true,
+       "rpe": 6
       },
       {
        "ex": "bandpogo",
        "sets": 3,
        "reps": "12",
        "rest": "45s",
-       "bw": true
+       "bw": true,
+       "rpe": 6
       }
      ]
     },
@@ -848,14 +877,16 @@
        "rest": "-",
        "start": 5,
        "step": 0,
-       "every": 1
+       "every": 1,
+       "rpe": 4
       },
       {
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "revfly",
@@ -865,7 +896,8 @@
        "start": 12.5,
        "step": 2.5,
        "every": 4,
-       "cap": 25
+       "cap": 25,
+       "rpe": 4
       }
      ],
      "circuit": true,
@@ -886,7 +918,8 @@
        "sets": 2,
        "reps": "20yd",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "quadiso",
@@ -894,14 +927,16 @@
        "reps": "45s",
        "rest": "-",
        "note": "70% effort, ~60 deg. BEFORE the session.",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "pogos",
        "sets": 2,
        "reps": "15",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       }
      ],
      "circuit": true,
@@ -916,14 +951,16 @@
        "sets": 4,
        "reps": "3",
        "rest": "60s",
-       "bw": true
+       "bw": true,
+       "rpe": 6
       },
       {
        "ex": "boxrepeat",
        "sets": 3,
        "reps": "5",
        "rest": "75s",
-       "bw": true
+       "bw": true,
+       "rpe": 6
       },
       {
        "ex": "altdrop",
@@ -931,7 +968,8 @@
        "reps": "4",
        "rest": "60s",
        "note": "Week 3+ only",
-       "bw": true
+       "bw": true,
+       "rpe": 6
       }
      ]
     },
@@ -946,7 +984,8 @@
        "start": 155,
        "step": 5,
        "every": 2,
-       "cap": 205
+       "cap": 205,
+       "rpe": 8
       },
       {
        "ex": "squatacc",
@@ -957,7 +996,8 @@
        "start": 235,
        "step": 10,
        "every": 2,
-       "cap": 285
+       "cap": 285,
+       "rpe": 8
       },
       {
        "ex": "hamcurl",
@@ -968,7 +1008,8 @@
        "step": 5,
        "every": 3,
        "cap": 95,
-       "note": "D1"
+       "note": "D1",
+       "rpe": 7
       },
       {
        "ex": "soleus",
@@ -979,7 +1020,8 @@
        "step": 10,
        "every": 2,
        "cap": 180,
-       "note": "D2"
+       "note": "D2",
+       "rpe": 7
       }
      ]
     },
@@ -994,14 +1036,16 @@
        "start": 55,
        "step": 5,
        "every": 3,
-       "cap": 85
+       "cap": 85,
+       "rpe": 7
       },
       {
        "ex": "spanish",
        "sets": 3,
        "reps": "30s",
        "rest": "45s",
-       "bw": true
+       "bw": true,
+       "rpe": 7
       }
      ]
     }
@@ -1019,21 +1063,24 @@
        "sets": 2,
        "reps": "15/arm",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "wristsnap",
        "sets": 2,
        "reps": "10",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "revthrow",
        "sets": 2,
        "reps": "8",
        "rest": "-",
-       "fixed": 2
+       "fixed": 2,
+       "rpe": 4
       }
      ],
      "circuit": true,
@@ -1048,28 +1095,32 @@
        "sets": 3,
        "reps": "8",
        "rest": "45s",
-       "fixed": 2
+       "fixed": 2,
+       "rpe": 6
       },
       {
        "ex": "pivotpick",
        "sets": 3,
        "reps": "6",
        "rest": "60s",
-       "fixed": 2
+       "fixed": 2,
+       "rpe": 6
       },
       {
        "ex": "rollin",
        "sets": 3,
        "reps": "5",
        "rest": "60s",
-       "fixed": 1
+       "fixed": 1,
+       "rpe": 6
       },
       {
        "ex": "walkwind",
        "sets": 3,
        "reps": "5",
        "rest": "60s",
-       "fixed": 1
+       "fixed": 1,
+       "rpe": 6
       }
      ]
     },
@@ -1081,14 +1132,16 @@
        "sets": 1,
        "reps": "10 min",
        "rest": "45s",
-       "bw": true
+       "bw": true,
+       "rpe": 6
       },
       {
        "ex": "longtoss",
        "sets": 1,
        "reps": "8-10 throws",
        "rest": "as needed",
-       "bw": true
+       "bw": true,
+       "rpe": 6
       },
       {
        "ex": "wball",
@@ -1096,7 +1149,8 @@
        "reps": "5 per ball",
        "rest": "90s",
        "note": "Week 5+ only. See block notes for weights.",
-       "bw": true
+       "bw": true,
+       "rpe": 6
       }
      ]
     },
@@ -1108,14 +1162,16 @@
        "sets": 3,
        "reps": "5/side",
        "rest": "60s",
-       "fixed": 6
+       "fixed": 6,
+       "rpe": 6
       },
       {
        "ex": "mbscoop",
        "sets": 3,
        "reps": "5",
        "rest": "60s",
-       "fixed": 8
+       "fixed": 8,
+       "rpe": 6
       }
      ]
     }
@@ -1133,28 +1189,32 @@
        "sets": 2,
        "reps": "20yd",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "anklelift",
        "sets": 2,
        "reps": "8/side",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "quadiso",
        "sets": 5,
        "reps": "45s",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "pogos",
        "sets": 2,
        "reps": "15",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       }
      ],
      "circuit": true,
@@ -1171,7 +1231,8 @@
        "rest": "15s",
        "note": "1 - 85-90%",
        "pct": 0.87,
-       "pctOf": "squatacc"
+       "pctOf": "squatacc",
+       "rpe": 8
       },
       {
        "ex": "altdrop",
@@ -1179,7 +1240,8 @@
        "reps": "4",
        "rest": "15s",
        "note": "2",
-       "bw": true
+       "bw": true,
+       "rpe": 6
       },
       {
        "ex": "trapjump",
@@ -1188,7 +1250,8 @@
        "rest": "15s",
        "note": "3 - 30%",
        "pct": 0.3,
-       "pctOf": "squatacc"
+       "pctOf": "squatacc",
+       "rpe": 7
       },
       {
        "ex": "bandassistjump",
@@ -1196,7 +1259,8 @@
        "reps": "4",
        "rest": "2.5min",
        "note": "4 - then next round",
-       "bw": true
+       "bw": true,
+       "rpe": 7
       }
      ]
     },
@@ -1209,7 +1273,8 @@
        "reps": "3",
        "rest": "2min",
        "pct": 0.8,
-       "pctOf": "hangclean"
+       "pctOf": "hangclean",
+       "rpe": 8
       },
       {
        "ex": "hamcurl",
@@ -1219,7 +1284,8 @@
        "start": 70,
        "step": 5,
        "every": 3,
-       "cap": 95
+       "cap": 95,
+       "rpe": 7
       },
       {
        "ex": "soleus",
@@ -1229,7 +1295,8 @@
        "start": 120,
        "step": 10,
        "every": 2,
-       "cap": 180
+       "cap": 180,
+       "rpe": 7
       }
      ]
     },
@@ -1244,14 +1311,16 @@
        "start": 55,
        "step": 5,
        "every": 3,
-       "cap": 85
+       "cap": 85,
+       "rpe": 7
       },
       {
        "ex": "spanish",
        "sets": 3,
        "reps": "30s",
        "rest": "45s",
-       "bw": true
+       "bw": true,
+       "rpe": 7
       }
      ]
     }
@@ -1269,28 +1338,32 @@
        "sets": 2,
        "reps": "20yd",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "anklelift",
        "sets": 2,
        "reps": "8/side",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "quadiso",
        "sets": 5,
        "reps": "45s",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "pogos",
        "sets": 2,
        "reps": "15",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       }
      ],
      "circuit": true,
@@ -1305,28 +1378,32 @@
        "sets": 4,
        "reps": "5",
        "rest": "75s",
-       "bw": true
+       "bw": true,
+       "rpe": 6
       },
       {
        "ex": "penult",
        "sets": 4,
        "reps": "3",
        "rest": "60s",
-       "bw": true
+       "bw": true,
+       "rpe": 6
       },
       {
        "ex": "altdrop",
        "sets": 3,
        "reps": "5",
        "rest": "60s",
-       "bw": true
+       "bw": true,
+       "rpe": 6
       },
       {
        "ex": "blocksim",
        "sets": 4,
        "reps": "5 jumps",
        "rest": "30s",
-       "bw": true
+       "bw": true,
+       "rpe": 6
       }
      ]
     },
@@ -1339,7 +1416,8 @@
        "reps": "4",
        "rest": "2.5min",
        "pct": 0.8,
-       "pctOf": "squatacc"
+       "pctOf": "squatacc",
+       "rpe": 8
       },
       {
        "ex": "heelsnarrow",
@@ -1347,7 +1425,8 @@
        "reps": "8",
        "rest": "90s",
        "pct": 0.62,
-       "pctOf": "heelsnarrow"
+       "pctOf": "heelsnarrow",
+       "rpe": 8
       },
       {
        "ex": "soleus",
@@ -1357,7 +1436,8 @@
        "start": 120,
        "step": 10,
        "every": 2,
-       "cap": 180
+       "cap": 180,
+       "rpe": 7
       }
      ]
     },
@@ -1369,7 +1449,8 @@
        "sets": 3,
        "reps": "30s",
        "rest": "45s",
-       "bw": true
+       "bw": true,
+       "rpe": 7
       }
      ]
     }
@@ -1387,14 +1468,16 @@
        "sets": 2,
        "reps": "15",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "banderer90",
        "sets": 2,
        "reps": "12/arm",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       }
      ],
      "circuit": true,
@@ -1410,7 +1493,8 @@
        "reps": "3",
        "rest": "2min",
        "pct": 0.85,
-       "pctOf": "bench"
+       "pctOf": "bench",
+       "rpe": 8
       },
       {
        "ex": "latpulldown",
@@ -1418,7 +1502,8 @@
        "reps": "6",
        "rest": "90s",
        "pct": 0.8,
-       "pctOf": "latpulldown"
+       "pctOf": "latpulldown",
+       "rpe": 7
       },
       {
        "ex": "dbrow",
@@ -1426,7 +1511,8 @@
        "reps": "8/arm",
        "rest": "90s",
        "pct": 0.85,
-       "pctOf": "dbrow"
+       "pctOf": "dbrow",
+       "rpe": 7
       },
       {
        "ex": "pallof",
@@ -1436,7 +1522,8 @@
        "start": 30,
        "step": 5,
        "every": 4,
-       "cap": 50
+       "cap": 50,
+       "rpe": 7
       }
      ]
     },
@@ -1450,14 +1537,16 @@
        "rest": "-",
        "start": 5,
        "step": 0,
-       "every": 1
+       "every": 1,
+       "rpe": 4
       },
       {
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "pronepull",
@@ -1467,7 +1556,8 @@
        "start": 20,
        "step": 5,
        "every": 6,
-       "cap": 30
+       "cap": 30,
+       "rpe": 4
       }
      ],
      "circuit": true,
@@ -1489,7 +1579,8 @@
        "reps": "45s",
        "rest": "-",
        "note": "BEFORE play.",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       }
      ],
      "circuit": true,
@@ -1506,7 +1597,8 @@
        "rest": "2min",
        "note": "80-85%",
        "pct": 0.82,
-       "pctOf": "hangclean"
+       "pctOf": "hangclean",
+       "rpe": 8
       },
       {
        "ex": "squatacc",
@@ -1515,7 +1607,8 @@
        "rest": "2.5min",
        "note": "80-85%, full depth",
        "pct": 0.82,
-       "pctOf": "squatacc"
+       "pctOf": "squatacc",
+       "rpe": 8
       },
       {
        "ex": "hamcurl",
@@ -1525,7 +1618,8 @@
        "start": 70,
        "step": 5,
        "every": 3,
-       "cap": 95
+       "cap": 95,
+       "rpe": 7
       },
       {
        "ex": "soleus",
@@ -1535,7 +1629,8 @@
        "start": 120,
        "step": 10,
        "every": 2,
-       "cap": 180
+       "cap": 180,
+       "rpe": 7
       },
       {
        "ex": "ecccalf",
@@ -1545,7 +1640,8 @@
        "start": 55,
        "step": 5,
        "every": 3,
-       "cap": 85
+       "cap": 85,
+       "rpe": 7
       }
      ]
     },
@@ -1557,7 +1653,8 @@
        "sets": 3,
        "reps": "30s",
        "rest": "45s",
-       "bw": true
+       "bw": true,
+       "rpe": 7
       }
      ]
     }
@@ -1575,14 +1672,16 @@
        "sets": 2,
        "reps": "15",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "banderer90",
        "sets": 2,
        "reps": "12/arm",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       }
      ],
      "circuit": true,
@@ -1599,7 +1698,8 @@
        "rest": "2min",
        "note": "85%, elbows tucked",
        "pct": 0.85,
-       "pctOf": "bench"
+       "pctOf": "bench",
+       "rpe": 8
       },
       {
        "ex": "latpulldown",
@@ -1607,7 +1707,8 @@
        "reps": "6",
        "rest": "90s",
        "pct": 0.8,
-       "pctOf": "latpulldown"
+       "pctOf": "latpulldown",
+       "rpe": 7
       },
       {
        "ex": "dbrow",
@@ -1615,7 +1716,8 @@
        "reps": "8/arm",
        "rest": "90s",
        "pct": 0.85,
-       "pctOf": "dbrow"
+       "pctOf": "dbrow",
+       "rpe": 7
       },
       {
        "ex": "pallof",
@@ -1625,7 +1727,8 @@
        "start": 30,
        "step": 5,
        "every": 4,
-       "cap": 50
+       "cap": 50,
+       "rpe": 7
       }
      ]
     },
@@ -1639,7 +1742,8 @@
        "rest": "-",
        "start": 5,
        "step": 0,
-       "every": 1
+       "every": 1,
+       "rpe": 4
       },
       {
        "ex": "pronepull",
@@ -1649,7 +1753,8 @@
        "start": 20,
        "step": 5,
        "every": 6,
-       "cap": 30
+       "cap": 30,
+       "rpe": 4
       }
      ],
      "circuit": true,
@@ -1670,28 +1775,32 @@
        "sets": 2,
        "reps": "3",
        "rest": "45s",
-       "fixed": 8
+       "fixed": 8,
+       "rpe": 6
       },
       {
        "ex": "mbvertover",
        "sets": 2,
        "reps": "3",
        "rest": "45s",
-       "fixed": 8
+       "fixed": 8,
+       "rpe": 6
       },
       {
        "ex": "mbbroad",
        "sets": 2,
        "reps": "3",
        "rest": "45s",
-       "fixed": 8
+       "fixed": 8,
+       "rpe": 6
       },
       {
        "ex": "pogos",
        "sets": 2,
        "reps": "10",
        "rest": "45s",
-       "bw": true
+       "bw": true,
+       "rpe": 6
       },
       {
        "ex": "approach",
@@ -1699,7 +1808,8 @@
        "reps": "1",
        "rest": "45s",
        "note": "80 / 90 / 100%",
-       "bw": true
+       "bw": true,
+       "rpe": 6
       }
      ]
     }
@@ -1718,7 +1828,8 @@
        "reps": "45s",
        "rest": "30s",
        "note": "Before you play.",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       }
      ]
     }
@@ -1743,21 +1854,24 @@
        "sets": 1,
        "reps": "full series",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "banderir",
        "sets": 2,
        "reps": "15/arm",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "ribdis",
        "sets": 2,
        "reps": "6/side",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       }
      ],
      "circuit": true,
@@ -1773,7 +1887,8 @@
        "reps": "8",
        "rest": "45s",
        "fixed": 2,
-       "note": "Always first"
+       "note": "Always first",
+       "rpe": 6
       },
       {
        "ex": "wallpivot",
@@ -1781,14 +1896,16 @@
        "reps": "6",
        "rest": "60s",
        "fixed": 2,
-       "note": "Always second"
+       "note": "Always second",
+       "rpe": 6
       },
       {
        "ex": "wallrocker",
        "sets": 3,
        "reps": "5",
        "rest": "60s",
-       "fixed": 1
+       "fixed": 1,
+       "rpe": 6
       },
       {
        "ex": "wallwind",
@@ -1796,7 +1913,8 @@
        "reps": "5",
        "rest": "60s",
        "fixed": 1,
-       "note": "Always last"
+       "note": "Always last",
+       "rpe": 6
       }
      ]
     },
@@ -1810,21 +1928,24 @@
        "rest": "45s",
        "start": 2,
        "step": 0,
-       "every": 1
+       "every": 1,
+       "rpe": 6
       },
       {
        "ex": "towel",
        "sets": 3,
        "reps": "8",
        "rest": "45s",
-       "bw": true
+       "bw": true,
+       "rpe": 6
       },
       {
        "ex": "tennisrebound",
        "sets": 3,
        "reps": "30s",
        "rest": "45s",
-       "bw": true
+       "bw": true,
+       "rpe": 6
       }
      ]
     },
@@ -1836,14 +1957,16 @@
        "sets": 4,
        "reps": "5/side",
        "rest": "60s",
-       "fixed": 6
+       "fixed": 6,
+       "rpe": 6
       },
       {
        "ex": "mbscoop",
        "sets": 3,
        "reps": "5",
        "rest": "60s",
-       "fixed": 8
+       "fixed": 8,
+       "rpe": 6
       }
      ]
     },
@@ -1857,7 +1980,8 @@
        "rest": "-",
        "start": 5,
        "step": 0,
-       "every": 1
+       "every": 1,
+       "rpe": 4
       },
       {
        "ex": "pronepull",
@@ -1867,14 +1991,16 @@
        "start": 20,
        "step": 5,
        "every": 6,
-       "cap": 30
+       "cap": 30,
+       "rpe": 4
       },
       {
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       }
      ],
      "circuit": true,
@@ -1895,21 +2021,24 @@
        "sets": 1,
        "reps": "full series",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "bandpa",
        "sets": 2,
        "reps": "15",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "ribdis",
        "sets": 2,
        "reps": "6/side",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       }
      ],
      "circuit": true,
@@ -1924,7 +2053,8 @@
        "sets": 4,
        "reps": "8",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 6
       },
       {
        "ex": "wristw",
@@ -1933,7 +2063,8 @@
        "rest": "-",
        "start": 2,
        "step": 0,
-       "every": 1
+       "every": 1,
+       "rpe": 6
       }
      ],
      "circuit": true,
@@ -1948,7 +2079,8 @@
        "sets": 3,
        "reps": "12/arm",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "sidelyer",
@@ -1957,14 +2089,16 @@
        "rest": "-",
        "start": 5,
        "step": 0,
-       "every": 1
+       "every": 1,
+       "rpe": 4
       },
       {
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
        "rest": "-",
-       "bw": true
+       "bw": true,
+       "rpe": 4
       },
       {
        "ex": "pronepull",
@@ -1973,7 +2107,8 @@
        "rest": "-",
        "start": 20,
        "step": 0,
-       "every": 1
+       "every": 1,
+       "rpe": 4
       }
      ],
      "circuit": true,

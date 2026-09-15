@@ -156,6 +156,11 @@ function bodyweight(){ return num(S.settings.bw); }   // local only, never in th
    derived from Roger's TrainHeroic history; later blocks derive from his own
    logged e1RM so the number comes from real data, not a year-old guess. */
 function roundTo(v, inc){ return Math.round(v/inc)*inc; }
+/* "8/arm" -> 8, "3/side, max effort" -> 3, "30s" -> 30, "full series" -> '' */
+function repsPrefill(reps){
+  const m = /\d+/.exec(String(reps ?? ''));
+  return m ? m[0] : '';
+}
 function isDeload(week){ return (P.deloadWeeks||[]).includes(week); }
 function prescribedLoad(it, week, exId){
   if(it.bw) return null;
@@ -241,8 +246,10 @@ function getSession(id){
     const n = parseInt(it.sets)||1;
     const L = prescribedLoad(it, k.week, it.ex);
     const pre = (L && L.v != null) ? String(L.v) : '';
+    const rp = repsPrefill(it.reps);
+    const rpe = it.rpe != null ? String(it.rpe) : '';
     s.entries.push({ex:it.ex, block:blk.name, rx:it,
-      sets:Array.from({length:n},()=>({reps:'',load:pre,rpe:'',done:false}))});
+      sets:Array.from({length:n},()=>({reps:rp,load:pre,rpe,done:false}))});
   }
   S.sessions[id] = s; save(); return s;
 }
@@ -250,11 +257,25 @@ function started(s){ return !!s && (s.done || !!s.startedAt || s.entries.some(e=
 
 /* ---------- session clock ---------- */
 let tick = null;
-function elapsedOf(s){
-  if(!s || !s.startedAt) return 0;
-  const end = s.done && s.finishedAt ? s.finishedAt : Date.now();
-  return Math.max(0, Math.floor((end - s.startedAt)/1000));
+/* clock = { accMs, since }. since is null while paused. */
+function clockOf(s){
+  if(!s) return {accMs:0, since:null};
+  if(!s.clock){
+    // migrate the old startedAt/finishedAt shape
+    const acc = (s.startedAt && s.finishedAt) ? (s.finishedAt - s.startedAt) : 0;
+    s.clock = {accMs:acc, since: (s.startedAt && !s.finishedAt && !s.done) ? s.startedAt : null};
+  }
+  return s.clock;
 }
+function elapsedOf(s){
+  const c = clockOf(s);
+  return Math.max(0, Math.floor((c.accMs + (c.since ? Date.now() - c.since : 0))/1000));
+}
+function isRunning(s){ return !!clockOf(s).since; }
+function clockStart(s){ const c = clockOf(s); if(!c.since) c.since = Date.now(); }
+function clockPause(s){ const c = clockOf(s);
+  if(c.since){ c.accMs += Date.now() - c.since; c.since = null; } }
+function clockReset(s){ s.clock = {accMs:0, since:null}; }
 function hms(sec){
   const m = Math.floor(sec/60), ss = sec%60;
   return `${m}:${String(ss).padStart(2,'0')}`;
@@ -265,7 +286,7 @@ function startClock(){
     const el = document.getElementById('clock');
     if(!el){ stopClock(); return; }
     const s = S.sessions[openSession];
-    if(!s || s.done){ stopClock(); return; }
+    if(!s || s.done || !isRunning(s)){ stopClock(); return; }
     el.textContent = hms(elapsedOf(s));
     const cap = dayDef(s.dayId);
     if(cap && cap.mins && elapsedOf(s) > cap.mins*60) el.classList.add('over');
@@ -315,7 +336,7 @@ function render(){
   renderTabs(); syncHash();
   window.scrollTo(0, keep);
   lastScreen = screen;
-  if(openSession){ const s = S.sessions[openSession]; if(s && !s.done && s.startedAt) startClock(); }
+  if(openSession){ const s = S.sessions[openSession]; if(s && !s.done && isRunning(s)) startClock(); }
 }
 function renderTabs(){
   const tabs = [['today','Today'],['week','Week'],['log','Log'],['tests','Tests'],['data','Data']];
@@ -488,11 +509,16 @@ function vSession(){
     <h1 style="margin-top:14px">Rest day</h1><p class="sub">Nothing scheduled.</p>`;
 
   let h = `<div class="row sb"><button class="btn sec sm" data-act="close">‹ Back</button>
-    <div class="row" style="gap:8px;flex:0 0 auto">
+    <div class="row" style="gap:6px;flex:0 0 auto">
       <span id="clock" class="clock${s.done?' done':''}${
-        s.startedAt && def.mins && elapsedOf(s) > def.mins*60 ? ' over':''}">${hms(elapsedOf(s))}</span>
-      ${s.done?'<span class="pill g">Done</span>':started(s)?'<span class="pill w">Part done</span>':''}
+        def.mins && elapsedOf(s) > def.mins*60 ? ' over':''}">${hms(elapsedOf(s))}</span>
+      ${s.done?'' :`<button class="tbtn" data-act="clk-toggle" aria-label="${isRunning(s)?'pause':'resume'}">${
+        isRunning(s) ? '&#10073;&#10073;' : '&#9654;'}</button>
+      <button class="tbtn" data-act="clk-reset" aria-label="reset timer">&#8635;</button>`}
     </div></div>
+    ${s.done?'':`<div class="row sb" style="margin:10px 0 2px">
+      <span class="tiny">${isRunning(s)?'Timer running':'Timer paused'}</span>
+      ${s.done?'':started(s)?'<span class="pill w">Part done</span>':''}</div>`}
     <h1 style="margin-top:14px">${esc(def.name)}</h1>
     <p class="sub">Week ${s.week} · session ${s.slot+1} of 7 · ~${def.mins} min incl. rest${
       s.date?` · logged ${s.date}`:''}</p>`;
@@ -610,7 +636,7 @@ function vHistory(){
     h += `<div class="card tight"><div class="row sb"><div class="grow">
       <div style="font-weight:600">${esc(def?def.name:s.dayId||'Session')}</div>
       <div class="tiny">${s.date} · wk ${s.week}${
-        s.startedAt&&s.finishedAt?` · ${hms(elapsedOf(s))}`:''}${s.rpe!=null?` · RPE ${s.rpe}`:''}${
+        elapsedOf(s)?` · ${hms(elapsedOf(s))}`:''}${s.rpe!=null?` · RPE ${s.rpe}`:''}${
         vol?` · ${Math.round(vol).toLocaleString()} lb`:''}${s.play?` · ${s.playHours||2}h play`:''}</div>
       ${s.notes?`<div class="tiny" style="color:var(--dim)">${esc(s.notes)}</div>`:''}</div>
       <button class="btn sec sm" data-act="open" data-sid="${s.id}">View</button></div></div>`;
@@ -695,8 +721,8 @@ document.addEventListener('click', e => {
   if(t.dataset.tab){ view = t.dataset.tab; openSession = null; return render(); }
   if(a === 'open'){ openSession = t.dataset.sid;
     const s = getSession(openSession);
-    if(s && !s.startedAt && !s.done){ s.startedAt = Date.now(); save(); }
-    render(); startClock(); return; }
+    if(s && !s.done && !clockOf(s).since && elapsedOf(s) === 0){ clockStart(s); save(); }
+    render(); if(s && !s.done && isRunning(s)) startClock(); return; }
   if(a === 'wk'){ const n = +t.dataset.n;
     if(n >= 1 && n <= P.meta.totalWeeks){ curWeek = n; view = 'week'; openSession = null; }
     return render(); }
@@ -704,10 +730,16 @@ document.addEventListener('click', e => {
   if(a === 'score'){ const d = today(); (S.daily[d] ||= {})[t.dataset.site] = +t.dataset.v; save(); return render(); }
   if(a === 'reset-checkin'){ delete S.daily[today()]; save(); return render(); }
   if(a === 'srpe'){ getSession(openSession).rpe = +t.dataset.v; save(); return render(); }
+  if(a === 'clk-toggle'){ const s = getSession(openSession);
+    isRunning(s) ? clockPause(s) : clockStart(s); save(); render();
+    if(isRunning(s)) startClock(); else stopClock(); return; }
+  if(a === 'clk-reset'){ const s = getSession(openSession);
+    clockReset(s); save(); stopClock(); return render(); }
   if(a === 'tog'){ const s = getSession(openSession), st = s.entries[+t.dataset.e].sets[+t.dataset.s];
     st.done = !st.done; save(); return render(); }
   if(a === 'addset'){ const s = getSession(openSession), en = s.entries[+t.dataset.e];
-    const l = en.sets[en.sets.length-1]; en.sets.push({reps:l?.reps||'', load:l?.load||'', rpe:'', done:false});
+    const l = en.sets[en.sets.length-1];
+    en.sets.push({reps:l?.reps||'', load:l?.load||'', rpe:l?.rpe||'', done:false});
     save(); return render(); }
   if(a === 'delset'){ const s = getSession(openSession), en = s.entries[+t.dataset.e];
     if(en.sets.length > 1) en.sets.pop(); save(); return render(); }
@@ -718,7 +750,7 @@ document.addEventListener('click', e => {
     const def = dayDef(s.dayId);
     if(def && def.isPlay){ s.play = true; s.playHours = num($('#pHours')?.value) || 2; }
     if(!s.date) s.date = today();
-    if(s.startedAt && !s.finishedAt) s.finishedAt = Date.now();
+    clockPause(s);
     s.done = true; save(); stopClock();
     openSession = null; view = 'today'; return render(); }
   if(a === 'unfinish'){ const s = getSession(openSession); s.done = false; save(); return render(); }
@@ -761,7 +793,13 @@ window.addEventListener('hashchange', () => { if(!P) return; readHash(); render(
 
 fetch('program.json?v=' + Date.now())
   .then(r => r.json())
-  .then(p => { P = p; readHash(); render();
+  .then(p => { P = p; readHash();
+    if(openSession){
+      const s = getSession(openSession);
+      if(s && !s.done && !clockOf(s).since && elapsedOf(s) === 0){ clockStart(s); save(); }
+    }
+    render();
+    if(openSession){ const s = S.sessions[openSession]; if(s && !s.done && isRunning(s)) startClock(); }
     requestPersist().then(ok => { if(ok !== null) render(); });
     if('serviceWorker' in navigator){
       // when a new service worker takes over, reload once so you are running the new code

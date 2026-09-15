@@ -194,3 +194,9 @@ a.vid:active{opacity:.6}
   padding:7px 11px 6px;border-radius:8px;letter-spacing:.5px}
 .clock.over{color:var(--warn);border-color:rgba(255,176,32,.45)}
 .clock.done{color:var(--dim)}
+
+/* ---------- timer buttons ---------- */
+.tbtn{width:36px;height:36px;border-radius:8px;background:var(--surface2);
+  border:1px solid var(--line2);color:var(--txt);font-size:13px;line-height:1;
+  display:grid;place-items:center;flex:0 0 auto}
+.tbtn:active{opacity:.6}
