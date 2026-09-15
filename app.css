@@ -186,3 +186,11 @@ a.vid{flex:0 0 auto;display:inline-flex;align-items:center;gap:5px;
 a.vid svg{width:11px;height:11px;fill:var(--accent);stroke:none;flex:0 0 auto}
 a.vid:active{opacity:.6}
 .rx b{color:var(--accent);font-weight:700}
+
+/* ---------- session clock ---------- */
+.clock{font-family:var(--display);font-weight:700;font-size:20px;line-height:1;
+  font-variant-numeric:tabular-nums;color:var(--accent);
+  background:var(--surface2);border:1px solid var(--line2);
+  padding:7px 11px 6px;border-radius:8px;letter-spacing:.5px}
+.clock.over{color:var(--warn);border-color:rgba(255,176,32,.45)}
+.clock.done{color:var(--dim)}

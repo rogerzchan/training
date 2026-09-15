@@ -246,7 +246,32 @@ function getSession(id){
   }
   S.sessions[id] = s; save(); return s;
 }
-function started(s){ return !!s && (s.done || s.entries.some(e=>e.sets.some(x=>x.done))); }
+function started(s){ return !!s && (s.done || !!s.startedAt || s.entries.some(e=>e.sets.some(x=>x.done))); }
+
+/* ---------- session clock ---------- */
+let tick = null;
+function elapsedOf(s){
+  if(!s || !s.startedAt) return 0;
+  const end = s.done && s.finishedAt ? s.finishedAt : Date.now();
+  return Math.max(0, Math.floor((end - s.startedAt)/1000));
+}
+function hms(sec){
+  const m = Math.floor(sec/60), ss = sec%60;
+  return `${m}:${String(ss).padStart(2,'0')}`;
+}
+function startClock(){
+  stopClock();
+  tick = setInterval(() => {
+    const el = document.getElementById('clock');
+    if(!el){ stopClock(); return; }
+    const s = S.sessions[openSession];
+    if(!s || s.done){ stopClock(); return; }
+    el.textContent = hms(elapsedOf(s));
+    const cap = dayDef(s.dayId);
+    if(cap && cap.mins && elapsedOf(s) > cap.mins*60) el.classList.add('over');
+  }, 1000);
+}
+function stopClock(){ if(tick){ clearInterval(tick); tick = null; } }
 /* Weeks advance with the real calendar, so a missed session would otherwise
    just vanish off the Today screen. Surface anything still unfinished. */
 function carryOver(){
@@ -281,10 +306,16 @@ function readHash(){
   const v = (location.hash||'').replace('#/','');
   if(['today','week','log','tests','data'].includes(v)){ view = v; openSession = null; }
 }
+let lastScreen = null;
 function render(){
   const v = {today:vToday, week:vWeek, log:vHistory, tests:vTests, data:vData}[view] || vToday;
+  const screen = openSession ? 's:'+openSession : view;
+  const keep = screen === lastScreen ? window.scrollY : 0;   // stay put within a screen
   $('#app').innerHTML = openSession ? vSession() : v();
-  renderTabs(); syncHash(); window.scrollTo(0,0);
+  renderTabs(); syncHash();
+  window.scrollTo(0, keep);
+  lastScreen = screen;
+  if(openSession){ const s = S.sessions[openSession]; if(s && !s.done && s.startedAt) startClock(); }
 }
 function renderTabs(){
   const tabs = [['today','Today'],['week','Week'],['log','Log'],['tests','Tests'],['data','Data']];
@@ -457,9 +488,13 @@ function vSession(){
     <h1 style="margin-top:14px">Rest day</h1><p class="sub">Nothing scheduled.</p>`;
 
   let h = `<div class="row sb"><button class="btn sec sm" data-act="close">‹ Back</button>
-    ${s.done?'<span class="pill g">Done</span>':started(s)?'<span class="pill w">Part done</span>':''}</div>
+    <div class="row" style="gap:8px;flex:0 0 auto">
+      <span id="clock" class="clock${s.done?' done':''}${
+        s.startedAt && def.mins && elapsedOf(s) > def.mins*60 ? ' over':''}">${hms(elapsedOf(s))}</span>
+      ${s.done?'<span class="pill g">Done</span>':started(s)?'<span class="pill w">Part done</span>':''}
+    </div></div>
     <h1 style="margin-top:14px">${esc(def.name)}</h1>
-    <p class="sub">Week ${s.week} · session ${s.slot+1} of 7 · ${def.mins} min target${
+    <p class="sub">Week ${s.week} · session ${s.slot+1} of 7 · ~${def.mins} min incl. rest${
       s.date?` · logged ${s.date}`:''}</p>`;
   if(w) for(const f of w.flags) h += `<div class="flag">${esc(f)}</div>`;
   if(w && w.weightedBalls && def.name.includes('Throwing'))
@@ -473,8 +508,16 @@ function vSession(){
         <span class="muted">hours played</span></div></div>`;
   } else {
     let cur = null;
+    const blockMeta = {};
+    for(const blk of def.blocks) blockMeta[blk.name] = blk;
     s.entries.forEach((en,ei)=>{
-      if(en.block !== cur){ cur = en.block; h += `<h2>${esc(cur)}</h2>`; }
+      if(en.block !== cur){
+        cur = en.block;
+        const bm = blockMeta[cur] || {};
+        h += `<h2>${esc(cur)}</h2>`;
+        if(bm.circuit) h += `<div class="tiny" style="margin:-4px 0 10px">Circuit — ${
+          bm.rounds||2} rounds, move straight through. ${esc(bm.roundRest||'45s')} between rounds.</div>`;
+      }
       const ex = P.exercises[en.ex] || {name:en.ex, cue:''};
       const rx = en.rx, lp = lastPerf(en.ex, id), hint = progressionHint(en.ex, id);
       const L = prescribedLoad(rx, s.week, en.ex);
@@ -487,7 +530,9 @@ function vSession(){
             How&nbsp;to</a></div>
         ${ex.cue?`<div class="cue">${esc(ex.cue)}</div>`:''}
         <div class="rx">${esc(rx.sets)} × ${esc(rx.reps)}${
-          L?` @ <b>${loadLabel(L, ex.unit)}</b>`:''} · rest ${esc(rx.rest)}${rx.note?` · ${esc(rx.note)}`:''}</div>
+          L?` @ <b>${loadLabel(L, ex.unit)}</b>`:''}${
+          String(rx.rest).trim()&&String(rx.rest).trim()!=='-'?` · rest ${esc(rx.rest)}`:''}${
+          rx.note?` · ${esc(rx.note)}`:''}</div>
         ${L&&L.kind==='implement'?'<div class="tiny">Implement weight — fixed. Progress intent, not load.</div>':''}
         ${L&&L.capped?'<div class="tiny">Holding here. Retest before adding more.</div>':''}
         ${lp?`<div class="last">Last ${lp.date}: ${lp.sets.map(x=>`${x.reps||'?'}×${x.load||'bw'}`).join(', ')}</div>`:'<div class="last">No history</div>'}
@@ -499,7 +544,8 @@ function vSession(){
             <input inputmode="numeric" placeholder="reps" value="${esc(st.reps)}" data-f="reps" data-e="${ei}" data-s="${si}">
             <input inputmode="decimal" placeholder="${ex.unit==='none'?'bw':ex.unit}" value="${esc(st.load)}" data-f="load" data-e="${ei}" data-s="${si}">
             <input inputmode="numeric" placeholder="rpe" value="${esc(st.rpe)}" data-f="rpe" data-e="${ei}" data-s="${si}">
-            <button class="chk ${st.done?'on':''}" data-act="tog" data-e="${ei}" data-s="${si}">${st.done?'✓':''}</button>
+            <button class="chk ${st.done?'on':''}" data-act="tog" data-e="${ei}" data-s="${si}"
+              aria-label="set ${si+1} done"></button>
           </div>`).join('')}
         </div>
         <div class="row sb"><button class="link" data-act="addset" data-e="${ei}">+ Add set</button>
@@ -563,7 +609,8 @@ function vHistory(){
       b + (st.done ? (num(st.load)||0)*(num(st.reps)||0) : 0),0),0);
     h += `<div class="card tight"><div class="row sb"><div class="grow">
       <div style="font-weight:600">${esc(def?def.name:s.dayId||'Session')}</div>
-      <div class="tiny">${s.date} · wk ${s.week}${s.rpe!=null?` · RPE ${s.rpe}`:''}${
+      <div class="tiny">${s.date} · wk ${s.week}${
+        s.startedAt&&s.finishedAt?` · ${hms(elapsedOf(s))}`:''}${s.rpe!=null?` · RPE ${s.rpe}`:''}${
         vol?` · ${Math.round(vol).toLocaleString()} lb`:''}${s.play?` · ${s.playHours||2}h play`:''}</div>
       ${s.notes?`<div class="tiny" style="color:var(--dim)">${esc(s.notes)}</div>`:''}</div>
       <button class="btn sec sm" data-act="open" data-sid="${s.id}">View</button></div></div>`;
@@ -646,11 +693,14 @@ document.addEventListener('click', e => {
   const t = e.target.closest('[data-act],[data-tab]'); if(!t) return;
   const a = t.dataset.act;
   if(t.dataset.tab){ view = t.dataset.tab; openSession = null; return render(); }
-  if(a === 'open'){ openSession = t.dataset.sid; return render(); }
+  if(a === 'open'){ openSession = t.dataset.sid;
+    const s = getSession(openSession);
+    if(s && !s.startedAt && !s.done){ s.startedAt = Date.now(); save(); }
+    render(); startClock(); return; }
   if(a === 'wk'){ const n = +t.dataset.n;
     if(n >= 1 && n <= P.meta.totalWeeks){ curWeek = n; view = 'week'; openSession = null; }
     return render(); }
-  if(a === 'close'){ openSession = null; return render(); }
+  if(a === 'close'){ stopClock(); openSession = null; return render(); }
   if(a === 'score'){ const d = today(); (S.daily[d] ||= {})[t.dataset.site] = +t.dataset.v; save(); return render(); }
   if(a === 'reset-checkin'){ delete S.daily[today()]; save(); return render(); }
   if(a === 'srpe'){ getSession(openSession).rpe = +t.dataset.v; save(); return render(); }
@@ -668,7 +718,8 @@ document.addEventListener('click', e => {
     const def = dayDef(s.dayId);
     if(def && def.isPlay){ s.play = true; s.playHours = num($('#pHours')?.value) || 2; }
     if(!s.date) s.date = today();
-    s.done = true; save();
+    if(s.startedAt && !s.finishedAt) s.finishedAt = Date.now();
+    s.done = true; save(); stopClock();
     openSession = null; view = 'today'; return render(); }
   if(a === 'unfinish'){ const s = getSession(openSession); s.done = false; save(); return render(); }
   if(a === 'savetest'){ const k = t.dataset.k, inp = document.querySelector(`[data-test="${k}"]`);

@@ -5,7 +5,8 @@
   "peakEvent": "NACIVT Los Angeles",
   "peakDate": "2027-09-04",
   "totalWeeks": 52,
-  "build": "2026-09-13 \u00b7 bdb40b0"
+  "build": "2026-09-13 \u00b7 bdb40b0",
+  "maxSessionMins": 90
  },
  "budget": {
   "offSeasonCeiling": 400,
@@ -529,26 +530,18 @@
  "days": {
   "upperA": {
    "name": "Upper A + Test",
-   "mins": 60,
+   "mins": 75,
    "blocks": [
     {
      "name": "Test (weekly)",
      "items": [
       {
        "ex": "mbscoop",
-       "sets": 3,
+       "sets": 1,
        "reps": "3/side, max effort",
        "rest": "full",
        "note": "Rotational throw for distance. Log your best.",
        "fixed": 6
-      },
-      {
-       "ex": "velotest",
-       "sets": 1,
-       "reps": "5 throws",
-       "rest": "full",
-       "note": "Every 3rd week only.",
-       "bw": true
       }
      ]
     },
@@ -559,21 +552,21 @@
        "ex": "armbar",
        "sets": 2,
        "reps": "6/side",
-       "rest": "0",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "tspine",
        "sets": 2,
        "reps": "5/side",
-       "rest": "0",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "shpullover",
        "sets": 2,
        "reps": "10",
-       "rest": "0",
+       "rest": "-",
        "start": 10,
        "step": 0,
        "every": 1
@@ -582,17 +575,20 @@
        "ex": "bandpa",
        "sets": 2,
        "reps": "15",
-       "rest": "0",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "banderer90",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "30s",
+       "rest": "-",
        "bw": true
       }
-     ]
+     ],
+     "circuit": true,
+     "rounds": 2,
+     "roundRest": "45s"
     },
     {
      "name": "Power",
@@ -608,25 +604,11 @@
        "cap": 45
       },
       {
-       "ex": "mbsplit",
-       "sets": 3,
-       "reps": "4/side",
-       "rest": "60s",
-       "fixed": 8
-      },
-      {
        "ex": "plyopush",
        "sets": 3,
        "reps": "5",
        "rest": "75s",
        "bw": true
-      },
-      {
-       "ex": "plyoballrev",
-       "sets": 3,
-       "reps": "8/arm",
-       "rest": "45s",
-       "fixed": 2
       }
      ]
     },
@@ -682,22 +664,10 @@
        "sets": 3,
        "reps": "8/arm",
        "rest": "60s",
-       "note": "C1",
        "start": 35,
        "step": 5,
        "every": 3,
        "cap": 55
-      },
-      {
-       "ex": "fingercurl",
-       "sets": 3,
-       "reps": "12",
-       "rest": "60s",
-       "note": "C2",
-       "start": 10,
-       "step": 5,
-       "every": 6,
-       "cap": 25
       }
      ]
     },
@@ -708,7 +678,7 @@
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "45s",
+       "rest": "-",
        "start": 5,
        "step": 0,
        "every": 1
@@ -717,36 +687,29 @@
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
-       "rest": "45s",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "pronepull",
        "sets": 2,
        "reps": "10",
-       "rest": "45s",
+       "rest": "-",
        "start": 20,
        "step": 5,
        "every": 6,
        "cap": 30
-      },
-      {
-       "ex": "revfly",
-       "sets": 2,
-       "reps": "12",
-       "rest": "45s",
-       "start": 12.5,
-       "step": 2.5,
-       "every": 4,
-       "cap": 25
       }
-     ]
+     ],
+     "circuit": true,
+     "rounds": 2,
+     "roundRest": "45s"
     }
    ]
   },
   "upperB": {
    "name": "Upper B + Plyo Microdose",
-   "mins": 70,
+   "mins": 80,
    "blocks": [
     {
      "name": "Prep",
@@ -755,21 +718,21 @@
        "ex": "armbar",
        "sets": 2,
        "reps": "6/side",
-       "rest": "0",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "tspine",
        "sets": 2,
        "reps": "5/side",
-       "rest": "0",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "shpullover",
        "sets": 2,
        "reps": "10",
-       "rest": "0",
+       "rest": "-",
        "start": 10,
        "step": 0,
        "every": 1
@@ -778,56 +741,20 @@
        "ex": "bandpa",
        "sets": 2,
        "reps": "15",
-       "rest": "0",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "banderer90",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "30s",
+       "rest": "-",
        "bw": true
       }
-     ]
-    },
-    {
-     "name": "Power",
-     "items": [
-      {
-       "ex": "cablerot",
-       "sets": 3,
-       "reps": "6/side",
-       "rest": "45s",
-       "start": 25,
-       "step": 5,
-       "every": 4,
-       "cap": 45
-      },
-      {
-       "ex": "mbrepeat",
-       "sets": 3,
-       "reps": "10",
-       "rest": "60s",
-       "fixed": 15
-      },
-      {
-       "ex": "ripthrough",
-       "sets": 3,
-       "reps": "6/side",
-       "rest": "60s",
-       "start": 10,
-       "step": 5,
-       "every": 4,
-       "cap": 25
-      },
-      {
-       "ex": "plyoballrev",
-       "sets": 3,
-       "reps": "8/arm",
-       "rest": "45s",
-       "fixed": 2
-      }
-     ]
+     ],
+     "circuit": true,
+     "rounds": 2,
+     "roundRest": "45s"
     },
     {
      "name": "Strength",
@@ -878,22 +805,10 @@
        "sets": 3,
        "reps": "8/arm",
        "rest": "60s",
-       "note": "C1",
        "start": 35,
        "step": 5,
        "every": 3,
        "cap": 55
-      },
-      {
-       "ex": "fingercurl",
-       "sets": 3,
-       "reps": "12",
-       "rest": "60s",
-       "note": "C2",
-       "start": 10,
-       "step": 5,
-       "every": 6,
-       "cap": 25
       }
      ]
     },
@@ -930,7 +845,7 @@
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "45s",
+       "rest": "-",
        "start": 5,
        "step": 0,
        "every": 1
@@ -939,26 +854,29 @@
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
-       "rest": "45s",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "revfly",
        "sets": 2,
        "reps": "12",
-       "rest": "45s",
+       "rest": "-",
        "start": 12.5,
        "step": 2.5,
        "every": 4,
        "cap": 25
       }
-     ]
+     ],
+     "circuit": true,
+     "rounds": 2,
+     "roundRest": "45s"
     }
    ]
   },
   "lowerPower": {
    "name": "Lower Power",
-   "mins": 60,
+   "mins": 80,
    "blocks": [
     {
      "name": "Prep",
@@ -967,21 +885,14 @@
        "ex": "hipskip",
        "sets": 2,
        "reps": "20yd",
-       "rest": "0",
-       "bw": true
-      },
-      {
-       "ex": "anklelift",
-       "sets": 2,
-       "reps": "8/side",
-       "rest": "0",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "quadiso",
        "sets": 5,
        "reps": "45s",
-       "rest": "30s",
+       "rest": "-",
        "note": "70% effort, ~60 deg. BEFORE the session.",
        "bw": true
       },
@@ -989,10 +900,13 @@
        "ex": "pogos",
        "sets": 2,
        "reps": "15",
-       "rest": "30s",
+       "rest": "-",
        "bw": true
       }
-     ]
+     ],
+     "circuit": true,
+     "rounds": 5,
+     "roundRest": "45s"
     },
     {
      "name": "Jump",
@@ -1026,7 +940,7 @@
      "items": [
       {
        "ex": "hangclean",
-       "sets": 5,
+       "sets": 4,
        "reps": "3",
        "rest": "2min",
        "start": 155,
@@ -1053,7 +967,8 @@
        "start": 70,
        "step": 5,
        "every": 3,
-       "cap": 95
+       "cap": 95,
+       "note": "D1"
       },
       {
        "ex": "soleus",
@@ -1063,7 +978,8 @@
        "start": 120,
        "step": 10,
        "every": 2,
-       "cap": 180
+       "cap": 180,
+       "note": "D2"
       }
      ]
     },
@@ -1102,24 +1018,27 @@
        "ex": "banderir",
        "sets": 2,
        "reps": "15/arm",
-       "rest": "30s",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "wristsnap",
        "sets": 2,
        "reps": "10",
-       "rest": "30s",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "revthrow",
        "sets": 2,
        "reps": "8",
-       "rest": "45s",
+       "rest": "-",
        "fixed": 2
       }
-     ]
+     ],
+     "circuit": true,
+     "rounds": 2,
+     "roundRest": "45s"
     },
     {
      "name": "Plyo Ball Routine (fixed order)",
@@ -1161,7 +1080,7 @@
        "ex": "catchplay",
        "sets": 1,
        "reps": "10 min",
-       "rest": "-",
+       "rest": "45s",
        "bw": true
       },
       {
@@ -1204,7 +1123,7 @@
   },
   "lowerA2": {
    "name": "Lower Power A (contrast)",
-   "mins": 70,
+   "mins": 65,
    "blocks": [
     {
      "name": "Prep",
@@ -1213,31 +1132,34 @@
        "ex": "hipskip",
        "sets": 2,
        "reps": "20yd",
-       "rest": "0",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "anklelift",
        "sets": 2,
        "reps": "8/side",
-       "rest": "0",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "quadiso",
        "sets": 5,
        "reps": "45s",
-       "rest": "30s",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "pogos",
        "sets": 2,
        "reps": "15",
-       "rest": "30s",
+       "rest": "-",
        "bw": true
       }
-     ]
+     ],
+     "circuit": true,
+     "rounds": 5,
+     "roundRest": "45s"
     },
     {
      "name": "French Contrast (3-4 rounds, in order)",
@@ -1337,7 +1259,7 @@
   },
   "lowerB2": {
    "name": "Lower Power B (approach-specific)",
-   "mins": 60,
+   "mins": 75,
    "blocks": [
     {
      "name": "Prep",
@@ -1346,31 +1268,34 @@
        "ex": "hipskip",
        "sets": 2,
        "reps": "20yd",
-       "rest": "0",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "anklelift",
        "sets": 2,
        "reps": "8/side",
-       "rest": "0",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "quadiso",
        "sets": 5,
        "reps": "45s",
-       "rest": "30s",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "pogos",
        "sets": 2,
        "reps": "15",
-       "rest": "30s",
+       "rest": "-",
        "bw": true
       }
-     ]
+     ],
+     "circuit": true,
+     "rounds": 5,
+     "roundRest": "45s"
     },
     {
      "name": "Approach + Reactive",
@@ -1461,17 +1386,20 @@
        "ex": "bandpa",
        "sets": 2,
        "reps": "15",
-       "rest": "30s",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "banderer90",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "30s",
+       "rest": "-",
        "bw": true
       }
-     ]
+     ],
+     "circuit": true,
+     "rounds": 2,
+     "roundRest": "45s"
     },
     {
      "name": "Strength (cut sets, HOLD load)",
@@ -1519,7 +1447,7 @@
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "45s",
+       "rest": "-",
        "start": 5,
        "step": 0,
        "every": 1
@@ -1528,26 +1456,29 @@
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
-       "rest": "45s",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "pronepull",
        "sets": 2,
        "reps": "10",
-       "rest": "45s",
+       "rest": "-",
        "start": 20,
        "step": 5,
        "every": 6,
        "cap": 30
       }
-     ]
+     ],
+     "circuit": true,
+     "rounds": 2,
+     "roundRest": "45s"
     }
    ]
   },
   "liftA": {
    "name": "In-Season Lift A (lower)",
-   "mins": 40,
+   "mins": 50,
    "blocks": [
     {
      "name": "Prep",
@@ -1556,11 +1487,14 @@
        "ex": "quadiso",
        "sets": 5,
        "reps": "45s",
-       "rest": "30s",
+       "rest": "-",
        "note": "BEFORE play.",
        "bw": true
       }
-     ]
+     ],
+     "circuit": true,
+     "rounds": 5,
+     "roundRest": "45s"
     },
     {
      "name": "Strength",
@@ -1640,17 +1574,20 @@
        "ex": "bandpa",
        "sets": 2,
        "reps": "15",
-       "rest": "30s",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "banderer90",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "30s",
+       "rest": "-",
        "bw": true
       }
-     ]
+     ],
+     "circuit": true,
+     "rounds": 2,
+     "roundRest": "45s"
     },
     {
      "name": "Strength",
@@ -1699,7 +1636,7 @@
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "45s",
+       "rest": "-",
        "start": 5,
        "step": 0,
        "every": 1
@@ -1708,19 +1645,22 @@
        "ex": "pronepull",
        "sets": 2,
        "reps": "10",
-       "rest": "45s",
+       "rest": "-",
        "start": 20,
        "step": 5,
        "every": 6,
        "cap": 30
       }
-     ]
+     ],
+     "circuit": true,
+     "rounds": 2,
+     "roundRest": "45s"
     }
    ]
   },
   "priming": {
    "name": "Match Day Priming",
-   "mins": 8,
+   "mins": 10,
    "blocks": [
     {
      "name": "Priming (zero fatigue)",
@@ -1729,35 +1669,35 @@
        "ex": "mbvertunder",
        "sets": 2,
        "reps": "3",
-       "rest": "-",
+       "rest": "45s",
        "fixed": 8
       },
       {
        "ex": "mbvertover",
        "sets": 2,
        "reps": "3",
-       "rest": "-",
+       "rest": "45s",
        "fixed": 8
       },
       {
        "ex": "mbbroad",
        "sets": 2,
        "reps": "3",
-       "rest": "-",
+       "rest": "45s",
        "fixed": 8
       },
       {
        "ex": "pogos",
        "sets": 2,
        "reps": "10",
-       "rest": "-",
+       "rest": "45s",
        "bw": true
       },
       {
        "ex": "approach",
        "sets": 3,
        "reps": "1",
-       "rest": "-",
+       "rest": "45s",
        "note": "80 / 90 / 100%",
        "bw": true
       }
@@ -1767,7 +1707,7 @@
   },
   "volleyball": {
    "name": "Volleyball (men's league)",
-   "mins": 120,
+   "mins": 10,
    "blocks": [
     {
      "name": "Log it",
@@ -1793,7 +1733,7 @@
   },
   "armGym": {
    "name": "Arm Speed (gym, wall)",
-   "mins": 40,
+   "mins": 55,
    "blocks": [
     {
      "name": "Warm-up",
@@ -1809,17 +1749,20 @@
        "ex": "banderir",
        "sets": 2,
        "reps": "15/arm",
-       "rest": "30s",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "ribdis",
        "sets": 2,
        "reps": "6/side",
-       "rest": "30s",
+       "rest": "-",
        "bw": true
       }
-     ]
+     ],
+     "circuit": true,
+     "rounds": 2,
+     "roundRest": "45s"
     },
     {
      "name": "Wall Plyo Routine (1.5-2 m, padded wall)",
@@ -1901,13 +1844,6 @@
        "reps": "5",
        "rest": "60s",
        "fixed": 8
-      },
-      {
-       "ex": "mbrepeat",
-       "sets": 3,
-       "reps": "10",
-       "rest": "60s",
-       "fixed": 15
       }
      ]
     },
@@ -1918,7 +1854,7 @@
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "45s",
+       "rest": "-",
        "start": 5,
        "step": 0,
        "every": 1
@@ -1927,7 +1863,7 @@
        "ex": "pronepull",
        "sets": 2,
        "reps": "10",
-       "rest": "45s",
+       "rest": "-",
        "start": 20,
        "step": 5,
        "every": 6,
@@ -1937,16 +1873,19 @@
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
-       "rest": "45s",
+       "rest": "-",
        "bw": true
       }
-     ]
+     ],
+     "circuit": true,
+     "rounds": 2,
+     "roundRest": "45s"
     }
    ]
   },
   "armHome": {
    "name": "Arm Speed (home, no space)",
-   "mins": 25,
+   "mins": 30,
    "blocks": [
     {
      "name": "Prep",
@@ -1962,17 +1901,20 @@
        "ex": "bandpa",
        "sets": 2,
        "reps": "15",
-       "rest": "30s",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "ribdis",
        "sets": 2,
        "reps": "6/side",
-       "rest": "30s",
+       "rest": "-",
        "bw": true
       }
-     ]
+     ],
+     "circuit": true,
+     "rounds": 2,
+     "roundRest": "45s"
     },
     {
      "name": "Mechanics, no ball",
@@ -1981,19 +1923,22 @@
        "ex": "towel",
        "sets": 4,
        "reps": "8",
-       "rest": "45s",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "wristw",
        "sets": 3,
        "reps": "8/arm",
-       "rest": "45s",
+       "rest": "-",
        "start": 2,
        "step": 0,
        "every": 1
       }
-     ]
+     ],
+     "circuit": true,
+     "rounds": 4,
+     "roundRest": "45s"
     },
     {
      "name": "Arm Care",
@@ -2002,14 +1947,14 @@
        "ex": "banderer90",
        "sets": 3,
        "reps": "12/arm",
-       "rest": "30s",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "45s",
+       "rest": "-",
        "start": 5,
        "step": 0,
        "every": 1
@@ -2018,19 +1963,22 @@
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
-       "rest": "45s",
+       "rest": "-",
        "bw": true
       },
       {
        "ex": "pronepull",
        "sets": 2,
        "reps": "10",
-       "rest": "45s",
+       "rest": "-",
        "start": 20,
        "step": 0,
        "every": 1
       }
-     ]
+     ],
+     "circuit": true,
+     "rounds": 3,
+     "roundRest": "45s"
     }
    ]
   }
