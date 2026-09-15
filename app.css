@@ -200,3 +200,24 @@ a.vid:active{opacity:.6}
   border:1px solid var(--line2);color:var(--txt);font-size:13px;line-height:1;
   display:grid;place-items:center;flex:0 0 auto}
 .tbtn:active{opacity:.6}
+
+/* ---------- rest bar ---------- */
+.restbar{position:fixed;left:0;right:0;z-index:25;
+  bottom:calc(68px + env(safe-area-inset-bottom));
+  height:0;overflow:hidden;transition:height .18s ease;
+  background:var(--surface2);border-top:1px solid var(--line2)}
+.restbar.on{height:56px}
+.restbar>i{position:absolute;inset:0 auto 0 0;background:rgba(211,243,75,.13);
+  transition:width .25s linear;pointer-events:none}
+.restbar.over>i{background:rgba(45,223,143,.18);width:100%!important}
+.rb-in{position:relative;display:flex;align-items:center;gap:12px;
+  height:56px;padding:0 16px;max-width:660px;margin:0 auto}
+.rb-t{font-family:var(--display);font-weight:700;font-size:26px;line-height:1;
+  font-variant-numeric:tabular-nums;color:var(--accent);min-width:64px}
+.restbar.over .rb-t{color:var(--good)}
+.rb-l{flex:1;min-width:0;font-size:13px;color:var(--dim);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rb-x{font-family:var(--display);font-weight:700;font-size:11.5px;
+  text-transform:uppercase;letter-spacing:.9px;color:var(--txt);
+  background:var(--surface3);border:1px solid var(--line2);
+  padding:8px 12px 7px;border-radius:7px;flex:0 0 auto}

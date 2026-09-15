@@ -255,6 +255,94 @@ function getSession(id){
 }
 function started(s){ return !!s && (s.done || !!s.startedAt || s.entries.some(e=>e.sets.some(x=>x.done))); }
 
+/* ---------- rest timer ----------
+   Timestamp-based on purpose: iOS suspends JS when the app is backgrounded or
+   the screen locks, so a tick-counting timer would drift or freeze. Storing the
+   end time means the display is always right when you come back, and an alarm
+   that came due while suspended fires the moment you return. */
+let rest = null;         // {exId, label, endsAt, dur, fired}
+let restTick = null;
+let audioCtx = null;
+
+function restSecs(r){
+  const s = String(r ?? '').trim().toLowerCase();
+  if(!s || s === '-' || s === '0') return 0;
+  if(s.includes('full')) return 150;
+  const m = /([\d.]+)\s*(min|m|s)?/.exec(s);
+  if(!m) return 60;
+  const v = parseFloat(m[1]);
+  return Math.round(m[2] === 'min' || m[2] === 'm' ? v*60 : v);
+}
+function beep(){
+  try{
+    audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+    if(audioCtx.state === 'suspended') audioCtx.resume();
+    const t0 = audioCtx.currentTime;
+    [0, 0.18, 0.36].forEach((off,i) => {
+      const o = audioCtx.createOscillator(), g = audioCtx.createGain();
+      o.type = 'sine'; o.frequency.value = i === 2 ? 1180 : 880;
+      g.gain.setValueAtTime(0.0001, t0+off);
+      g.gain.exponentialRampToValueAtTime(0.35, t0+off+0.02);
+      g.gain.exponentialRampToValueAtTime(0.0001, t0+off+0.15);
+      o.connect(g); g.connect(audioCtx.destination);
+      o.start(t0+off); o.stop(t0+off+0.16);
+    });
+  }catch(e){}
+}
+function notify(title, body){
+  try{
+    if('Notification' in window && Notification.permission === 'granted')
+      new Notification(title, {body, tag:'rest', icon:'icon.svg', silent:false});
+  }catch(e){}
+}
+function restLeft(){ return rest ? Math.ceil((rest.endsAt - Date.now())/1000) : 0; }
+function startRest(exId, restStr){
+  const d = restSecs(restStr);
+  if(!d){ rest = null; return renderRest(); }
+  const ex = P.exercises[exId];
+  rest = {exId, label: ex ? ex.name : '', endsAt: Date.now() + d*1000, dur: d, fired:false};
+  // unlock audio inside the tap that started the rest, or iOS will stay silent
+  try{ audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)(); audioCtx.resume(); }catch(e){}
+  renderRest(); runRest();
+}
+function clearRest(){ rest = null; if(restTick){ clearInterval(restTick); restTick = null; } renderRest(); }
+function runRest(){
+  if(restTick) clearInterval(restTick);
+  restTick = setInterval(() => {
+    if(!rest){ clearInterval(restTick); restTick = null; return; }
+    if(restLeft() <= 0 && !rest.fired){
+      rest.fired = true;
+      beep(); notify('Rest over', `${rest.label} — back to work`);
+      setTimeout(() => { if(rest && rest.fired) clearRest(); }, 4000);
+    }
+    renderRest();
+  }, 250);
+}
+function renderRest(){
+  const el = document.getElementById('restbar');
+  if(!el) return;
+  if(!rest){ el.className = 'restbar'; el.innerHTML = ''; return; }
+  const left = restLeft(), over = left <= 0;
+  const pct = Math.max(0, Math.min(100, (1 - left/rest.dur)*100));
+  el.className = 'restbar on' + (over ? ' over' : '');
+  el.innerHTML = `
+    <i style="width:${pct}%"></i>
+    <div class="rb-in">
+      <span class="rb-t">${over ? 'GO' : hms(left)}</span>
+      <span class="rb-l">${over ? 'rest over' : 'rest · ' + esc(rest.label)}</span>
+      <button class="rb-x" data-act="rest-skip">${over ? 'Dismiss' : 'Skip'}</button>
+    </div>`;
+}
+// an alarm that came due while iOS had the page suspended should fire on return
+document.addEventListener('visibilitychange', () => {
+  if(document.visibilityState !== 'visible' || !rest) return;
+  if(restLeft() <= 0 && !rest.fired){
+    rest.fired = true; beep(); notify('Rest over', `${rest.label} — back to work`);
+    setTimeout(() => { if(rest && rest.fired) clearRest(); }, 4000);
+  }
+  renderRest(); runRest();
+});
+
 /* ---------- session clock ---------- */
 let tick = null;
 /* clock = { accMs, since }. since is null while paused. */
@@ -337,6 +425,7 @@ function render(){
   window.scrollTo(0, keep);
   lastScreen = screen;
   if(openSession){ const s = S.sessions[openSession]; if(s && !s.done && isRunning(s)) startClock(); }
+  renderRest();
 }
 function renderTabs(){
   const tabs = [['today','Today'],['week','Week'],['log','Log'],['tests','Tests'],['data','Data']];
@@ -702,6 +791,19 @@ function vData(){
       value="${S.settings.bw ?? ''}" data-set="bw" style="max-width:150px">
       <span class="muted tiny grow">stays on this device, never in the repo</span></div>
     <div class="tiny" style="margin-top:8px">Used for the ×bodyweight column on key lifts.</div></div>
+  <h2>Rest alarm</h2><div class="card tight"><table>
+    <tr><td>Sound at end of rest</td><td class="r"><span class="pill g">On</span></td></tr>
+    <tr><td>Phone notification</td><td class="r">${
+      !('Notification' in window) ? '<span class="pill n">Unsupported</span>'
+      : Notification.permission === 'granted' ? '<span class="pill g">Allowed</span>'
+      : Notification.permission === 'denied' ? '<span class="pill b">Blocked</span>'
+      : '<button class="btn sec sm" data-act="notif">Enable</button>'}</td></tr>
+    <tr><td>Installed to Home Screen</td><td class="r">${isStandalone()
+      ? '<span class="pill g">Yes</span>' : '<span class="pill w">Required for iOS</span>'}</td></tr>
+  </table><div class="tiny" style="margin-top:10px">iOS only allows web notifications for
+   Home Screen apps, and it suspends the page when the screen locks — so an alarm that comes
+   due with the screen off fires the moment you pick the phone back up, not before. The
+   countdown itself is always accurate because it runs off an end time, not a tick count.</div></div>
   <h2>Program</h2><div class="card tight"><table>
     <tr><td>Build</td><td class="r mono">${esc(P.meta.build || 'unknown')}</td></tr>
     <tr><td>Start</td><td class="r mono">${P.meta.start}</td></tr>
@@ -726,17 +828,36 @@ document.addEventListener('click', e => {
   if(a === 'wk'){ const n = +t.dataset.n;
     if(n >= 1 && n <= P.meta.totalWeeks){ curWeek = n; view = 'week'; openSession = null; }
     return render(); }
-  if(a === 'close'){ stopClock(); openSession = null; return render(); }
+  if(a === 'close'){ stopClock(); clearRest(); openSession = null; return render(); }
   if(a === 'score'){ const d = today(); (S.daily[d] ||= {})[t.dataset.site] = +t.dataset.v; save(); return render(); }
   if(a === 'reset-checkin'){ delete S.daily[today()]; save(); return render(); }
   if(a === 'srpe'){ getSession(openSession).rpe = +t.dataset.v; save(); return render(); }
   if(a === 'clk-toggle'){ const s = getSession(openSession);
     isRunning(s) ? clockPause(s) : clockStart(s); save(); render();
     if(isRunning(s)) startClock(); else stopClock(); return; }
+  if(a === 'rest-skip'){ clearRest(); return; }
+  if(a === 'notif'){
+    if('Notification' in window) Notification.requestPermission().then(()=>render());
+    return; }
   if(a === 'clk-reset'){ const s = getSession(openSession);
     clockReset(s); save(); stopClock(); return render(); }
-  if(a === 'tog'){ const s = getSession(openSession), st = s.entries[+t.dataset.e].sets[+t.dataset.s];
-    st.done = !st.done; save(); return render(); }
+  if(a === 'tog'){ const s = getSession(openSession), en = s.entries[+t.dataset.e];
+    const st = en.sets[+t.dataset.s];
+    st.done = !st.done; save();
+    if(st.done){
+      // circuits have no rest between drills; the rest belongs between rounds,
+      // so it fires when the last drill in the circuit is ticked
+      const def = dayDef(s.dayId);
+      const blk = def && def.blocks.find(b => b.name === en.block);
+      if(blk && blk.circuit){
+        const lastEx = blk.items[blk.items.length-1].ex;
+        if(en.ex === lastEx) startRest(en.ex, blk.roundRest || '45s');
+        else clearRest();
+      } else {
+        startRest(en.ex, en.rx.rest);
+      }
+    } else clearRest();
+    return render(); }
   if(a === 'addset'){ const s = getSession(openSession), en = s.entries[+t.dataset.e];
     const l = en.sets[en.sets.length-1];
     en.sets.push({reps:l?.reps||'', load:l?.load||'', rpe:l?.rpe||'', done:false});
@@ -751,7 +872,7 @@ document.addEventListener('click', e => {
     if(def && def.isPlay){ s.play = true; s.playHours = num($('#pHours')?.value) || 2; }
     if(!s.date) s.date = today();
     clockPause(s);
-    s.done = true; save(); stopClock();
+    s.done = true; save(); stopClock(); clearRest();
     openSession = null; view = 'today'; return render(); }
   if(a === 'unfinish'){ const s = getSession(openSession); s.done = false; save(); return render(); }
   if(a === 'savetest'){ const k = t.dataset.k, inp = document.querySelector(`[data-test="${k}"]`);
@@ -800,6 +921,7 @@ fetch('program.json?v=' + Date.now())
     }
     render();
     if(openSession){ const s = S.sessions[openSession]; if(s && !s.done && isRunning(s)) startClock(); }
+  renderRest();
     requestPersist().then(ok => { if(ok !== null) render(); });
     if('serviceWorker' in navigator){
       // when a new service worker takes over, reload once so you are running the new code
