@@ -886,6 +886,29 @@
    "q": "heavy sled push acceleration sprint technique",
    "equip": "sled",
    "loc": "gym"
+  },
+  "wuLower": {
+   "name": "Warm-up \u2014 PJF Dynamic Warmup",
+   "cat": "prep",
+   "unit": "none",
+   "cue": "Follow the video start to finish. Same one you used on PJF.",
+   "video": "https://www.youtube.com/watch?v=8Y78nYEIxIY",
+   "q": "PJF dynamic warmup",
+   "equip": "space to move",
+   "loc": "both",
+   "mins": 12
+  },
+  "wuUpper": {
+   "name": "Warm-up \u2014 J-Band Arm Care Routine",
+   "cat": "prep",
+   "unit": "none",
+   "cue": "Follow the video. Doubles as your arm care, so do it properly.",
+   "video": "https://www.youtube.com/watch?v=DQmrp-voO8Y",
+   "q": "j band warm up routine baseball",
+   "equip": "J-bands or any light band",
+   "loc": "both",
+   "alt": "Any light resistance band",
+   "mins": 6
   }
  },
  "days": {
@@ -893,6 +916,20 @@
    "name": "Upper A + Test",
    "mins": 75,
    "blocks": [
+    {
+     "name": "Warm-up",
+     "items": [
+      {
+       "ex": "wuUpper",
+       "sets": 1,
+       "reps": "6 min video",
+       "rest": "-",
+       "bw": true,
+       "rpe": 4,
+       "note": "follow along"
+      }
+     ]
+    },
     {
      "name": "Test (weekly)",
      "items": [
@@ -906,56 +943,6 @@
        "rpe": 6
       }
      ]
-    },
-    {
-     "name": "Prep",
-     "items": [
-      {
-       "ex": "armbar",
-       "sets": 2,
-       "reps": "6/side",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "tspine",
-       "sets": 2,
-       "reps": "5/side",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "shpullover",
-       "sets": 2,
-       "reps": "10",
-       "rest": "-",
-       "start": 10,
-       "step": 0,
-       "every": 1,
-       "rpe": 4
-      },
-      {
-       "ex": "bandpa",
-       "sets": 2,
-       "reps": "15",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "banderer90",
-       "sets": 2,
-       "reps": "12/arm",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
-      }
-     ],
-     "circuit": true,
-     "rounds": 2,
-     "roundRest": "45s"
     },
     {
      "name": "Power",
@@ -1089,54 +1076,18 @@
    "mins": 65,
    "blocks": [
     {
-     "name": "Prep",
+     "name": "Warm-up",
      "items": [
       {
-       "ex": "armbar",
-       "sets": 2,
-       "reps": "6/side",
+       "ex": "wuUpper",
+       "sets": 1,
+       "reps": "6 min video",
        "rest": "-",
        "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "tspine",
-       "sets": 2,
-       "reps": "5/side",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "shpullover",
-       "sets": 2,
-       "reps": "10",
-       "rest": "-",
-       "start": 10,
-       "step": 0,
-       "every": 1,
-       "rpe": 4
-      },
-      {
-       "ex": "bandpa",
-       "sets": 2,
-       "reps": "15",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "banderer90",
-       "sets": 2,
-       "reps": "12/arm",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
+       "rpe": 4,
+       "note": "follow along"
       }
-     ],
-     "circuit": true,
-     "rounds": 2,
-     "roundRest": "45s"
+     ]
     },
     {
      "name": "Strength",
@@ -1219,17 +1170,6 @@
        "rest": "-",
        "bw": true,
        "rpe": 4
-      },
-      {
-       "ex": "revfly",
-       "sets": 2,
-       "reps": "12",
-       "rest": "-",
-       "start": 12.5,
-       "step": 2.5,
-       "every": 4,
-       "cap": 25,
-       "rpe": 4
       }
      ],
      "circuit": true,
@@ -1243,37 +1183,27 @@
    "mins": 85,
    "blocks": [
     {
-     "name": "Prep",
+     "name": "Warm-up",
      "items": [
       {
-       "ex": "hipskip",
-       "sets": 2,
-       "reps": "20yd",
+       "ex": "wuLower",
+       "sets": 1,
+       "reps": "12 min video",
        "rest": "-",
        "bw": true,
-       "rpe": 4
+       "rpe": 4,
+       "note": "follow along"
       },
       {
        "ex": "quadiso",
        "sets": 5,
        "reps": "45s",
-       "rest": "-",
+       "rest": "30s",
        "note": "70% effort, ~60 deg. BEFORE the session.",
        "bw": true,
        "rpe": 4
-      },
-      {
-       "ex": "pogos",
-       "sets": 2,
-       "reps": "15",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
       }
-     ],
-     "circuit": true,
-     "rounds": 5,
-     "roundRest": "45s"
+     ]
     },
     {
      "name": "Jump",
@@ -1283,14 +1213,6 @@
        "sets": 4,
        "reps": "3",
        "rest": "60s",
-       "bw": true,
-       "rpe": 6
-      },
-      {
-       "ex": "boxrepeat",
-       "sets": 3,
-       "reps": "5",
-       "rest": "75s",
        "bw": true,
        "rpe": 6
       },
@@ -1391,33 +1313,15 @@
      "name": "Warm-up",
      "items": [
       {
-       "ex": "banderir",
-       "sets": 2,
-       "reps": "15/arm",
+       "ex": "wuUpper",
+       "sets": 1,
+       "reps": "6 min video",
        "rest": "-",
        "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "wristsnap",
-       "sets": 2,
-       "reps": "10",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "revthrow",
-       "sets": 2,
-       "reps": "8",
-       "rest": "-",
-       "fixed": 2,
-       "rpe": 4
+       "rpe": 4,
+       "note": "follow along"
       }
-     ],
-     "circuit": true,
-     "rounds": 2,
-     "roundRest": "45s"
+     ]
     },
     {
      "name": "Plyo Ball Routine (fixed order)",
@@ -1511,47 +1415,29 @@
   },
   "lowerA2": {
    "name": "Lower Power A (contrast)",
-   "mins": 65,
+   "mins": 70,
    "blocks": [
     {
-     "name": "Prep",
+     "name": "Warm-up",
      "items": [
       {
-       "ex": "hipskip",
-       "sets": 2,
-       "reps": "20yd",
+       "ex": "wuLower",
+       "sets": 1,
+       "reps": "12 min video",
        "rest": "-",
        "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "anklelift",
-       "sets": 2,
-       "reps": "8/side",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
+       "rpe": 4,
+       "note": "follow along"
       },
       {
        "ex": "quadiso",
        "sets": 5,
        "reps": "45s",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "pogos",
-       "sets": 2,
-       "reps": "15",
-       "rest": "-",
+       "rest": "30s",
        "bw": true,
        "rpe": 4
       }
-     ],
-     "circuit": true,
-     "rounds": 5,
-     "roundRest": "45s"
+     ]
     },
     {
      "name": "French Contrast (3-4 rounds, in order)",
@@ -1660,47 +1546,29 @@
   },
   "lowerB2": {
    "name": "Lower Power B (approach-specific)",
-   "mins": 75,
+   "mins": 80,
    "blocks": [
     {
-     "name": "Prep",
+     "name": "Warm-up",
      "items": [
       {
-       "ex": "hipskip",
-       "sets": 2,
-       "reps": "20yd",
+       "ex": "wuLower",
+       "sets": 1,
+       "reps": "12 min video",
        "rest": "-",
        "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "anklelift",
-       "sets": 2,
-       "reps": "8/side",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
+       "rpe": 4,
+       "note": "follow along"
       },
       {
        "ex": "quadiso",
        "sets": 5,
        "reps": "45s",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "pogos",
-       "sets": 2,
-       "reps": "15",
-       "rest": "-",
+       "rest": "30s",
        "bw": true,
        "rpe": 4
       }
-     ],
-     "circuit": true,
-     "rounds": 5,
-     "roundRest": "45s"
+     ]
     },
     {
      "name": "Approach + Reactive",
@@ -1790,31 +1658,21 @@
   },
   "upperMaint": {
    "name": "Upper Maintenance",
-   "mins": 40,
+   "mins": 45,
    "blocks": [
     {
-     "name": "Prep",
+     "name": "Warm-up",
      "items": [
       {
-       "ex": "bandpa",
-       "sets": 2,
-       "reps": "15",
+       "ex": "wuUpper",
+       "sets": 1,
+       "reps": "6 min video",
        "rest": "-",
        "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "banderer90",
-       "sets": 2,
-       "reps": "12/arm",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
+       "rpe": 4,
+       "note": "follow along"
       }
-     ],
-     "circuit": true,
-     "rounds": 2,
-     "roundRest": "45s"
+     ]
     },
     {
      "name": "Strength (cut sets, HOLD load)",
@@ -1900,24 +1758,30 @@
   },
   "liftA": {
    "name": "In-Season Lift A (lower)",
-   "mins": 50,
+   "mins": 65,
    "blocks": [
     {
-     "name": "Prep",
+     "name": "Warm-up",
      "items": [
+      {
+       "ex": "wuLower",
+       "sets": 1,
+       "reps": "12 min video",
+       "rest": "-",
+       "bw": true,
+       "rpe": 4,
+       "note": "follow along"
+      },
       {
        "ex": "quadiso",
        "sets": 5,
        "reps": "45s",
-       "rest": "-",
+       "rest": "30s",
        "note": "BEFORE play.",
        "bw": true,
        "rpe": 4
       }
-     ],
-     "circuit": true,
-     "rounds": 5,
-     "roundRest": "45s"
+     ]
     },
     {
      "name": "Strength",
@@ -1997,28 +1861,18 @@
    "mins": 40,
    "blocks": [
     {
-     "name": "Prep",
+     "name": "Warm-up",
      "items": [
       {
-       "ex": "bandpa",
-       "sets": 2,
-       "reps": "15",
+       "ex": "wuUpper",
+       "sets": 1,
+       "reps": "6 min video",
        "rest": "-",
        "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "banderer90",
-       "sets": 2,
-       "reps": "12/arm",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
+       "rpe": 4,
+       "note": "follow along"
       }
-     ],
-     "circuit": true,
-     "rounds": 2,
-     "roundRest": "45s"
+     ]
     },
     {
      "name": "Strength",
@@ -2182,33 +2036,15 @@
      "name": "Warm-up",
      "items": [
       {
-       "ex": "tubing",
+       "ex": "wuUpper",
        "sets": 1,
-       "reps": "full series",
+       "reps": "6 min video",
        "rest": "-",
        "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "banderir",
-       "sets": 2,
-       "reps": "15/arm",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "ribdis",
-       "sets": 2,
-       "reps": "6/side",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
+       "rpe": 4,
+       "note": "follow along"
       }
-     ],
-     "circuit": true,
-     "rounds": 2,
-     "roundRest": "45s"
+     ]
     },
     {
      "name": "Wall Plyo Routine (1.5-2 m, padded wall)",
@@ -2316,17 +2152,6 @@
        "rpe": 4
       },
       {
-       "ex": "pronepull",
-       "sets": 2,
-       "reps": "10",
-       "rest": "-",
-       "start": 20,
-       "step": 5,
-       "every": 6,
-       "cap": 30,
-       "rpe": 4
-      },
-      {
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
@@ -2343,39 +2168,21 @@
   },
   "armHome": {
    "name": "Arm Speed (home, no space)",
-   "mins": 30,
+   "mins": 25,
    "blocks": [
     {
-     "name": "Prep",
+     "name": "Warm-up",
      "items": [
       {
-       "ex": "tubing",
+       "ex": "wuUpper",
        "sets": 1,
-       "reps": "full series",
+       "reps": "6 min video",
        "rest": "-",
        "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "bandpa",
-       "sets": 2,
-       "reps": "15",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "ribdis",
-       "sets": 2,
-       "reps": "6/side",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
+       "rpe": 4,
+       "note": "follow along"
       }
-     ],
-     "circuit": true,
-     "rounds": 2,
-     "roundRest": "45s"
+     ]
     },
     {
      "name": "Mechanics, no ball",
@@ -2407,14 +2214,6 @@
      "name": "Arm Care",
      "items": [
       {
-       "ex": "banderer90",
-       "sets": 3,
-       "reps": "12/arm",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
-      },
-      {
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
@@ -2431,16 +2230,6 @@
        "rest": "-",
        "bw": true,
        "rpe": 4
-      },
-      {
-       "ex": "pronepull",
-       "sets": 2,
-       "reps": "10",
-       "rest": "-",
-       "start": 20,
-       "step": 0,
-       "every": 1,
-       "rpe": 4
       }
      ],
      "circuit": true,
@@ -2451,35 +2240,25 @@
   },
   "lowerB": {
    "name": "Lower B \u00b7 Unilateral + Agility",
-   "mins": 80,
+   "mins": 85,
    "blocks": [
     {
-     "name": "Prep",
-     "circuit": true,
-     "rounds": 2,
-     "roundRest": "45s",
+     "name": "Warm-up",
      "items": [
       {
-       "ex": "hipskip",
-       "sets": 2,
-       "reps": "20yd",
+       "ex": "wuLower",
+       "sets": 1,
+       "reps": "12 min video",
        "rest": "-",
        "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "recipinhib",
-       "sets": 2,
-       "reps": "12/side",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
+       "rpe": 4,
+       "note": "follow along"
       },
       {
        "ex": "quadiso",
        "sets": 5,
        "reps": "45s",
-       "rest": "-",
+       "rest": "30s",
        "bw": true,
        "rpe": 5,
        "note": "70% effort, before the session"
@@ -2509,15 +2288,6 @@
        "bw": true,
        "rpe": 8,
        "note": "Moderate resistance"
-      },
-      {
-       "ex": "ctread",
-       "sets": 3,
-       "reps": "8s",
-       "rest": "2min",
-       "bw": true,
-       "rpe": 9,
-       "note": "No resistance, top speed"
       }
      ]
     },
@@ -2577,7 +2347,7 @@
     {
      "name": "Lower Leg",
      "circuit": true,
-     "rounds": 3,
+     "rounds": 2,
      "roundRest": "45s",
      "items": [
       {
@@ -2605,39 +2375,21 @@
   },
   "armLowerC": {
    "name": "Arm Speed + Lower C \u00b7 Extensive",
-   "mins": 80,
+   "mins": 60,
    "blocks": [
     {
      "name": "Warm-up",
      "items": [
       {
-       "ex": "tubing",
+       "ex": "wuUpper",
        "sets": 1,
-       "reps": "full series",
+       "reps": "6 min video",
        "rest": "-",
        "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "banderir",
-       "sets": 2,
-       "reps": "15/arm",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "ribdis",
-       "sets": 2,
-       "reps": "6/side",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
+       "rpe": 4,
+       "note": "follow along"
       }
-     ],
-     "circuit": true,
-     "rounds": 2,
-     "roundRest": "45s"
+     ]
     },
     {
      "name": "Wall Plyo Routine (1.5-2 m, padded wall)",
@@ -2691,14 +2443,6 @@
        "step": 0,
        "every": 1,
        "rpe": 6
-      },
-      {
-       "ex": "towel",
-       "sets": 3,
-       "reps": "8",
-       "rest": "45s",
-       "bw": true,
-       "rpe": 6
       }
      ]
     },
@@ -2714,43 +2458,6 @@
        "rpe": 6
       }
      ]
-    },
-    {
-     "name": "Arm Care",
-     "items": [
-      {
-       "ex": "sidelyer",
-       "sets": 2,
-       "reps": "12/arm",
-       "rest": "-",
-       "start": 5,
-       "step": 0,
-       "every": 1,
-       "rpe": 4
-      },
-      {
-       "ex": "pronepull",
-       "sets": 2,
-       "reps": "10",
-       "rest": "-",
-       "start": 20,
-       "step": 5,
-       "every": 6,
-       "cap": 30,
-       "rpe": 4
-      },
-      {
-       "ex": "serratus",
-       "sets": 2,
-       "reps": "10",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4
-      }
-     ],
-     "circuit": true,
-     "rounds": 2,
-     "roundRest": "45s"
     },
     {
      "name": "Lower C \u00b7 Posterior + Lower Leg",
@@ -2778,14 +2485,6 @@
        "cap": 75,
        "rpe": 7,
        "note": "C2"
-      },
-      {
-       "ex": "hipbridge",
-       "sets": 3,
-       "reps": "12",
-       "rest": "60s",
-       "bw": true,
-       "rpe": 6
       }
      ]
     },
@@ -2812,16 +2511,6 @@
        "reps": "10/side",
        "rest": "-",
        "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "ankleres",
-       "sets": 2,
-       "reps": "20s",
-       "rest": "-",
-       "start": 10,
-       "step": 0,
-       "every": 1,
        "rpe": 4
       },
       {
