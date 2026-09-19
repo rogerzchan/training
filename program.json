@@ -5,7 +5,7 @@
   "peakEvent": "NACIVT Los Angeles",
   "peakDate": "2027-09-04",
   "totalWeeks": 52,
-  "build": "2026-09-19 15:56",
+  "build": "2026-09-19 16:00",
   "maxSessionMins": 90
  },
  "budget": {
@@ -1207,15 +1207,6 @@
        "bw": true,
        "rpe": 4,
        "note": "follow along"
-      },
-      {
-       "ex": "quadiso",
-       "sets": 5,
-       "reps": "45s",
-       "rest": "30s",
-       "note": "70% effort, ~60 deg. BEFORE the session.",
-       "bw": true,
-       "rpe": 4
       }
      ]
     },
@@ -1306,6 +1297,15 @@
        "every": 3,
        "cap": 85,
        "rpe": 7
+      },
+      {
+       "ex": "spanish",
+       "sets": 3,
+       "reps": "45s",
+       "rest": "45s",
+       "bw": true,
+       "rpe": 7,
+       "note": "tendon work \u2014 last thing you do"
       }
      ]
     }
@@ -1421,7 +1421,7 @@
   },
   "lowerA2": {
    "name": "Lower Power A (contrast)",
-   "mins": 65,
+   "mins": 60,
    "blocks": [
     {
      "name": "Warm-up",
@@ -1434,14 +1434,6 @@
        "bw": true,
        "rpe": 4,
        "note": "follow along"
-      },
-      {
-       "ex": "quadiso",
-       "sets": 5,
-       "reps": "45s",
-       "rest": "30s",
-       "bw": true,
-       "rpe": 4
       }
      ]
     },
@@ -1537,6 +1529,15 @@
        "every": 3,
        "cap": 85,
        "rpe": 7
+      },
+      {
+       "ex": "spanish",
+       "sets": 3,
+       "reps": "45s",
+       "rest": "45s",
+       "bw": true,
+       "rpe": 7,
+       "note": "tendon work \u2014 last thing you do"
       }
      ]
     }
@@ -1557,14 +1558,6 @@
        "bw": true,
        "rpe": 4,
        "note": "follow along"
-      },
-      {
-       "ex": "quadiso",
-       "sets": 5,
-       "reps": "45s",
-       "rest": "30s",
-       "bw": true,
-       "rpe": 4
       }
      ]
     },
@@ -1636,6 +1629,20 @@
        "every": 2,
        "cap": 180,
        "rpe": 7
+      }
+     ]
+    },
+    {
+     "name": "Finisher",
+     "items": [
+      {
+       "ex": "spanish",
+       "sets": 3,
+       "reps": "45s",
+       "rest": "45s",
+       "bw": true,
+       "rpe": 7,
+       "note": "tendon work \u2014 last thing you do"
       }
      ]
     }
@@ -1753,15 +1760,6 @@
        "bw": true,
        "rpe": 4,
        "note": "follow along"
-      },
-      {
-       "ex": "quadiso",
-       "sets": 5,
-       "reps": "45s",
-       "rest": "30s",
-       "note": "BEFORE play.",
-       "bw": true,
-       "rpe": 4
       }
      ]
     },
@@ -1820,6 +1818,20 @@
        "every": 3,
        "cap": 85,
        "rpe": 7
+      }
+     ]
+    },
+    {
+     "name": "Finisher",
+     "items": [
+      {
+       "ex": "spanish",
+       "sets": 3,
+       "reps": "45s",
+       "rest": "45s",
+       "bw": true,
+       "rpe": 7,
+       "note": "tendon work \u2014 last thing you do"
       }
      ]
     }
@@ -2189,7 +2201,7 @@
   },
   "lowerB": {
    "name": "Lower B \u00b7 Unilateral + Agility",
-   "mins": 85,
+   "mins": 80,
    "blocks": [
     {
      "name": "Warm-up",
@@ -2202,15 +2214,6 @@
        "bw": true,
        "rpe": 4,
        "note": "follow along"
-      },
-      {
-       "ex": "quadiso",
-       "sets": 5,
-       "reps": "45s",
-       "rest": "30s",
-       "bw": true,
-       "rpe": 5,
-       "note": "70% effort, before the session"
       }
      ]
     },
@@ -2306,6 +2309,15 @@
        "every": 4,
        "cap": 45,
        "rpe": 7
+      },
+      {
+       "ex": "spanish",
+       "sets": 3,
+       "reps": "45s",
+       "rest": "45s",
+       "bw": true,
+       "rpe": 7,
+       "note": "tendon work \u2014 last thing you do"
       }
      ]
     }
@@ -2313,7 +2325,7 @@
   },
   "armLowerC": {
    "name": "Arm Speed + Lower C \u00b7 Extensive",
-   "mins": 65,
+   "mins": 70,
    "blocks": [
     {
      "name": "Warm-up",
@@ -2448,6 +2460,15 @@
        "rest": "60s",
        "bw": true,
        "rpe": 5
+      },
+      {
+       "ex": "spanish",
+       "sets": 3,
+       "reps": "45s",
+       "rest": "45s",
+       "bw": true,
+       "rpe": 7,
+       "note": "tendon work \u2014 last thing you do"
       }
      ]
     }
