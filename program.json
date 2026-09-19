@@ -465,13 +465,13 @@
   },
   "invrow": {
    "name": "Inverted Row",
-   "cue": "Body rigid. Chest to the bar.",
+   "cue": "TRX or rings. Walk feet forward to make it harder, not more reps. 1s squeeze at the top.",
    "cat": "upper",
    "unit": "lb",
    "q": "inverted row form",
    "equip": "bar or rings",
    "loc": "gym",
-   "alt": "Table-edge row, or a band row"
+   "alt": "TRX straps, rings, a bar, or a table edge"
   },
   "landmine": {
    "name": "Landmine Split Stance Dip Press",
@@ -909,12 +909,32 @@
    "loc": "both",
    "alt": "Any light resistance band",
    "mins": 6
+  },
+  "gastroc": {
+   "name": "Straight-Leg Calf Raise",
+   "cat": "lower",
+   "unit": "lb",
+   "cue": "Knee locked. Gastroc, not soleus. Pause at the top.",
+   "q": "standing straight leg calf raise gastrocnemius",
+   "equip": "calf machine or dumbbells",
+   "loc": "gym",
+   "alt": "Standing calf raise holding dumbbells, or a Smith machine"
+  },
+  "tibraise": {
+   "name": "KB Anti-Tib Raise (bench)",
+   "cat": "prep",
+   "unit": "lb",
+   "cue": "Heels on the bench edge, KB hooked on the foot. The brakes for landing and sprinting.",
+   "q": "kettlebell tibialis raise bench anterior tib",
+   "equip": "kettlebell + bench",
+   "loc": "gym",
+   "alt": "Wall tib raise, bodyweight"
   }
  },
  "days": {
   "upperA": {
    "name": "Upper A + Test",
-   "mins": 75,
+   "mins": 85,
    "blocks": [
     {
      "name": "Warm-up",
@@ -1039,7 +1059,7 @@
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "-",
+       "rest": "60s",
        "start": 5,
        "step": 0,
        "every": 1,
@@ -1049,7 +1069,7 @@
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
-       "rest": "-",
+       "rest": "60s",
        "bw": true,
        "rpe": 4
       },
@@ -1057,17 +1077,14 @@
        "ex": "pronepull",
        "sets": 2,
        "reps": "10",
-       "rest": "-",
+       "rest": "60s",
        "start": 20,
        "step": 5,
        "every": 6,
        "cap": 30,
        "rpe": 4
       }
-     ],
-     "circuit": true,
-     "rounds": 2,
-     "roundRest": "45s"
+     ]
     }
    ]
   },
@@ -1098,10 +1115,10 @@
        "reps": "6",
        "rest": "2min",
        "note": "A1",
-       "start": 125,
+       "start": 135,
        "step": 5,
        "every": 2,
-       "cap": 165,
+       "cap": 175,
        "rpe": 8
       },
       {
@@ -1109,7 +1126,7 @@
        "sets": 4,
        "reps": "10",
        "rest": "2min",
-       "note": "A2",
+       "note": "A2 \u00b7 TRX or rings",
        "bw": true,
        "rpe": 7
       },
@@ -1157,7 +1174,7 @@
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "-",
+       "rest": "60s",
        "start": 5,
        "step": 0,
        "every": 1,
@@ -1167,20 +1184,17 @@
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
-       "rest": "-",
+       "rest": "60s",
        "bw": true,
        "rpe": 4
       }
-     ],
-     "circuit": true,
-     "rounds": 2,
-     "roundRest": "45s"
+     ]
     }
    ]
   },
   "lowerPower": {
    "name": "Lower A \u00b7 Power",
-   "mins": 85,
+   "mins": 80,
    "blocks": [
     {
      "name": "Warm-up",
@@ -1291,14 +1305,6 @@
        "step": 5,
        "every": 3,
        "cap": 85,
-       "rpe": 7
-      },
-      {
-       "ex": "spanish",
-       "sets": 3,
-       "reps": "30s",
-       "rest": "45s",
-       "bw": true,
        "rpe": 7
       }
      ]
@@ -1415,7 +1421,7 @@
   },
   "lowerA2": {
    "name": "Lower Power A (contrast)",
-   "mins": 70,
+   "mins": 65,
    "blocks": [
     {
      "name": "Warm-up",
@@ -1531,14 +1537,6 @@
        "every": 3,
        "cap": 85,
        "rpe": 7
-      },
-      {
-       "ex": "spanish",
-       "sets": 3,
-       "reps": "30s",
-       "rest": "45s",
-       "bw": true,
-       "rpe": 7
       }
      ]
     }
@@ -1546,7 +1544,7 @@
   },
   "lowerB2": {
    "name": "Lower Power B (approach-specific)",
-   "mins": 80,
+   "mins": 75,
    "blocks": [
     {
      "name": "Warm-up",
@@ -1640,25 +1638,12 @@
        "rpe": 7
       }
      ]
-    },
-    {
-     "name": "Finisher",
-     "items": [
-      {
-       "ex": "spanish",
-       "sets": 3,
-       "reps": "30s",
-       "rest": "45s",
-       "bw": true,
-       "rpe": 7
-      }
-     ]
     }
    ]
   },
   "upperMaint": {
    "name": "Upper Maintenance",
-   "mins": 45,
+   "mins": 50,
    "blocks": [
     {
      "name": "Warm-up",
@@ -1724,7 +1709,7 @@
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "-",
+       "rest": "60s",
        "start": 5,
        "step": 0,
        "every": 1,
@@ -1734,7 +1719,7 @@
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
-       "rest": "-",
+       "rest": "60s",
        "bw": true,
        "rpe": 4
       },
@@ -1742,23 +1727,20 @@
        "ex": "pronepull",
        "sets": 2,
        "reps": "10",
-       "rest": "-",
+       "rest": "60s",
        "start": 20,
        "step": 5,
        "every": 6,
        "cap": 30,
        "rpe": 4
       }
-     ],
-     "circuit": true,
-     "rounds": 2,
-     "roundRest": "45s"
+     ]
     }
    ]
   },
   "liftA": {
    "name": "In-Season Lift A (lower)",
-   "mins": 65,
+   "mins": 60,
    "blocks": [
     {
      "name": "Warm-up",
@@ -1840,25 +1822,12 @@
        "rpe": 7
       }
      ]
-    },
-    {
-     "name": "Finisher",
-     "items": [
-      {
-       "ex": "spanish",
-       "sets": 3,
-       "reps": "30s",
-       "rest": "45s",
-       "bw": true,
-       "rpe": 7
-      }
-     ]
     }
    ]
   },
   "liftB": {
    "name": "In-Season Lift B (upper)",
-   "mins": 40,
+   "mins": 45,
    "blocks": [
     {
      "name": "Warm-up",
@@ -1925,7 +1894,7 @@
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "-",
+       "rest": "60s",
        "start": 5,
        "step": 0,
        "every": 1,
@@ -1935,17 +1904,14 @@
        "ex": "pronepull",
        "sets": 2,
        "reps": "10",
-       "rest": "-",
+       "rest": "60s",
        "start": 20,
        "step": 5,
        "every": 6,
        "cap": 30,
        "rpe": 4
       }
-     ],
-     "circuit": true,
-     "rounds": 2,
-     "roundRest": "45s"
+     ]
     }
    ]
   },
@@ -2030,7 +1996,7 @@
   },
   "armGym": {
    "name": "Arm Speed (gym, wall)",
-   "mins": 55,
+   "mins": 50,
    "blocks": [
     {
      "name": "Warm-up",
@@ -2065,23 +2031,6 @@
        "rest": "60s",
        "fixed": 2,
        "note": "Always second",
-       "rpe": 6
-      },
-      {
-       "ex": "wallrocker",
-       "sets": 3,
-       "reps": "5",
-       "rest": "60s",
-       "fixed": 1,
-       "rpe": 6
-      },
-      {
-       "ex": "wallwind",
-       "sets": 3,
-       "reps": "5",
-       "rest": "60s",
-       "fixed": 1,
-       "note": "Always last",
        "rpe": 6
       }
      ]
@@ -2145,7 +2094,7 @@
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "-",
+       "rest": "60s",
        "start": 5,
        "step": 0,
        "every": 1,
@@ -2155,14 +2104,11 @@
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
-       "rest": "-",
+       "rest": "60s",
        "bw": true,
        "rpe": 4
       }
-     ],
-     "circuit": true,
-     "rounds": 2,
-     "roundRest": "45s"
+     ]
     }
    ]
   },
@@ -2191,7 +2137,7 @@
        "ex": "towel",
        "sets": 4,
        "reps": "8",
-       "rest": "-",
+       "rest": "45s",
        "bw": true,
        "rpe": 6
       },
@@ -2199,16 +2145,13 @@
        "ex": "wristw",
        "sets": 3,
        "reps": "8/arm",
-       "rest": "-",
+       "rest": "45s",
        "start": 2,
        "step": 0,
        "every": 1,
        "rpe": 6
       }
-     ],
-     "circuit": true,
-     "rounds": 4,
-     "roundRest": "45s"
+     ]
     },
     {
      "name": "Arm Care",
@@ -2217,7 +2160,7 @@
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "-",
+       "rest": "60s",
        "start": 5,
        "step": 0,
        "every": 1,
@@ -2227,14 +2170,11 @@
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
-       "rest": "-",
+       "rest": "60s",
        "bw": true,
        "rpe": 4
       }
-     ],
-     "circuit": true,
-     "rounds": 3,
-     "roundRest": "45s"
+     ]
     }
    ]
   },
@@ -2346,28 +2286,17 @@
     },
     {
      "name": "Lower Leg",
-     "circuit": true,
-     "rounds": 2,
-     "roundRest": "45s",
      "items": [
       {
        "ex": "olcalf",
-       "sets": 3,
+       "sets": 2,
        "reps": "12/leg",
-       "rest": "-",
+       "rest": "75s",
        "start": 25,
        "step": 5,
        "every": 4,
        "cap": 45,
        "rpe": 7
-      },
-      {
-       "ex": "spanish",
-       "sets": 3,
-       "reps": "30s",
-       "rest": "-",
-       "bw": true,
-       "rpe": 6
       }
      ]
     }
@@ -2375,7 +2304,7 @@
   },
   "armLowerC": {
    "name": "Arm Speed + Lower C \u00b7 Extensive",
-   "mins": 60,
+   "mins": 65,
    "blocks": [
     {
      "name": "Warm-up",
@@ -2410,23 +2339,6 @@
        "rest": "60s",
        "fixed": 2,
        "note": "Always second",
-       "rpe": 6
-      },
-      {
-       "ex": "wallrocker",
-       "sets": 3,
-       "reps": "5",
-       "rest": "60s",
-       "fixed": 1,
-       "rpe": 6
-      },
-      {
-       "ex": "wallwind",
-       "sets": 3,
-       "reps": "5",
-       "rest": "60s",
-       "fixed": 1,
-       "note": "Always last",
        "rpe": 6
       }
      ]
@@ -2490,34 +2402,41 @@
     },
     {
      "name": "Ankle + Tissue",
-     "circuit": true,
-     "rounds": 2,
-     "roundRest": "45s",
      "items": [
       {
-       "ex": "soleus",
+       "ex": "gastroc",
        "sets": 2,
        "reps": "15",
-       "rest": "-",
-       "start": 120,
+       "rest": "75s",
+       "start": 180,
        "step": 10,
        "every": 2,
-       "cap": 180,
+       "cap": 240,
        "rpe": 7
       },
       {
        "ex": "ankle3d",
        "sets": 2,
        "reps": "10/side",
-       "rest": "-",
+       "rest": "30s",
        "bw": true,
        "rpe": 4
+      },
+      {
+       "ex": "tibraise",
+       "sets": 2,
+       "reps": "10/leg",
+       "rest": "30s",
+       "start": 18,
+       "step": 0,
+       "every": 1,
+       "rpe": 5
       },
       {
        "ex": "pogos",
        "sets": 2,
        "reps": "20",
-       "rest": "-",
+       "rest": "60s",
        "bw": true,
        "rpe": 5
       }

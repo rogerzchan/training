@@ -404,6 +404,58 @@ function weekProgress(n){
   return {done,total};
 }
 
+/* Export is written to be readable on its own: exercise names, what was
+   prescribed and what was actually done, side by side, plus notes. The raw
+   state rides along under _state so an import is still lossless. */
+function rxText(it, week, exId){
+  const L = prescribedLoad(it, week, exId);
+  const ex = P.exercises[exId] || {};
+  return `${it.sets} x ${it.reps}` + (L ? ` @ ${loadLabel(L, ex.unit)}` : '')
+       + (String(it.rest).trim() && String(it.rest).trim() !== '-' ? `, rest ${it.rest}` : '');
+}
+function buildExport(){
+  const sessions = completedSessions().concat(
+    Object.values(S.sessions).filter(s => !s.done && started(s))
+  ).map(s => {
+    const def = dayDef(s.dayId) || {};
+    return {
+      id: s.id, week: s.week, session: (s.slot ?? 0) + 1,
+      name: def.name || s.dayId, date: s.date, done: !!s.done,
+      durationMin: elapsedOf(s) ? +(elapsedOf(s)/60).toFixed(1) : null,
+      targetMin: def.mins || null,
+      sessionRPE: s.rpe ?? null,
+      playHours: s.play ? (num(s.playHours) || 2) : undefined,
+      notes: s.notes || undefined,
+      exercises: (s.entries||[])
+        .filter(en => en.note || (en.sets||[]).some(x => x.done))   // prefills are not data
+        .map(en => ({...en, sets: (en.sets||[]).filter(x => x.done || en.note)}))
+        .map(en => {
+          const ex = P.exercises[en.ex] || {};
+          return {
+            exercise: ex.name || en.ex,
+            block: en.block,
+            prescribed: rxText(en.rx, s.week, en.ex),
+            unit: ex.unit === 'none' ? 'bodyweight' : (ex.unit || 'lb'),
+            sets: (en.sets||[]).map(x => ({
+              reps: num(x.reps), load: num(x.load), rpe: num(x.rpe), done: !!x.done })),
+            note: en.note || undefined
+          };
+        })
+    };
+  });
+  return {
+    exportedAt: new Date().toISOString(),
+    build: P.meta.build,
+    bodyweightLb: num(S.settings.bw) || undefined,
+    morningPain: Object.entries(S.daily).sort()
+      .map(([date,v]) => ({date, quad:v.quad, shoulder:v.shoulder})),
+    tests: S.tests.slice().sort((a,b)=> a.d<b.d?1:-1)
+      .map(t => ({date:t.d, test:(TESTS.find(x=>x[0]===t.k)||[,t.k])[1], value:t.v})),
+    sessions,
+    _state: S
+  };
+}
+
 /* ---------- render ---------- */
 function syncHash(){
   const h = openSession ? `#/s/${openSession}` : `#/${view}`;
@@ -666,6 +718,10 @@ function vSession(){
         </div>
         <div class="row sb"><button class="link" data-act="addset" data-e="${ei}">+ Add set</button>
         ${en.sets.length>1?`<button class="link" style="color:var(--dim2)" data-act="delset" data-e="${ei}">− Remove</button>`:''}</div>
+        ${(en.noteOpen || en.note) ? `
+          <textarea class="exnote" rows="2" placeholder="Swapped it? Felt off? Write it here."
+            data-f="exnote" data-e="${ei}">${esc(en.note||'')}</textarea>` : `
+          <button class="link notebtn" data-act="opennote" data-e="${ei}">+ Note</button>`}
       </div>`;
     });
     h += `<h2>Session</h2><div class="card">
@@ -867,6 +923,8 @@ document.addEventListener('click', e => {
       }
     } else clearRest();
     return render(); }
+  if(a === 'opennote'){ const s = getSession(openSession);
+    s.entries[+t.dataset.e].noteOpen = true; save(); return render(); }
   if(a === 'addset'){ const s = getSession(openSession), en = s.entries[+t.dataset.e];
     const l = en.sets[en.sets.length-1];
     en.sets.push({reps:l?.reps||'', load:l?.load||'', rpe:l?.rpe||'', done:false});
@@ -891,7 +949,7 @@ document.addEventListener('click', e => {
     save(); return render(); }
   if(a === 'export'){
     S.settings.lastExport = today(); S.settings.lastExportCount = doneCount(); save();
-    const b = new Blob([JSON.stringify(S,null,1)], {type:'application/json'});
+    const b = new Blob([JSON.stringify(buildExport(),null,1)], {type:'application/json'});
     const u = URL.createObjectURL(b), l = document.createElement('a');
     l.href = u; l.download = `training-${today()}.json`; l.click(); URL.revokeObjectURL(u);
     render(); return; }
@@ -905,6 +963,7 @@ document.addEventListener('input', e => {
   const s = getSession(openSession); if(!s) return;
   if(el.dataset.f === 'notes'){ s.notes = el.value; return save(); }
   if(el.dataset.f === 'date'){ s.date = el.value || null; return save(); }
+  if(el.dataset.f === 'exnote'){ s.entries[+el.dataset.e].note = el.value; return save(); }
   if(el.dataset.e == null) return;
   s.entries[+el.dataset.e].sets[+el.dataset.s][el.dataset.f] = el.value;
   save();   // no re-render: keeps focus
@@ -913,7 +972,8 @@ document.addEventListener('change', e => {
   if(e.target.id !== 'fin') return;
   const f = e.target.files[0]; if(!f) return;
   const r = new FileReader();
-  r.onload = () => { try { S = Object.assign(blank(), JSON.parse(r.result)); save(); render(); }
+  r.onload = () => { try { const j = JSON.parse(r.result);
+      S = Object.assign(blank(), j && j._state ? j._state : j); save(); render(); }
                      catch(err){ alert('Could not read that file.'); } };
   r.readAsText(f);
 });

@@ -225,3 +225,9 @@ a.vid:active{opacity:.6}
 /* ---------- equipment substitute line ---------- */
 .equip{margin-top:6px;font-size:12.5px;line-height:1.35;color:var(--dim2)}
 .equip b{color:var(--dim);font-weight:600}
+
+/* ---------- per-exercise note ---------- */
+.notebtn{color:var(--dim2)}
+textarea.exnote{width:100%;margin-top:9px;text-align:left;resize:vertical;
+  font-family:var(--body);font-size:14.5px;font-weight:400;line-height:1.4;
+  padding:10px 11px;min-height:56px}
