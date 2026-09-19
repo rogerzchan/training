@@ -676,14 +676,14 @@
    "alt": "Tennis ball into a mat"
   },
   "wallwind": {
-   "name": "Walking Windup into padded wall",
-   "cue": "Last drill. Full sequence at controlled intent.",
+   "name": "Walking Windup (dry or into padding)",
+   "cue": "Full sequence, controlled intent. No release needed \u2014 dry reps count. Into a pillow if you have room.",
    "cat": "throw",
    "unit": "lb",
    "q": "driveline walking windup plyo ball",
-   "equip": "plyo ball + padded wall",
-   "loc": "gym",
-   "alt": "Tennis ball into a mat"
+   "equip": "a few steps of space",
+   "loc": "both",
+   "alt": "Dry rep with no ball, or a light ball into a mattress"
   },
   "tennisrebound": {
    "name": "Tennis Ball Wall Rebound",
@@ -2114,7 +2114,7 @@
   },
   "armHome": {
    "name": "Arm Speed (home, no space)",
-   "mins": 25,
+   "mins": 30,
    "blocks": [
     {
      "name": "Warm-up",
@@ -2150,6 +2150,15 @@
        "step": 0,
        "every": 1,
        "rpe": 6
+      },
+      {
+       "ex": "wallwind",
+       "sets": 3,
+       "reps": "5",
+       "rest": "60s",
+       "fixed": 1,
+       "rpe": 6,
+       "note": "the only full-sequence reps you get until spring"
       }
      ]
     },
