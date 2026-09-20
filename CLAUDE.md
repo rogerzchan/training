@@ -59,10 +59,21 @@ Also `morningPain` (quad + shoulder, 0-10), `tests`, `bodyweightLb`. Raw state i
 
 ## Duration model
 
-`sets x (work + rest)`, supersets share rest, then **x1.20** for transitions and setup, plus
-**5 min per barbell lift** needing a warm-up ramp (capped at 10). A dev harness lives in
-`.dev/harness.js` (gitignored) that loads `app.js` in node so you can call
-`prescribedLoad`, `vSession`, `jumpBudget` etc. without a browser.
+`sets x (work + rest)`, then **x1.35** for transitions and setup, plus **5 min per barbell
+lift** needing a warm-up ramp (capped at 10). Work time is ~3.5 s/rep, doubled for `/arm`,
+`/leg` and `/side`; timed reps and video runtimes count at face value.
+
+**Supersets do NOT share a rest.** An earlier version of this model assumed they did. The
+app runs a rest timer on every exercise, so he takes both rests, and the three sessions
+logged on 2026-09-19 confirmed it. The 1.35 factor is fitted on those same three sessions,
+whose overhead over raw set time was 21%, 30% and 53%. `[?]` It still under-predicts
+barbell days by roughly 10 min. Re-fit it as sessions accumulate.
+
+The estimator is not in the repo. `mins` is recomputed by running the model in a scratch
+script whenever items change, and every day must land under `meta.maxSessionMins`.
+
+A dev harness lives in `.dev/harness.js` (gitignored) that loads `app.js` in node so you can
+call `prescribedLoad`, `vSession`, `jumpBudget` etc. without a browser.
 
 ## Deploying
 

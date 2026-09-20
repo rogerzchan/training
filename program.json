@@ -5,7 +5,7 @@
   "peakEvent": "NACIVT Los Angeles",
   "peakDate": "2027-09-04",
   "totalWeeks": 52,
-  "build": "2026-09-19 16:00",
+  "build": "2026-09-19 21:44",
   "maxSessionMins": 90
  },
  "budget": {
@@ -677,7 +677,7 @@
   },
   "wallwind": {
    "name": "Walking Windup (dry or into padding)",
-   "cue": "Full sequence, controlled intent. No release needed \u2014 dry reps count. Into a pillow if you have room.",
+   "cue": "Full sequence, controlled intent. No release needed — dry reps count. Into a pillow if you have room.",
    "cat": "throw",
    "unit": "lb",
    "q": "driveline walking windup plyo ball",
@@ -888,7 +888,7 @@
    "loc": "gym"
   },
   "wuLower": {
-   "name": "Warm-up \u2014 PJF Dynamic Warmup",
+   "name": "Warm-up — PJF Dynamic Warmup",
    "cat": "prep",
    "unit": "none",
    "cue": "Follow the video start to finish. Same one you used on PJF.",
@@ -899,7 +899,7 @@
    "mins": 12
   },
   "wuUpper": {
-   "name": "Warm-up \u2014 J-Band Arm Care Routine",
+   "name": "Warm-up — J-Band Arm Care Routine",
    "cat": "prep",
    "unit": "none",
    "cue": "Follow the video. Doubles as your arm care, so do it properly.",
@@ -1021,7 +1021,7 @@
        "reps": "10",
        "rest": "90s",
        "note": "B1 - bent arm, short of end range",
-       "start": 35,
+       "start": 45,
        "step": 5,
        "every": 3,
        "cap": 55,
@@ -1038,17 +1038,6 @@
        "every": 3,
        "cap": 80,
        "rpe": 7
-      },
-      {
-       "ex": "landmine",
-       "sets": 3,
-       "reps": "8/arm",
-       "rest": "60s",
-       "start": 35,
-       "step": 5,
-       "every": 3,
-       "cap": 55,
-       "rpe": 7
       }
      ]
     },
@@ -1059,7 +1048,7 @@
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "60s",
+       "rest": "30s",
        "start": 5,
        "step": 0,
        "every": 1,
@@ -1069,7 +1058,7 @@
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
-       "rest": "60s",
+       "rest": "30s",
        "bw": true,
        "rpe": 4
       },
@@ -1077,7 +1066,7 @@
        "ex": "pronepull",
        "sets": 2,
        "reps": "10",
-       "rest": "60s",
+       "rest": "30s",
        "start": 20,
        "step": 5,
        "every": 6,
@@ -1090,7 +1079,7 @@
   },
   "upperB": {
    "name": "Upper B",
-   "mins": 65,
+   "mins": 75,
    "blocks": [
     {
      "name": "Warm-up",
@@ -1126,7 +1115,7 @@
        "sets": 4,
        "reps": "10",
        "rest": "2min",
-       "note": "A2 \u00b7 TRX or rings",
+       "note": "A2 · TRX or rings",
        "bw": true,
        "rpe": 7
       },
@@ -1136,7 +1125,7 @@
        "reps": "10",
        "rest": "90s",
        "note": "B1",
-       "start": 35,
+       "start": 45,
        "step": 5,
        "every": 3,
        "cap": 55,
@@ -1174,7 +1163,7 @@
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "60s",
+       "rest": "30s",
        "start": 5,
        "step": 0,
        "every": 1,
@@ -1184,7 +1173,7 @@
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
-       "rest": "60s",
+       "rest": "30s",
        "bw": true,
        "rpe": 4
       }
@@ -1193,8 +1182,8 @@
    ]
   },
   "lowerPower": {
-   "name": "Lower A \u00b7 Power",
-   "mins": 80,
+   "name": "Lower A · Power",
+   "mins": 85,
    "blocks": [
     {
      "name": "Warm-up",
@@ -1267,8 +1256,8 @@
        "step": 5,
        "every": 3,
        "cap": 95,
-       "note": "D1",
-       "rpe": 7
+       "rpe": 7,
+       "note": "D1"
       },
       {
        "ex": "soleus",
@@ -1279,8 +1268,8 @@
        "step": 10,
        "every": 2,
        "cap": 180,
-       "note": "D2",
-       "rpe": 7
+       "rpe": 7,
+       "note": "D2"
       }
      ]
     },
@@ -1288,24 +1277,13 @@
      "name": "Finisher",
      "items": [
       {
-       "ex": "ecccalf",
-       "sets": 2,
-       "reps": "10",
-       "rest": "45s",
-       "start": 55,
-       "step": 5,
-       "every": 3,
-       "cap": 85,
-       "rpe": 7
-      },
-      {
        "ex": "spanish",
        "sets": 3,
        "reps": "45s",
        "rest": "45s",
        "bw": true,
        "rpe": 7,
-       "note": "tendon work \u2014 last thing you do"
+       "note": "tendon work — last thing you do"
       }
      ]
     }
@@ -1313,7 +1291,7 @@
   },
   "throwing": {
    "name": "Throwing Day",
-   "mins": 45,
+   "mins": 65,
    "blocks": [
     {
      "name": "Warm-up",
@@ -1421,7 +1399,7 @@
   },
   "lowerA2": {
    "name": "Lower Power A (contrast)",
-   "mins": 60,
+   "mins": 70,
    "blocks": [
     {
      "name": "Warm-up",
@@ -1537,7 +1515,7 @@
        "rest": "45s",
        "bw": true,
        "rpe": 7,
-       "note": "tendon work \u2014 last thing you do"
+       "note": "tendon work — last thing you do"
       }
      ]
     }
@@ -1545,7 +1523,7 @@
   },
   "lowerB2": {
    "name": "Lower Power B (approach-specific)",
-   "mins": 75,
+   "mins": 80,
    "blocks": [
     {
      "name": "Warm-up",
@@ -1642,7 +1620,7 @@
        "rest": "45s",
        "bw": true,
        "rpe": 7,
-       "note": "tendon work \u2014 last thing you do"
+       "note": "tendon work — last thing you do"
       }
      ]
     }
@@ -1716,7 +1694,7 @@
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "60s",
+       "rest": "30s",
        "start": 5,
        "step": 0,
        "every": 1,
@@ -1726,7 +1704,7 @@
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
-       "rest": "60s",
+       "rest": "30s",
        "bw": true,
        "rpe": 4
       },
@@ -1734,7 +1712,7 @@
        "ex": "pronepull",
        "sets": 2,
        "reps": "10",
-       "rest": "60s",
+       "rest": "30s",
        "start": 20,
        "step": 5,
        "every": 6,
@@ -1747,7 +1725,7 @@
   },
   "liftA": {
    "name": "In-Season Lift A (lower)",
-   "mins": 60,
+   "mins": 65,
    "blocks": [
     {
      "name": "Warm-up",
@@ -1831,7 +1809,7 @@
        "rest": "45s",
        "bw": true,
        "rpe": 7,
-       "note": "tendon work \u2014 last thing you do"
+       "note": "tendon work — last thing you do"
       }
      ]
     }
@@ -1839,7 +1817,7 @@
   },
   "liftB": {
    "name": "In-Season Lift B (upper)",
-   "mins": 45,
+   "mins": 50,
    "blocks": [
     {
      "name": "Warm-up",
@@ -1929,7 +1907,7 @@
   },
   "priming": {
    "name": "Match Day Priming",
-   "mins": 10,
+   "mins": 15,
    "blocks": [
     {
      "name": "Priming (zero fatigue)",
@@ -2008,7 +1986,7 @@
   },
   "armGym": {
    "name": "Arm Speed (gym, wall)",
-   "mins": 50,
+   "mins": 55,
    "blocks": [
     {
      "name": "Warm-up",
@@ -2032,7 +2010,7 @@
        "sets": 3,
        "reps": "8",
        "rest": "45s",
-       "fixed": 2,
+       "fixed": 3,
        "note": "Always first",
        "rpe": 6
       },
@@ -2106,7 +2084,7 @@
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "60s",
+       "rest": "30s",
        "start": 5,
        "step": 0,
        "every": 1,
@@ -2116,7 +2094,7 @@
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
-       "rest": "60s",
+       "rest": "30s",
        "bw": true,
        "rpe": 4
       }
@@ -2126,7 +2104,7 @@
   },
   "armHome": {
    "name": "Arm Speed (home, no space)",
-   "mins": 30,
+   "mins": 35,
    "blocks": [
     {
      "name": "Warm-up",
@@ -2181,7 +2159,7 @@
        "ex": "sidelyer",
        "sets": 2,
        "reps": "12/arm",
-       "rest": "60s",
+       "rest": "30s",
        "start": 5,
        "step": 0,
        "every": 1,
@@ -2191,7 +2169,7 @@
        "ex": "serratus",
        "sets": 2,
        "reps": "10",
-       "rest": "60s",
+       "rest": "30s",
        "bw": true,
        "rpe": 4
       }
@@ -2200,8 +2178,8 @@
    ]
   },
   "lowerB": {
-   "name": "Lower B \u00b7 Unilateral + Agility",
-   "mins": 80,
+   "name": "Lower B · Unilateral + Agility",
+   "mins": 75,
    "blocks": [
     {
      "name": "Warm-up",
@@ -2251,7 +2229,7 @@
        "sets": 3,
        "reps": "6/leg",
        "rest": "90s",
-       "start": 70,
+       "start": 40,
        "step": 5,
        "every": 3,
        "cap": 105,
@@ -2263,10 +2241,10 @@
        "sets": 3,
        "reps": "8/leg",
        "rest": "90s",
-       "start": 45,
+       "start": 70,
        "step": 5,
        "every": 3,
-       "cap": 75,
+       "cap": 100,
        "rpe": 7,
        "note": "A2"
       },
@@ -2275,10 +2253,10 @@
        "sets": 3,
        "reps": "8/side",
        "rest": "60s",
-       "start": 25,
+       "start": 40,
        "step": 5,
        "every": 4,
-       "cap": 50,
+       "cap": 65,
        "rpe": 7,
        "note": "B1"
       },
@@ -2317,15 +2295,15 @@
        "rest": "45s",
        "bw": true,
        "rpe": 7,
-       "note": "tendon work \u2014 last thing you do"
+       "note": "tendon work — last thing you do"
       }
      ]
     }
    ]
   },
   "armLowerC": {
-   "name": "Arm Speed + Lower C \u00b7 Extensive",
-   "mins": 70,
+   "name": "Arm Speed + Lower C · Extensive",
+   "mins": 80,
    "blocks": [
     {
      "name": "Warm-up",
@@ -2349,7 +2327,7 @@
        "sets": 3,
        "reps": "8",
        "rest": "45s",
-       "fixed": 2,
+       "fixed": 3,
        "note": "Always first",
        "rpe": 6
       },
@@ -2393,7 +2371,7 @@
      ]
     },
     {
-     "name": "Lower C \u00b7 Posterior + Lower Leg",
+     "name": "Lower C · Posterior + Lower Leg",
      "items": [
       {
        "ex": "rdl",
@@ -2429,7 +2407,7 @@
        "sets": 2,
        "reps": "15",
        "rest": "75s",
-       "start": 180,
+       "start": 200,
        "step": 10,
        "every": 2,
        "cap": 240,
@@ -2468,7 +2446,7 @@
        "rest": "45s",
        "bw": true,
        "rpe": 7,
-       "note": "tendon work \u2014 last thing you do"
+       "note": "tendon work — last thing you do"
       }
      ]
     }
