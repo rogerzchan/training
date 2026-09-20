@@ -5,7 +5,7 @@
   "peakEvent": "NACIVT Los Angeles",
   "peakDate": "2027-09-04",
   "totalWeeks": 52,
-  "build": "2026-09-19 21:44",
+  "build": "2026-09-19 21:58",
   "maxSessionMins": 90
  },
  "budget": {
@@ -2229,7 +2229,7 @@
        "sets": 3,
        "reps": "6/leg",
        "rest": "90s",
-       "start": 40,
+       "start": 80,
        "step": 5,
        "every": 3,
        "cap": 105,

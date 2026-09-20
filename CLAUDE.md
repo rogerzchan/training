@@ -42,6 +42,8 @@ Also `morningPain` (quad + shoulder, 0-10), `tests`, `bodyweightLb`. Raw state i
 - **Every exercise needs a rest period.** The only exemption is a follow-along video.
 - **Weekly jump contacts under 400** (volleyball hours x 64 + logged plyo contacts).
 - Loads are always **one concrete number**, never a range.
+- A load is the **total**, not per hand. A 70 lb dumbbell lift means 35 in each hand. His
+  notes are written the same way, but not always, so read them with this in mind.
 - No circuits. He wants a rest timer on every single exercise.
 
 ## Data model in `program.json`
