@@ -38,8 +38,14 @@ Also `morningPain` (quad + shoulder, 0-10), `tests`, `bodyweightLb`. Raw state i
 
 ## Hard rules
 
-- **90 minutes max per session**, including warm-up and rest. Always re-estimate after edits.
+- **Session length is Roger's call, not a cap** (revised 2026-09-22). It was a hard 90 min
+  ceiling; he dropped it after Upper A ran 90.3 and he judged it fine. Still re-estimate
+  `mins` after every edit so the label is honest, but **do not cut work to hit a number**.
+  He will say in the session notes if a workout is too long. `meta.maxSessionMins` is now
+  advisory and is not read by the app.
 - **Every exercise needs a rest period.** The only exemption is a follow-along video.
+- **Read the session notes field**, not just per-exercise notes. It is the bottom of the
+  session view and is where length complaints and anything session-wide will land.
 - **Weekly jump contacts under 400** (volleyball hours x 64 + logged plyo contacts).
 - Loads are always **one concrete number**, never a range.
 - A load is the **total**, not per hand. A 70 lb dumbbell lift means 35 in each hand. His

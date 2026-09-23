@@ -5,8 +5,8 @@
   "peakEvent": "NACIVT Los Angeles",
   "peakDate": "2027-09-04",
   "totalWeeks": 52,
-  "build": "2026-09-19 21:58",
-  "maxSessionMins": 90
+  "build": "2026-09-22 21:20",
+  "maxSessionMins": 105
  },
  "budget": {
   "offSeasonCeiling": 400,
@@ -929,12 +929,42 @@
    "equip": "kettlebell + bench",
    "loc": "gym",
    "alt": "Wall tib raise, bodyweight"
+  },
+  "mbseatedoh": {
+   "name": "Seated Overhead MB Throw",
+   "cue": "Seated, legs out of it. Ribs down, throw from the trunk up. Max intent, stop if a rep slows.",
+   "cat": "power",
+   "unit": "lb",
+   "q": "seated overhead medicine ball throw wall",
+   "equip": "med ball + wall",
+   "loc": "gym",
+   "alt": "Half-kneeling overhead throw, or a standing overhead slam"
+  },
+  "sapulldown": {
+   "name": "Single-Arm Cable Pulldown",
+   "cue": "Half kneel. One arm, let the shoulder blade travel. Resist the rotation.",
+   "cat": "upper",
+   "unit": "lb",
+   "q": "single arm half kneeling cable lat pulldown",
+   "equip": "cable",
+   "loc": "gym",
+   "alt": "Half kneel lat pulldown, two arms"
+  },
+  "ballrollout": {
+   "name": "Stability Ball Plank In-and-Out",
+   "cue": "Forearms on the ball. Ribs down, NO lumbar arch. Short range, control the way out.",
+   "cat": "upper",
+   "unit": "none",
+   "q": "stability ball plank rollout in and out",
+   "equip": "stability ball",
+   "loc": "gym",
+   "alt": "Ab wheel rollout from the knees, or a dead bug"
   }
  },
  "days": {
   "upperA": {
    "name": "Upper A + Test",
-   "mins": 85,
+   "mins": 100,
    "blocks": [
     {
      "name": "Warm-up",
@@ -985,6 +1015,15 @@
        "rest": "75s",
        "bw": true,
        "rpe": 6
+      },
+      {
+       "ex": "mbseatedoh",
+       "sets": 3,
+       "reps": "5",
+       "rest": "90s",
+       "fixed": 4,
+       "rpe": 6,
+       "note": "max intent — stop the set if a rep slows"
       }
      ]
     },
@@ -1004,15 +1043,15 @@
        "rpe": 8
       },
       {
-       "ex": "latpulldown",
+       "ex": "sapulldown",
        "sets": 4,
-       "reps": "8",
+       "reps": "8/arm",
        "rest": "2min",
        "note": "A2",
-       "start": 100,
+       "start": 60,
        "step": 5,
        "every": 2,
-       "cap": 150,
+       "cap": 90,
        "rpe": 7
       },
       {
@@ -1049,7 +1088,7 @@
        "sets": 2,
        "reps": "12/arm",
        "rest": "30s",
-       "start": 5,
+       "start": 8,
        "step": 0,
        "every": 1,
        "rpe": 4
@@ -1072,6 +1111,19 @@
        "every": 6,
        "cap": 30,
        "rpe": 4
+      }
+     ]
+    },
+    {
+     "name": "Trunk",
+     "items": [
+      {
+       "ex": "ballrollout",
+       "sets": 3,
+       "reps": "10",
+       "rest": "45s",
+       "bw": true,
+       "rpe": 6
       }
      ]
     }
@@ -1164,7 +1216,7 @@
        "sets": 2,
        "reps": "12/arm",
        "rest": "30s",
-       "start": 5,
+       "start": 8,
        "step": 0,
        "every": 1,
        "rpe": 4
@@ -1695,7 +1747,7 @@
        "sets": 2,
        "reps": "12/arm",
        "rest": "30s",
-       "start": 5,
+       "start": 8,
        "step": 0,
        "every": 1,
        "rpe": 4
@@ -2085,7 +2137,7 @@
        "sets": 2,
        "reps": "12/arm",
        "rest": "30s",
-       "start": 5,
+       "start": 8,
        "step": 0,
        "every": 1,
        "rpe": 4
@@ -2160,7 +2212,7 @@
        "sets": 2,
        "reps": "12/arm",
        "rest": "30s",
-       "start": 5,
+       "start": 8,
        "step": 0,
        "every": 1,
        "rpe": 4

@@ -413,10 +413,11 @@ function rxText(it, week, exId){
   return `${it.sets} x ${it.reps}` + (L ? ` @ ${loadLabel(L, ex.unit)}` : '')
        + (String(it.rest).trim() && String(it.rest).trim() !== '-' ? `, rest ${it.rest}` : '');
 }
-function buildExport(){
+function buildExport(only){
+  const pick = only ? (Array.isArray(only) ? only : [only]) : null;
   const sessions = completedSessions().concat(
     Object.values(S.sessions).filter(s => !s.done && started(s))
-  ).map(s => {
+  ).filter(s => !pick || pick.includes(s.id)).map(s => {
     const def = dayDef(s.dayId) || {};
     return {
       id: s.id, week: s.week, session: (s.slot ?? 0) + 1,
@@ -452,7 +453,10 @@ function buildExport(){
     tests: S.tests.slice().sort((a,b)=> a.d<b.d?1:-1)
       .map(t => ({date:t.d, test:(TESTS.find(x=>x[0]===t.k)||[,t.k])[1], value:t.v})),
     sessions,
-    _state: S
+    _state: pick
+      ? {...S, sessions: Object.fromEntries(
+          Object.entries(S.sessions).filter(([k]) => pick.includes(k)))}
+      : S
   };
 }
 
@@ -726,7 +730,10 @@ function vSession(){
     });
     h += `<h2>Session</h2><div class="card">
       <div class="muted">Session RPE (0–10)</div>${scaleS(s.rpe)}
-      <input style="margin-top:12px;text-align:left" placeholder="Notes" value="${esc(s.notes||'')}" data-f="notes">`;
+      <div class="muted" style="margin-top:14px">Notes on the whole session</div>
+      <textarea class="exnote" rows="3" style="margin-top:6px"
+        placeholder="Too long? Too short? Anything that applies to the session rather than one exercise."
+        data-f="notes">${esc(s.notes||'')}</textarea>`;
   }
   if(def.isPlay) h += `<div class="card">`;
   h += `<div class="row" style="margin-top:12px;gap:8px">
@@ -785,7 +792,10 @@ function vHistory(){
         elapsedOf(s)?` · ${hms(elapsedOf(s))}`:''}${s.rpe!=null?` · RPE ${s.rpe}`:''}${
         vol?` · ${Math.round(vol).toLocaleString()} lb`:''}${s.play?` · ${s.playHours||2}h play`:''}</div>
       ${s.notes?`<div class="tiny" style="color:var(--dim)">${esc(s.notes)}</div>`:''}</div>
-      <button class="btn sec sm" data-act="open" data-sid="${s.id}">View</button></div></div>`;
+      <div class="row" style="gap:6px;flex:0 0 auto">
+        <button class="btn sec sm" data-act="open" data-sid="${s.id}">View</button>
+        <button class="btn sec sm" data-act="exportone" data-sid="${s.id}">Export</button>
+      </div></div></div>`;
   }
   return h;
 }
@@ -953,6 +963,15 @@ document.addEventListener('click', e => {
     const u = URL.createObjectURL(b), l = document.createElement('a');
     l.href = u; l.download = `training-${today()}.json`; l.click(); URL.revokeObjectURL(u);
     render(); return; }
+  if(a === 'exportone'){
+    const sid = t.dataset.sid, one = S.sessions[sid]; if(!one) return;
+    const def = dayDef(one.dayId) || {};
+    const slug = (def.name || one.dayId || 'session').toLowerCase()
+      .replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+    const b = new Blob([JSON.stringify(buildExport(sid),null,1)], {type:'application/json'});
+    const u = URL.createObjectURL(b), l = document.createElement('a');
+    l.href = u; l.download = `training-${slug}-${one.date||today()}.json`;
+    l.click(); URL.revokeObjectURL(u); return; }
   if(a === 'import'){ $('#fin').click(); return; }
   if(a === 'wipe'){ if(confirm('Erase all logged sessions and tests? This cannot be undone.')){
     localStorage.removeItem(KEY); S = blank(); render(); } return; }
