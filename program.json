@@ -5,7 +5,7 @@
   "peakEvent": "NACIVT Los Angeles",
   "peakDate": "2027-09-04",
   "totalWeeks": 52,
-  "build": "2026-09-22 21:20",
+  "build": "2026-09-22 22:05",
   "maxSessionMins": 105
  },
  "budget": {
@@ -959,12 +959,32 @@
    "equip": "stability ball",
    "loc": "gym",
    "alt": "Ab wheel rollout from the knees, or a dead bug"
+  },
+  "cableir": {
+   "name": "Cable Internal Rotation @ 90 deg",
+   "cue": "Elbow at 90 and abducted to 90. Drive the hand forward fast, control it back slow.",
+   "cat": "upper",
+   "unit": "lb",
+   "q": "cable internal rotation 90 degrees abduction shoulder",
+   "equip": "cable",
+   "loc": "gym",
+   "alt": "Band internal rotation anchored at elbow height"
+  },
+  "armswing": {
+   "name": "Weighted Arm Swing (spike pattern)",
+   "cue": "Wrist weight on. Full spike arm path, max downswing as the front foot lands. Fast, never heavy.",
+   "cat": "throw",
+   "unit": "lb",
+   "q": "volleyball arm swing drill spike mechanics slow motion",
+   "equip": "wrist weight",
+   "loc": "both",
+   "alt": "Same pattern with no weight at all"
   }
  },
  "days": {
   "upperA": {
    "name": "Upper A + Test",
-   "mins": 100,
+   "mins": 105,
    "blocks": [
     {
      "name": "Warm-up",
@@ -1102,15 +1122,15 @@
        "rpe": 4
       },
       {
-       "ex": "pronepull",
-       "sets": 2,
-       "reps": "10",
+       "ex": "cableir",
+       "sets": 3,
+       "reps": "12/arm",
        "rest": "30s",
-       "start": 20,
+       "start": 15,
        "step": 5,
-       "every": 6,
-       "cap": 30,
-       "rpe": 4
+       "every": 4,
+       "cap": 35,
+       "rpe": 6
       }
      ]
     },
@@ -1759,17 +1779,6 @@
        "rest": "30s",
        "bw": true,
        "rpe": 4
-      },
-      {
-       "ex": "pronepull",
-       "sets": 2,
-       "reps": "10",
-       "rest": "30s",
-       "start": 20,
-       "step": 5,
-       "every": 6,
-       "cap": 30,
-       "rpe": 4
       }
      ]
     }
@@ -2355,7 +2364,7 @@
   },
   "armLowerC": {
    "name": "Arm Speed + Lower C · Extensive",
-   "mins": 80,
+   "mins": 85,
    "blocks": [
     {
      "name": "Warm-up",
@@ -2406,6 +2415,17 @@
        "step": 0,
        "every": 1,
        "rpe": 6
+      },
+      {
+       "ex": "armswing",
+       "sets": 3,
+       "reps": "8",
+       "rest": "45s",
+       "start": 2,
+       "step": 0,
+       "every": 1,
+       "rpe": 6,
+       "note": "speed drill — if it feels heavy, drop the weight"
       }
      ]
     },
