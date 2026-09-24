@@ -1,3649 +1,3649 @@
 {
- "version": 1,
- "meta": {
-  "start": "2026-09-14",
-  "peakEvent": "NACIVT Los Angeles",
-  "peakDate": "2027-09-04",
-  "totalWeeks": 52,
-  "build": "2026-09-22 22:05",
-  "maxSessionMins": 105
- },
- "budget": {
-  "offSeasonCeiling": 400,
-  "inSeasonCeiling": 400,
-  "outdoorCeiling": 350,
-  "vbJumpsPerHour": 64
- },
- "targets": {
-  "bench": {
-   "now": 165,
-   "dec": 190
-  },
-  "squatAcc": {
-   "now": 235,
-   "dec": 285
-  },
-  "hangClean": {
-   "now": 155,
-   "dec": 200
-  }
- },
- "exercises": {
-  "armbar": {
-   "name": "Rolling Arm Bar w/ Screwdriver Rotation",
-   "cue": "Slow. Thoracic rotation, not lumbar.",
-   "cat": "prep",
-   "unit": "none",
-   "q": "rolling arm bar screwdriver rotation shoulder mobility drill",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "tspine": {
-   "name": "Wall Side T Spine Opener",
-   "cue": "Reach long, follow the hand with your eyes.",
-   "cat": "prep",
-   "unit": "none",
-   "q": "side lying wall thoracic spine opener rotation drill",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "shpullover": {
-   "name": "Shoulder Mobility Pullovers",
-   "cue": "Ribs down, no lumbar arch.",
-   "cat": "prep",
-   "unit": "lb",
-   "q": "dumbbell shoulder mobility pullover ribs down",
-   "equip": "light dumbbell",
-   "loc": "both",
-   "alt": "Band overhead pull, or a broomstick"
-  },
-  "bandpa": {
-   "name": "Band Pull-Apart",
-   "cue": "Straight arms, low load, high reps.",
-   "cat": "prep",
-   "unit": "none",
-   "q": "band pull apart proper form",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "banderer90": {
-   "name": "Band External Rotation @ 90 deg",
-   "cue": "Upper arm parallel to floor. No shrug.",
-   "cat": "prep",
-   "unit": "none",
-   "q": "band external rotation at 90 degrees shoulder",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "banderir": {
-   "name": "Band ER / IR",
-   "cue": "Elbow pinned. Rotate from the shoulder, not the wrist.",
-   "cat": "prep",
-   "unit": "none",
-   "q": "band internal external rotation shoulder warm up",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "wristsnap": {
-   "name": "Wrist Snaps into wall",
-   "cue": "Light ball. Snap, don't push.",
-   "cat": "prep",
-   "unit": "none",
-   "q": "wrist snap drill throwing into wall baseball",
-   "equip": "ball + wall",
-   "loc": "both",
-   "alt": "Tennis ball works for all of these"
-  },
-  "hipskip": {
-   "name": "Hip Mobility ER/IR Skips",
-   "cue": "Loose, rhythmic.",
-   "cat": "agility",
-   "unit": "none",
-   "q": "hip external internal rotation skip warm up drill",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "anklelift": {
-   "name": "Ankle Mobility Liftoff",
-   "cue": "Knee tracks over toe.",
-   "cat": "prep",
-   "unit": "none",
-   "q": "ankle mobility liftoff drill knee over toe",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "quadiso": {
-   "name": "Quad Tendon Isometric @ ~60 deg",
-   "cue": "70% effort. BEFORE training, not after. ~45 min analgesic window.",
-   "cat": "prep",
-   "unit": "none",
-   "q": "spanish squat isometric quad tendon 45 second hold",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "pogos": {
-   "name": "Pogos",
-   "cue": "Stiff ankles, minimal knee bend, quiet.",
-   "cat": "plyo",
-   "unit": "none",
-   "q": "pogo jumps stiff ankle plyometric",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "cablerot": {
-   "name": "Cable Rotation / Rib Dissociation",
-   "cue": "Hips quiet. Rotate the ribcage on the pelvis.",
-   "cat": "power",
-   "unit": "lb",
-   "q": "cable rib dissociation rotation hips quiet drill",
-   "equip": "cable machine",
-   "loc": "gym"
-  },
-  "mbsplit": {
-   "name": "MB Split Stance Toss into wall",
-   "cue": "Load the back hip. Drive with hip rotation, not the arm.",
-   "cat": "power",
-   "unit": "lb",
-   "q": "split stance rotational medicine ball throw into wall",
-   "equip": "medicine ball",
-   "loc": "gym",
-   "alt": "Any med ball; weight matters less than intent"
-  },
-  "plyopush": {
-   "name": "Plyo Push-up",
-   "cue": "Hands leave the floor. Land soft.",
-   "cat": "power",
-   "unit": "none",
-   "q": "plyometric push up hands leave floor",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "plyoballrev": {
-   "name": "Plyo Ball Reverse Throw into wall",
-   "cue": "Controlled. This is the eccentric ER drill.",
-   "cat": "power",
-   "unit": "lb",
-   "q": "driveline reverse throw plyo ball",
-   "equip": "ball + wall",
-   "loc": "both",
-   "alt": "Tennis ball works for all of these"
-  },
-  "mbrepeat": {
-   "name": "Med Ball Repeat Toss",
-   "cue": "Continuous, rhythmic, no pause.",
-   "cat": "power",
-   "unit": "lb",
-   "q": "medicine ball chest pass repeat toss wall",
-   "equip": "medicine ball",
-   "loc": "gym",
-   "alt": "Any med ball; weight matters less than intent"
-  },
-  "ripthrough": {
-   "name": "Band or Cable Rip Through",
-   "cue": "Explosive. Finish tall.",
-   "cat": "power",
-   "unit": "lb",
-   "q": "band rip through rotational power drill",
-   "equip": "cable machine",
-   "loc": "gym"
-  },
-  "mbshotput": {
-   "name": "Step-behind Rotational MB Shotput",
-   "cue": "Build momentum. Land into a stiff front leg.",
-   "cat": "power",
-   "unit": "lb",
-   "q": "step behind rotational medicine ball shotput",
-   "equip": "medicine ball",
-   "loc": "gym",
-   "alt": "Any med ball; weight matters less than intent"
-  },
-  "mbscoop": {
-   "name": "MB Scoop Throw",
-   "cue": "Full extension. Finish tall.",
-   "cat": "power",
-   "unit": "lb",
-   "q": "medicine ball scoop toss rotational distance",
-   "equip": "medicine ball",
-   "loc": "gym",
-   "alt": "Any med ball; weight matters less than intent"
-  },
-  "mbvertunder": {
-   "name": "CM Vertical Underhand MB Throw",
-   "cue": "Priming only. Max intent, zero fatigue.",
-   "cat": "power",
-   "unit": "lb",
-   "q": "countermovement vertical underhand medicine ball throw",
-   "equip": "medicine ball",
-   "loc": "gym",
-   "alt": "Any med ball; weight matters less than intent"
-  },
-  "mbvertover": {
-   "name": "Vertical Overhand MB Throw",
-   "cue": "Priming only.",
-   "cat": "power",
-   "unit": "lb",
-   "q": "vertical overhand medicine ball throw",
-   "equip": "medicine ball",
-   "loc": "gym",
-   "alt": "Any med ball; weight matters less than intent"
-  },
-  "mbbroad": {
-   "name": "Broad Jump MB Throw",
-   "cue": "Priming only.",
-   "cat": "power",
-   "unit": "lb",
-   "q": "broad jump medicine ball throw",
-   "equip": "medicine ball",
-   "loc": "gym",
-   "alt": "Any med ball; weight matters less than intent"
-  },
-  "penult": {
-   "name": "Lean/Fall Penultimate Jumps",
-   "cue": "Long low penultimate step, quick final step.",
-   "cat": "plyo",
-   "unit": "none",
-   "q": "penultimate step jump drill volleyball approach lean fall",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "boxrepeat": {
-   "name": "Box or Hurdle Repeat Jumps",
-   "cue": "Minimise ground contact.",
-   "cat": "plyo",
-   "unit": "none",
-   "q": "repeat box jumps hurdle hops minimal ground contact",
-   "equip": "plyo box",
-   "loc": "gym",
-   "alt": "A sturdy bench, or step platforms"
-  },
-  "altdrop": {
-   "name": "Altitude Drop Progressions",
-   "cue": "Step off. Land TALL, stiffer knees.",
-   "cat": "plyo",
-   "unit": "none",
-   "q": "altitude drop landing drill plyometric",
-   "equip": "plyo box",
-   "loc": "gym",
-   "alt": "A sturdy bench, or step platforms"
-  },
-  "deepnocm": {
-   "name": "Deep Non Countermovement Assisted Jump",
-   "cue": "No countermovement. Pure concentric.",
-   "cat": "plyo",
-   "unit": "none",
-   "q": "non countermovement squat jump no countermovement",
-   "equip": "plyo box",
-   "loc": "gym",
-   "alt": "A sturdy bench, or step platforms"
-  },
-  "slmultibox": {
-   "name": "Single Leg Multi Directional Box Jump",
-   "cue": "Control the landing.",
-   "cat": "plyo",
-   "unit": "none",
-   "q": "single leg multi directional box jump",
-   "equip": "plyo box",
-   "loc": "gym",
-   "alt": "A sturdy bench, or step platforms"
-  },
-  "bandpogo": {
-   "name": "Band Resisted Pogos",
-   "cue": "Fast, low amplitude.",
-   "cat": "plyo",
-   "unit": "none",
-   "q": "band resisted pogo jumps",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "approach": {
-   "name": "4-Step Approach Jump",
-   "cue": "Arms back then up. Max downswing = final foot strike.",
-   "cat": "plyo",
-   "unit": "none",
-   "q": "volleyball 4 step approach jump technique arm swing",
-   "equip": "run-up space + ceiling height",
-   "loc": "gym",
-   "alt": "Do these at volleyball instead if the gym ceiling is low"
-  },
-  "blocksim": {
-   "name": "Block Jump Simulation",
-   "cue": "5 consecutive jumps.",
-   "cat": "plyo",
-   "unit": "none",
-   "q": "volleyball block jump repeat footwork drill",
-   "equip": "ceiling height",
-   "loc": "gym",
-   "alt": "Do these at volleyball instead"
-  },
-  "hangclean": {
-   "name": "Hang Power Clean",
-   "cue": "Violent hip extension. Catch tall.",
-   "cat": "lower",
-   "unit": "lb",
-   "q": "hang power clean technique",
-   "equip": "barbell + rack",
-   "loc": "gym"
-  },
-  "squatacc": {
-   "name": "Squat (Accelerative Strength)",
-   "cue": "Full depth. Move the bar fast.",
-   "cat": "lower",
-   "unit": "lb",
-   "q": "speed squat accelerative back squat bar speed",
-   "equip": "barbell + rack",
-   "loc": "gym"
-  },
-  "squatabs": {
-   "name": "Absolute Strength Squat",
-   "cue": "Heavy. Full depth.",
-   "cat": "lower",
-   "unit": "lb",
-   "q": "heavy back squat form",
-   "equip": "barbell + rack",
-   "loc": "gym"
-  },
-  "heelsnarrow": {
-   "name": "Heels Elevated Narrow Squat",
-   "cue": "Deep and quad-biased. Week 5+ only.",
-   "cat": "lower",
-   "unit": "lb",
-   "q": "heels elevated narrow stance squat",
-   "equip": "barbell + rack",
-   "loc": "gym"
-  },
-  "hamcurl": {
-   "name": "Worlds Greatest Hamstring Curl",
-   "cue": "Control the eccentric.",
-   "cat": "lower",
-   "unit": "lb",
-   "q": "nordic hamstring curl eccentric",
-   "equip": "partner or anchored heels",
-   "loc": "gym",
-   "alt": "Hook heels under a lat-pulldown seat or a loaded barbell; or use the 45-degree bench"
-  },
-  "soleus": {
-   "name": "Soleus Raise",
-   "cue": "BENT KNEE. This is the one sprints don't train.",
-   "cat": "lower",
-   "unit": "lb",
-   "q": "seated calf raise bent knee soleus",
-   "equip": "seated calf machine",
-   "loc": "gym",
-   "alt": "Bent-knee calf raise holding dumbbells, or a Smith machine"
-  },
-  "ecccalf": {
-   "name": "Eccentric Calf Raise",
-   "cue": "3s down.",
-   "cat": "lower",
-   "unit": "lb",
-   "q": "eccentric calf raise slow lowering",
-   "equip": "dumbbells",
-   "loc": "both"
-  },
-  "spanish": {
-   "name": "Spanish Squat (~60 deg)",
-   "cue": "Band behind the knees. Stay tall.",
-   "cat": "lower",
-   "unit": "none",
-   "q": "spanish squat band knee isometric",
-   "equip": "thick band + rack anchor",
-   "loc": "both",
-   "alt": "Plain wall sit at the same knee angle"
-  },
-  "trapjump": {
-   "name": "Trap Bar Jump",
-   "cue": "30% load. Intent is speed.",
-   "cat": "lower",
-   "unit": "lb",
-   "q": "trap bar jump loaded jump squat",
-   "equip": "trap/hex bar",
-   "loc": "gym",
-   "alt": "DB jump squat holding two dumbbells"
-  },
-  "bandassistjump": {
-   "name": "Band Assisted Jump",
-   "cue": "Overspeed. Let the band help.",
-   "cat": "lower",
-   "unit": "none",
-   "q": "band assisted jump overspeed",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "bench": {
-   "name": "Bench Press",
-   "cue": "Elbows tucked 45-60 deg, NEVER flared to 90. Scap retracted + depressed.",
-   "cat": "upper",
-   "unit": "lb",
-   "q": "barbell bench press elbow tuck scapula retract",
-   "equip": "barbell + rack",
-   "loc": "gym"
-  },
-  "incline": {
-   "name": "Incline Bench Press",
-   "cue": "Same elbow rule.",
-   "cat": "upper",
-   "unit": "lb",
-   "q": "incline barbell bench press form",
-   "equip": "barbell + rack",
-   "loc": "gym"
-  },
-  "latpulldown": {
-   "name": "Half Kneel Lat Pulldown",
-   "cue": "Ribs down. Pull with the lat, not the bicep.",
-   "cat": "upper",
-   "unit": "lb",
-   "q": "half kneeling lat pulldown",
-   "equip": "cable machine",
-   "loc": "gym"
-  },
-  "pullover": {
-   "name": "DB Pullover",
-   "cue": "BENT ARM. Stop short of full end range.",
-   "cat": "upper",
-   "unit": "lb",
-   "q": "dumbbell pullover bent arm form",
-   "equip": "dumbbells",
-   "loc": "both"
-  },
-  "stiffarmpd": {
-   "name": "Cable Stiff-Arm Pulldown",
-   "cue": "Fallback for the pullover if pinching returns.",
-   "cat": "upper",
-   "unit": "lb",
-   "q": "cable stiff arm pulldown lat",
-   "equip": "cable machine",
-   "loc": "gym"
-  },
-  "dbrow": {
-   "name": "Split Stance DB Row",
-   "cue": "Full stretch at the bottom.",
-   "cat": "upper",
-   "unit": "lb",
-   "q": "split stance dumbbell row",
-   "equip": "dumbbells",
-   "loc": "both"
-  },
-  "invrow": {
-   "name": "Inverted Row",
-   "cue": "TRX or rings. Walk feet forward to make it harder, not more reps. 1s squeeze at the top.",
-   "cat": "upper",
-   "unit": "lb",
-   "q": "inverted row form",
-   "equip": "bar or rings",
-   "loc": "gym",
-   "alt": "TRX straps, rings, a bar, or a table edge"
-  },
-  "landmine": {
-   "name": "Landmine Split Stance Dip Press",
-   "cue": "Shoulder-friendly press angle.",
-   "cat": "upper",
-   "unit": "lb",
-   "q": "landmine press split stance",
-   "equip": "landmine attachment",
-   "loc": "gym",
-   "alt": "Wedge a barbell into a corner, or single-arm DB press"
-  },
-  "fingercurl": {
-   "name": "Finger Tip Curls",
-   "cue": "Slow. Relevant to ball grip.",
-   "cat": "upper",
-   "unit": "lb",
-   "q": "finger tip curls forearm grip",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "sidelyer": {
-   "name": "Side-lying DB External Rotation",
-   "cue": "3s lower. Light.",
-   "cat": "upper",
-   "unit": "lb",
-   "q": "side lying dumbbell external rotation",
-   "equip": "light dumbbell",
-   "loc": "both",
-   "alt": "Band external rotation lying on your side"
-  },
-  "serratus": {
-   "name": "Serratus Wall Slide",
-   "cue": "Push INTO the wall. Reach long at the top.",
-   "cat": "upper",
-   "unit": "none",
-   "q": "serratus wall slide",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "pronepull": {
-   "name": "Prone Pull Through",
-   "cue": "Short range. Scap retraction.",
-   "cat": "upper",
-   "unit": "lb",
-   "q": "prone trap raise pull through shoulder",
-   "equip": "light dumbbells",
-   "loc": "both",
-   "alt": "Band pull-through, or no weight at all"
-  },
-  "revfly": {
-   "name": "Reverse Fly",
-   "cue": "Light. Squeeze the blades.",
-   "cat": "upper",
-   "unit": "lb",
-   "q": "dumbbell reverse fly",
-   "equip": "dumbbells",
-   "loc": "both"
-  },
-  "pallof": {
-   "name": "Pallof Press",
-   "cue": "Resist the rotation. Ribs down.",
-   "cat": "upper",
-   "unit": "lb",
-   "q": "pallof press anti rotation",
-   "equip": "cable or band",
-   "loc": "both",
-   "alt": "Band anchored at chest height"
-  },
-  "revthrow": {
-   "name": "Reverse Throws (plyo ball)",
-   "cue": "ALWAYS FIRST in the plyo ball routine.",
-   "cat": "throw",
-   "unit": "lb",
-   "q": "driveline reverse throws plyo ball",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "pivotpick": {
-   "name": "Pivot Picks (plyo ball)",
-   "cue": "Always second.",
-   "cat": "throw",
-   "unit": "lb",
-   "q": "driveline pivot pickoff drill plyo ball",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "rollin": {
-   "name": "Roll-ins (plyo ball)",
-   "cue": "Max effort.",
-   "cat": "throw",
-   "unit": "lb",
-   "q": "driveline roll in throw plyo ball",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "walkwind": {
-   "name": "Walking Windups (plyo ball)",
-   "cue": "ALWAYS LAST.",
-   "cat": "throw",
-   "unit": "lb",
-   "q": "driveline walking windup plyo ball",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "catchplay": {
-   "name": "Catch Play Build-up",
-   "cue": "Build intensity gradually.",
-   "cat": "throw",
-   "unit": "none",
-   "q": "baseball catch play warm up routine",
-   "equip": "partner or wall",
-   "loc": "gym",
-   "alt": "Wall at 1.5-2 m"
-  },
-  "longtoss": {
-   "name": "Long Toss",
-   "cue": "Build to max distance.",
-   "cat": "throw",
-   "unit": "none",
-   "q": "baseball long toss progression",
-   "equip": "outdoor space",
-   "loc": "outdoor",
-   "alt": "Spring only. No indoor substitute"
-  },
-  "wball": {
-   "name": "Weighted Ball Throws",
-   "cue": "Week 5+. Never off a mound, never cold.",
-   "cat": "throw",
-   "unit": "oz",
-   "q": "driveline weighted baseball throwing program",
-   "equip": "weighted / plyo balls",
-   "loc": "gym",
-   "alt": "Tennis ball as the underload; the gym's weighted balls for overload"
-  },
-  "velotest": {
-   "name": "Velocity Test (video flight time)",
-   "cue": "240fps, 60ft, 5 throws. mph = 9816/frames.",
-   "cat": "test",
-   "unit": "mph",
-   "q": "measure pitch speed slow motion video frame count",
-   "equip": "60 ft + phone at 240fps",
-   "loc": "outdoor",
-   "alt": "Spring only. Track the MB scoop throw instead"
-  },
-  "towel": {
-   "name": "Towel Drill",
-   "cue": "No ball. Snap the towel through release. Full mechanics, zero space.",
-   "cat": "throw",
-   "unit": "none",
-   "q": "baseball towel drill pitching mechanics",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "wristw": {
-   "name": "Wrist Weight Arm Action",
-   "cue": "1-2 lb wrist weight. Slow, full throwing arm path. No release.",
-   "cat": "throw",
-   "unit": "lb",
-   "q": "wrist weight arm action driveline throwing",
-   "equip": "wrist weights (~$15)",
-   "loc": "both",
-   "alt": "Hold a 2 lb dumbbell, or a light band in the hand"
-  },
-  "tubing": {
-   "name": "Shoulder Tubing / J-Band Series",
-   "cue": "Full J-band series. This is the arm care backbone all winter.",
-   "cat": "throw",
-   "unit": "none",
-   "q": "jaeger j band shoulder tubing full series",
-   "equip": "J-bands / shoulder tubing (~$25)",
-   "loc": "both",
-   "alt": "Any light resistance band, or a light cable stack"
-  },
-  "wallrev": {
-   "name": "Reverse Throw into padded wall",
-   "cue": "1.5-2 m from the wall. Controlled. Eccentric ER drill.",
-   "cat": "throw",
-   "unit": "lb",
-   "q": "driveline reverse throw plyo ball wall",
-   "equip": "plyo ball + padded wall",
-   "loc": "gym",
-   "alt": "Tennis ball, or a 1 kg med ball into a mat"
-  },
-  "wallpivot": {
-   "name": "Pivot Pick into padded wall",
-   "cue": "1.5-2 m. Torso rotation, arm along for the ride.",
-   "cat": "throw",
-   "unit": "lb",
-   "q": "driveline pivot pickoff drill wall",
-   "equip": "plyo ball + padded wall",
-   "loc": "gym",
-   "alt": "Tennis ball into a mat"
-  },
-  "wallrocker": {
-   "name": "Rocker Throw into padded wall",
-   "cue": "Rock back, rock forward, throw. Momentum into a stiff front leg.",
-   "cat": "throw",
-   "unit": "lb",
-   "q": "driveline rocker drill plyo ball wall",
-   "equip": "plyo ball + padded wall",
-   "loc": "gym",
-   "alt": "Tennis ball into a mat"
-  },
-  "wallwind": {
-   "name": "Walking Windup (dry or into padding)",
-   "cue": "Full sequence, controlled intent. No release needed — dry reps count. Into a pillow if you have room.",
-   "cat": "throw",
-   "unit": "lb",
-   "q": "driveline walking windup plyo ball",
-   "equip": "a few steps of space",
-   "loc": "both",
-   "alt": "Dry rep with no ball, or a light ball into a mattress"
-  },
-  "tennisrebound": {
-   "name": "Tennis Ball Wall Rebound",
-   "cue": "1.5 m from wall. Continuous throw-and-catch. Fast hands, low load.",
-   "cat": "throw",
-   "unit": "none",
-   "q": "tennis ball wall rebound reaction drill baseball",
-   "equip": "ball + wall",
-   "loc": "both",
-   "alt": "Tennis ball works for all of these"
-  },
-  "ribdis": {
-   "name": "Rib / Pelvis Dissociation Hold",
-   "cue": "Hips square, ribs rotate. This IS hip-shoulder separation.",
-   "cat": "throw",
-   "unit": "none",
-   "q": "hip shoulder separation drill rib pelvis dissociation",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "rfess": {
-   "name": "RFESS Progressions",
-   "cue": "Rear foot elevated. Front shin vertical, torso tall.",
-   "cat": "lower",
-   "unit": "lb",
-   "q": "rear foot elevated split squat form",
-   "equip": "dumbbells",
-   "loc": "both"
-  },
-  "kickrdl": {
-   "name": "Kickstand RDL",
-   "cue": "Back toe as a kickstand. Hinge, feel the front hamstring.",
-   "cat": "lower",
-   "unit": "lb",
-   "q": "kickstand RDL single leg romanian deadlift",
-   "equip": "dumbbells",
-   "loc": "both"
-  },
-  "hipflex": {
-   "name": "Cable Hip Flexor Drivers",
-   "cue": "Drive the knee. This is the stride-length lift.",
-   "cat": "lower",
-   "unit": "lb",
-   "q": "cable hip flexor driver march knee drive",
-   "equip": "cable + ankle strap",
-   "loc": "gym",
-   "alt": "Band looped round the foot, anchored low"
-  },
-  "hipext45": {
-   "name": "45 Degree Hip Extension",
-   "cue": "Glute and hamstring, not lower back.",
-   "cat": "lower",
-   "unit": "lb",
-   "q": "45 degree back extension hip extension glute",
-   "equip": "45-degree back extension bench",
-   "loc": "gym",
-   "alt": "Back extension machine, or a barbell hip thrust"
-  },
-  "dotdrill": {
-   "name": "Dot Drill (2 foot / 1 foot V)",
-   "cue": "Fast feet, quiet landings. Footwork, not power.",
-   "cat": "agility",
-   "unit": "none",
-   "q": "dot drill footwork agility 5 dot",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "curvedrun": {
-   "name": "Curved Runs",
-   "cue": "Lean into the curve. 20-30 m arcs.",
-   "cat": "agility",
-   "unit": "none",
-   "q": "curved run sprint mechanics drill",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "olcalf": {
-   "name": "One Leg Calf Raise Progressions",
-   "cue": "Full range, pause at the top.",
-   "cat": "lower",
-   "unit": "lb",
-   "q": "single leg calf raise progression",
-   "equip": "dumbbells",
-   "loc": "both"
-  },
-  "hamslider": {
-   "name": "Hamstring Slider Progressions",
-   "cue": "Control the eccentric. Hips stay up.",
-   "cat": "lower",
-   "unit": "lb",
-   "q": "hamstring slider curl eccentric",
-   "equip": "furniture sliders",
-   "loc": "gym",
-   "alt": "Towels on a smooth floor, or a stability-ball leg curl"
-  },
-  "hipbridge": {
-   "name": "Rapid Hip Bridge Progression",
-   "cue": "Fast, rhythmic. Glutes not lower back.",
-   "cat": "lower",
-   "unit": "lb",
-   "q": "rapid hip bridge glute bridge progression",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "ankle3d": {
-   "name": "3D Ankle Blaster",
-   "cue": "All three planes. Small range, high control.",
-   "cat": "prep",
-   "unit": "none",
-   "q": "3d ankle mobility strength drill",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "ankleres": {
-   "name": "Resisted Ankle Circles",
-   "cue": "Band around the foot. Slow circles.",
-   "cat": "prep",
-   "unit": "lb",
-   "q": "resisted ankle circles band",
-   "equip": "band",
-   "loc": "both"
-  },
-  "rdl": {
-   "name": "Romanian Deadlift",
-   "cue": "Hinge. Bar close. Stop where the hamstrings stop.",
-   "cat": "lower",
-   "unit": "lb",
-   "q": "romanian deadlift barbell form",
-   "equip": "barbell + rack",
-   "loc": "gym"
-  },
-  "splitrepeat": {
-   "name": "Band Resisted Split Stance Repeats",
-   "cue": "Split stance, repeated fast reps against the band.",
-   "cat": "plyo",
-   "unit": "none",
-   "q": "band resisted split stance jump repeats",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "razor": {
-   "name": "Razor Curl Progressions",
-   "cue": "Hips extended throughout. Hard.",
-   "cat": "lower",
-   "unit": "lb",
-   "q": "razor curl hamstring",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "reversal": {
-   "name": "Rhythm Reversal Strength",
-   "cue": "Rhythmic reps. Fast reversal out of the bottom.",
-   "cat": "lower",
-   "unit": "lb",
-   "q": "rhythm reversal squat strength",
-   "equip": "barbell + rack",
-   "loc": "gym"
-  },
-  "sledmarch": {
-   "name": "Sled March",
-   "cue": "Low, driving marches. Long contacts.",
-   "cat": "lower",
-   "unit": "lb",
-   "q": "sled march drive",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "recipinhib": {
-   "name": "Lower Leg Reciprocal Inhibition",
-   "cue": "Tib raise then calf raise, alternating.",
-   "cat": "prep",
-   "unit": "none",
-   "q": "tibialis raise calf raise reciprocal",
-   "equip": "bodyweight",
-   "loc": "both"
-  },
-  "ctread": {
-   "name": "Curved Treadmill Sprint",
-   "cat": "agility",
-   "unit": "none",
-   "cue": "8s max effort. Hands off the rails. Walk-back recovery.",
-   "q": "curved treadmill sprint assault airrunner technique",
-   "equip": "curved treadmill",
-   "loc": "gym"
-  },
-  "ctreadres": {
-   "name": "Curved Treadmill Resisted Sprint",
-   "cat": "agility",
-   "unit": "none",
-   "cue": "Moderate resistance. 6s, driving. Stride length, not turnover.",
-   "q": "resisted curved treadmill sprint magnetic resistance training",
-   "equip": "curved treadmill with resistance",
-   "loc": "gym"
-  },
-  "sledpush": {
-   "name": "Sled Push (acceleration)",
-   "cat": "lower",
-   "unit": "lb",
-   "cue": "Low body angle, long drives. This is the acceleration lift.",
-   "q": "heavy sled push acceleration sprint technique",
-   "equip": "sled",
-   "loc": "gym"
-  },
-  "wuLower": {
-   "name": "Warm-up — PJF Dynamic Warmup",
-   "cat": "prep",
-   "unit": "none",
-   "cue": "Follow the video start to finish. Same one you used on PJF.",
-   "video": "https://www.youtube.com/watch?v=8Y78nYEIxIY",
-   "q": "PJF dynamic warmup",
-   "equip": "space to move",
-   "loc": "both",
-   "mins": 12
-  },
-  "wuUpper": {
-   "name": "Warm-up — J-Band Arm Care Routine",
-   "cat": "prep",
-   "unit": "none",
-   "cue": "Follow the video. Doubles as your arm care, so do it properly.",
-   "video": "https://www.youtube.com/watch?v=DQmrp-voO8Y",
-   "q": "j band warm up routine baseball",
-   "equip": "J-bands or any light band",
-   "loc": "both",
-   "alt": "Any light resistance band",
-   "mins": 6
-  },
-  "gastroc": {
-   "name": "Straight-Leg Calf Raise",
-   "cat": "lower",
-   "unit": "lb",
-   "cue": "Knee locked. Gastroc, not soleus. Pause at the top.",
-   "q": "standing straight leg calf raise gastrocnemius",
-   "equip": "calf machine or dumbbells",
-   "loc": "gym",
-   "alt": "Standing calf raise holding dumbbells, or a Smith machine"
-  },
-  "tibraise": {
-   "name": "KB Anti-Tib Raise (bench)",
-   "cat": "prep",
-   "unit": "lb",
-   "cue": "Heels on the bench edge, KB hooked on the foot. The brakes for landing and sprinting.",
-   "q": "kettlebell tibialis raise bench anterior tib",
-   "equip": "kettlebell + bench",
-   "loc": "gym",
-   "alt": "Wall tib raise, bodyweight"
-  },
-  "mbseatedoh": {
-   "name": "Seated Overhead MB Throw",
-   "cue": "Seated, legs out of it. Ribs down, throw from the trunk up. Max intent, stop if a rep slows.",
-   "cat": "power",
-   "unit": "lb",
-   "q": "seated overhead medicine ball throw wall",
-   "equip": "med ball + wall",
-   "loc": "gym",
-   "alt": "Half-kneeling overhead throw, or a standing overhead slam"
-  },
-  "sapulldown": {
-   "name": "Single-Arm Cable Pulldown",
-   "cue": "Half kneel. One arm, let the shoulder blade travel. Resist the rotation.",
-   "cat": "upper",
-   "unit": "lb",
-   "q": "single arm half kneeling cable lat pulldown",
-   "equip": "cable",
-   "loc": "gym",
-   "alt": "Half kneel lat pulldown, two arms"
-  },
-  "ballrollout": {
-   "name": "Stability Ball Plank In-and-Out",
-   "cue": "Forearms on the ball. Ribs down, NO lumbar arch. Short range, control the way out.",
-   "cat": "upper",
-   "unit": "none",
-   "q": "stability ball plank rollout in and out",
-   "equip": "stability ball",
-   "loc": "gym",
-   "alt": "Ab wheel rollout from the knees, or a dead bug"
-  },
-  "cableir": {
-   "name": "Cable Internal Rotation @ 90 deg",
-   "cue": "Elbow at 90 and abducted to 90. Drive the hand forward fast, control it back slow.",
-   "cat": "upper",
-   "unit": "lb",
-   "q": "cable internal rotation 90 degrees abduction shoulder",
-   "equip": "cable",
-   "loc": "gym",
-   "alt": "Band internal rotation anchored at elbow height"
-  },
-  "armswing": {
-   "name": "Weighted Arm Swing (spike pattern)",
-   "cue": "Wrist weight on. Full spike arm path, max downswing as the front foot lands. Fast, never heavy.",
-   "cat": "throw",
-   "unit": "lb",
-   "q": "volleyball arm swing drill spike mechanics slow motion",
-   "equip": "wrist weight",
-   "loc": "both",
-   "alt": "Same pattern with no weight at all"
-  }
- },
- "days": {
-  "upperA": {
-   "name": "Upper A + Test",
-   "mins": 105,
-   "blocks": [
-    {
-     "name": "Warm-up",
-     "items": [
-      {
-       "ex": "wuUpper",
-       "sets": 1,
-       "reps": "6 min video",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4,
-       "note": "follow along"
-      }
-     ]
+  "version": 1,
+  "meta": {
+    "start": "2026-09-14",
+    "peakEvent": "NACIVT Los Angeles",
+    "peakDate": "2027-09-04",
+    "totalWeeks": 52,
+    "build": "2026-09-22 22:05",
+    "maxSessionMins": 105
+  },
+  "budget": {
+    "offSeasonCeiling": 400,
+    "inSeasonCeiling": 400,
+    "outdoorCeiling": 350,
+    "vbJumpsPerHour": 64
+  },
+  "targets": {
+    "bench": {
+      "now": 165,
+      "dec": 190
     },
-    {
-     "name": "Test (weekly)",
-     "items": [
-      {
-       "ex": "mbscoop",
-       "sets": 1,
-       "reps": "3/side, max effort",
-       "rest": "full",
-       "note": "Rotational throw for distance. Log your best.",
-       "fixed": 6,
-       "rpe": 6
-      }
-     ]
+    "squatAcc": {
+      "now": 235,
+      "dec": 285
     },
-    {
-     "name": "Power",
-     "items": [
-      {
-       "ex": "cablerot",
-       "sets": 3,
-       "reps": "6/side",
-       "rest": "45s",
-       "start": 25,
-       "step": 5,
-       "every": 4,
-       "cap": 45,
-       "rpe": 6
-      },
-      {
-       "ex": "plyopush",
-       "sets": 3,
-       "reps": "5",
-       "rest": "75s",
-       "bw": true,
-       "rpe": 6
-      },
-      {
-       "ex": "mbseatedoh",
-       "sets": 3,
-       "reps": "5",
-       "rest": "90s",
-       "fixed": 4,
-       "rpe": 6,
-       "note": "max intent — stop the set if a rep slows"
-      }
-     ]
-    },
-    {
-     "name": "Strength",
-     "items": [
-      {
-       "ex": "bench",
-       "sets": 4,
-       "reps": "5",
-       "rest": "2min",
-       "note": "A1",
-       "start": 165,
-       "step": 5,
-       "every": 2,
-       "cap": 210,
-       "rpe": 8
-      },
-      {
-       "ex": "sapulldown",
-       "sets": 4,
-       "reps": "8/arm",
-       "rest": "2min",
-       "note": "A2",
-       "start": 60,
-       "step": 5,
-       "every": 2,
-       "cap": 90,
-       "rpe": 7
-      },
-      {
-       "ex": "pullover",
-       "sets": 3,
-       "reps": "10",
-       "rest": "90s",
-       "note": "B1 - bent arm, short of end range",
-       "start": 45,
-       "step": 5,
-       "every": 3,
-       "cap": 55,
-       "rpe": 7
-      },
-      {
-       "ex": "dbrow",
-       "sets": 3,
-       "reps": "8/arm",
-       "rest": "90s",
-       "note": "B2",
-       "start": 60,
-       "step": 5,
-       "every": 3,
-       "cap": 80,
-       "rpe": 7
-      }
-     ]
-    },
-    {
-     "name": "Arm Care",
-     "items": [
-      {
-       "ex": "sidelyer",
-       "sets": 2,
-       "reps": "12/arm",
-       "rest": "30s",
-       "start": 8,
-       "step": 0,
-       "every": 1,
-       "rpe": 4
-      },
-      {
-       "ex": "serratus",
-       "sets": 2,
-       "reps": "10",
-       "rest": "30s",
-       "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "cableir",
-       "sets": 3,
-       "reps": "12/arm",
-       "rest": "30s",
-       "start": 15,
-       "step": 5,
-       "every": 4,
-       "cap": 35,
-       "rpe": 6
-      }
-     ]
-    },
-    {
-     "name": "Trunk",
-     "items": [
-      {
-       "ex": "ballrollout",
-       "sets": 3,
-       "reps": "10",
-       "rest": "45s",
-       "bw": true,
-       "rpe": 6
-      }
-     ]
+    "hangClean": {
+      "now": 155,
+      "dec": 200
     }
-   ]
   },
-  "upperB": {
-   "name": "Upper B",
-   "mins": 75,
-   "blocks": [
-    {
-     "name": "Warm-up",
-     "items": [
-      {
-       "ex": "wuUpper",
-       "sets": 1,
-       "reps": "6 min video",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4,
-       "note": "follow along"
-      }
-     ]
+  "exercises": {
+    "armbar": {
+      "name": "Rolling Arm Bar w/ Screwdriver Rotation",
+      "cue": "Slow. Thoracic rotation, not lumbar.",
+      "cat": "prep",
+      "unit": "none",
+      "q": "rolling arm bar screwdriver rotation shoulder mobility drill",
+      "equip": "bodyweight",
+      "loc": "both"
     },
-    {
-     "name": "Strength",
-     "items": [
-      {
-       "ex": "incline",
-       "sets": 4,
-       "reps": "6",
-       "rest": "2min",
-       "note": "A1",
-       "start": 135,
-       "step": 5,
-       "every": 2,
-       "cap": 175,
-       "rpe": 8
-      },
-      {
-       "ex": "invrow",
-       "sets": 4,
-       "reps": "10",
-       "rest": "2min",
-       "note": "A2 · TRX or rings",
-       "bw": true,
-       "rpe": 7
-      },
-      {
-       "ex": "pullover",
-       "sets": 3,
-       "reps": "10",
-       "rest": "90s",
-       "note": "B1",
-       "start": 45,
-       "step": 5,
-       "every": 3,
-       "cap": 55,
-       "rpe": 7
-      },
-      {
-       "ex": "dbrow",
-       "sets": 3,
-       "reps": "8/arm",
-       "rest": "90s",
-       "note": "B2",
-       "start": 60,
-       "step": 5,
-       "every": 3,
-       "cap": 80,
-       "rpe": 7
-      },
-      {
-       "ex": "landmine",
-       "sets": 3,
-       "reps": "8/arm",
-       "rest": "60s",
-       "start": 35,
-       "step": 5,
-       "every": 3,
-       "cap": 55,
-       "rpe": 7
-      }
-     ]
+    "tspine": {
+      "name": "Wall Side T Spine Opener",
+      "cue": "Reach long, follow the hand with your eyes.",
+      "cat": "prep",
+      "unit": "none",
+      "q": "side lying wall thoracic spine opener rotation drill",
+      "equip": "bodyweight",
+      "loc": "both"
     },
-    {
-     "name": "Arm Care",
-     "items": [
-      {
-       "ex": "sidelyer",
-       "sets": 2,
-       "reps": "12/arm",
-       "rest": "30s",
-       "start": 8,
-       "step": 0,
-       "every": 1,
-       "rpe": 4
-      },
-      {
-       "ex": "serratus",
-       "sets": 2,
-       "reps": "10",
-       "rest": "30s",
-       "bw": true,
-       "rpe": 4
-      }
-     ]
+    "shpullover": {
+      "name": "Shoulder Mobility Pullovers",
+      "cue": "Ribs down, no lumbar arch.",
+      "cat": "prep",
+      "unit": "lb",
+      "q": "dumbbell shoulder mobility pullover ribs down",
+      "equip": "light dumbbell",
+      "loc": "both",
+      "alt": "Band overhead pull, or a broomstick"
+    },
+    "bandpa": {
+      "name": "Band Pull-Apart",
+      "cue": "Straight arms, low load, high reps.",
+      "cat": "prep",
+      "unit": "none",
+      "q": "band pull apart proper form",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "banderer90": {
+      "name": "Band External Rotation @ 90 deg",
+      "cue": "Upper arm parallel to floor. No shrug.",
+      "cat": "prep",
+      "unit": "none",
+      "q": "band external rotation at 90 degrees shoulder",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "banderir": {
+      "name": "Band ER / IR",
+      "cue": "Elbow pinned. Rotate from the shoulder, not the wrist.",
+      "cat": "prep",
+      "unit": "none",
+      "q": "band internal external rotation shoulder warm up",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "wristsnap": {
+      "name": "Wrist Snaps into wall",
+      "cue": "Light ball. Snap, don't push.",
+      "cat": "prep",
+      "unit": "none",
+      "q": "wrist snap drill throwing into wall baseball",
+      "equip": "ball + wall",
+      "loc": "both",
+      "alt": "Tennis ball works for all of these"
+    },
+    "hipskip": {
+      "name": "Hip Mobility ER/IR Skips",
+      "cue": "Loose, rhythmic.",
+      "cat": "agility",
+      "unit": "none",
+      "q": "hip external internal rotation skip warm up drill",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "anklelift": {
+      "name": "Ankle Mobility Liftoff",
+      "cue": "Knee tracks over toe.",
+      "cat": "prep",
+      "unit": "none",
+      "q": "ankle mobility liftoff drill knee over toe",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "quadiso": {
+      "name": "Quad Tendon Isometric @ ~60 deg",
+      "cue": "70% effort. BEFORE training, not after. ~45 min analgesic window.",
+      "cat": "prep",
+      "unit": "none",
+      "q": "spanish squat isometric quad tendon 45 second hold",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "pogos": {
+      "name": "Pogos",
+      "cue": "Stiff ankles, minimal knee bend, quiet.",
+      "cat": "plyo",
+      "unit": "none",
+      "q": "pogo jumps stiff ankle plyometric",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "cablerot": {
+      "name": "Cable Rotation / Rib Dissociation",
+      "cue": "Hips quiet. Rotate the ribcage on the pelvis.",
+      "cat": "power",
+      "unit": "lb",
+      "q": "cable rib dissociation rotation hips quiet drill",
+      "equip": "cable machine",
+      "loc": "gym"
+    },
+    "mbsplit": {
+      "name": "MB Split Stance Toss into wall",
+      "cue": "Load the back hip. Drive with hip rotation, not the arm.",
+      "cat": "power",
+      "unit": "lb",
+      "q": "split stance rotational medicine ball throw into wall",
+      "equip": "medicine ball",
+      "loc": "gym",
+      "alt": "Any med ball; weight matters less than intent"
+    },
+    "plyopush": {
+      "name": "Plyo Push-up",
+      "cue": "Hands leave the floor. Land soft.",
+      "cat": "power",
+      "unit": "none",
+      "q": "plyometric push up hands leave floor",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "plyoballrev": {
+      "name": "Plyo Ball Reverse Throw into wall",
+      "cue": "Controlled. This is the eccentric ER drill.",
+      "cat": "power",
+      "unit": "lb",
+      "q": "driveline reverse throw plyo ball",
+      "equip": "ball + wall",
+      "loc": "both",
+      "alt": "Tennis ball works for all of these"
+    },
+    "mbrepeat": {
+      "name": "Med Ball Repeat Toss",
+      "cue": "Continuous, rhythmic, no pause.",
+      "cat": "power",
+      "unit": "lb",
+      "q": "medicine ball chest pass repeat toss wall",
+      "equip": "medicine ball",
+      "loc": "gym",
+      "alt": "Any med ball; weight matters less than intent"
+    },
+    "ripthrough": {
+      "name": "Band or Cable Rip Through",
+      "cue": "Explosive. Finish tall.",
+      "cat": "power",
+      "unit": "lb",
+      "q": "band rip through rotational power drill",
+      "equip": "cable machine",
+      "loc": "gym"
+    },
+    "mbshotput": {
+      "name": "Step-behind Rotational MB Shotput",
+      "cue": "Build momentum. Land into a stiff front leg.",
+      "cat": "power",
+      "unit": "lb",
+      "q": "step behind rotational medicine ball shotput",
+      "equip": "medicine ball",
+      "loc": "gym",
+      "alt": "Any med ball; weight matters less than intent"
+    },
+    "mbscoop": {
+      "name": "MB Scoop Throw",
+      "cue": "Full extension. Finish tall.",
+      "cat": "power",
+      "unit": "lb",
+      "q": "medicine ball scoop toss rotational distance",
+      "equip": "medicine ball",
+      "loc": "gym",
+      "alt": "Any med ball; weight matters less than intent"
+    },
+    "mbvertunder": {
+      "name": "CM Vertical Underhand MB Throw",
+      "cue": "Priming only. Max intent, zero fatigue.",
+      "cat": "power",
+      "unit": "lb",
+      "q": "countermovement vertical underhand medicine ball throw",
+      "equip": "medicine ball",
+      "loc": "gym",
+      "alt": "Any med ball; weight matters less than intent"
+    },
+    "mbvertover": {
+      "name": "Vertical Overhand MB Throw",
+      "cue": "Priming only.",
+      "cat": "power",
+      "unit": "lb",
+      "q": "vertical overhand medicine ball throw",
+      "equip": "medicine ball",
+      "loc": "gym",
+      "alt": "Any med ball; weight matters less than intent"
+    },
+    "mbbroad": {
+      "name": "Broad Jump MB Throw",
+      "cue": "Priming only.",
+      "cat": "power",
+      "unit": "lb",
+      "q": "broad jump medicine ball throw",
+      "equip": "medicine ball",
+      "loc": "gym",
+      "alt": "Any med ball; weight matters less than intent"
+    },
+    "penult": {
+      "name": "Lean/Fall Penultimate Jumps",
+      "cue": "Long low penultimate step, quick final step.",
+      "cat": "plyo",
+      "unit": "none",
+      "q": "penultimate step jump drill volleyball approach lean fall",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "boxrepeat": {
+      "name": "Box or Hurdle Repeat Jumps",
+      "cue": "Minimise ground contact.",
+      "cat": "plyo",
+      "unit": "none",
+      "q": "repeat box jumps hurdle hops minimal ground contact",
+      "equip": "plyo box",
+      "loc": "gym",
+      "alt": "A sturdy bench, or step platforms"
+    },
+    "altdrop": {
+      "name": "Altitude Drop Progressions",
+      "cue": "Step off. Land TALL, stiffer knees.",
+      "cat": "plyo",
+      "unit": "none",
+      "q": "altitude drop landing drill plyometric",
+      "equip": "plyo box",
+      "loc": "gym",
+      "alt": "A sturdy bench, or step platforms"
+    },
+    "deepnocm": {
+      "name": "Deep Non Countermovement Assisted Jump",
+      "cue": "No countermovement. Pure concentric.",
+      "cat": "plyo",
+      "unit": "none",
+      "q": "non countermovement squat jump no countermovement",
+      "equip": "plyo box",
+      "loc": "gym",
+      "alt": "A sturdy bench, or step platforms"
+    },
+    "slmultibox": {
+      "name": "Single Leg Multi Directional Box Jump",
+      "cue": "Control the landing.",
+      "cat": "plyo",
+      "unit": "none",
+      "q": "single leg multi directional box jump",
+      "equip": "plyo box",
+      "loc": "gym",
+      "alt": "A sturdy bench, or step platforms"
+    },
+    "bandpogo": {
+      "name": "Band Resisted Pogos",
+      "cue": "Fast, low amplitude.",
+      "cat": "plyo",
+      "unit": "none",
+      "q": "band resisted pogo jumps",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "approach": {
+      "name": "4-Step Approach Jump",
+      "cue": "Arms back then up. Max downswing = final foot strike.",
+      "cat": "plyo",
+      "unit": "none",
+      "q": "volleyball 4 step approach jump technique arm swing",
+      "equip": "run-up space + ceiling height",
+      "loc": "gym",
+      "alt": "Do these at volleyball instead if the gym ceiling is low"
+    },
+    "blocksim": {
+      "name": "Block Jump Simulation",
+      "cue": "5 consecutive jumps.",
+      "cat": "plyo",
+      "unit": "none",
+      "q": "volleyball block jump repeat footwork drill",
+      "equip": "ceiling height",
+      "loc": "gym",
+      "alt": "Do these at volleyball instead"
+    },
+    "hangclean": {
+      "name": "Hang Power Clean",
+      "cue": "Violent hip extension. Catch tall.",
+      "cat": "lower",
+      "unit": "lb",
+      "q": "hang power clean technique",
+      "equip": "barbell + rack",
+      "loc": "gym"
+    },
+    "squatacc": {
+      "name": "Squat (Accelerative Strength)",
+      "cue": "Full depth. Move the bar fast.",
+      "cat": "lower",
+      "unit": "lb",
+      "q": "speed squat accelerative back squat bar speed",
+      "equip": "barbell + rack",
+      "loc": "gym"
+    },
+    "squatabs": {
+      "name": "Absolute Strength Squat",
+      "cue": "Heavy. Full depth.",
+      "cat": "lower",
+      "unit": "lb",
+      "q": "heavy back squat form",
+      "equip": "barbell + rack",
+      "loc": "gym"
+    },
+    "heelsnarrow": {
+      "name": "Heels Elevated Narrow Squat",
+      "cue": "Deep and quad-biased. Week 5+ only.",
+      "cat": "lower",
+      "unit": "lb",
+      "q": "heels elevated narrow stance squat",
+      "equip": "barbell + rack",
+      "loc": "gym"
+    },
+    "hamcurl": {
+      "name": "Worlds Greatest Hamstring Curl",
+      "cue": "Control the eccentric.",
+      "cat": "lower",
+      "unit": "lb",
+      "q": "nordic hamstring curl eccentric",
+      "equip": "partner or anchored heels",
+      "loc": "gym",
+      "alt": "Hook heels under a lat-pulldown seat or a loaded barbell; or use the 45-degree bench"
+    },
+    "soleus": {
+      "name": "Soleus Raise",
+      "cue": "BENT KNEE. This is the one sprints don't train.",
+      "cat": "lower",
+      "unit": "lb",
+      "q": "seated calf raise bent knee soleus",
+      "equip": "seated calf machine",
+      "loc": "gym",
+      "alt": "Bent-knee calf raise holding dumbbells, or a Smith machine"
+    },
+    "ecccalf": {
+      "name": "Eccentric Calf Raise",
+      "cue": "3s down.",
+      "cat": "lower",
+      "unit": "lb",
+      "q": "eccentric calf raise slow lowering",
+      "equip": "dumbbells",
+      "loc": "both"
+    },
+    "spanish": {
+      "name": "Spanish Squat (~60 deg)",
+      "cue": "Band behind the knees. Stay tall.",
+      "cat": "lower",
+      "unit": "none",
+      "q": "spanish squat band knee isometric",
+      "equip": "thick band + rack anchor",
+      "loc": "both",
+      "alt": "Plain wall sit at the same knee angle"
+    },
+    "trapjump": {
+      "name": "Trap Bar Jump",
+      "cue": "30% load. Intent is speed.",
+      "cat": "lower",
+      "unit": "lb",
+      "q": "trap bar jump loaded jump squat",
+      "equip": "trap/hex bar",
+      "loc": "gym",
+      "alt": "DB jump squat holding two dumbbells"
+    },
+    "bandassistjump": {
+      "name": "Band Assisted Jump",
+      "cue": "Overspeed. Let the band help.",
+      "cat": "lower",
+      "unit": "none",
+      "q": "band assisted jump overspeed",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "bench": {
+      "name": "Bench Press",
+      "cue": "Elbows tucked 45-60 deg, NEVER flared to 90. Scap retracted + depressed.",
+      "cat": "upper",
+      "unit": "lb",
+      "q": "barbell bench press elbow tuck scapula retract",
+      "equip": "barbell + rack",
+      "loc": "gym"
+    },
+    "incline": {
+      "name": "Incline Bench Press",
+      "cue": "Same elbow rule.",
+      "cat": "upper",
+      "unit": "lb",
+      "q": "incline barbell bench press form",
+      "equip": "barbell + rack",
+      "loc": "gym"
+    },
+    "latpulldown": {
+      "name": "Half Kneel Lat Pulldown",
+      "cue": "Ribs down. Pull with the lat, not the bicep.",
+      "cat": "upper",
+      "unit": "lb",
+      "q": "half kneeling lat pulldown",
+      "equip": "cable machine",
+      "loc": "gym"
+    },
+    "pullover": {
+      "name": "DB Pullover",
+      "cue": "BENT ARM. Stop short of full end range.",
+      "cat": "upper",
+      "unit": "lb",
+      "q": "dumbbell pullover bent arm form",
+      "equip": "dumbbells",
+      "loc": "both"
+    },
+    "stiffarmpd": {
+      "name": "Cable Stiff-Arm Pulldown",
+      "cue": "Fallback for the pullover if pinching returns.",
+      "cat": "upper",
+      "unit": "lb",
+      "q": "cable stiff arm pulldown lat",
+      "equip": "cable machine",
+      "loc": "gym"
+    },
+    "dbrow": {
+      "name": "Split Stance DB Row",
+      "cue": "Full stretch at the bottom.",
+      "cat": "upper",
+      "unit": "lb",
+      "q": "split stance dumbbell row",
+      "equip": "dumbbells",
+      "loc": "both"
+    },
+    "invrow": {
+      "name": "Inverted Row",
+      "cue": "TRX or rings. Walk feet forward to make it harder, not more reps. 1s squeeze at the top.",
+      "cat": "upper",
+      "unit": "lb",
+      "q": "inverted row form",
+      "equip": "bar or rings",
+      "loc": "gym",
+      "alt": "TRX straps, rings, a bar, or a table edge"
+    },
+    "landmine": {
+      "name": "Landmine Split Stance Dip Press",
+      "cue": "Shoulder-friendly press angle.",
+      "cat": "upper",
+      "unit": "lb",
+      "q": "landmine press split stance",
+      "equip": "landmine attachment",
+      "loc": "gym",
+      "alt": "Wedge a barbell into a corner, or single-arm DB press"
+    },
+    "fingercurl": {
+      "name": "Finger Tip Curls",
+      "cue": "Slow. Relevant to ball grip.",
+      "cat": "upper",
+      "unit": "lb",
+      "q": "finger tip curls forearm grip",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "sidelyer": {
+      "name": "Side-lying DB External Rotation",
+      "cue": "3s lower. Light.",
+      "cat": "upper",
+      "unit": "lb",
+      "q": "side lying dumbbell external rotation",
+      "equip": "light dumbbell",
+      "loc": "both",
+      "alt": "Band external rotation lying on your side"
+    },
+    "serratus": {
+      "name": "Serratus Wall Slide",
+      "cue": "Push INTO the wall. Reach long at the top.",
+      "cat": "upper",
+      "unit": "none",
+      "q": "serratus wall slide",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "pronepull": {
+      "name": "Prone Pull Through",
+      "cue": "Short range. Scap retraction.",
+      "cat": "upper",
+      "unit": "lb",
+      "q": "prone trap raise pull through shoulder",
+      "equip": "light dumbbells",
+      "loc": "both",
+      "alt": "Band pull-through, or no weight at all"
+    },
+    "revfly": {
+      "name": "Reverse Fly",
+      "cue": "Light. Squeeze the blades.",
+      "cat": "upper",
+      "unit": "lb",
+      "q": "dumbbell reverse fly",
+      "equip": "dumbbells",
+      "loc": "both"
+    },
+    "pallof": {
+      "name": "Pallof Press",
+      "cue": "Resist the rotation. Ribs down.",
+      "cat": "upper",
+      "unit": "lb",
+      "q": "pallof press anti rotation",
+      "equip": "cable or band",
+      "loc": "both",
+      "alt": "Band anchored at chest height"
+    },
+    "revthrow": {
+      "name": "Reverse Throws (plyo ball)",
+      "cue": "ALWAYS FIRST in the plyo ball routine.",
+      "cat": "throw",
+      "unit": "lb",
+      "q": "driveline reverse throws plyo ball",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "pivotpick": {
+      "name": "Pivot Picks (plyo ball)",
+      "cue": "Always second.",
+      "cat": "throw",
+      "unit": "lb",
+      "q": "driveline pivot pickoff drill plyo ball",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "rollin": {
+      "name": "Roll-ins (plyo ball)",
+      "cue": "Max effort.",
+      "cat": "throw",
+      "unit": "lb",
+      "q": "driveline roll in throw plyo ball",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "walkwind": {
+      "name": "Walking Windups (plyo ball)",
+      "cue": "ALWAYS LAST.",
+      "cat": "throw",
+      "unit": "lb",
+      "q": "driveline walking windup plyo ball",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "catchplay": {
+      "name": "Catch Play Build-up",
+      "cue": "Build intensity gradually.",
+      "cat": "throw",
+      "unit": "none",
+      "q": "baseball catch play warm up routine",
+      "equip": "partner or wall",
+      "loc": "gym",
+      "alt": "Wall at 1.5-2 m"
+    },
+    "longtoss": {
+      "name": "Long Toss",
+      "cue": "Build to max distance.",
+      "cat": "throw",
+      "unit": "none",
+      "q": "baseball long toss progression",
+      "equip": "outdoor space",
+      "loc": "outdoor",
+      "alt": "Spring only. No indoor substitute"
+    },
+    "wball": {
+      "name": "Weighted Ball Throws",
+      "cue": "Week 5+. Never off a mound, never cold.",
+      "cat": "throw",
+      "unit": "oz",
+      "q": "driveline weighted baseball throwing program",
+      "equip": "weighted / plyo balls",
+      "loc": "gym",
+      "alt": "Tennis ball as the underload; the gym's weighted balls for overload"
+    },
+    "velotest": {
+      "name": "Velocity Test (video flight time)",
+      "cue": "240fps, 60ft, 5 throws. mph = 9816/frames.",
+      "cat": "test",
+      "unit": "mph",
+      "q": "measure pitch speed slow motion video frame count",
+      "equip": "60 ft + phone at 240fps",
+      "loc": "outdoor",
+      "alt": "Spring only. Track the MB scoop throw instead"
+    },
+    "towel": {
+      "name": "Towel Drill",
+      "cue": "No ball. Snap the towel through release. Full mechanics, zero space.",
+      "cat": "throw",
+      "unit": "none",
+      "q": "baseball towel drill pitching mechanics",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "wristw": {
+      "name": "Wrist Weight Arm Action",
+      "cue": "1-2 lb wrist weight. Slow, full throwing arm path. No release.",
+      "cat": "throw",
+      "unit": "lb",
+      "q": "wrist weight arm action driveline throwing",
+      "equip": "wrist weights (~$15)",
+      "loc": "both",
+      "alt": "Hold a 2 lb dumbbell, or a light band in the hand"
+    },
+    "tubing": {
+      "name": "Shoulder Tubing / J-Band Series",
+      "cue": "Full J-band series. This is the arm care backbone all winter.",
+      "cat": "throw",
+      "unit": "none",
+      "q": "jaeger j band shoulder tubing full series",
+      "equip": "J-bands / shoulder tubing (~$25)",
+      "loc": "both",
+      "alt": "Any light resistance band, or a light cable stack"
+    },
+    "wallrev": {
+      "name": "Reverse Throw into padded wall",
+      "cue": "1.5-2 m from the wall. Controlled. Eccentric ER drill.",
+      "cat": "throw",
+      "unit": "lb",
+      "q": "driveline reverse throw plyo ball wall",
+      "equip": "plyo ball + padded wall",
+      "loc": "gym",
+      "alt": "Tennis ball, or a 1 kg med ball into a mat"
+    },
+    "wallpivot": {
+      "name": "Pivot Pick into padded wall",
+      "cue": "1.5-2 m. Torso rotation, arm along for the ride.",
+      "cat": "throw",
+      "unit": "lb",
+      "q": "driveline pivot pickoff drill wall",
+      "equip": "plyo ball + padded wall",
+      "loc": "gym",
+      "alt": "Tennis ball into a mat"
+    },
+    "wallrocker": {
+      "name": "Rocker Throw into padded wall",
+      "cue": "Rock back, rock forward, throw. Momentum into a stiff front leg.",
+      "cat": "throw",
+      "unit": "lb",
+      "q": "driveline rocker drill plyo ball wall",
+      "equip": "plyo ball + padded wall",
+      "loc": "gym",
+      "alt": "Tennis ball into a mat"
+    },
+    "wallwind": {
+      "name": "Walking Windup (dry or into padding)",
+      "cue": "Full sequence, controlled intent. No release needed — dry reps count. Into a pillow if you have room.",
+      "cat": "throw",
+      "unit": "lb",
+      "q": "driveline walking windup plyo ball",
+      "equip": "a few steps of space",
+      "loc": "both",
+      "alt": "Dry rep with no ball, or a light ball into a mattress"
+    },
+    "tennisrebound": {
+      "name": "Tennis Ball Wall Rebound",
+      "cue": "1.5 m from wall. Continuous throw-and-catch. Fast hands, low load.",
+      "cat": "throw",
+      "unit": "none",
+      "q": "tennis ball wall rebound reaction drill baseball",
+      "equip": "ball + wall",
+      "loc": "both",
+      "alt": "Tennis ball works for all of these"
+    },
+    "ribdis": {
+      "name": "Rib / Pelvis Dissociation Hold",
+      "cue": "Hips square, ribs rotate. This IS hip-shoulder separation.",
+      "cat": "throw",
+      "unit": "none",
+      "q": "hip shoulder separation drill rib pelvis dissociation",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "rfess": {
+      "name": "RFESS Progressions",
+      "cue": "Rear foot elevated. Front shin vertical, torso tall.",
+      "cat": "lower",
+      "unit": "lb",
+      "q": "rear foot elevated split squat form",
+      "equip": "dumbbells",
+      "loc": "both"
+    },
+    "kickrdl": {
+      "name": "Kickstand RDL",
+      "cue": "Back toe as a kickstand. Hinge, feel the front hamstring.",
+      "cat": "lower",
+      "unit": "lb",
+      "q": "kickstand RDL single leg romanian deadlift",
+      "equip": "dumbbells",
+      "loc": "both"
+    },
+    "hipflex": {
+      "name": "Cable Hip Flexor Drivers",
+      "cue": "Drive the knee. This is the stride-length lift.",
+      "cat": "lower",
+      "unit": "lb",
+      "q": "cable hip flexor driver march knee drive",
+      "equip": "cable + ankle strap",
+      "loc": "gym",
+      "alt": "Band looped round the foot, anchored low"
+    },
+    "hipext45": {
+      "name": "45 Degree Hip Extension",
+      "cue": "Glute and hamstring, not lower back.",
+      "cat": "lower",
+      "unit": "lb",
+      "q": "45 degree back extension hip extension glute",
+      "equip": "45-degree back extension bench",
+      "loc": "gym",
+      "alt": "Back extension machine, or a barbell hip thrust"
+    },
+    "dotdrill": {
+      "name": "Dot Drill (2 foot / 1 foot V)",
+      "cue": "Fast feet, quiet landings. Footwork, not power.",
+      "cat": "agility",
+      "unit": "none",
+      "q": "dot drill footwork agility 5 dot",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "curvedrun": {
+      "name": "Curved Runs",
+      "cue": "Lean into the curve. 20-30 m arcs.",
+      "cat": "agility",
+      "unit": "none",
+      "q": "curved run sprint mechanics drill",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "olcalf": {
+      "name": "One Leg Calf Raise Progressions",
+      "cue": "Full range, pause at the top.",
+      "cat": "lower",
+      "unit": "lb",
+      "q": "single leg calf raise progression",
+      "equip": "dumbbells",
+      "loc": "both"
+    },
+    "hamslider": {
+      "name": "Hamstring Slider Progressions",
+      "cue": "Control the eccentric. Hips stay up.",
+      "cat": "lower",
+      "unit": "lb",
+      "q": "hamstring slider curl eccentric",
+      "equip": "furniture sliders",
+      "loc": "gym",
+      "alt": "Towels on a smooth floor, or a stability-ball leg curl"
+    },
+    "hipbridge": {
+      "name": "Rapid Hip Bridge Progression",
+      "cue": "Fast, rhythmic. Glutes not lower back.",
+      "cat": "lower",
+      "unit": "lb",
+      "q": "rapid hip bridge glute bridge progression",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "ankle3d": {
+      "name": "3D Ankle Blaster",
+      "cue": "All three planes. Small range, high control.",
+      "cat": "prep",
+      "unit": "none",
+      "q": "3d ankle mobility strength drill",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "ankleres": {
+      "name": "Resisted Ankle Circles",
+      "cue": "Band around the foot. Slow circles.",
+      "cat": "prep",
+      "unit": "lb",
+      "q": "resisted ankle circles band",
+      "equip": "band",
+      "loc": "both"
+    },
+    "rdl": {
+      "name": "Romanian Deadlift",
+      "cue": "Hinge. Bar close. Stop where the hamstrings stop.",
+      "cat": "lower",
+      "unit": "lb",
+      "q": "romanian deadlift barbell form",
+      "equip": "barbell + rack",
+      "loc": "gym"
+    },
+    "splitrepeat": {
+      "name": "Band Resisted Split Stance Repeats",
+      "cue": "Split stance, repeated fast reps against the band.",
+      "cat": "plyo",
+      "unit": "none",
+      "q": "band resisted split stance jump repeats",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "razor": {
+      "name": "Razor Curl Progressions",
+      "cue": "Hips extended throughout. Hard.",
+      "cat": "lower",
+      "unit": "lb",
+      "q": "razor curl hamstring",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "reversal": {
+      "name": "Rhythm Reversal Strength",
+      "cue": "Rhythmic reps. Fast reversal out of the bottom.",
+      "cat": "lower",
+      "unit": "lb",
+      "q": "rhythm reversal squat strength",
+      "equip": "barbell + rack",
+      "loc": "gym"
+    },
+    "sledmarch": {
+      "name": "Sled March",
+      "cue": "Low, driving marches. Long contacts.",
+      "cat": "lower",
+      "unit": "lb",
+      "q": "sled march drive",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "recipinhib": {
+      "name": "Lower Leg Reciprocal Inhibition",
+      "cue": "Tib raise then calf raise, alternating.",
+      "cat": "prep",
+      "unit": "none",
+      "q": "tibialis raise calf raise reciprocal",
+      "equip": "bodyweight",
+      "loc": "both"
+    },
+    "ctread": {
+      "name": "Curved Treadmill Sprint",
+      "cat": "agility",
+      "unit": "none",
+      "cue": "8s max effort. Hands off the rails. Walk-back recovery.",
+      "q": "curved treadmill sprint assault airrunner technique",
+      "equip": "curved treadmill",
+      "loc": "gym"
+    },
+    "ctreadres": {
+      "name": "Curved Treadmill Resisted Sprint",
+      "cat": "agility",
+      "unit": "none",
+      "cue": "Moderate resistance. 6s, driving. Stride length, not turnover.",
+      "q": "resisted curved treadmill sprint magnetic resistance training",
+      "equip": "curved treadmill with resistance",
+      "loc": "gym"
+    },
+    "sledpush": {
+      "name": "Sled Push (acceleration)",
+      "cat": "lower",
+      "unit": "lb",
+      "cue": "Low body angle, long drives. This is the acceleration lift.",
+      "q": "heavy sled push acceleration sprint technique",
+      "equip": "sled",
+      "loc": "gym"
+    },
+    "wuLower": {
+      "name": "Warm-up — PJF Dynamic Warmup",
+      "cat": "prep",
+      "unit": "none",
+      "cue": "Follow the video start to finish. Same one you used on PJF.",
+      "video": "https://www.youtube.com/watch?v=8Y78nYEIxIY",
+      "q": "PJF dynamic warmup",
+      "equip": "space to move",
+      "loc": "both",
+      "mins": 12
+    },
+    "wuUpper": {
+      "name": "Warm-up — J-Band Arm Care Routine",
+      "cat": "prep",
+      "unit": "none",
+      "cue": "Follow the video. Doubles as your arm care, so do it properly.",
+      "video": "https://www.youtube.com/watch?v=DQmrp-voO8Y",
+      "q": "j band warm up routine baseball",
+      "equip": "J-bands or any light band",
+      "loc": "both",
+      "alt": "Any light resistance band",
+      "mins": 6
+    },
+    "gastroc": {
+      "name": "Straight-Leg Calf Raise",
+      "cat": "lower",
+      "unit": "lb",
+      "cue": "Knee locked. Gastroc, not soleus. Pause at the top.",
+      "q": "standing straight leg calf raise gastrocnemius",
+      "equip": "calf machine or dumbbells",
+      "loc": "gym",
+      "alt": "Standing calf raise holding dumbbells, or a Smith machine"
+    },
+    "tibraise": {
+      "name": "KB Anti-Tib Raise (bench)",
+      "cat": "prep",
+      "unit": "lb",
+      "cue": "Heels on the bench edge, KB hooked on the foot. The brakes for landing and sprinting.",
+      "q": "kettlebell tibialis raise bench anterior tib",
+      "equip": "kettlebell + bench",
+      "loc": "gym",
+      "alt": "Wall tib raise, bodyweight"
+    },
+    "mbseatedoh": {
+      "name": "Seated Overhead MB Throw",
+      "cue": "Seated, legs out of it. Ribs down, throw from the trunk up. Max intent, stop if a rep slows.",
+      "cat": "power",
+      "unit": "lb",
+      "q": "seated overhead medicine ball throw wall",
+      "equip": "med ball + wall",
+      "loc": "gym",
+      "alt": "Half-kneeling overhead throw, or a standing overhead slam"
+    },
+    "sapulldown": {
+      "name": "Single-Arm Cable Pulldown",
+      "cue": "Half kneel. One arm, let the shoulder blade travel. Resist the rotation.",
+      "cat": "upper",
+      "unit": "lb",
+      "q": "single arm half kneeling cable lat pulldown",
+      "equip": "cable",
+      "loc": "gym",
+      "alt": "Half kneel lat pulldown, two arms"
+    },
+    "ballrollout": {
+      "name": "Stability Ball Plank In-and-Out",
+      "cue": "Forearms on the ball. Ribs down, NO lumbar arch. Short range, control the way out.",
+      "cat": "upper",
+      "unit": "none",
+      "q": "stability ball plank rollout in and out",
+      "equip": "stability ball",
+      "loc": "gym",
+      "alt": "Ab wheel rollout from the knees, or a dead bug"
+    },
+    "cableir": {
+      "name": "Cable Internal Rotation @ 90 deg",
+      "cue": "Elbow at 90 and abducted to 90. Drive the hand forward fast, control it back slow.",
+      "cat": "upper",
+      "unit": "lb",
+      "q": "cable internal rotation 90 degrees abduction shoulder",
+      "equip": "cable",
+      "loc": "gym",
+      "alt": "Band internal rotation anchored at elbow height"
+    },
+    "armswing": {
+      "name": "Weighted Arm Swing (spike pattern)",
+      "cue": "Wrist weight on. Full spike arm path, max downswing as the front foot lands. Fast, never heavy.",
+      "cat": "throw",
+      "unit": "lb",
+      "q": "volleyball arm swing drill spike mechanics slow motion",
+      "equip": "wrist weight",
+      "loc": "both",
+      "alt": "Same pattern with no weight at all"
     }
-   ]
   },
-  "lowerPower": {
-   "name": "Lower A · Power",
-   "mins": 85,
-   "blocks": [
-    {
-     "name": "Warm-up",
-     "items": [
-      {
-       "ex": "wuLower",
-       "sets": 1,
-       "reps": "12 min video",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4,
-       "note": "follow along"
-      }
-     ]
+  "days": {
+    "upperA": {
+      "name": "Upper A + Test",
+      "mins": 105,
+      "blocks": [
+        {
+          "name": "Warm-up",
+          "items": [
+            {
+              "ex": "wuUpper",
+              "sets": 1,
+              "reps": "6 min video",
+              "rest": "-",
+              "bw": true,
+              "rpe": 4,
+              "note": "follow along"
+            }
+          ]
+        },
+        {
+          "name": "Test (weekly)",
+          "items": [
+            {
+              "ex": "mbscoop",
+              "sets": 1,
+              "reps": "3/side, max effort",
+              "rest": "full",
+              "note": "Rotational throw for distance. Log your best.",
+              "fixed": 6,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Power",
+          "items": [
+            {
+              "ex": "cablerot",
+              "sets": 3,
+              "reps": "6/side",
+              "rest": "45s",
+              "start": 25,
+              "step": 5,
+              "every": 4,
+              "cap": 45,
+              "rpe": 6
+            },
+            {
+              "ex": "plyopush",
+              "sets": 3,
+              "reps": "5",
+              "rest": "75s",
+              "bw": true,
+              "rpe": 6
+            },
+            {
+              "ex": "mbseatedoh",
+              "sets": 3,
+              "reps": "5",
+              "rest": "90s",
+              "fixed": 4,
+              "rpe": 6,
+              "note": "max intent — stop the set if a rep slows"
+            }
+          ]
+        },
+        {
+          "name": "Strength",
+          "items": [
+            {
+              "ex": "bench",
+              "sets": 4,
+              "reps": "5",
+              "rest": "2min",
+              "note": "A1",
+              "start": 165,
+              "step": 5,
+              "every": 2,
+              "cap": 210,
+              "rpe": 8
+            },
+            {
+              "ex": "sapulldown",
+              "sets": 4,
+              "reps": "8/arm",
+              "rest": "2min",
+              "note": "A2",
+              "start": 60,
+              "step": 5,
+              "every": 2,
+              "cap": 90,
+              "rpe": 7
+            },
+            {
+              "ex": "pullover",
+              "sets": 3,
+              "reps": "10",
+              "rest": "90s",
+              "note": "B1 - bent arm, short of end range",
+              "start": 45,
+              "step": 5,
+              "every": 3,
+              "cap": 55,
+              "rpe": 7
+            },
+            {
+              "ex": "dbrow",
+              "sets": 3,
+              "reps": "8/arm",
+              "rest": "90s",
+              "note": "B2",
+              "start": 60,
+              "step": 5,
+              "every": 3,
+              "cap": 80,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Arm Care",
+          "items": [
+            {
+              "ex": "sidelyer",
+              "sets": 2,
+              "reps": "12/arm",
+              "rest": "30s",
+              "start": 8,
+              "step": 0,
+              "every": 1,
+              "rpe": 4
+            },
+            {
+              "ex": "serratus",
+              "sets": 2,
+              "reps": "10",
+              "rest": "30s",
+              "bw": true,
+              "rpe": 4
+            },
+            {
+              "ex": "cableir",
+              "sets": 3,
+              "reps": "12/arm",
+              "rest": "30s",
+              "start": 15,
+              "step": 5,
+              "every": 4,
+              "cap": 35,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Trunk",
+          "items": [
+            {
+              "ex": "ballrollout",
+              "sets": 3,
+              "reps": "10",
+              "rest": "45s",
+              "bw": true,
+              "rpe": 6
+            }
+          ]
+        }
+      ]
     },
-    {
-     "name": "Jump",
-     "items": [
-      {
-       "ex": "penult",
-       "sets": 4,
-       "reps": "3",
-       "rest": "60s",
-       "bw": true,
-       "rpe": 6
-      },
-      {
-       "ex": "altdrop",
-       "sets": 3,
-       "reps": "4",
-       "rest": "60s",
-       "note": "Week 3+ only",
-       "bw": true,
-       "rpe": 6
-      }
-     ]
+    "upperB": {
+      "name": "Upper B",
+      "mins": 75,
+      "blocks": [
+        {
+          "name": "Warm-up",
+          "items": [
+            {
+              "ex": "wuUpper",
+              "sets": 1,
+              "reps": "6 min video",
+              "rest": "-",
+              "bw": true,
+              "rpe": 4,
+              "note": "follow along"
+            }
+          ]
+        },
+        {
+          "name": "Strength",
+          "items": [
+            {
+              "ex": "incline",
+              "sets": 4,
+              "reps": "6",
+              "rest": "2min",
+              "note": "A1",
+              "start": 135,
+              "step": 5,
+              "every": 2,
+              "cap": 175,
+              "rpe": 8
+            },
+            {
+              "ex": "invrow",
+              "sets": 4,
+              "reps": "10",
+              "rest": "2min",
+              "note": "A2 · TRX or rings",
+              "bw": true,
+              "rpe": 7
+            },
+            {
+              "ex": "pullover",
+              "sets": 3,
+              "reps": "10",
+              "rest": "90s",
+              "note": "B1",
+              "start": 45,
+              "step": 5,
+              "every": 3,
+              "cap": 55,
+              "rpe": 7
+            },
+            {
+              "ex": "dbrow",
+              "sets": 3,
+              "reps": "8/arm",
+              "rest": "90s",
+              "note": "B2",
+              "start": 60,
+              "step": 5,
+              "every": 3,
+              "cap": 80,
+              "rpe": 7
+            },
+            {
+              "ex": "landmine",
+              "sets": 3,
+              "reps": "8/arm",
+              "rest": "60s",
+              "start": 35,
+              "step": 5,
+              "every": 3,
+              "cap": 55,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Arm Care",
+          "items": [
+            {
+              "ex": "sidelyer",
+              "sets": 2,
+              "reps": "12/arm",
+              "rest": "30s",
+              "start": 8,
+              "step": 0,
+              "every": 1,
+              "rpe": 4
+            },
+            {
+              "ex": "serratus",
+              "sets": 2,
+              "reps": "10",
+              "rest": "30s",
+              "bw": true,
+              "rpe": 4
+            }
+          ]
+        }
+      ]
     },
-    {
-     "name": "Strength",
-     "items": [
-      {
-       "ex": "hangclean",
-       "sets": 4,
-       "reps": "3",
-       "rest": "2min",
-       "start": 155,
-       "step": 5,
-       "every": 2,
-       "cap": 205,
-       "rpe": 8
-      },
-      {
-       "ex": "squatacc",
-       "sets": 4,
-       "reps": "4",
-       "rest": "2.5min",
-       "note": "Full depth",
-       "start": 235,
-       "step": 10,
-       "every": 2,
-       "cap": 285,
-       "rpe": 8
-      },
-      {
-       "ex": "hamcurl",
-       "sets": 3,
-       "reps": "8",
-       "rest": "90s",
-       "start": 70,
-       "step": 5,
-       "every": 3,
-       "cap": 95,
-       "rpe": 7,
-       "note": "D1"
-      },
-      {
-       "ex": "soleus",
-       "sets": 3,
-       "reps": "12",
-       "rest": "60s",
-       "start": 120,
-       "step": 10,
-       "every": 2,
-       "cap": 180,
-       "rpe": 7,
-       "note": "D2"
-      }
-     ]
+    "lowerPower": {
+      "name": "Lower A · Power",
+      "mins": 85,
+      "blocks": [
+        {
+          "name": "Warm-up",
+          "items": [
+            {
+              "ex": "wuLower",
+              "sets": 1,
+              "reps": "12 min video",
+              "rest": "-",
+              "bw": true,
+              "rpe": 4,
+              "note": "follow along"
+            }
+          ]
+        },
+        {
+          "name": "Jump",
+          "items": [
+            {
+              "ex": "penult",
+              "sets": 4,
+              "reps": "3",
+              "rest": "60s",
+              "bw": true,
+              "rpe": 6
+            },
+            {
+              "ex": "altdrop",
+              "sets": 3,
+              "reps": "4",
+              "rest": "60s",
+              "note": "Week 3+ only",
+              "bw": true,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Strength",
+          "items": [
+            {
+              "ex": "hangclean",
+              "sets": 4,
+              "reps": "3",
+              "rest": "2min",
+              "start": 155,
+              "step": 5,
+              "every": 2,
+              "cap": 205,
+              "rpe": 8
+            },
+            {
+              "ex": "squatacc",
+              "sets": 4,
+              "reps": "4",
+              "rest": "2.5min",
+              "note": "Full depth",
+              "start": 235,
+              "step": 10,
+              "every": 2,
+              "cap": 285,
+              "rpe": 8
+            },
+            {
+              "ex": "hamcurl",
+              "sets": 3,
+              "reps": "8",
+              "rest": "90s",
+              "start": 70,
+              "step": 5,
+              "every": 3,
+              "cap": 95,
+              "rpe": 7,
+              "note": "D1"
+            },
+            {
+              "ex": "soleus",
+              "sets": 3,
+              "reps": "12",
+              "rest": "60s",
+              "start": 135,
+              "step": 10,
+              "every": 2,
+              "cap": 180,
+              "rpe": 7,
+              "note": "D2"
+            }
+          ]
+        },
+        {
+          "name": "Finisher",
+          "items": [
+            {
+              "ex": "spanish",
+              "sets": 3,
+              "reps": "45s",
+              "rest": "45s",
+              "bw": true,
+              "rpe": 7,
+              "note": "tendon work — last thing you do"
+            }
+          ]
+        }
+      ]
     },
-    {
-     "name": "Finisher",
-     "items": [
-      {
-       "ex": "spanish",
-       "sets": 3,
-       "reps": "45s",
-       "rest": "45s",
-       "bw": true,
-       "rpe": 7,
-       "note": "tendon work — last thing you do"
-      }
-     ]
+    "throwing": {
+      "name": "Throwing Day",
+      "mins": 65,
+      "blocks": [
+        {
+          "name": "Warm-up",
+          "items": [
+            {
+              "ex": "wuUpper",
+              "sets": 1,
+              "reps": "6 min video",
+              "rest": "-",
+              "bw": true,
+              "rpe": 4,
+              "note": "follow along"
+            }
+          ]
+        },
+        {
+          "name": "Plyo Ball Routine (fixed order)",
+          "items": [
+            {
+              "ex": "revthrow",
+              "sets": 3,
+              "reps": "8",
+              "rest": "45s",
+              "fixed": 2,
+              "rpe": 6
+            },
+            {
+              "ex": "pivotpick",
+              "sets": 3,
+              "reps": "6",
+              "rest": "60s",
+              "fixed": 2,
+              "rpe": 6
+            },
+            {
+              "ex": "rollin",
+              "sets": 3,
+              "reps": "5",
+              "rest": "60s",
+              "fixed": 1,
+              "rpe": 6
+            },
+            {
+              "ex": "walkwind",
+              "sets": 3,
+              "reps": "5",
+              "rest": "60s",
+              "fixed": 1,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Throwing",
+          "items": [
+            {
+              "ex": "catchplay",
+              "sets": 1,
+              "reps": "10 min",
+              "rest": "45s",
+              "bw": true,
+              "rpe": 6
+            },
+            {
+              "ex": "longtoss",
+              "sets": 1,
+              "reps": "8-10 throws",
+              "rest": "as needed",
+              "bw": true,
+              "rpe": 6
+            },
+            {
+              "ex": "wball",
+              "sets": 3,
+              "reps": "5 per ball",
+              "rest": "90s",
+              "note": "Week 5+ only. See block notes for weights.",
+              "bw": true,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Rotational",
+          "items": [
+            {
+              "ex": "mbshotput",
+              "sets": 3,
+              "reps": "5/side",
+              "rest": "60s",
+              "fixed": 6,
+              "rpe": 6
+            },
+            {
+              "ex": "mbscoop",
+              "sets": 3,
+              "reps": "5",
+              "rest": "60s",
+              "fixed": 8,
+              "rpe": 6
+            }
+          ]
+        }
+      ]
+    },
+    "lowerA2": {
+      "name": "Lower Power A (contrast)",
+      "mins": 70,
+      "blocks": [
+        {
+          "name": "Warm-up",
+          "items": [
+            {
+              "ex": "wuLower",
+              "sets": 1,
+              "reps": "12 min video",
+              "rest": "-",
+              "bw": true,
+              "rpe": 4,
+              "note": "follow along"
+            }
+          ]
+        },
+        {
+          "name": "French Contrast (3-4 rounds, in order)",
+          "items": [
+            {
+              "ex": "squatabs",
+              "sets": 1,
+              "reps": "2",
+              "rest": "15s",
+              "note": "1 - 85-90%",
+              "pct": 0.87,
+              "pctOf": "squatacc",
+              "rpe": 8
+            },
+            {
+              "ex": "altdrop",
+              "sets": 1,
+              "reps": "4",
+              "rest": "15s",
+              "note": "2",
+              "bw": true,
+              "rpe": 6
+            },
+            {
+              "ex": "trapjump",
+              "sets": 1,
+              "reps": "4",
+              "rest": "15s",
+              "note": "3 - 30%",
+              "pct": 0.3,
+              "pctOf": "squatacc",
+              "rpe": 7
+            },
+            {
+              "ex": "bandassistjump",
+              "sets": 1,
+              "reps": "4",
+              "rest": "2.5min",
+              "note": "4 - then next round",
+              "bw": true,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Strength",
+          "items": [
+            {
+              "ex": "hangclean",
+              "sets": 4,
+              "reps": "3",
+              "rest": "2min",
+              "pct": 0.8,
+              "pctOf": "hangclean",
+              "rpe": 8
+            },
+            {
+              "ex": "hamcurl",
+              "sets": 3,
+              "reps": "8",
+              "rest": "90s",
+              "start": 70,
+              "step": 5,
+              "every": 3,
+              "cap": 95,
+              "rpe": 7
+            },
+            {
+              "ex": "soleus",
+              "sets": 3,
+              "reps": "12",
+              "rest": "60s",
+              "start": 120,
+              "step": 10,
+              "every": 2,
+              "cap": 180,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Finisher",
+          "items": [
+            {
+              "ex": "ecccalf",
+              "sets": 2,
+              "reps": "10",
+              "rest": "45s",
+              "start": 55,
+              "step": 5,
+              "every": 3,
+              "cap": 85,
+              "rpe": 7
+            },
+            {
+              "ex": "spanish",
+              "sets": 3,
+              "reps": "45s",
+              "rest": "45s",
+              "bw": true,
+              "rpe": 7,
+              "note": "tendon work — last thing you do"
+            }
+          ]
+        }
+      ]
+    },
+    "lowerB2": {
+      "name": "Lower Power B (approach-specific)",
+      "mins": 80,
+      "blocks": [
+        {
+          "name": "Warm-up",
+          "items": [
+            {
+              "ex": "wuLower",
+              "sets": 1,
+              "reps": "12 min video",
+              "rest": "-",
+              "bw": true,
+              "rpe": 4,
+              "note": "follow along"
+            }
+          ]
+        },
+        {
+          "name": "Approach + Reactive",
+          "items": [
+            {
+              "ex": "approach",
+              "sets": 4,
+              "reps": "5",
+              "rest": "75s",
+              "bw": true,
+              "rpe": 6
+            },
+            {
+              "ex": "penult",
+              "sets": 4,
+              "reps": "3",
+              "rest": "60s",
+              "bw": true,
+              "rpe": 6
+            },
+            {
+              "ex": "altdrop",
+              "sets": 3,
+              "reps": "5",
+              "rest": "60s",
+              "bw": true,
+              "rpe": 6
+            },
+            {
+              "ex": "blocksim",
+              "sets": 4,
+              "reps": "5 jumps",
+              "rest": "30s",
+              "bw": true,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Strength",
+          "items": [
+            {
+              "ex": "squatacc",
+              "sets": 3,
+              "reps": "4",
+              "rest": "2.5min",
+              "pct": 0.8,
+              "pctOf": "squatacc",
+              "rpe": 8
+            },
+            {
+              "ex": "heelsnarrow",
+              "sets": 3,
+              "reps": "8",
+              "rest": "90s",
+              "pct": 0.62,
+              "pctOf": "heelsnarrow",
+              "rpe": 8
+            },
+            {
+              "ex": "soleus",
+              "sets": 3,
+              "reps": "12",
+              "rest": "60s",
+              "start": 120,
+              "step": 10,
+              "every": 2,
+              "cap": 180,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Finisher",
+          "items": [
+            {
+              "ex": "spanish",
+              "sets": 3,
+              "reps": "45s",
+              "rest": "45s",
+              "bw": true,
+              "rpe": 7,
+              "note": "tendon work — last thing you do"
+            }
+          ]
+        }
+      ]
+    },
+    "upperMaint": {
+      "name": "Upper Maintenance",
+      "mins": 50,
+      "blocks": [
+        {
+          "name": "Warm-up",
+          "items": [
+            {
+              "ex": "wuUpper",
+              "sets": 1,
+              "reps": "6 min video",
+              "rest": "-",
+              "bw": true,
+              "rpe": 4,
+              "note": "follow along"
+            }
+          ]
+        },
+        {
+          "name": "Strength (cut sets, HOLD load)",
+          "items": [
+            {
+              "ex": "bench",
+              "sets": 3,
+              "reps": "3",
+              "rest": "2min",
+              "pct": 0.85,
+              "pctOf": "bench",
+              "rpe": 8
+            },
+            {
+              "ex": "latpulldown",
+              "sets": 3,
+              "reps": "6",
+              "rest": "90s",
+              "pct": 0.8,
+              "pctOf": "latpulldown",
+              "rpe": 7
+            },
+            {
+              "ex": "dbrow",
+              "sets": 2,
+              "reps": "8/arm",
+              "rest": "90s",
+              "pct": 0.85,
+              "pctOf": "dbrow",
+              "rpe": 7
+            },
+            {
+              "ex": "pallof",
+              "sets": 2,
+              "reps": "8/side",
+              "rest": "60s",
+              "start": 30,
+              "step": 5,
+              "every": 4,
+              "cap": 50,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Arm Care",
+          "items": [
+            {
+              "ex": "sidelyer",
+              "sets": 2,
+              "reps": "12/arm",
+              "rest": "30s",
+              "start": 8,
+              "step": 0,
+              "every": 1,
+              "rpe": 4
+            },
+            {
+              "ex": "serratus",
+              "sets": 2,
+              "reps": "10",
+              "rest": "30s",
+              "bw": true,
+              "rpe": 4
+            }
+          ]
+        }
+      ]
+    },
+    "liftA": {
+      "name": "In-Season Lift A (lower)",
+      "mins": 65,
+      "blocks": [
+        {
+          "name": "Warm-up",
+          "items": [
+            {
+              "ex": "wuLower",
+              "sets": 1,
+              "reps": "12 min video",
+              "rest": "-",
+              "bw": true,
+              "rpe": 4,
+              "note": "follow along"
+            }
+          ]
+        },
+        {
+          "name": "Strength",
+          "items": [
+            {
+              "ex": "hangclean",
+              "sets": 3,
+              "reps": "2",
+              "rest": "2min",
+              "note": "80-85%",
+              "pct": 0.82,
+              "pctOf": "hangclean",
+              "rpe": 8
+            },
+            {
+              "ex": "squatacc",
+              "sets": 2,
+              "reps": "3",
+              "rest": "2.5min",
+              "note": "80-85%, full depth",
+              "pct": 0.82,
+              "pctOf": "squatacc",
+              "rpe": 8
+            },
+            {
+              "ex": "hamcurl",
+              "sets": 2,
+              "reps": "6",
+              "rest": "90s",
+              "start": 70,
+              "step": 5,
+              "every": 3,
+              "cap": 95,
+              "rpe": 7
+            },
+            {
+              "ex": "soleus",
+              "sets": 3,
+              "reps": "12",
+              "rest": "60s",
+              "start": 120,
+              "step": 10,
+              "every": 2,
+              "cap": 180,
+              "rpe": 7
+            },
+            {
+              "ex": "ecccalf",
+              "sets": 2,
+              "reps": "10",
+              "rest": "45s",
+              "start": 55,
+              "step": 5,
+              "every": 3,
+              "cap": 85,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Finisher",
+          "items": [
+            {
+              "ex": "spanish",
+              "sets": 3,
+              "reps": "45s",
+              "rest": "45s",
+              "bw": true,
+              "rpe": 7,
+              "note": "tendon work — last thing you do"
+            }
+          ]
+        }
+      ]
+    },
+    "liftB": {
+      "name": "In-Season Lift B (upper)",
+      "mins": 50,
+      "blocks": [
+        {
+          "name": "Warm-up",
+          "items": [
+            {
+              "ex": "wuUpper",
+              "sets": 1,
+              "reps": "6 min video",
+              "rest": "-",
+              "bw": true,
+              "rpe": 4,
+              "note": "follow along"
+            }
+          ]
+        },
+        {
+          "name": "Strength",
+          "items": [
+            {
+              "ex": "bench",
+              "sets": 3,
+              "reps": "3",
+              "rest": "2min",
+              "note": "85%, elbows tucked",
+              "pct": 0.85,
+              "pctOf": "bench",
+              "rpe": 8
+            },
+            {
+              "ex": "latpulldown",
+              "sets": 3,
+              "reps": "6",
+              "rest": "90s",
+              "pct": 0.8,
+              "pctOf": "latpulldown",
+              "rpe": 7
+            },
+            {
+              "ex": "dbrow",
+              "sets": 2,
+              "reps": "8/arm",
+              "rest": "90s",
+              "pct": 0.85,
+              "pctOf": "dbrow",
+              "rpe": 7
+            },
+            {
+              "ex": "pallof",
+              "sets": 2,
+              "reps": "8/side",
+              "rest": "60s",
+              "start": 30,
+              "step": 5,
+              "every": 4,
+              "cap": 50,
+              "rpe": 7
+            }
+          ]
+        },
+        {
+          "name": "Arm Care",
+          "items": [
+            {
+              "ex": "sidelyer",
+              "sets": 2,
+              "reps": "12/arm",
+              "rest": "60s",
+              "start": 5,
+              "step": 0,
+              "every": 1,
+              "rpe": 4
+            },
+            {
+              "ex": "pronepull",
+              "sets": 2,
+              "reps": "10",
+              "rest": "60s",
+              "start": 20,
+              "step": 5,
+              "every": 6,
+              "cap": 30,
+              "rpe": 4
+            }
+          ]
+        }
+      ]
+    },
+    "priming": {
+      "name": "Match Day Priming",
+      "mins": 15,
+      "blocks": [
+        {
+          "name": "Priming (zero fatigue)",
+          "items": [
+            {
+              "ex": "mbvertunder",
+              "sets": 2,
+              "reps": "3",
+              "rest": "45s",
+              "fixed": 8,
+              "rpe": 6
+            },
+            {
+              "ex": "mbvertover",
+              "sets": 2,
+              "reps": "3",
+              "rest": "45s",
+              "fixed": 8,
+              "rpe": 6
+            },
+            {
+              "ex": "mbbroad",
+              "sets": 2,
+              "reps": "3",
+              "rest": "45s",
+              "fixed": 8,
+              "rpe": 6
+            },
+            {
+              "ex": "pogos",
+              "sets": 2,
+              "reps": "10",
+              "rest": "45s",
+              "bw": true,
+              "rpe": 6
+            },
+            {
+              "ex": "approach",
+              "sets": 3,
+              "reps": "1",
+              "rest": "45s",
+              "note": "80 / 90 / 100%",
+              "bw": true,
+              "rpe": 6
+            }
+          ]
+        }
+      ]
+    },
+    "volleyball": {
+      "name": "Volleyball (men's league)",
+      "mins": 10,
+      "blocks": [
+        {
+          "name": "Log it",
+          "items": [
+            {
+              "ex": "quadiso",
+              "sets": 5,
+              "reps": "45s",
+              "rest": "30s",
+              "note": "Before you play.",
+              "bw": true,
+              "rpe": 4
+            }
+          ]
+        }
+      ],
+      "isPlay": true
+    },
+    "off": {
+      "name": "Off",
+      "mins": 0,
+      "blocks": [],
+      "isOff": true
+    },
+    "armGym": {
+      "name": "Arm Speed (gym, wall)",
+      "mins": 55,
+      "blocks": [
+        {
+          "name": "Warm-up",
+          "items": [
+            {
+              "ex": "wuUpper",
+              "sets": 1,
+              "reps": "6 min video",
+              "rest": "-",
+              "bw": true,
+              "rpe": 4,
+              "note": "follow along"
+            }
+          ]
+        },
+        {
+          "name": "Wall Plyo Routine (1.5-2 m, padded wall)",
+          "items": [
+            {
+              "ex": "wallrev",
+              "sets": 3,
+              "reps": "8",
+              "rest": "45s",
+              "fixed": 3,
+              "note": "Always first",
+              "rpe": 6
+            },
+            {
+              "ex": "wallpivot",
+              "sets": 3,
+              "reps": "6",
+              "rest": "60s",
+              "fixed": 2,
+              "note": "Always second",
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Arm Speed",
+          "items": [
+            {
+              "ex": "wristw",
+              "sets": 3,
+              "reps": "8/arm",
+              "rest": "45s",
+              "start": 2,
+              "step": 0,
+              "every": 1,
+              "rpe": 6
+            },
+            {
+              "ex": "towel",
+              "sets": 3,
+              "reps": "8",
+              "rest": "45s",
+              "bw": true,
+              "rpe": 6
+            },
+            {
+              "ex": "tennisrebound",
+              "sets": 3,
+              "reps": "30s",
+              "rest": "45s",
+              "bw": true,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Rotational Power",
+          "items": [
+            {
+              "ex": "mbshotput",
+              "sets": 4,
+              "reps": "5/side",
+              "rest": "60s",
+              "fixed": 6,
+              "rpe": 6
+            },
+            {
+              "ex": "mbscoop",
+              "sets": 3,
+              "reps": "5",
+              "rest": "60s",
+              "fixed": 8,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Arm Care",
+          "items": [
+            {
+              "ex": "sidelyer",
+              "sets": 2,
+              "reps": "12/arm",
+              "rest": "30s",
+              "start": 8,
+              "step": 0,
+              "every": 1,
+              "rpe": 4
+            },
+            {
+              "ex": "serratus",
+              "sets": 2,
+              "reps": "10",
+              "rest": "30s",
+              "bw": true,
+              "rpe": 4
+            }
+          ]
+        }
+      ]
+    },
+    "armHome": {
+      "name": "Arm Speed (home, no space)",
+      "mins": 35,
+      "blocks": [
+        {
+          "name": "Warm-up",
+          "items": [
+            {
+              "ex": "wuUpper",
+              "sets": 1,
+              "reps": "6 min video",
+              "rest": "-",
+              "bw": true,
+              "rpe": 4,
+              "note": "follow along"
+            }
+          ]
+        },
+        {
+          "name": "Mechanics, no ball",
+          "items": [
+            {
+              "ex": "towel",
+              "sets": 4,
+              "reps": "8",
+              "rest": "45s",
+              "bw": true,
+              "rpe": 6
+            },
+            {
+              "ex": "wristw",
+              "sets": 3,
+              "reps": "8/arm",
+              "rest": "45s",
+              "start": 2,
+              "step": 0,
+              "every": 1,
+              "rpe": 6
+            },
+            {
+              "ex": "wallwind",
+              "sets": 3,
+              "reps": "5",
+              "rest": "60s",
+              "fixed": 1,
+              "rpe": 6,
+              "note": "the only full-sequence reps you get until spring"
+            }
+          ]
+        },
+        {
+          "name": "Arm Care",
+          "items": [
+            {
+              "ex": "sidelyer",
+              "sets": 2,
+              "reps": "12/arm",
+              "rest": "30s",
+              "start": 8,
+              "step": 0,
+              "every": 1,
+              "rpe": 4
+            },
+            {
+              "ex": "serratus",
+              "sets": 2,
+              "reps": "10",
+              "rest": "30s",
+              "bw": true,
+              "rpe": 4
+            }
+          ]
+        }
+      ]
+    },
+    "lowerB": {
+      "name": "Lower B · Unilateral + Agility",
+      "mins": 75,
+      "blocks": [
+        {
+          "name": "Warm-up",
+          "items": [
+            {
+              "ex": "wuLower",
+              "sets": 1,
+              "reps": "12 min video",
+              "rest": "-",
+              "bw": true,
+              "rpe": 4,
+              "note": "follow along"
+            }
+          ]
+        },
+        {
+          "name": "Speed + Horizontal Power",
+          "items": [
+            {
+              "ex": "sledpush",
+              "sets": 3,
+              "reps": "20yd",
+              "rest": "90s",
+              "start": 135,
+              "step": 10,
+              "every": 3,
+              "cap": 205,
+              "rpe": 8,
+              "note": "Acceleration. The treadmill is poor at this, the sled is not."
+            },
+            {
+              "ex": "ctreadres",
+              "sets": 3,
+              "reps": "6s",
+              "rest": "90s",
+              "bw": true,
+              "rpe": 8,
+              "note": "Moderate resistance"
+            }
+          ]
+        },
+        {
+          "name": "Unilateral Strength",
+          "items": [
+            {
+              "ex": "rfess",
+              "sets": 3,
+              "reps": "6/leg",
+              "rest": "90s",
+              "start": 80,
+              "step": 5,
+              "every": 3,
+              "cap": 105,
+              "rpe": 8,
+              "note": "A1"
+            },
+            {
+              "ex": "kickrdl",
+              "sets": 3,
+              "reps": "8/leg",
+              "rest": "90s",
+              "start": 70,
+              "step": 5,
+              "every": 3,
+              "cap": 100,
+              "rpe": 7,
+              "note": "A2"
+            },
+            {
+              "ex": "hipflex",
+              "sets": 3,
+              "reps": "8/side",
+              "rest": "60s",
+              "start": 40,
+              "step": 5,
+              "every": 4,
+              "cap": 65,
+              "rpe": 7,
+              "note": "B1"
+            },
+            {
+              "ex": "hipext45",
+              "sets": 3,
+              "reps": "10",
+              "rest": "60s",
+              "start": 25,
+              "step": 5,
+              "every": 4,
+              "cap": 50,
+              "rpe": 7,
+              "note": "B2"
+            }
+          ]
+        },
+        {
+          "name": "Lower Leg",
+          "items": [
+            {
+              "ex": "olcalf",
+              "sets": 2,
+              "reps": "12/leg",
+              "rest": "75s",
+              "start": 25,
+              "step": 5,
+              "every": 4,
+              "cap": 45,
+              "rpe": 7
+            },
+            {
+              "ex": "spanish",
+              "sets": 3,
+              "reps": "45s",
+              "rest": "45s",
+              "bw": true,
+              "rpe": 7,
+              "note": "tendon work — last thing you do"
+            }
+          ]
+        }
+      ]
+    },
+    "armLowerC": {
+      "name": "Arm Speed + Lower C · Extensive",
+      "mins": 85,
+      "blocks": [
+        {
+          "name": "Warm-up",
+          "items": [
+            {
+              "ex": "wuUpper",
+              "sets": 1,
+              "reps": "6 min video",
+              "rest": "-",
+              "bw": true,
+              "rpe": 4,
+              "note": "follow along"
+            }
+          ]
+        },
+        {
+          "name": "Wall Plyo Routine (1.5-2 m, padded wall)",
+          "items": [
+            {
+              "ex": "wallrev",
+              "sets": 3,
+              "reps": "8",
+              "rest": "45s",
+              "fixed": 3,
+              "note": "Always first",
+              "rpe": 6
+            },
+            {
+              "ex": "wallpivot",
+              "sets": 3,
+              "reps": "6",
+              "rest": "60s",
+              "fixed": 2,
+              "note": "Always second",
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Arm Speed",
+          "items": [
+            {
+              "ex": "wristw",
+              "sets": 3,
+              "reps": "8/arm",
+              "rest": "45s",
+              "start": 2,
+              "step": 0,
+              "every": 1,
+              "rpe": 6
+            },
+            {
+              "ex": "armswing",
+              "sets": 3,
+              "reps": "8",
+              "rest": "45s",
+              "start": 2,
+              "step": 0,
+              "every": 1,
+              "rpe": 6,
+              "note": "speed drill — if it feels heavy, drop the weight"
+            }
+          ]
+        },
+        {
+          "name": "Rotational Power",
+          "items": [
+            {
+              "ex": "mbshotput",
+              "sets": 4,
+              "reps": "5/side",
+              "rest": "60s",
+              "fixed": 6,
+              "rpe": 6
+            }
+          ]
+        },
+        {
+          "name": "Lower C · Posterior + Lower Leg",
+          "items": [
+            {
+              "ex": "rdl",
+              "sets": 3,
+              "reps": "8",
+              "rest": "90s",
+              "start": 185,
+              "step": 10,
+              "every": 3,
+              "cap": 245,
+              "rpe": 7,
+              "note": "C1"
+            },
+            {
+              "ex": "hamslider",
+              "sets": 3,
+              "reps": "8",
+              "rest": "90s",
+              "start": 50,
+              "step": 5,
+              "every": 4,
+              "cap": 75,
+              "rpe": 7,
+              "note": "C2"
+            }
+          ]
+        },
+        {
+          "name": "Ankle + Tissue",
+          "items": [
+            {
+              "ex": "gastroc",
+              "sets": 2,
+              "reps": "15",
+              "rest": "75s",
+              "start": 200,
+              "step": 10,
+              "every": 2,
+              "cap": 240,
+              "rpe": 7
+            },
+            {
+              "ex": "ankle3d",
+              "sets": 2,
+              "reps": "10/side",
+              "rest": "30s",
+              "bw": true,
+              "rpe": 4
+            },
+            {
+              "ex": "tibraise",
+              "sets": 2,
+              "reps": "10/leg",
+              "rest": "30s",
+              "start": 18,
+              "step": 0,
+              "every": 1,
+              "rpe": 5
+            },
+            {
+              "ex": "pogos",
+              "sets": 2,
+              "reps": "20",
+              "rest": "60s",
+              "bw": true,
+              "rpe": 5
+            },
+            {
+              "ex": "spanish",
+              "sets": 3,
+              "reps": "45s",
+              "rest": "45s",
+              "bw": true,
+              "rpe": 7,
+              "note": "tendon work — last thing you do"
+            }
+          ]
+        }
+      ]
     }
-   ]
   },
-  "throwing": {
-   "name": "Throwing Day",
-   "mins": 65,
-   "blocks": [
+  "weeks": [
     {
-     "name": "Warm-up",
-     "items": [
-      {
-       "ex": "wuUpper",
-       "sets": 1,
-       "reps": "6 min video",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4,
-       "note": "follow along"
-      }
-     ]
+      "n": 1,
+      "start": "2026-09-14",
+      "block": "1",
+      "sub": "1a",
+      "priority": "throwing",
+      "days": [
+        "upperA",
+        "lowerPower",
+        "armLowerC",
+        "upperB",
+        "lowerB",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "TEST WEEK: 2 sets per lift, no altitude drops, full baseline battery"
+      ],
+      "ballWeights": []
     },
     {
-     "name": "Plyo Ball Routine (fixed order)",
-     "items": [
-      {
-       "ex": "revthrow",
-       "sets": 3,
-       "reps": "8",
-       "rest": "45s",
-       "fixed": 2,
-       "rpe": 6
-      },
-      {
-       "ex": "pivotpick",
-       "sets": 3,
-       "reps": "6",
-       "rest": "60s",
-       "fixed": 2,
-       "rpe": 6
-      },
-      {
-       "ex": "rollin",
-       "sets": 3,
-       "reps": "5",
-       "rest": "60s",
-       "fixed": 1,
-       "rpe": 6
-      },
-      {
-       "ex": "walkwind",
-       "sets": 3,
-       "reps": "5",
-       "rest": "60s",
-       "fixed": 1,
-       "rpe": 6
-      }
-     ]
+      "n": 2,
+      "start": "2026-09-21",
+      "block": "1",
+      "sub": "1a",
+      "priority": "throwing",
+      "days": [
+        "upperA",
+        "lowerPower",
+        "armLowerC",
+        "upperB",
+        "lowerB",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "3 sets per lift, still no altitude drops"
+      ],
+      "ballWeights": []
     },
     {
-     "name": "Throwing",
-     "items": [
-      {
-       "ex": "catchplay",
-       "sets": 1,
-       "reps": "10 min",
-       "rest": "45s",
-       "bw": true,
-       "rpe": 6
-      },
-      {
-       "ex": "longtoss",
-       "sets": 1,
-       "reps": "8-10 throws",
-       "rest": "as needed",
-       "bw": true,
-       "rpe": 6
-      },
-      {
-       "ex": "wball",
-       "sets": 3,
-       "reps": "5 per ball",
-       "rest": "90s",
-       "note": "Week 5+ only. See block notes for weights.",
-       "bw": true,
-       "rpe": 6
-      }
-     ]
+      "n": 3,
+      "start": "2026-09-28",
+      "block": "1",
+      "sub": "1a",
+      "priority": "throwing",
+      "days": [
+        "upperA",
+        "lowerPower",
+        "armLowerC",
+        "upperB",
+        "lowerB",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "Altitude drops enter now, gated on week 1 RSI"
+      ],
+      "ballWeights": []
     },
     {
-     "name": "Rotational",
-     "items": [
-      {
-       "ex": "mbshotput",
-       "sets": 3,
-       "reps": "5/side",
-       "rest": "60s",
-       "fixed": 6,
-       "rpe": 6
-      },
-      {
-       "ex": "mbscoop",
-       "sets": 3,
-       "reps": "5",
-       "rest": "60s",
-       "fixed": 8,
-       "rpe": 6
-      }
-     ]
+      "n": 4,
+      "start": "2026-10-05",
+      "block": "1",
+      "sub": "1a",
+      "priority": "throwing",
+      "days": [
+        "upperA",
+        "lowerPower",
+        "armLowerC",
+        "upperB",
+        "lowerB",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "Altitude drops enter now, gated on week 1 RSI"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 5,
+      "start": "2026-10-12",
+      "block": "1",
+      "sub": "1b",
+      "priority": "throwing",
+      "days": [
+        "upperA",
+        "lowerPower",
+        "armLowerC",
+        "upperB",
+        "lowerB",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": "overload: plyo balls 450g/1kg into the wall, 3x5 each, 90s",
+      "flags": [
+        "DELOAD: 2 sets per exercise, no test"
+      ],
+      "ballWeights": [
+        6,
+        7
+      ]
+    },
+    {
+      "n": 6,
+      "start": "2026-10-19",
+      "block": "1",
+      "sub": "1b",
+      "priority": "throwing",
+      "days": [
+        "upperA",
+        "lowerPower",
+        "armLowerC",
+        "upperB",
+        "lowerB",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": "overload: plyo balls 450g/1kg into the wall, 3x5 each, 90s",
+      "flags": [],
+      "ballWeights": [
+        6,
+        7
+      ]
+    },
+    {
+      "n": 7,
+      "start": "2026-10-26",
+      "block": "1",
+      "sub": "1b",
+      "priority": "throwing",
+      "days": [
+        "upperA",
+        "lowerPower",
+        "armLowerC",
+        "upperB",
+        "lowerB",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": "overload: plyo balls 450g/1kg into the wall, 3x5 each, 90s",
+      "flags": [],
+      "ballWeights": [
+        6,
+        7
+      ]
+    },
+    {
+      "n": 8,
+      "start": "2026-11-02",
+      "block": "1",
+      "sub": "1b",
+      "priority": "throwing",
+      "days": [
+        "upperA",
+        "lowerPower",
+        "armLowerC",
+        "upperB",
+        "lowerB",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": "overload: plyo balls 450g/1kg into the wall, 3x5 each, 90s",
+      "flags": [],
+      "ballWeights": [
+        6,
+        7
+      ]
+    },
+    {
+      "n": 9,
+      "start": "2026-11-09",
+      "block": "1",
+      "sub": "1c",
+      "priority": "throwing",
+      "days": [
+        "upperA",
+        "lowerPower",
+        "armLowerC",
+        "upperB",
+        "lowerB",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": "underload: tennis ball + 150g plyo ball, 3x5 each, 90s",
+      "flags": [],
+      "ballWeights": [
+        3,
+        4
+      ]
+    },
+    {
+      "n": 10,
+      "start": "2026-11-16",
+      "block": "1",
+      "sub": "1c",
+      "priority": "throwing",
+      "days": [
+        "upperA",
+        "lowerPower",
+        "armLowerC",
+        "upperB",
+        "lowerB",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": "underload: tennis ball + 150g plyo ball, 3x5 each, 90s",
+      "flags": [
+        "DELOAD: 2 sets per exercise, no test"
+      ],
+      "ballWeights": [
+        3,
+        4
+      ]
+    },
+    {
+      "n": 11,
+      "start": "2026-11-23",
+      "block": "1",
+      "sub": "1c",
+      "priority": "throwing",
+      "days": [
+        "upperA",
+        "lowerPower",
+        "armLowerC",
+        "upperB",
+        "lowerB",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": "underload: tennis ball + 150g plyo ball, 3x5 each, 90s",
+      "flags": [],
+      "ballWeights": [
+        3,
+        4
+      ]
+    },
+    {
+      "n": 12,
+      "start": "2026-11-30",
+      "block": "1",
+      "sub": "1c",
+      "priority": "throwing",
+      "days": [
+        "upperA",
+        "lowerPower",
+        "armLowerC",
+        "upperB",
+        "lowerB",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": "underload: tennis ball + 150g plyo ball, 3x5 each, 90s",
+      "flags": [],
+      "ballWeights": [
+        3,
+        4
+      ]
+    },
+    {
+      "n": 13,
+      "start": "2026-12-07",
+      "block": "1",
+      "sub": "1d",
+      "priority": "throwing",
+      "days": [
+        "upperA",
+        "lowerPower",
+        "armLowerC",
+        "upperB",
+        "lowerB",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [],
+      "ballWeights": []
+    },
+    {
+      "n": 14,
+      "start": "2026-12-14",
+      "block": "1",
+      "sub": "1d",
+      "priority": "throwing",
+      "days": [
+        "upperA",
+        "lowerPower",
+        "armLowerC",
+        "upperB",
+        "lowerB",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [],
+      "ballWeights": []
+    },
+    {
+      "n": 15,
+      "start": "2026-12-21",
+      "block": "1",
+      "sub": "1d",
+      "priority": "throwing",
+      "days": [
+        "upperA",
+        "lowerPower",
+        "armLowerC",
+        "upperB",
+        "lowerB",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [],
+      "ballWeights": []
+    },
+    {
+      "n": 16,
+      "start": "2026-12-28",
+      "block": "1",
+      "sub": "1d",
+      "priority": "throwing",
+      "days": [
+        "upperA",
+        "lowerPower",
+        "armLowerC",
+        "upperB",
+        "lowerB",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "DELOAD: 2 sets per exercise, no test"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 17,
+      "start": "2027-01-04",
+      "block": "2",
+      "sub": "2a",
+      "priority": "vert",
+      "days": [
+        "lowerA2",
+        "upperMaint",
+        "armLowerC",
+        "lowerB2",
+        "upperMaint",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "Upper is MAINTENANCE: cut sets, hold load"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 18,
+      "start": "2027-01-11",
+      "block": "2",
+      "sub": "2a",
+      "priority": "vert",
+      "days": [
+        "lowerA2",
+        "upperMaint",
+        "armLowerC",
+        "lowerB2",
+        "upperMaint",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "Upper is MAINTENANCE: cut sets, hold load"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 19,
+      "start": "2027-01-18",
+      "block": "2",
+      "sub": "2a",
+      "priority": "vert",
+      "days": [
+        "lowerA2",
+        "upperMaint",
+        "armLowerC",
+        "lowerB2",
+        "upperMaint",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "Upper is MAINTENANCE: cut sets, hold load"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 20,
+      "start": "2027-01-25",
+      "block": "2",
+      "sub": "2a",
+      "priority": "vert",
+      "days": [
+        "lowerA2",
+        "upperMaint",
+        "armLowerC",
+        "lowerB2",
+        "upperMaint",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "Upper is MAINTENANCE: cut sets, hold load"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 21,
+      "start": "2027-02-01",
+      "block": "2",
+      "sub": "2a",
+      "priority": "vert",
+      "days": [
+        "lowerA2",
+        "upperMaint",
+        "armLowerC",
+        "lowerB2",
+        "upperMaint",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "DELOAD: 2 sets per exercise, no test",
+        "Upper is MAINTENANCE: cut sets, hold load"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 22,
+      "start": "2027-02-08",
+      "block": "2",
+      "sub": "2b",
+      "priority": "vert",
+      "days": [
+        "lowerA2",
+        "upperMaint",
+        "armLowerC",
+        "lowerB2",
+        "upperMaint",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "Upper is MAINTENANCE: cut sets, hold load"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 23,
+      "start": "2027-02-15",
+      "block": "2",
+      "sub": "2b",
+      "priority": "vert",
+      "days": [
+        "lowerA2",
+        "upperMaint",
+        "armLowerC",
+        "lowerB2",
+        "upperMaint",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "Upper is MAINTENANCE: cut sets, hold load"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 24,
+      "start": "2027-02-22",
+      "block": "2",
+      "sub": "2b",
+      "priority": "vert",
+      "days": [
+        "lowerA2",
+        "upperMaint",
+        "armLowerC",
+        "lowerB2",
+        "upperMaint",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "Upper is MAINTENANCE: cut sets, hold load"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 25,
+      "start": "2027-03-01",
+      "block": "2",
+      "sub": "2b",
+      "priority": "vert",
+      "days": [
+        "lowerA2",
+        "upperMaint",
+        "armLowerC",
+        "lowerB2",
+        "upperMaint",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "Upper is MAINTENANCE: cut sets, hold load"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 26,
+      "start": "2027-03-08",
+      "block": "2",
+      "sub": "2b",
+      "priority": "vert",
+      "days": [
+        "lowerA2",
+        "upperMaint",
+        "armLowerC",
+        "lowerB2",
+        "upperMaint",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "DELOAD: 2 sets per exercise, no test",
+        "Upper is MAINTENANCE: cut sets, hold load"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 27,
+      "start": "2027-03-15",
+      "block": "2",
+      "sub": "2c",
+      "priority": "vert",
+      "days": [
+        "lowerA2",
+        "upperMaint",
+        "armLowerC",
+        "lowerB2",
+        "upperMaint",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "Upper is MAINTENANCE: cut sets, hold load"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 28,
+      "start": "2027-03-22",
+      "block": "2",
+      "sub": "2c",
+      "priority": "vert",
+      "days": [
+        "lowerA2",
+        "upperMaint",
+        "armLowerC",
+        "lowerB2",
+        "upperMaint",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "Upper is MAINTENANCE: cut sets, hold load"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 29,
+      "start": "2027-03-29",
+      "block": "2",
+      "sub": "2c",
+      "priority": "vert",
+      "days": [
+        "lowerA2",
+        "upperMaint",
+        "armLowerC",
+        "lowerB2",
+        "upperMaint",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "Upper is MAINTENANCE: cut sets, hold load"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 30,
+      "start": "2027-04-05",
+      "block": "2",
+      "sub": "2c",
+      "priority": "vert",
+      "days": [
+        "lowerA2",
+        "upperMaint",
+        "armLowerC",
+        "lowerB2",
+        "upperMaint",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "DELOAD: 2 sets per exercise, no test",
+        "Upper is MAINTENANCE: cut sets, hold load",
+        "SPRING ON-RAMP: weather permitting, start outdoor catch play. 4-5 week structured return before any max intent."
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 31,
+      "start": "2027-04-12",
+      "block": "2",
+      "sub": "2d",
+      "priority": "vert",
+      "days": [
+        "lowerA2",
+        "upperMaint",
+        "armLowerC",
+        "lowerB2",
+        "upperMaint",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "Upper is MAINTENANCE: cut sets, hold load",
+        "SPRING ON-RAMP: weather permitting, start outdoor catch play. 4-5 week structured return before any max intent."
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 32,
+      "start": "2027-04-19",
+      "block": "2",
+      "sub": "2d",
+      "priority": "vert",
+      "days": [
+        "lowerA2",
+        "upperMaint",
+        "armLowerC",
+        "lowerB2",
+        "upperMaint",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "Upper is MAINTENANCE: cut sets, hold load",
+        "SPRING ON-RAMP: weather permitting, start outdoor catch play. 4-5 week structured return before any max intent."
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 33,
+      "start": "2027-04-26",
+      "block": "2",
+      "sub": "2d",
+      "priority": "vert",
+      "days": [
+        "lowerA2",
+        "upperMaint",
+        "armLowerC",
+        "lowerB2",
+        "upperMaint",
+        "volleyball",
+        "armHome"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "DELOAD: 2 sets per exercise, no test",
+        "Upper is MAINTENANCE: cut sets, hold load",
+        "SPRING ON-RAMP: weather permitting, start outdoor catch play. 4-5 week structured return before any max intent."
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 34,
+      "start": "2027-05-03",
+      "block": "in-season",
+      "sub": "transition",
+      "priority": "compete",
+      "days": [
+        "liftA",
+        "volleyball",
+        "off",
+        "liftB",
+        "off",
+        "volleyball",
+        "off"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 35,
+      "start": "2027-05-10",
+      "block": "in-season",
+      "sub": "transition",
+      "priority": "compete",
+      "days": [
+        "liftA",
+        "volleyball",
+        "off",
+        "liftB",
+        "off",
+        "volleyball",
+        "off"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 36,
+      "start": "2027-05-17",
+      "block": "in-season",
+      "sub": "transition",
+      "priority": "compete",
+      "days": [
+        "liftA",
+        "volleyball",
+        "off",
+        "liftB",
+        "off",
+        "volleyball",
+        "off"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 37,
+      "start": "2027-05-24",
+      "block": "in-season",
+      "sub": "transition",
+      "priority": "compete",
+      "days": [
+        "liftA",
+        "volleyball",
+        "off",
+        "liftB",
+        "off",
+        "volleyball",
+        "off"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 38,
+      "start": "2027-05-31",
+      "block": "in-season",
+      "sub": "maintenance",
+      "priority": "compete",
+      "days": [
+        "liftA",
+        "volleyball",
+        "off",
+        "liftB",
+        "off",
+        "volleyball",
+        "off"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 39,
+      "start": "2027-06-07",
+      "block": "in-season",
+      "sub": "maintenance",
+      "priority": "compete",
+      "days": [
+        "liftA",
+        "volleyball",
+        "off",
+        "liftB",
+        "off",
+        "volleyball",
+        "off"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 40,
+      "start": "2027-06-14",
+      "block": "in-season",
+      "sub": "maintenance",
+      "priority": "compete",
+      "days": [
+        "liftA",
+        "volleyball",
+        "off",
+        "liftB",
+        "off",
+        "volleyball",
+        "off"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 41,
+      "start": "2027-06-21",
+      "block": "in-season",
+      "sub": "maintenance",
+      "priority": "compete",
+      "days": [
+        "liftA",
+        "volleyball",
+        "off",
+        "liftB",
+        "off",
+        "volleyball",
+        "off"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 42,
+      "start": "2027-06-28",
+      "block": "in-season",
+      "sub": "maintenance",
+      "priority": "compete",
+      "days": [
+        "liftA",
+        "volleyball",
+        "off",
+        "liftB",
+        "off",
+        "volleyball",
+        "off"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 43,
+      "start": "2027-07-05",
+      "block": "in-season",
+      "sub": "maintenance",
+      "priority": "compete",
+      "days": [
+        "liftA",
+        "volleyball",
+        "off",
+        "liftB",
+        "off",
+        "volleyball",
+        "off"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 44,
+      "start": "2027-07-12",
+      "block": "in-season",
+      "sub": "maintenance",
+      "priority": "compete",
+      "days": [
+        "liftA",
+        "volleyball",
+        "off",
+        "liftB",
+        "off",
+        "volleyball",
+        "off"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 45,
+      "start": "2027-07-19",
+      "block": "in-season",
+      "sub": "maintenance",
+      "priority": "compete",
+      "days": [
+        "liftA",
+        "volleyball",
+        "off",
+        "liftB",
+        "off",
+        "volleyball",
+        "off"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 46,
+      "start": "2027-07-26",
+      "block": "in-season",
+      "sub": "volume peak",
+      "priority": "compete",
+      "days": [
+        "liftA",
+        "volleyball",
+        "off",
+        "liftB",
+        "off",
+        "volleyball",
+        "off"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 47,
+      "start": "2027-08-02",
+      "block": "in-season",
+      "sub": "volume peak",
+      "priority": "compete",
+      "days": [
+        "liftA",
+        "volleyball",
+        "off",
+        "liftB",
+        "off",
+        "volleyball",
+        "off"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 48,
+      "start": "2027-08-09",
+      "block": "in-season",
+      "sub": "volume peak",
+      "priority": "compete",
+      "days": [
+        "liftA",
+        "volleyball",
+        "off",
+        "liftB",
+        "off",
+        "volleyball",
+        "off"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 49,
+      "start": "2027-08-16",
+      "block": "in-season",
+      "sub": "volume peak",
+      "priority": "compete",
+      "days": [
+        "liftA",
+        "volleyball",
+        "off",
+        "liftB",
+        "off",
+        "volleyball",
+        "off"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 50,
+      "start": "2027-08-23",
+      "block": "in-season",
+      "sub": "intensity peak",
+      "priority": "compete",
+      "days": [
+        "liftA",
+        "volleyball",
+        "off",
+        "liftB",
+        "off",
+        "volleyball",
+        "off"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks",
+        "TAPER: cut sets ~45%, HOLD load. Last heavy lower 10 days out"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 51,
+      "start": "2027-08-30",
+      "block": "in-season",
+      "sub": "taper",
+      "priority": "compete",
+      "days": [
+        "liftA",
+        "volleyball",
+        "off",
+        "liftB",
+        "off",
+        "volleyball",
+        "off"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks",
+        "TAPER: cut sets ~45%, HOLD load. Last heavy lower 10 days out"
+      ],
+      "ballWeights": []
+    },
+    {
+      "n": 52,
+      "start": "2027-09-06",
+      "block": "in-season",
+      "sub": "taper",
+      "priority": "compete",
+      "days": [
+        "liftA",
+        "volleyball",
+        "off",
+        "liftB",
+        "off",
+        "volleyball",
+        "off"
+      ],
+      "weightedBalls": null,
+      "flags": [
+        "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks",
+        "TAPER: cut sets ~45%, HOLD load. Last heavy lower 10 days out"
+      ],
+      "ballWeights": []
     }
-   ]
-  },
-  "lowerA2": {
-   "name": "Lower Power A (contrast)",
-   "mins": 70,
-   "blocks": [
-    {
-     "name": "Warm-up",
-     "items": [
-      {
-       "ex": "wuLower",
-       "sets": 1,
-       "reps": "12 min video",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4,
-       "note": "follow along"
-      }
-     ]
-    },
-    {
-     "name": "French Contrast (3-4 rounds, in order)",
-     "items": [
-      {
-       "ex": "squatabs",
-       "sets": 1,
-       "reps": "2",
-       "rest": "15s",
-       "note": "1 - 85-90%",
-       "pct": 0.87,
-       "pctOf": "squatacc",
-       "rpe": 8
-      },
-      {
-       "ex": "altdrop",
-       "sets": 1,
-       "reps": "4",
-       "rest": "15s",
-       "note": "2",
-       "bw": true,
-       "rpe": 6
-      },
-      {
-       "ex": "trapjump",
-       "sets": 1,
-       "reps": "4",
-       "rest": "15s",
-       "note": "3 - 30%",
-       "pct": 0.3,
-       "pctOf": "squatacc",
-       "rpe": 7
-      },
-      {
-       "ex": "bandassistjump",
-       "sets": 1,
-       "reps": "4",
-       "rest": "2.5min",
-       "note": "4 - then next round",
-       "bw": true,
-       "rpe": 7
-      }
-     ]
-    },
-    {
-     "name": "Strength",
-     "items": [
-      {
-       "ex": "hangclean",
-       "sets": 4,
-       "reps": "3",
-       "rest": "2min",
-       "pct": 0.8,
-       "pctOf": "hangclean",
-       "rpe": 8
-      },
-      {
-       "ex": "hamcurl",
-       "sets": 3,
-       "reps": "8",
-       "rest": "90s",
-       "start": 70,
-       "step": 5,
-       "every": 3,
-       "cap": 95,
-       "rpe": 7
-      },
-      {
-       "ex": "soleus",
-       "sets": 3,
-       "reps": "12",
-       "rest": "60s",
-       "start": 120,
-       "step": 10,
-       "every": 2,
-       "cap": 180,
-       "rpe": 7
-      }
-     ]
-    },
-    {
-     "name": "Finisher",
-     "items": [
-      {
-       "ex": "ecccalf",
-       "sets": 2,
-       "reps": "10",
-       "rest": "45s",
-       "start": 55,
-       "step": 5,
-       "every": 3,
-       "cap": 85,
-       "rpe": 7
-      },
-      {
-       "ex": "spanish",
-       "sets": 3,
-       "reps": "45s",
-       "rest": "45s",
-       "bw": true,
-       "rpe": 7,
-       "note": "tendon work — last thing you do"
-      }
-     ]
-    }
-   ]
-  },
-  "lowerB2": {
-   "name": "Lower Power B (approach-specific)",
-   "mins": 80,
-   "blocks": [
-    {
-     "name": "Warm-up",
-     "items": [
-      {
-       "ex": "wuLower",
-       "sets": 1,
-       "reps": "12 min video",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4,
-       "note": "follow along"
-      }
-     ]
-    },
-    {
-     "name": "Approach + Reactive",
-     "items": [
-      {
-       "ex": "approach",
-       "sets": 4,
-       "reps": "5",
-       "rest": "75s",
-       "bw": true,
-       "rpe": 6
-      },
-      {
-       "ex": "penult",
-       "sets": 4,
-       "reps": "3",
-       "rest": "60s",
-       "bw": true,
-       "rpe": 6
-      },
-      {
-       "ex": "altdrop",
-       "sets": 3,
-       "reps": "5",
-       "rest": "60s",
-       "bw": true,
-       "rpe": 6
-      },
-      {
-       "ex": "blocksim",
-       "sets": 4,
-       "reps": "5 jumps",
-       "rest": "30s",
-       "bw": true,
-       "rpe": 6
-      }
-     ]
-    },
-    {
-     "name": "Strength",
-     "items": [
-      {
-       "ex": "squatacc",
-       "sets": 3,
-       "reps": "4",
-       "rest": "2.5min",
-       "pct": 0.8,
-       "pctOf": "squatacc",
-       "rpe": 8
-      },
-      {
-       "ex": "heelsnarrow",
-       "sets": 3,
-       "reps": "8",
-       "rest": "90s",
-       "pct": 0.62,
-       "pctOf": "heelsnarrow",
-       "rpe": 8
-      },
-      {
-       "ex": "soleus",
-       "sets": 3,
-       "reps": "12",
-       "rest": "60s",
-       "start": 120,
-       "step": 10,
-       "every": 2,
-       "cap": 180,
-       "rpe": 7
-      }
-     ]
-    },
-    {
-     "name": "Finisher",
-     "items": [
-      {
-       "ex": "spanish",
-       "sets": 3,
-       "reps": "45s",
-       "rest": "45s",
-       "bw": true,
-       "rpe": 7,
-       "note": "tendon work — last thing you do"
-      }
-     ]
-    }
-   ]
-  },
-  "upperMaint": {
-   "name": "Upper Maintenance",
-   "mins": 50,
-   "blocks": [
-    {
-     "name": "Warm-up",
-     "items": [
-      {
-       "ex": "wuUpper",
-       "sets": 1,
-       "reps": "6 min video",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4,
-       "note": "follow along"
-      }
-     ]
-    },
-    {
-     "name": "Strength (cut sets, HOLD load)",
-     "items": [
-      {
-       "ex": "bench",
-       "sets": 3,
-       "reps": "3",
-       "rest": "2min",
-       "pct": 0.85,
-       "pctOf": "bench",
-       "rpe": 8
-      },
-      {
-       "ex": "latpulldown",
-       "sets": 3,
-       "reps": "6",
-       "rest": "90s",
-       "pct": 0.8,
-       "pctOf": "latpulldown",
-       "rpe": 7
-      },
-      {
-       "ex": "dbrow",
-       "sets": 2,
-       "reps": "8/arm",
-       "rest": "90s",
-       "pct": 0.85,
-       "pctOf": "dbrow",
-       "rpe": 7
-      },
-      {
-       "ex": "pallof",
-       "sets": 2,
-       "reps": "8/side",
-       "rest": "60s",
-       "start": 30,
-       "step": 5,
-       "every": 4,
-       "cap": 50,
-       "rpe": 7
-      }
-     ]
-    },
-    {
-     "name": "Arm Care",
-     "items": [
-      {
-       "ex": "sidelyer",
-       "sets": 2,
-       "reps": "12/arm",
-       "rest": "30s",
-       "start": 8,
-       "step": 0,
-       "every": 1,
-       "rpe": 4
-      },
-      {
-       "ex": "serratus",
-       "sets": 2,
-       "reps": "10",
-       "rest": "30s",
-       "bw": true,
-       "rpe": 4
-      }
-     ]
-    }
-   ]
-  },
-  "liftA": {
-   "name": "In-Season Lift A (lower)",
-   "mins": 65,
-   "blocks": [
-    {
-     "name": "Warm-up",
-     "items": [
-      {
-       "ex": "wuLower",
-       "sets": 1,
-       "reps": "12 min video",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4,
-       "note": "follow along"
-      }
-     ]
-    },
-    {
-     "name": "Strength",
-     "items": [
-      {
-       "ex": "hangclean",
-       "sets": 3,
-       "reps": "2",
-       "rest": "2min",
-       "note": "80-85%",
-       "pct": 0.82,
-       "pctOf": "hangclean",
-       "rpe": 8
-      },
-      {
-       "ex": "squatacc",
-       "sets": 2,
-       "reps": "3",
-       "rest": "2.5min",
-       "note": "80-85%, full depth",
-       "pct": 0.82,
-       "pctOf": "squatacc",
-       "rpe": 8
-      },
-      {
-       "ex": "hamcurl",
-       "sets": 2,
-       "reps": "6",
-       "rest": "90s",
-       "start": 70,
-       "step": 5,
-       "every": 3,
-       "cap": 95,
-       "rpe": 7
-      },
-      {
-       "ex": "soleus",
-       "sets": 3,
-       "reps": "12",
-       "rest": "60s",
-       "start": 120,
-       "step": 10,
-       "every": 2,
-       "cap": 180,
-       "rpe": 7
-      },
-      {
-       "ex": "ecccalf",
-       "sets": 2,
-       "reps": "10",
-       "rest": "45s",
-       "start": 55,
-       "step": 5,
-       "every": 3,
-       "cap": 85,
-       "rpe": 7
-      }
-     ]
-    },
-    {
-     "name": "Finisher",
-     "items": [
-      {
-       "ex": "spanish",
-       "sets": 3,
-       "reps": "45s",
-       "rest": "45s",
-       "bw": true,
-       "rpe": 7,
-       "note": "tendon work — last thing you do"
-      }
-     ]
-    }
-   ]
-  },
-  "liftB": {
-   "name": "In-Season Lift B (upper)",
-   "mins": 50,
-   "blocks": [
-    {
-     "name": "Warm-up",
-     "items": [
-      {
-       "ex": "wuUpper",
-       "sets": 1,
-       "reps": "6 min video",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4,
-       "note": "follow along"
-      }
-     ]
-    },
-    {
-     "name": "Strength",
-     "items": [
-      {
-       "ex": "bench",
-       "sets": 3,
-       "reps": "3",
-       "rest": "2min",
-       "note": "85%, elbows tucked",
-       "pct": 0.85,
-       "pctOf": "bench",
-       "rpe": 8
-      },
-      {
-       "ex": "latpulldown",
-       "sets": 3,
-       "reps": "6",
-       "rest": "90s",
-       "pct": 0.8,
-       "pctOf": "latpulldown",
-       "rpe": 7
-      },
-      {
-       "ex": "dbrow",
-       "sets": 2,
-       "reps": "8/arm",
-       "rest": "90s",
-       "pct": 0.85,
-       "pctOf": "dbrow",
-       "rpe": 7
-      },
-      {
-       "ex": "pallof",
-       "sets": 2,
-       "reps": "8/side",
-       "rest": "60s",
-       "start": 30,
-       "step": 5,
-       "every": 4,
-       "cap": 50,
-       "rpe": 7
-      }
-     ]
-    },
-    {
-     "name": "Arm Care",
-     "items": [
-      {
-       "ex": "sidelyer",
-       "sets": 2,
-       "reps": "12/arm",
-       "rest": "60s",
-       "start": 5,
-       "step": 0,
-       "every": 1,
-       "rpe": 4
-      },
-      {
-       "ex": "pronepull",
-       "sets": 2,
-       "reps": "10",
-       "rest": "60s",
-       "start": 20,
-       "step": 5,
-       "every": 6,
-       "cap": 30,
-       "rpe": 4
-      }
-     ]
-    }
-   ]
-  },
-  "priming": {
-   "name": "Match Day Priming",
-   "mins": 15,
-   "blocks": [
-    {
-     "name": "Priming (zero fatigue)",
-     "items": [
-      {
-       "ex": "mbvertunder",
-       "sets": 2,
-       "reps": "3",
-       "rest": "45s",
-       "fixed": 8,
-       "rpe": 6
-      },
-      {
-       "ex": "mbvertover",
-       "sets": 2,
-       "reps": "3",
-       "rest": "45s",
-       "fixed": 8,
-       "rpe": 6
-      },
-      {
-       "ex": "mbbroad",
-       "sets": 2,
-       "reps": "3",
-       "rest": "45s",
-       "fixed": 8,
-       "rpe": 6
-      },
-      {
-       "ex": "pogos",
-       "sets": 2,
-       "reps": "10",
-       "rest": "45s",
-       "bw": true,
-       "rpe": 6
-      },
-      {
-       "ex": "approach",
-       "sets": 3,
-       "reps": "1",
-       "rest": "45s",
-       "note": "80 / 90 / 100%",
-       "bw": true,
-       "rpe": 6
-      }
-     ]
-    }
-   ]
-  },
-  "volleyball": {
-   "name": "Volleyball (men's league)",
-   "mins": 10,
-   "blocks": [
-    {
-     "name": "Log it",
-     "items": [
-      {
-       "ex": "quadiso",
-       "sets": 5,
-       "reps": "45s",
-       "rest": "30s",
-       "note": "Before you play.",
-       "bw": true,
-       "rpe": 4
-      }
-     ]
-    }
-   ],
-   "isPlay": true
-  },
-  "off": {
-   "name": "Off",
-   "mins": 0,
-   "blocks": [],
-   "isOff": true
-  },
-  "armGym": {
-   "name": "Arm Speed (gym, wall)",
-   "mins": 55,
-   "blocks": [
-    {
-     "name": "Warm-up",
-     "items": [
-      {
-       "ex": "wuUpper",
-       "sets": 1,
-       "reps": "6 min video",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4,
-       "note": "follow along"
-      }
-     ]
-    },
-    {
-     "name": "Wall Plyo Routine (1.5-2 m, padded wall)",
-     "items": [
-      {
-       "ex": "wallrev",
-       "sets": 3,
-       "reps": "8",
-       "rest": "45s",
-       "fixed": 3,
-       "note": "Always first",
-       "rpe": 6
-      },
-      {
-       "ex": "wallpivot",
-       "sets": 3,
-       "reps": "6",
-       "rest": "60s",
-       "fixed": 2,
-       "note": "Always second",
-       "rpe": 6
-      }
-     ]
-    },
-    {
-     "name": "Arm Speed",
-     "items": [
-      {
-       "ex": "wristw",
-       "sets": 3,
-       "reps": "8/arm",
-       "rest": "45s",
-       "start": 2,
-       "step": 0,
-       "every": 1,
-       "rpe": 6
-      },
-      {
-       "ex": "towel",
-       "sets": 3,
-       "reps": "8",
-       "rest": "45s",
-       "bw": true,
-       "rpe": 6
-      },
-      {
-       "ex": "tennisrebound",
-       "sets": 3,
-       "reps": "30s",
-       "rest": "45s",
-       "bw": true,
-       "rpe": 6
-      }
-     ]
-    },
-    {
-     "name": "Rotational Power",
-     "items": [
-      {
-       "ex": "mbshotput",
-       "sets": 4,
-       "reps": "5/side",
-       "rest": "60s",
-       "fixed": 6,
-       "rpe": 6
-      },
-      {
-       "ex": "mbscoop",
-       "sets": 3,
-       "reps": "5",
-       "rest": "60s",
-       "fixed": 8,
-       "rpe": 6
-      }
-     ]
-    },
-    {
-     "name": "Arm Care",
-     "items": [
-      {
-       "ex": "sidelyer",
-       "sets": 2,
-       "reps": "12/arm",
-       "rest": "30s",
-       "start": 8,
-       "step": 0,
-       "every": 1,
-       "rpe": 4
-      },
-      {
-       "ex": "serratus",
-       "sets": 2,
-       "reps": "10",
-       "rest": "30s",
-       "bw": true,
-       "rpe": 4
-      }
-     ]
-    }
-   ]
-  },
-  "armHome": {
-   "name": "Arm Speed (home, no space)",
-   "mins": 35,
-   "blocks": [
-    {
-     "name": "Warm-up",
-     "items": [
-      {
-       "ex": "wuUpper",
-       "sets": 1,
-       "reps": "6 min video",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4,
-       "note": "follow along"
-      }
-     ]
-    },
-    {
-     "name": "Mechanics, no ball",
-     "items": [
-      {
-       "ex": "towel",
-       "sets": 4,
-       "reps": "8",
-       "rest": "45s",
-       "bw": true,
-       "rpe": 6
-      },
-      {
-       "ex": "wristw",
-       "sets": 3,
-       "reps": "8/arm",
-       "rest": "45s",
-       "start": 2,
-       "step": 0,
-       "every": 1,
-       "rpe": 6
-      },
-      {
-       "ex": "wallwind",
-       "sets": 3,
-       "reps": "5",
-       "rest": "60s",
-       "fixed": 1,
-       "rpe": 6,
-       "note": "the only full-sequence reps you get until spring"
-      }
-     ]
-    },
-    {
-     "name": "Arm Care",
-     "items": [
-      {
-       "ex": "sidelyer",
-       "sets": 2,
-       "reps": "12/arm",
-       "rest": "30s",
-       "start": 8,
-       "step": 0,
-       "every": 1,
-       "rpe": 4
-      },
-      {
-       "ex": "serratus",
-       "sets": 2,
-       "reps": "10",
-       "rest": "30s",
-       "bw": true,
-       "rpe": 4
-      }
-     ]
-    }
-   ]
-  },
-  "lowerB": {
-   "name": "Lower B · Unilateral + Agility",
-   "mins": 75,
-   "blocks": [
-    {
-     "name": "Warm-up",
-     "items": [
-      {
-       "ex": "wuLower",
-       "sets": 1,
-       "reps": "12 min video",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4,
-       "note": "follow along"
-      }
-     ]
-    },
-    {
-     "name": "Speed + Horizontal Power",
-     "items": [
-      {
-       "ex": "sledpush",
-       "sets": 3,
-       "reps": "20yd",
-       "rest": "90s",
-       "start": 135,
-       "step": 10,
-       "every": 3,
-       "cap": 205,
-       "rpe": 8,
-       "note": "Acceleration. The treadmill is poor at this, the sled is not."
-      },
-      {
-       "ex": "ctreadres",
-       "sets": 3,
-       "reps": "6s",
-       "rest": "90s",
-       "bw": true,
-       "rpe": 8,
-       "note": "Moderate resistance"
-      }
-     ]
-    },
-    {
-     "name": "Unilateral Strength",
-     "items": [
-      {
-       "ex": "rfess",
-       "sets": 3,
-       "reps": "6/leg",
-       "rest": "90s",
-       "start": 80,
-       "step": 5,
-       "every": 3,
-       "cap": 105,
-       "rpe": 8,
-       "note": "A1"
-      },
-      {
-       "ex": "kickrdl",
-       "sets": 3,
-       "reps": "8/leg",
-       "rest": "90s",
-       "start": 70,
-       "step": 5,
-       "every": 3,
-       "cap": 100,
-       "rpe": 7,
-       "note": "A2"
-      },
-      {
-       "ex": "hipflex",
-       "sets": 3,
-       "reps": "8/side",
-       "rest": "60s",
-       "start": 40,
-       "step": 5,
-       "every": 4,
-       "cap": 65,
-       "rpe": 7,
-       "note": "B1"
-      },
-      {
-       "ex": "hipext45",
-       "sets": 3,
-       "reps": "10",
-       "rest": "60s",
-       "start": 25,
-       "step": 5,
-       "every": 4,
-       "cap": 50,
-       "rpe": 7,
-       "note": "B2"
-      }
-     ]
-    },
-    {
-     "name": "Lower Leg",
-     "items": [
-      {
-       "ex": "olcalf",
-       "sets": 2,
-       "reps": "12/leg",
-       "rest": "75s",
-       "start": 25,
-       "step": 5,
-       "every": 4,
-       "cap": 45,
-       "rpe": 7
-      },
-      {
-       "ex": "spanish",
-       "sets": 3,
-       "reps": "45s",
-       "rest": "45s",
-       "bw": true,
-       "rpe": 7,
-       "note": "tendon work — last thing you do"
-      }
-     ]
-    }
-   ]
-  },
-  "armLowerC": {
-   "name": "Arm Speed + Lower C · Extensive",
-   "mins": 85,
-   "blocks": [
-    {
-     "name": "Warm-up",
-     "items": [
-      {
-       "ex": "wuUpper",
-       "sets": 1,
-       "reps": "6 min video",
-       "rest": "-",
-       "bw": true,
-       "rpe": 4,
-       "note": "follow along"
-      }
-     ]
-    },
-    {
-     "name": "Wall Plyo Routine (1.5-2 m, padded wall)",
-     "items": [
-      {
-       "ex": "wallrev",
-       "sets": 3,
-       "reps": "8",
-       "rest": "45s",
-       "fixed": 3,
-       "note": "Always first",
-       "rpe": 6
-      },
-      {
-       "ex": "wallpivot",
-       "sets": 3,
-       "reps": "6",
-       "rest": "60s",
-       "fixed": 2,
-       "note": "Always second",
-       "rpe": 6
-      }
-     ]
-    },
-    {
-     "name": "Arm Speed",
-     "items": [
-      {
-       "ex": "wristw",
-       "sets": 3,
-       "reps": "8/arm",
-       "rest": "45s",
-       "start": 2,
-       "step": 0,
-       "every": 1,
-       "rpe": 6
-      },
-      {
-       "ex": "armswing",
-       "sets": 3,
-       "reps": "8",
-       "rest": "45s",
-       "start": 2,
-       "step": 0,
-       "every": 1,
-       "rpe": 6,
-       "note": "speed drill — if it feels heavy, drop the weight"
-      }
-     ]
-    },
-    {
-     "name": "Rotational Power",
-     "items": [
-      {
-       "ex": "mbshotput",
-       "sets": 4,
-       "reps": "5/side",
-       "rest": "60s",
-       "fixed": 6,
-       "rpe": 6
-      }
-     ]
-    },
-    {
-     "name": "Lower C · Posterior + Lower Leg",
-     "items": [
-      {
-       "ex": "rdl",
-       "sets": 3,
-       "reps": "8",
-       "rest": "90s",
-       "start": 185,
-       "step": 10,
-       "every": 3,
-       "cap": 245,
-       "rpe": 7,
-       "note": "C1"
-      },
-      {
-       "ex": "hamslider",
-       "sets": 3,
-       "reps": "8",
-       "rest": "90s",
-       "start": 50,
-       "step": 5,
-       "every": 4,
-       "cap": 75,
-       "rpe": 7,
-       "note": "C2"
-      }
-     ]
-    },
-    {
-     "name": "Ankle + Tissue",
-     "items": [
-      {
-       "ex": "gastroc",
-       "sets": 2,
-       "reps": "15",
-       "rest": "75s",
-       "start": 200,
-       "step": 10,
-       "every": 2,
-       "cap": 240,
-       "rpe": 7
-      },
-      {
-       "ex": "ankle3d",
-       "sets": 2,
-       "reps": "10/side",
-       "rest": "30s",
-       "bw": true,
-       "rpe": 4
-      },
-      {
-       "ex": "tibraise",
-       "sets": 2,
-       "reps": "10/leg",
-       "rest": "30s",
-       "start": 18,
-       "step": 0,
-       "every": 1,
-       "rpe": 5
-      },
-      {
-       "ex": "pogos",
-       "sets": 2,
-       "reps": "20",
-       "rest": "60s",
-       "bw": true,
-       "rpe": 5
-      },
-      {
-       "ex": "spanish",
-       "sets": 3,
-       "reps": "45s",
-       "rest": "45s",
-       "bw": true,
-       "rpe": 7,
-       "note": "tendon work — last thing you do"
-      }
-     ]
-    }
-   ]
-  }
- },
- "weeks": [
-  {
-   "n": 1,
-   "start": "2026-09-14",
-   "block": "1",
-   "sub": "1a",
-   "priority": "throwing",
-   "days": [
-    "upperA",
-    "lowerPower",
-    "armLowerC",
-    "upperB",
-    "lowerB",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "TEST WEEK: 2 sets per lift, no altitude drops, full baseline battery"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 2,
-   "start": "2026-09-21",
-   "block": "1",
-   "sub": "1a",
-   "priority": "throwing",
-   "days": [
-    "upperA",
-    "lowerPower",
-    "armLowerC",
-    "upperB",
-    "lowerB",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "3 sets per lift, still no altitude drops"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 3,
-   "start": "2026-09-28",
-   "block": "1",
-   "sub": "1a",
-   "priority": "throwing",
-   "days": [
-    "upperA",
-    "lowerPower",
-    "armLowerC",
-    "upperB",
-    "lowerB",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "Altitude drops enter now, gated on week 1 RSI"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 4,
-   "start": "2026-10-05",
-   "block": "1",
-   "sub": "1a",
-   "priority": "throwing",
-   "days": [
-    "upperA",
-    "lowerPower",
-    "armLowerC",
-    "upperB",
-    "lowerB",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "Altitude drops enter now, gated on week 1 RSI"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 5,
-   "start": "2026-10-12",
-   "block": "1",
-   "sub": "1b",
-   "priority": "throwing",
-   "days": [
-    "upperA",
-    "lowerPower",
-    "armLowerC",
-    "upperB",
-    "lowerB",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": "overload: plyo balls 450g/1kg into the wall, 3x5 each, 90s",
-   "flags": [
-    "DELOAD: 2 sets per exercise, no test"
-   ],
-   "ballWeights": [
-    6,
-    7
-   ]
-  },
-  {
-   "n": 6,
-   "start": "2026-10-19",
-   "block": "1",
-   "sub": "1b",
-   "priority": "throwing",
-   "days": [
-    "upperA",
-    "lowerPower",
-    "armLowerC",
-    "upperB",
-    "lowerB",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": "overload: plyo balls 450g/1kg into the wall, 3x5 each, 90s",
-   "flags": [],
-   "ballWeights": [
-    6,
-    7
-   ]
-  },
-  {
-   "n": 7,
-   "start": "2026-10-26",
-   "block": "1",
-   "sub": "1b",
-   "priority": "throwing",
-   "days": [
-    "upperA",
-    "lowerPower",
-    "armLowerC",
-    "upperB",
-    "lowerB",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": "overload: plyo balls 450g/1kg into the wall, 3x5 each, 90s",
-   "flags": [],
-   "ballWeights": [
-    6,
-    7
-   ]
-  },
-  {
-   "n": 8,
-   "start": "2026-11-02",
-   "block": "1",
-   "sub": "1b",
-   "priority": "throwing",
-   "days": [
-    "upperA",
-    "lowerPower",
-    "armLowerC",
-    "upperB",
-    "lowerB",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": "overload: plyo balls 450g/1kg into the wall, 3x5 each, 90s",
-   "flags": [],
-   "ballWeights": [
-    6,
-    7
-   ]
-  },
-  {
-   "n": 9,
-   "start": "2026-11-09",
-   "block": "1",
-   "sub": "1c",
-   "priority": "throwing",
-   "days": [
-    "upperA",
-    "lowerPower",
-    "armLowerC",
-    "upperB",
-    "lowerB",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": "underload: tennis ball + 150g plyo ball, 3x5 each, 90s",
-   "flags": [],
-   "ballWeights": [
-    3,
-    4
-   ]
-  },
-  {
-   "n": 10,
-   "start": "2026-11-16",
-   "block": "1",
-   "sub": "1c",
-   "priority": "throwing",
-   "days": [
-    "upperA",
-    "lowerPower",
-    "armLowerC",
-    "upperB",
-    "lowerB",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": "underload: tennis ball + 150g plyo ball, 3x5 each, 90s",
-   "flags": [
-    "DELOAD: 2 sets per exercise, no test"
-   ],
-   "ballWeights": [
-    3,
-    4
-   ]
-  },
-  {
-   "n": 11,
-   "start": "2026-11-23",
-   "block": "1",
-   "sub": "1c",
-   "priority": "throwing",
-   "days": [
-    "upperA",
-    "lowerPower",
-    "armLowerC",
-    "upperB",
-    "lowerB",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": "underload: tennis ball + 150g plyo ball, 3x5 each, 90s",
-   "flags": [],
-   "ballWeights": [
-    3,
-    4
-   ]
-  },
-  {
-   "n": 12,
-   "start": "2026-11-30",
-   "block": "1",
-   "sub": "1c",
-   "priority": "throwing",
-   "days": [
-    "upperA",
-    "lowerPower",
-    "armLowerC",
-    "upperB",
-    "lowerB",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": "underload: tennis ball + 150g plyo ball, 3x5 each, 90s",
-   "flags": [],
-   "ballWeights": [
-    3,
-    4
-   ]
-  },
-  {
-   "n": 13,
-   "start": "2026-12-07",
-   "block": "1",
-   "sub": "1d",
-   "priority": "throwing",
-   "days": [
-    "upperA",
-    "lowerPower",
-    "armLowerC",
-    "upperB",
-    "lowerB",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [],
-   "ballWeights": []
-  },
-  {
-   "n": 14,
-   "start": "2026-12-14",
-   "block": "1",
-   "sub": "1d",
-   "priority": "throwing",
-   "days": [
-    "upperA",
-    "lowerPower",
-    "armLowerC",
-    "upperB",
-    "lowerB",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [],
-   "ballWeights": []
-  },
-  {
-   "n": 15,
-   "start": "2026-12-21",
-   "block": "1",
-   "sub": "1d",
-   "priority": "throwing",
-   "days": [
-    "upperA",
-    "lowerPower",
-    "armLowerC",
-    "upperB",
-    "lowerB",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [],
-   "ballWeights": []
-  },
-  {
-   "n": 16,
-   "start": "2026-12-28",
-   "block": "1",
-   "sub": "1d",
-   "priority": "throwing",
-   "days": [
-    "upperA",
-    "lowerPower",
-    "armLowerC",
-    "upperB",
-    "lowerB",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "DELOAD: 2 sets per exercise, no test"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 17,
-   "start": "2027-01-04",
-   "block": "2",
-   "sub": "2a",
-   "priority": "vert",
-   "days": [
-    "lowerA2",
-    "upperMaint",
-    "armLowerC",
-    "lowerB2",
-    "upperMaint",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "Upper is MAINTENANCE: cut sets, hold load"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 18,
-   "start": "2027-01-11",
-   "block": "2",
-   "sub": "2a",
-   "priority": "vert",
-   "days": [
-    "lowerA2",
-    "upperMaint",
-    "armLowerC",
-    "lowerB2",
-    "upperMaint",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "Upper is MAINTENANCE: cut sets, hold load"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 19,
-   "start": "2027-01-18",
-   "block": "2",
-   "sub": "2a",
-   "priority": "vert",
-   "days": [
-    "lowerA2",
-    "upperMaint",
-    "armLowerC",
-    "lowerB2",
-    "upperMaint",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "Upper is MAINTENANCE: cut sets, hold load"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 20,
-   "start": "2027-01-25",
-   "block": "2",
-   "sub": "2a",
-   "priority": "vert",
-   "days": [
-    "lowerA2",
-    "upperMaint",
-    "armLowerC",
-    "lowerB2",
-    "upperMaint",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "Upper is MAINTENANCE: cut sets, hold load"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 21,
-   "start": "2027-02-01",
-   "block": "2",
-   "sub": "2a",
-   "priority": "vert",
-   "days": [
-    "lowerA2",
-    "upperMaint",
-    "armLowerC",
-    "lowerB2",
-    "upperMaint",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "DELOAD: 2 sets per exercise, no test",
-    "Upper is MAINTENANCE: cut sets, hold load"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 22,
-   "start": "2027-02-08",
-   "block": "2",
-   "sub": "2b",
-   "priority": "vert",
-   "days": [
-    "lowerA2",
-    "upperMaint",
-    "armLowerC",
-    "lowerB2",
-    "upperMaint",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "Upper is MAINTENANCE: cut sets, hold load"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 23,
-   "start": "2027-02-15",
-   "block": "2",
-   "sub": "2b",
-   "priority": "vert",
-   "days": [
-    "lowerA2",
-    "upperMaint",
-    "armLowerC",
-    "lowerB2",
-    "upperMaint",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "Upper is MAINTENANCE: cut sets, hold load"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 24,
-   "start": "2027-02-22",
-   "block": "2",
-   "sub": "2b",
-   "priority": "vert",
-   "days": [
-    "lowerA2",
-    "upperMaint",
-    "armLowerC",
-    "lowerB2",
-    "upperMaint",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "Upper is MAINTENANCE: cut sets, hold load"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 25,
-   "start": "2027-03-01",
-   "block": "2",
-   "sub": "2b",
-   "priority": "vert",
-   "days": [
-    "lowerA2",
-    "upperMaint",
-    "armLowerC",
-    "lowerB2",
-    "upperMaint",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "Upper is MAINTENANCE: cut sets, hold load"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 26,
-   "start": "2027-03-08",
-   "block": "2",
-   "sub": "2b",
-   "priority": "vert",
-   "days": [
-    "lowerA2",
-    "upperMaint",
-    "armLowerC",
-    "lowerB2",
-    "upperMaint",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "DELOAD: 2 sets per exercise, no test",
-    "Upper is MAINTENANCE: cut sets, hold load"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 27,
-   "start": "2027-03-15",
-   "block": "2",
-   "sub": "2c",
-   "priority": "vert",
-   "days": [
-    "lowerA2",
-    "upperMaint",
-    "armLowerC",
-    "lowerB2",
-    "upperMaint",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "Upper is MAINTENANCE: cut sets, hold load"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 28,
-   "start": "2027-03-22",
-   "block": "2",
-   "sub": "2c",
-   "priority": "vert",
-   "days": [
-    "lowerA2",
-    "upperMaint",
-    "armLowerC",
-    "lowerB2",
-    "upperMaint",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "Upper is MAINTENANCE: cut sets, hold load"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 29,
-   "start": "2027-03-29",
-   "block": "2",
-   "sub": "2c",
-   "priority": "vert",
-   "days": [
-    "lowerA2",
-    "upperMaint",
-    "armLowerC",
-    "lowerB2",
-    "upperMaint",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "Upper is MAINTENANCE: cut sets, hold load"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 30,
-   "start": "2027-04-05",
-   "block": "2",
-   "sub": "2c",
-   "priority": "vert",
-   "days": [
-    "lowerA2",
-    "upperMaint",
-    "armLowerC",
-    "lowerB2",
-    "upperMaint",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "DELOAD: 2 sets per exercise, no test",
-    "Upper is MAINTENANCE: cut sets, hold load",
-    "SPRING ON-RAMP: weather permitting, start outdoor catch play. 4-5 week structured return before any max intent."
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 31,
-   "start": "2027-04-12",
-   "block": "2",
-   "sub": "2d",
-   "priority": "vert",
-   "days": [
-    "lowerA2",
-    "upperMaint",
-    "armLowerC",
-    "lowerB2",
-    "upperMaint",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "Upper is MAINTENANCE: cut sets, hold load",
-    "SPRING ON-RAMP: weather permitting, start outdoor catch play. 4-5 week structured return before any max intent."
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 32,
-   "start": "2027-04-19",
-   "block": "2",
-   "sub": "2d",
-   "priority": "vert",
-   "days": [
-    "lowerA2",
-    "upperMaint",
-    "armLowerC",
-    "lowerB2",
-    "upperMaint",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "Upper is MAINTENANCE: cut sets, hold load",
-    "SPRING ON-RAMP: weather permitting, start outdoor catch play. 4-5 week structured return before any max intent."
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 33,
-   "start": "2027-04-26",
-   "block": "2",
-   "sub": "2d",
-   "priority": "vert",
-   "days": [
-    "lowerA2",
-    "upperMaint",
-    "armLowerC",
-    "lowerB2",
-    "upperMaint",
-    "volleyball",
-    "armHome"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "DELOAD: 2 sets per exercise, no test",
-    "Upper is MAINTENANCE: cut sets, hold load",
-    "SPRING ON-RAMP: weather permitting, start outdoor catch play. 4-5 week structured return before any max intent."
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 34,
-   "start": "2027-05-03",
-   "block": "in-season",
-   "sub": "transition",
-   "priority": "compete",
-   "days": [
-    "liftA",
-    "volleyball",
-    "off",
-    "liftB",
-    "off",
-    "volleyball",
-    "off"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 35,
-   "start": "2027-05-10",
-   "block": "in-season",
-   "sub": "transition",
-   "priority": "compete",
-   "days": [
-    "liftA",
-    "volleyball",
-    "off",
-    "liftB",
-    "off",
-    "volleyball",
-    "off"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 36,
-   "start": "2027-05-17",
-   "block": "in-season",
-   "sub": "transition",
-   "priority": "compete",
-   "days": [
-    "liftA",
-    "volleyball",
-    "off",
-    "liftB",
-    "off",
-    "volleyball",
-    "off"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 37,
-   "start": "2027-05-24",
-   "block": "in-season",
-   "sub": "transition",
-   "priority": "compete",
-   "days": [
-    "liftA",
-    "volleyball",
-    "off",
-    "liftB",
-    "off",
-    "volleyball",
-    "off"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 38,
-   "start": "2027-05-31",
-   "block": "in-season",
-   "sub": "maintenance",
-   "priority": "compete",
-   "days": [
-    "liftA",
-    "volleyball",
-    "off",
-    "liftB",
-    "off",
-    "volleyball",
-    "off"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 39,
-   "start": "2027-06-07",
-   "block": "in-season",
-   "sub": "maintenance",
-   "priority": "compete",
-   "days": [
-    "liftA",
-    "volleyball",
-    "off",
-    "liftB",
-    "off",
-    "volleyball",
-    "off"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 40,
-   "start": "2027-06-14",
-   "block": "in-season",
-   "sub": "maintenance",
-   "priority": "compete",
-   "days": [
-    "liftA",
-    "volleyball",
-    "off",
-    "liftB",
-    "off",
-    "volleyball",
-    "off"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 41,
-   "start": "2027-06-21",
-   "block": "in-season",
-   "sub": "maintenance",
-   "priority": "compete",
-   "days": [
-    "liftA",
-    "volleyball",
-    "off",
-    "liftB",
-    "off",
-    "volleyball",
-    "off"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 42,
-   "start": "2027-06-28",
-   "block": "in-season",
-   "sub": "maintenance",
-   "priority": "compete",
-   "days": [
-    "liftA",
-    "volleyball",
-    "off",
-    "liftB",
-    "off",
-    "volleyball",
-    "off"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 43,
-   "start": "2027-07-05",
-   "block": "in-season",
-   "sub": "maintenance",
-   "priority": "compete",
-   "days": [
-    "liftA",
-    "volleyball",
-    "off",
-    "liftB",
-    "off",
-    "volleyball",
-    "off"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 44,
-   "start": "2027-07-12",
-   "block": "in-season",
-   "sub": "maintenance",
-   "priority": "compete",
-   "days": [
-    "liftA",
-    "volleyball",
-    "off",
-    "liftB",
-    "off",
-    "volleyball",
-    "off"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 45,
-   "start": "2027-07-19",
-   "block": "in-season",
-   "sub": "maintenance",
-   "priority": "compete",
-   "days": [
-    "liftA",
-    "volleyball",
-    "off",
-    "liftB",
-    "off",
-    "volleyball",
-    "off"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 46,
-   "start": "2027-07-26",
-   "block": "in-season",
-   "sub": "volume peak",
-   "priority": "compete",
-   "days": [
-    "liftA",
-    "volleyball",
-    "off",
-    "liftB",
-    "off",
-    "volleyball",
-    "off"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 47,
-   "start": "2027-08-02",
-   "block": "in-season",
-   "sub": "volume peak",
-   "priority": "compete",
-   "days": [
-    "liftA",
-    "volleyball",
-    "off",
-    "liftB",
-    "off",
-    "volleyball",
-    "off"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 48,
-   "start": "2027-08-09",
-   "block": "in-season",
-   "sub": "volume peak",
-   "priority": "compete",
-   "days": [
-    "liftA",
-    "volleyball",
-    "off",
-    "liftB",
-    "off",
-    "volleyball",
-    "off"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 49,
-   "start": "2027-08-16",
-   "block": "in-season",
-   "sub": "volume peak",
-   "priority": "compete",
-   "days": [
-    "liftA",
-    "volleyball",
-    "off",
-    "liftB",
-    "off",
-    "volleyball",
-    "off"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 50,
-   "start": "2027-08-23",
-   "block": "in-season",
-   "sub": "intensity peak",
-   "priority": "compete",
-   "days": [
-    "liftA",
-    "volleyball",
-    "off",
-    "liftB",
-    "off",
-    "volleyball",
-    "off"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks",
-    "TAPER: cut sets ~45%, HOLD load. Last heavy lower 10 days out"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 51,
-   "start": "2027-08-30",
-   "block": "in-season",
-   "sub": "taper",
-   "priority": "compete",
-   "days": [
-    "liftA",
-    "volleyball",
-    "off",
-    "liftB",
-    "off",
-    "volleyball",
-    "off"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks",
-    "TAPER: cut sets ~45%, HOLD load. Last heavy lower 10 days out"
-   ],
-   "ballWeights": []
-  },
-  {
-   "n": 52,
-   "start": "2027-09-06",
-   "block": "in-season",
-   "sub": "taper",
-   "priority": "compete",
-   "days": [
-    "liftA",
-    "volleyball",
-    "off",
-    "liftB",
-    "off",
-    "volleyball",
-    "off"
-   ],
-   "weightedBalls": null,
-   "flags": [
-    "In-season. 2 lifts/wk; drop to 1 on tournament or 3-session weeks",
-    "TAPER: cut sets ~45%, HOLD load. Last heavy lower 10 days out"
-   ],
-   "ballWeights": []
-  }
- ],
- "deloadWeeks": [
-  5,
-  10,
-  16,
-  21,
-  26,
-  30,
-  33
- ],
- "deloadFactor": 0.85
+  ],
+  "deloadWeeks": [
+    5,
+    10,
+    16,
+    21,
+    26,
+    30,
+    33
+  ],
+  "deloadFactor": 0.85
 }
