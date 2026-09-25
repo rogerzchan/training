@@ -5,7 +5,7 @@
     "peakEvent": "NACIVT Los Angeles",
     "peakDate": "2027-09-04",
     "totalWeeks": 52,
-    "build": "2026-09-24 12:36",
+    "build": "2026-09-24 20:37",
     "maxSessionMins": 105
   },
   "budget": {
@@ -770,10 +770,10 @@
       "loc": "both"
     },
     "hamslider": {
-      "name": "Hamstring Slider Progressions",
-      "cue": "Control the eccentric. Hips stay up.",
+      "name": "Single-Leg Hamstring Slider",
+      "cue": "Single leg, other leg held off the ground. Slide out and back in — extension and flexion. Hips stay up.",
       "cat": "lower",
-      "unit": "lb",
+      "unit": "bodyweight",
       "q": "hamstring slider curl eccentric",
       "equip": "furniture sliders",
       "loc": "gym",
@@ -979,6 +979,16 @@
       "equip": "wrist weight",
       "loc": "both",
       "alt": "Same pattern with no weight at all"
+    },
+    "rotslam": {
+      "name": "Standing Bent-Over Rotational Med Ball Slam",
+      "cue": "Hinge over, ball starts overhead, slam down rotating through the hitting side. Legs and trunk drive it — arm just delivers.",
+      "cat": "throw",
+      "unit": "lb",
+      "q": "rotational med ball slam overhead",
+      "equip": "med ball",
+      "loc": "both",
+      "alt": "Half-kneeling rotational slam"
     }
   },
   "days": {
@@ -2417,15 +2427,13 @@
               "rpe": 6
             },
             {
-              "ex": "armswing",
+              "ex": "rotslam",
               "sets": 3,
-              "reps": "8",
-              "rest": "45s",
-              "start": 2,
-              "step": 0,
-              "every": 1,
-              "rpe": 6,
-              "note": "speed drill — if it feels heavy, drop the weight"
+              "reps": "4/side",
+              "rest": "60s",
+              "fixed": 4,
+              "rpe": 7,
+              "note": "power — full recovery between sets"
             }
           ]
         },
@@ -2460,14 +2468,11 @@
             {
               "ex": "hamslider",
               "sets": 3,
-              "reps": "8",
+              "reps": "8/side",
               "rest": "90s",
-              "start": 50,
-              "step": 5,
-              "every": 4,
-              "cap": 75,
+              "bw": true,
               "rpe": 7,
-              "note": "C2"
+              "note": "C2 — single leg, other leg held off the ground"
             }
           ]
         },
@@ -2492,16 +2497,6 @@
               "rest": "30s",
               "bw": true,
               "rpe": 4
-            },
-            {
-              "ex": "tibraise",
-              "sets": 2,
-              "reps": "10/leg",
-              "rest": "30s",
-              "start": 18,
-              "step": 0,
-              "every": 1,
-              "rpe": 5
             },
             {
               "ex": "pogos",
