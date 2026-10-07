@@ -5,7 +5,7 @@
     "peakEvent": "NACIVT Los Angeles",
     "peakDate": "2027-09-04",
     "totalWeeks": 52,
-    "build": "2026-10-04 18:48",
+    "build": "2026-10-06 23:32",
     "maxSessionMins": 105
   },
   "budget": {
@@ -1042,10 +1042,10 @@
               "sets": 3,
               "reps": "6/side",
               "rest": "45s",
-              "start": 25,
+              "start": 70,
               "step": 5,
               "every": 4,
-              "cap": 45,
+              "cap": 90,
               "rpe": 6
             },
             {
@@ -1061,7 +1061,7 @@
               "sets": 3,
               "reps": "5",
               "rest": "90s",
-              "fixed": 4,
+              "fixed": 8,
               "rpe": 6,
               "note": "max intent — stop the set if a rep slows"
             }
@@ -1088,7 +1088,7 @@
               "reps": "8/arm",
               "rest": "2min",
               "note": "A2",
-              "start": 60,
+              "start": 65,
               "step": 5,
               "every": 2,
               "cap": 90,
@@ -1100,10 +1100,10 @@
               "reps": "10",
               "rest": "90s",
               "note": "B1 - bent arm, short of end range",
-              "start": 45,
+              "start": 55,
               "step": 5,
               "every": 3,
-              "cap": 55,
+              "cap": 75,
               "rpe": 7
             },
             {
@@ -1128,7 +1128,7 @@
               "sets": 2,
               "reps": "12/arm",
               "rest": "30s",
-              "start": 8,
+              "start": 12,
               "step": 0,
               "every": 1,
               "rpe": 4
@@ -1140,17 +1140,6 @@
               "rest": "30s",
               "bw": true,
               "rpe": 4
-            },
-            {
-              "ex": "cableir",
-              "sets": 3,
-              "reps": "12/arm",
-              "rest": "30s",
-              "start": 15,
-              "step": 5,
-              "every": 4,
-              "cap": 35,
-              "rpe": 6
             }
           ]
         },
@@ -1160,7 +1149,7 @@
             {
               "ex": "ballrollout",
               "sets": 3,
-              "reps": "10",
+              "reps": "25/side",
               "rest": "45s",
               "bw": true,
               "rpe": 6
@@ -1217,10 +1206,10 @@
               "reps": "10",
               "rest": "90s",
               "note": "B1",
-              "start": 45,
+              "start": 55,
               "step": 5,
               "every": 3,
-              "cap": 55,
+              "cap": 75,
               "rpe": 7
             },
             {
@@ -1256,7 +1245,7 @@
               "sets": 2,
               "reps": "12/arm",
               "rest": "30s",
-              "start": 8,
+              "start": 12,
               "step": 0,
               "every": 1,
               "rpe": 4
@@ -1321,7 +1310,7 @@
               "sets": 4,
               "reps": "3",
               "rest": "2min",
-              "start": 160,
+              "start": 165,
               "step": 5,
               "every": 2,
               "cap": 205,
@@ -1344,12 +1333,9 @@
               "sets": 3,
               "reps": "8",
               "rest": "90s",
-              "start": 70,
-              "step": 5,
-              "every": 3,
-              "cap": 95,
               "rpe": 7,
-              "note": "D1"
+              "note": "D1",
+              "bw": true
             },
             {
               "ex": "soleus",
@@ -1560,18 +1546,16 @@
               "rest": "2min",
               "pct": 0.8,
               "pctOf": "hangclean",
-              "rpe": 8
+              "rpe": 8,
+              "start": 165
             },
             {
               "ex": "hamcurl",
               "sets": 3,
               "reps": "8",
               "rest": "90s",
-              "start": 70,
-              "step": 5,
-              "every": 3,
-              "cap": 95,
-              "rpe": 7
+              "rpe": 7,
+              "bw": true
             },
             {
               "ex": "soleus",
@@ -1787,7 +1771,7 @@
               "sets": 2,
               "reps": "12/arm",
               "rest": "30s",
-              "start": 8,
+              "start": 12,
               "step": 0,
               "every": 1,
               "rpe": 4
@@ -1833,7 +1817,8 @@
               "note": "80-85%",
               "pct": 0.82,
               "pctOf": "hangclean",
-              "rpe": 8
+              "rpe": 8,
+              "start": 165
             },
             {
               "ex": "squatacc",
@@ -1850,11 +1835,8 @@
               "sets": 2,
               "reps": "6",
               "rest": "90s",
-              "start": 70,
-              "step": 5,
-              "every": 3,
-              "cap": 95,
-              "rpe": 7
+              "rpe": 7,
+              "bw": true
             },
             {
               "ex": "soleus",
@@ -2167,7 +2149,7 @@
               "sets": 2,
               "reps": "12/arm",
               "rest": "30s",
-              "start": 8,
+              "start": 12,
               "step": 0,
               "every": 1,
               "rpe": 4
@@ -2243,7 +2225,7 @@
               "sets": 2,
               "reps": "12/arm",
               "rest": "30s",
-              "start": 8,
+              "start": 12,
               "step": 0,
               "every": 1,
               "rpe": 4
@@ -2341,14 +2323,14 @@
               "every": 4,
               "cap": 65,
               "rpe": 7,
-              "note": "B1"
+              "note": "B1 · per side (cable)"
             },
             {
               "ex": "hipext45",
               "sets": 3,
               "reps": "10",
               "rest": "60s",
-              "start": 25,
+              "start": 35,
               "step": 5,
               "every": 4,
               "cap": 50,
@@ -2365,12 +2347,12 @@
               "sets": 2,
               "reps": "12/leg",
               "rest": "75s",
-              "start": 25,
+              "start": 110,
               "step": 5,
               "every": 4,
-              "cap": 45,
+              "cap": 150,
               "rpe": 7,
-              "note": "load in working hand"
+              "note": "machine load, per leg"
             },
             {
               "ex": "spanish",
