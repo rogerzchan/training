@@ -5,7 +5,7 @@
     "peakEvent": "NACIVT Los Angeles",
     "peakDate": "2027-09-04",
     "totalWeeks": 52,
-    "build": "2026-10-06 23:32",
+    "build": "2026-10-07 19:22",
     "maxSessionMins": 105
   },
   "budget": {
@@ -1342,8 +1342,8 @@
               "sets": 3,
               "reps": "12",
               "rest": "60s",
-              "start": 135,
-              "step": 10,
+              "start": 145,
+              "step": 20,
               "every": 2,
               "cap": 180,
               "rpe": 7,
@@ -1562,8 +1562,8 @@
               "sets": 3,
               "reps": "12",
               "rest": "60s",
-              "start": 135,
-              "step": 10,
+              "start": 145,
+              "step": 20,
               "every": 2,
               "cap": 180,
               "rpe": 7
@@ -1678,8 +1678,8 @@
               "sets": 3,
               "reps": "12",
               "rest": "60s",
-              "start": 135,
-              "step": 10,
+              "start": 145,
+              "step": 20,
               "every": 2,
               "cap": 180,
               "rpe": 7
@@ -1843,8 +1843,8 @@
               "sets": 3,
               "reps": "12",
               "rest": "60s",
-              "start": 135,
-              "step": 10,
+              "start": 145,
+              "step": 20,
               "every": 2,
               "cap": 180,
               "rpe": 7
