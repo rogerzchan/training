@@ -5,7 +5,7 @@
     "peakEvent": "NACIVT Los Angeles",
     "peakDate": "2027-09-04",
     "totalWeeks": 52,
-    "build": "2026-10-07 19:22",
+    "build": "2026-10-08 22:23",
     "maxSessionMins": 105
   },
   "budget": {
@@ -2092,17 +2092,6 @@
           "name": "Arm Speed",
           "items": [
             {
-              "ex": "pushpress",
-              "sets": 3,
-              "reps": "5",
-              "rest": "2min",
-              "start": 95,
-              "step": 5,
-              "every": 2,
-              "cap": 165,
-              "rpe": 8
-            },
-            {
               "ex": "towel",
               "sets": 3,
               "reps": "8",
@@ -2125,7 +2114,7 @@
           "items": [
             {
               "ex": "mbshotput",
-              "sets": 4,
+              "sets": 3,
               "reps": "5/side",
               "rest": "60s",
               "fixed": 6,
@@ -2194,17 +2183,6 @@
               "rest": "45s",
               "bw": true,
               "rpe": 6
-            },
-            {
-              "ex": "pushpress",
-              "sets": 3,
-              "reps": "5",
-              "rest": "2min",
-              "start": 95,
-              "step": 5,
-              "every": 2,
-              "cap": 165,
-              "rpe": 8
             },
             {
               "ex": "wallwind",
@@ -2412,22 +2390,11 @@
           "name": "Arm Speed",
           "items": [
             {
-              "ex": "pushpress",
-              "sets": 3,
-              "reps": "5",
-              "rest": "2min",
-              "start": 95,
-              "step": 5,
-              "every": 2,
-              "cap": 165,
-              "rpe": 8
-            },
-            {
               "ex": "rotslam",
               "sets": 3,
               "reps": "4/side",
               "rest": "60s",
-              "fixed": 4,
+              "fixed": 8,
               "rpe": 7,
               "note": "power — full recovery between sets"
             }
@@ -2438,7 +2405,7 @@
           "items": [
             {
               "ex": "mbshotput",
-              "sets": 4,
+              "sets": 3,
               "reps": "5/side",
               "rest": "60s",
               "fixed": 6,
@@ -2489,10 +2456,10 @@
             {
               "ex": "ankle3d",
               "sets": 2,
-              "reps": "10/side",
+              "reps": "15/side",
               "rest": "30s",
-              "bw": true,
-              "rpe": 4
+              "rpe": 4,
+              "fixed": 15
             },
             {
               "ex": "pogos",
