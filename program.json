@@ -5,7 +5,7 @@
     "peakEvent": "NACIVT Los Angeles",
     "peakDate": "2027-09-04",
     "totalWeeks": 52,
-    "build": "2026-10-10 21:03",
+    "build": "2026-10-10 21:09",
     "maxSessionMins": 105
   },
   "budget": {
@@ -2486,93 +2486,6 @@
           ]
         }
       ]
-    },
-    "hotelLower": {
-      "name": "Hotel Gym · Lower Body",
-      "mins": 50,
-      "blocks": [
-        {
-          "name": "Warm-up",
-          "items": [
-            {
-              "ex": "wuLower",
-              "sets": 1,
-              "reps": "12 min video",
-              "rest": "-",
-              "bw": true,
-              "rpe": 4,
-              "note": "follow along"
-            }
-          ]
-        },
-        {
-          "name": "Lower Strength",
-          "items": [
-            {
-              "ex": "rfess",
-              "sets": 3,
-              "reps": "6/leg",
-              "rest": "90s",
-              "fixed": 45,
-              "rpe": 7,
-              "note": "per hand (2 DBs) — heaviest available"
-            },
-            {
-              "ex": "kickrdl",
-              "sets": 3,
-              "reps": "8/leg",
-              "rest": "90s",
-              "fixed": 40,
-              "rpe": 7,
-              "note": "per hand — heaviest available"
-            },
-            {
-              "ex": "hipbridge",
-              "sets": 3,
-              "reps": "12",
-              "rest": "60s",
-              "bw": true,
-              "rpe": 6
-            }
-          ]
-        },
-        {
-          "name": "Lower Leg",
-          "items": [
-            {
-              "ex": "olcalf",
-              "sets": 2,
-              "reps": "12/leg",
-              "rest": "75s",
-              "fixed": 25,
-              "rpe": 7,
-              "note": "per hand — heaviest DB available"
-            },
-            {
-              "ex": "pogos",
-              "sets": 2,
-              "reps": "20",
-              "rest": "60s",
-              "bw": true,
-              "rpe": 5
-            }
-          ]
-        },
-        {
-          "name": "Finisher",
-          "items": [
-            {
-              "ex": "spanish",
-              "sets": 3,
-              "reps": "45s",
-              "rest": "45s",
-              "bw": true,
-              "rpe": 7,
-              "note": "tendon work — skip if no sturdy anchor"
-            }
-          ]
-        }
-      ]
     }
   },
   "weeks": [
@@ -2651,7 +2564,7 @@
         "lowerPower",
         "armLowerC",
         "upperB",
-        "hotelLower",
+        "lowerB",
         "armHome"
       ],
       "weightedBalls": null,
