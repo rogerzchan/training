@@ -5,7 +5,7 @@
     "peakEvent": "NACIVT Los Angeles",
     "peakDate": "2027-09-04",
     "totalWeeks": 52,
-    "build": "2026-10-10 21:09",
+    "build": "2026-10-17 11:27",
     "maxSessionMins": 105
   },
   "budget": {
@@ -16,16 +16,16 @@
   },
   "targets": {
     "bench": {
-      "now": 165,
-      "dec": 190
+      "now": 175,
+      "dec": 195
     },
     "squatAcc": {
-      "now": 245,
-      "dec": 285
+      "now": 265,
+      "dec": 305
     },
     "hangClean": {
-      "now": 160,
-      "dec": 200
+      "now": 170,
+      "dec": 205
     }
   },
   "exercises": {
@@ -1079,7 +1079,7 @@
               "start": 165,
               "step": 5,
               "every": 2,
-              "cap": 210,
+              "cap": 195,
               "rpe": 8
             },
             {
@@ -1313,7 +1313,7 @@
               "start": 165,
               "step": 5,
               "every": 2,
-              "cap": 205,
+              "cap": 210,
               "rpe": 8
             },
             {
@@ -1325,7 +1325,7 @@
               "start": 245,
               "step": 10,
               "every": 2,
-              "cap": 285,
+              "cap": 315,
               "rpe": 8
             },
             {
