@@ -5,7 +5,7 @@
     "peakEvent": "NACIVT Los Angeles",
     "peakDate": "2027-09-04",
     "totalWeeks": 52,
-    "build": "2026-10-17 11:27",
+    "build": "2026-10-21 20:21",
     "maxSessionMins": 105
   },
   "budget": {
@@ -677,7 +677,7 @@
     },
     "wallwind": {
       "name": "Walking Windup (dry or into padding)",
-      "cue": "Full sequence, controlled intent. No release needed — dry reps count. Into a pillow if you have room.",
+      "cue": "Full sequence, controlled intent. No release needed \u2014 dry reps count. Into a pillow if you have room.",
       "cat": "throw",
       "unit": "lb",
       "q": "driveline walking windup plyo ball",
@@ -771,7 +771,7 @@
     },
     "hamslider": {
       "name": "Single-Leg Hamstring Slider",
-      "cue": "Single leg, other leg held off the ground. Slide out and back in — extension and flexion. Hips stay up.",
+      "cue": "Single leg, other leg held off the ground. Slide out and back in \u2014 extension and flexion. Hips stay up.",
       "cat": "lower",
       "unit": "bodyweight",
       "q": "hamstring slider curl eccentric",
@@ -888,7 +888,7 @@
       "loc": "gym"
     },
     "wuLower": {
-      "name": "Warm-up — PJF Dynamic Warmup",
+      "name": "Warm-up \u2014 PJF Dynamic Warmup",
       "cat": "prep",
       "unit": "none",
       "cue": "Follow the video start to finish. Same one you used on PJF.",
@@ -899,7 +899,7 @@
       "mins": 12
     },
     "wuUpper": {
-      "name": "Warm-up — J-Band Arm Care Routine",
+      "name": "Warm-up \u2014 J-Band Arm Care Routine",
       "cat": "prep",
       "unit": "none",
       "cue": "Follow the video. Doubles as your arm care, so do it properly.",
@@ -982,7 +982,7 @@
     },
     "rotslam": {
       "name": "Standing Bent-Over Rotational Med Ball Slam",
-      "cue": "Hinge over, ball starts overhead, slam down rotating through the hitting side. Legs and trunk drive it — arm just delivers.",
+      "cue": "Hinge over, ball starts overhead, slam down rotating through the hitting side. Legs and trunk drive it \u2014 arm just delivers.",
       "cat": "throw",
       "unit": "lb",
       "q": "rotational med ball slam overhead",
@@ -1043,7 +1043,7 @@
               "reps": "6/side",
               "rest": "45s",
               "start": 70,
-              "step": 5,
+              "step": 10,
               "every": 4,
               "cap": 90,
               "rpe": 6
@@ -1063,7 +1063,7 @@
               "rest": "90s",
               "fixed": 8,
               "rpe": 6,
-              "note": "max intent — stop the set if a rep slows"
+              "note": "max intent \u2014 stop the set if a rep slows"
             }
           ]
         },
@@ -1089,7 +1089,7 @@
               "rest": "2min",
               "note": "A2",
               "start": 65,
-              "step": 5,
+              "step": 10,
               "every": 2,
               "cap": 90,
               "rpe": 7
@@ -1111,7 +1111,7 @@
               "sets": 3,
               "reps": "8/arm",
               "rest": "90s",
-              "note": "B2 · per hand",
+              "note": "B2 \u00b7 per hand",
               "start": 60,
               "step": 5,
               "every": 3,
@@ -1196,7 +1196,7 @@
               "sets": 4,
               "reps": "10",
               "rest": "2min",
-              "note": "A2 · TRX or rings",
+              "note": "A2 \u00b7 TRX or rings",
               "bw": true,
               "rpe": 7
             },
@@ -1217,7 +1217,7 @@
               "sets": 3,
               "reps": "8/arm",
               "rest": "90s",
-              "note": "B2 · per hand",
+              "note": "B2 \u00b7 per hand",
               "start": 60,
               "step": 5,
               "every": 3,
@@ -1263,7 +1263,7 @@
       ]
     },
     "lowerPower": {
-      "name": "Lower A · Power",
+      "name": "Lower A \u00b7 Power",
       "mins": 85,
       "blocks": [
         {
@@ -1361,7 +1361,7 @@
               "rest": "45s",
               "bw": true,
               "rpe": 7,
-              "note": "tendon work — last thing you do"
+              "note": "tendon work \u2014 last thing you do"
             }
           ]
         }
@@ -1591,7 +1591,7 @@
               "rest": "45s",
               "bw": true,
               "rpe": 7,
-              "note": "tendon work — last thing you do"
+              "note": "tendon work \u2014 last thing you do"
             }
           ]
         }
@@ -1696,7 +1696,7 @@
               "rest": "45s",
               "bw": true,
               "rpe": 7,
-              "note": "tendon work — last thing you do"
+              "note": "tendon work \u2014 last thing you do"
             }
           ]
         }
@@ -1872,7 +1872,7 @@
               "rest": "45s",
               "bw": true,
               "rpe": 7,
-              "note": "tendon work — last thing you do"
+              "note": "tendon work \u2014 last thing you do"
             }
           ]
         }
@@ -2221,7 +2221,7 @@
       ]
     },
     "lowerB": {
-      "name": "Lower B · Unilateral + Agility",
+      "name": "Lower B \u00b7 Unilateral + Agility",
       "mins": 75,
       "blocks": [
         {
@@ -2277,7 +2277,7 @@
               "every": 3,
               "cap": 57.5,
               "rpe": 8,
-              "note": "A1 · per hand (2 DBs)"
+              "note": "A1 \u00b7 per hand (2 DBs)"
             },
             {
               "ex": "kickrdl",
@@ -2289,7 +2289,7 @@
               "every": 3,
               "cap": 55,
               "rpe": 7,
-              "note": "A2 · per hand (2 DBs)"
+              "note": "A2 \u00b7 per hand (2 DBs)"
             },
             {
               "ex": "hipflex",
@@ -2297,11 +2297,11 @@
               "reps": "8/side",
               "rest": "60s",
               "start": 40,
-              "step": 5,
+              "step": 10,
               "every": 4,
               "cap": 65,
               "rpe": 7,
-              "note": "B1 · per side (cable)"
+              "note": "B1 \u00b7 per side (cable)"
             },
             {
               "ex": "hipext45",
@@ -2339,14 +2339,14 @@
               "rest": "45s",
               "bw": true,
               "rpe": 7,
-              "note": "tendon work — last thing you do"
+              "note": "tendon work \u2014 last thing you do"
             }
           ]
         }
       ]
     },
     "armLowerC": {
-      "name": "Arm Speed + Lower C · Extensive",
+      "name": "Arm Speed + Lower C \u00b7 Extensive",
       "mins": 85,
       "blocks": [
         {
@@ -2396,7 +2396,7 @@
               "rest": "60s",
               "fixed": 8,
               "rpe": 7,
-              "note": "power — full recovery between sets"
+              "note": "power \u2014 full recovery between sets"
             }
           ]
         },
@@ -2414,7 +2414,7 @@
           ]
         },
         {
-          "name": "Lower C · Posterior + Lower Leg",
+          "name": "Lower C \u00b7 Posterior + Lower Leg",
           "items": [
             {
               "ex": "rdl",
@@ -2435,7 +2435,7 @@
               "rest": "90s",
               "bw": true,
               "rpe": 7,
-              "note": "C2 — single leg, other leg held off the ground"
+              "note": "C2 \u2014 single leg, other leg held off the ground"
             }
           ]
         },
@@ -2481,7 +2481,7 @@
               "rest": "45s",
               "bw": true,
               "rpe": 7,
-              "note": "tendon work — last thing you do"
+              "note": "tendon work \u2014 last thing you do"
             }
           ]
         }
